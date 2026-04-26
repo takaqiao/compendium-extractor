@@ -1,0 +1,100 @@
+{
+    "label": "Clerics+ Effects",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Effect: Divine Flight": {
+            "name": "Effect: Divine Flight",
+            "description": "<p>Your sacred animal grows wings, levitates, or another means by which it can fly. Your sacred animal gains a fly Speed of 25 feet. If your sacred animal already possessed a means to fly, it increases its fly Speed by 15 feet.</p>"
+        },
+        "Effect: Eater of Avatars (Unholy)": {
+            "name": "Effect: Eater of Avatars (Unholy)",
+            "description": "<p>Your sacred animal can choose to gain the benefits of your sanctification and its unarmed attacks gain the appropriate trait for its sanctification. You must be sanctified to select this.</p>"
+        },
+        "Effect: Deific Conduit": {
+            "name": "Effect: Deific Conduit",
+            "description": "<p>You may gain a beatific appearance resembling your deity for 10 minutes. All those who see you use this action know that you are a representative of your god, and you receive a +1 circumstance bonus to Charisma-based skill checks for the duration. This circumstance bonus increases to +2 if the creature follows your deity, or creatures that violates your deity’s edicts or anathema, either by their nature or from acts they have committed.</p>"
+        },
+        "Effect: Body of the Chosen": {
+            "name": "Effect: Body of the Chosen",
+            "description": "<p>Choose two of the following: acid, cold, electricity, fire, poison, or sonic. Your sacred animal gains resistance equal to half your level against the chosen damage types. In addition, your sacred animal gains a weakness equal to half your level against an opposing alignment of its choice. If your deity is neutral, you gain only one type of resistance and no weakness.</p>"
+        },
+        "Effect: Blessed Skill": {
+            "name": "Effect: Blessed Skill",
+            "description": "<p>Your sacred animal becomes trained in the divine skill of your deity. At 9th level, it becomes expert in your deity’s divine skill, and at 17th level it becomes a master.</p>"
+        },
+        "Effect: Heraldic Statue": {
+            "name": "Effect: Heraldic Statue",
+            "description": "<p>While your sacred animal is a statue, it can't take any actions except to use the same activity to transform back, and it can't defend itself easily, making it @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Off-Guard} and giving it an additional –2 status penalty to its AC, but gains resistance 5 to all damage. While in this form, all allies within 30 feet receive a +1 status bonus to attack rolls and to saves against mental effects. Creatures that oppose your deity or are considered enemies of your deity have a -1 status penalty to their AC and Will saves while within 30 feet of your sacred animal.</p>"
+        },
+        "Effect: Fist of the Acolyte": {
+            "name": "Effect: Fist of the Acolyte",
+            "description": "<p>Choose a weapon which you have used @UUID[Compendium.pf2e.feats-srd.7RFjTTzznsdPcaYB]{Emblazon Armament}. The weapon gains the thrown 20 feet trait and functions as if it had the @UUID[Compendium.pf2e.equipment-srd.qlunQzfnzPQpMG6U]{Returning} rune while you are wielding it. If the weapon is a one-handed weapon, the range of its thrown trait increases to 40 feet.</p>"
+        },
+        "Effect: Deific Beam": {
+            "name": "Effect: Deific Beam",
+            "description": "<p>It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 spirit damage with the kickback, spirit, and unarmed traits. Your sacred animal does not take the –2 penalty for firing a kickback weapon while prone, even if their Strength isn't high enough to avoid the penalty.</p>"
+        },
+        "Effect: Beacon": {
+            "name": "Effect: Beacon",
+            "description": "<p> You can spend a single action to raise your deity's focus to grant allies within 15 feet a +1 status bonus against emotion effects until the beginning of your next turn. When you would become an expert in your deity’s favored weapon, you instead increase the range to 30 feet.</p>"
+        },
+        "Effect: Transcendent Mobility": {
+            "name": "Effect: Transcendent Mobility",
+            "description": "<p>Your sacred animal increases its Climb Speed, Speed, or Swim Speed by 15 feet.</p>"
+        },
+        "Effect: Reckless Conquest": {
+            "name": "Effect: Reckless Conquest",
+            "description": "<p>Your Strikes gain the splash trait for the duration of your Fervor and deal splash damage equal to half your level until the end of your next turn. This splash damage is spirit damage or the same type as your Fervor damage if your choice of Fervor deals damage. You are immune to your own splash damage from Fervor.</p>"
+        },
+        "Effect: Eater of Avatars (Holy)": {
+            "name": "Effect: Eater of Avatars (Holy)",
+            "description": "<p>Your sacred animal can choose to gain the benefits of your sanctification and its unarmed attacks gain the appropriate trait for its sanctification. You must be sanctified to select this.</p>"
+        },
+        "Effect: Hope Prevails": {
+            "name": "Effect: Hope Prevails",
+            "description": "<p>The target also gains a +2 status bonus to saves against fear effects for 1 minute.</p>"
+        },
+        "Effect: Stigmata": {
+            "name": "Effect: Stigmata",
+            "description": "<p>While you are suffering from this persistent bleed damage, you receive a +1 status bonus to Religion checks and your harm and heal spells gain the following additional effect:</p>\n<p><strong>Harm </strong>Your <em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{Harm}</em> spells that target a single creature deal 1d4 persistent bleed damage for every 4 levels you possess to targets that fail their Fortitude save. If you use the 3-action cast, only targets that critically fail their save take persistent bleed damage.</p>\n<p><strong>Heal </strong>When you cast <em>@UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{Heal}</em> on a single target other than yourself, they automatically end any ongoing persistent damage they are suffering from. If you use the 3-action cast, targets instead get an immediate attempt to end any ongoing persistent damage they are suffering from by succeeding at a @Check[type:flat|dc:11].</p>"
+        },
+        "Effect: Fervor": {
+            "name": "Effect: Fervor",
+            "description": "<p>You have learned to forge your font energy into powerful boons. When you use this action, you gain one of the chosen fervor benefits listed below which lasts until the end of your next turn. You can extend the duration of this effect to 1 minute if you expend a divine font slot. You cannot benefit from more than one fervor benefit at a time and you immediately end the effects of a previous fervor if you use this action again before the duration has expired. If you have the holy or unholy trait, you can choose to give your Fervor the corresponding trait and any damage dealt from Fervor only applies to creatures with the opposing trait.</p>\n<ul>\n<li>You gain a +1 status bonus to your AC and to saves against mental effects.</li>\n<li>Your weapon and unarmed attacks deal an additional 1d4 spirit damage. This damage increases by 1d4 for each additional weapon damage die your weapon deals.</li>\n</ul>"
+        },
+        "Effect: Heretic's Disguise": {
+            "name": "Effect: Heretic's Disguise",
+            "description": "<p>Your illusory clothing and items grant you a +4 circumstance bonus to attempts to Impersonate being a member of the organization.</p>"
+        },
+        "Effect: Virtue's Light": {
+            "name": "Effect: Virtue's Light",
+            "description": "<p>All unholy creatures within the emanation gain weakness to holy equal to twice the spell’s level. If they already had a weakness to holy, its weakness is increased by the same amount.</p>"
+        },
+        "Effect: Fervor Chosen Element": {
+            "name": "Effect: Fervor Chosen Element",
+            "description": "<p>During your daily preparations, you pray to your god to bless you by the elements of acid, cold, electricity, or fire.</p>"
+        },
+        "Effect: Mantle of Nobility": {
+            "name": "Effect: Mantle of Nobility",
+            "description": "<p>You gain a +1 status bonus to Diplomacy checks and a small crowd of illusory followers in a 5-foot emanation. The crowd of followers acts as a crowd and is difficult terrain.</p>"
+        },
+        "Effect: Wield the Will": {
+            "name": "Effect: Wield the Will",
+            "description": "<p>You call to your deity to aid you in your endeavors against a foe, allowing you to capture its will into a tangible result. Roll a d20. If you attempt a Strike or a basic skill action for Religion or your deity’s divine skill against the subject of your Seek the Will later this round, you must use the result of the roll you made to Wield the Will for your roll instead of rolling. You make this substitution only for the first roll of the listed types you make against the creature this round, not any subsequent rolls of the listed types. If you use your result and you would get a critical failure, you get a failure instead. If you possess the holy or unholy trait, you can choose to give a Strike that used your result from Wield the Will the same trait.</p>"
+        },
+        "Effect: Liberator's Ferocity": {
+            "name": "Effect: Liberator's Ferocity",
+            "description": "<p>You gain resistance to all damage equal to twice the spell’s rank against the triggering attack and a status bonus to damage equal to the same amount against the triggering creature for 1 round.</p>"
+        }
+    }
+}

@@ -1,0 +1,360 @@
+{
+    "label": "Misc",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Qi-Empowered Blows": {
+            "name": "气强化打击 Qi-Empowered Blows",
+            "description": "<p>你以自身生命力强化你的攻击。将你的生命值减少一个由你选择的数值，最少为 1，最多为 2 + 你等级的一半（且受你剩余生命值总数限制）。以这种方式减少生命值不计为伤害，且无法被减轻。你在本回合结束前下一次成功的近战 Strike 会造成等同于你所选生命值数值的额外精魂伤害。</p><p><strong>充能</strong> 造成额外伤害的 Strike 会在目标的躯体上留下持续 1 分钟的灵性印记，使你只要位于该生物 30 尺内就能感知到它。这是一种模糊感官。若你在使用 Qi-Empowered Blows 时减少了至少 5 点生命值，则这种感官改为精确感官，而非模糊感官。</p>"
+        },
+        "Stance: Dance of the Kaiju Caller": {
+            "name": "架势：怪兽信使之舞蹈 Stance: Dance of the Kaiju Caller",
+            "description": "<p>你对大型或更大的生物拥有次级掩蔽，并对它们获得 AC +1 的环境加值。即使你不满足“寻找掩护”的需求，你也可以使用“寻找掩护”，但你只会对大型或更大的生物获得其效果。如果你满足其需求，则你会对大型或更大的生物获得强效掩蔽的效果。当你处于此架势期间，若一个大型或更大的生物对你进行的打击造成重击，或你对其制造的一个区域效果的豁免结果为大失败，则你的架势结束。</p>"
+        },
+        "Secure Convoy": {
+            "name": "护送车队 Secure Convoy",
+            "description": "<p>你将自己的感官与努力集中于保护车队。指定一个单一的非敌对生物、无人看管的物品，或由非敌对生物驾驶的载具作为你的车队。你必须能够看见或听见该车队，或者你必须在探索期间追踪该车队。当你对自己的车队执行搜寻时，你的察觉检定获得+2环境加值；当你追踪自己的车队时，你的求生检定获得+2环境加值。与车队一同旅行时，你的车队可以像你一样飞奔同样长的时间。当你@UUID[Compendium.pf2e.actionspf2e.JYi4MnsdFu618hPm]{猎杀目标}时，你的车队针对你的猎物的 AC 和豁免获得+1环境加值，而你对你的猎物进行打击时，每个武器伤害骰额外造成1点伤害。如果你的猎物在上一轮内曾以敌对动作将你的车队作为目标，则此额外伤害加倍。</p><p>你同一时间只能将一个生物、物品或载具指定为你的车队。如果你在已经指定了一个车队的情况下，对另一个生物、物品或载具使用“护送车队”，则先前的生物、物品或载具失去该指定，而新的对象获得该指定。你的指定持续到你的下一次每日准备。</p>"
+        },
+        "Effect: Ballad of Focus": {
+            "name": "效果：专注歌谣 Effect: Ballad of Focus",
+            "description": "<p><strong>专家</strong> 听到这首歌的盟友，其远程攻击骰和对抗情绪效果的意志豁免获得 +1 状态加值。</p><p><strong>大师</strong> 同专家，但状态加值为 +2。</p><p><strong>传奇</strong> 同专家，但状态加值为 +3。</p>"
+        },
+        "Effect: Counterwit": {
+            "name": "效果：智谋反制 Effect: Counterwit",
+            "description": "<p>直到你下个回合开始前，你对心灵效果获得+2状态加值。</p>"
+        },
+        "By Thine Authority": {
+            "name": "奉汝权柄 By Thine Authority",
+            "description": "<p><strong>需求</strong> 你持有一份你用 @UUID[Compendium.pf2e-team-plus-tian-xia.misc.jtAILwSlLZIpjB9g]{Proclamation of Authority} 制作的文件并将其<strong>储存</strong>起来，且有一只<strong>空手</strong>，或你正拿着这份文件。</p><hr /><p>你以凯旋般的姿态展示这份文件，自信地以权威宣示其真实性。对你15尺内、会尊重该文件权威的生物，进行一次对抗其<strong>意志</strong>DC的 @Check[society|against:will] 检定。作为同一次检定的一部分，你可以在展示时对该文件的权威说谎，但若你这么做，你此次尝试会受到–2环境减值。无论结果如何，生物都会在1天内暂时免疫此效果。</p><hr /><p><strong>大成功</strong> 该生物变为 @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}，且在受惊期间不能对你采取敌对动作。若你或你的盟友对该生物采取敌对动作，该生物便可正常采取敌对动作，但仍保持受惊。</p><p><strong>成功</strong> 如大成功，但该生物变为 @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}。</p>"
+        },
+        "Effect: Imperial Aura (Penalty, Soverign)": {
+            "name": "效果：帝国灵气（减值，君主） Effect: Imperial Aura (Penalty, Soverign)",
+            "description": "<p>他们获得等同于你等级一半、针对你帝龙伤害类型的弱点，并且对心灵效果承受 –1 状态减值。这些效果会持续到他们停留在该区域内期间，并在离开该区域后再持续 1 轮；如果他们的意志豁免大失败，则在离开该区域后持续 4 轮。</p>"
+        },
+        "Effect: Dance Upon the Soaring Blade (Animated Rune)": {
+            "name": "效果：于翱翔之刃上舞蹈（活化符文） Effect: Dance Upon the Soaring Blade (Animated Rune)",
+            "description": "<p>在你的每日准备期间，你可以选择一件你持有的武器，并赋予它活化属性符文；该符文不计入你的符文最大数量限制。</p>"
+        },
+        "Disrupting Riposte": {
+            "name": "扰乱还击 Disrupting Riposte",
+            "description": "<p><strong>触发</strong> 被“失衡守备”选为目标的一名敌人以一次打击将你作为目标</p><hr /><p>直到你的下一回合开始前，你对该目标的打击获得 AC +2 环境加值。若你不再满足此专长的要求，你会失去此环境加值。若该触发攻击未命中你，则该触发生物直到你的下一回合结束前陷入 @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 1}。</p>"
+        },
+        "Effect: Attract Wrath": {
+            "name": "效果：吸引愤怒 Effect: Attract Wrath",
+            "description": "<p>你的盟友对触发该反应的效果的 AC 和反射豁免获得 +1 环境加值</p>"
+        },
+        "Effect: Guide to Freedom": {
+            "name": "效果：通往解锢术的向导 Effect: Guide to Freedom",
+            "description": "<p>你的神灵呼唤附近的藤蔓与根须来阻碍你的目标，使你的掷骰获得+1状态加值。</p>"
+        },
+        "Effect: Feed on Water": {
+            "name": "效果：水吸血 Effect: Feed on Water",
+            "description": "<p>你获得等同于你等级的临时生命值，只要你持续引导你的龙类，这些临时生命值就会持续存在。</p>"
+        },
+        "Effect: Spirit of the Rushing River": {
+            "name": "效果：奔流河流精魂 Effect: Spirit of the Rushing River",
+            "description": "<p>这赋予你虫群和水（特征），对动弹不得、擒抱和束缚（状态）具有免疫，你对火焰和物理伤害具有等于你等级一半的抗力，并对区域和泼水伤害具有等于你等级一半的弱点。你可以挤入仅有数英寸宽的空间。你不会获得母巢思维能力，因此你仍会正常受到心灵效果的影响。作为虫群，你不能说话、施放法术、使用需要双手的操纵动作、启动你的魔法物品，或以你正常的躯体进行任何打击。你获得“奔涌激流”动作。</p>"
+        },
+        "Effect: Feed on Metal": {
+            "name": "效果：吸血金属 Effect: Feed on Metal",
+            "description": "<p>你获得 AC 的 +1 物品加值，或者使你对 AC 的物品加值提高 1，直到你下个回合结束。</p>"
+        },
+        "Stance: Maglalatik Stance": {
+            "name": "架势：马格拉拉提克架势 Stance: Maglalatik Stance",
+            "description": "<p><strong>需求</strong> 你穿着马格拉拉提克护甲，且双手各持有一个椰壳</p><hr /><p>你运用由椰壳半片制成的护甲与手中的椰壳，交织出一曲由自身躯体敲击而成的守护之歌。当你处于此架势时，椰壳的伤害骰提升为 d6，并获得娴熟与招架特征。当你表演时，你获得招架特征的效果，如同你花费了一个单动作，区别在于你可以选择将该环境加值给予一名相邻的盟友而非你自己。该环境加值持续至你下一回合开始，或直到其不再与你相邻为止，以先发生者为准。</p><hr /><p>特殊 如果你拥有 Dueling Parry，则你通过招架特征给予自己和盟友的环境加值提升为 +2。</p>"
+        },
+        "Bestow Favor": {
+            "name": "赐予恩惠 Bestow Favor",
+            "description": "<p><strong>触发</strong> 你尝试进行一次用于<span class=\"action-glyph\">H</span>躲藏的自然检定</p><hr /><p>你的神灵通过感召自然来协助你，帮助你避免被发现。对该触发检定掷骰两次，并使用较好的结果。</p>"
+        },
+        "Effect: Imperial Aura (Penalty, Sky)": {
+            "name": "效果：帝国灵气（减值，空域） Effect: Imperial Aura (Penalty, Sky)",
+            "description": "<p>它们获得等同于你等级一半、针对你的帝龙的伤害类型的弱点，并且对心灵效果承受 –1 状态减值。这些效果会持续到它们停留在该区域内期间，并在离开该区域后再持续 1 轮；若它们在意志豁免中大失败，则在离开该区域后再持续 4 轮。</p>"
+        },
+        "Effect: Line of Succession": {
+            "name": "效果：继承顺位 Effect: Line of Succession",
+            "description": "<p>该盟友获得 40 点临时生命值，AC 获得 +2 状态加值，并且在 1 分钟内，对会使其更接近你的动作或行动的技能检定获得 +2 状态加值</p>"
+        },
+        "Guide to Freedom": {
+            "name": "解锢术向导 Guide to Freedom",
+            "description": "<p><strong>触发</strong> 你尝试挣脱，或进行一次反射豁免以避免被擒抱、定身或束缚</p><p><strong>需求</strong> 你处于自然地形中</p><hr /><p>你的神灵呼唤附近的藤蔓与根须来阻碍你的目标，使你的掷骰获得+1状态加值。</p>"
+        },
+        "Effect: Whisper of Knowledge": {
+            "name": "效果：知识低语 Effect: Whisper of Knowledge",
+            "description": "<p>你的神灵为你提供协助，你在该检定上获得+2状态加值。</p>"
+        },
+        "Hongali Support Benefit": {
+            "name": "洪加利支援增益 Hongali Support Benefit",
+            "description": "<p>直到你下个回合开始时，若你正骑乘你的动物伙伴，并且在此前一个动作中移动了10尺或更多，随后以弓弩组武器进行一次远程打击，则为该次打击的伤害增添一个等于武器伤害骰数量两倍的环境加值。</p>"
+        },
+        "Effect: Step on the Wind (Energize)": {
+            "name": "效果：踏风（充能） Effect: Step on the Wind (Energize)",
+            "description": "<p>你改为飞行而不是跳跃，并获得等同于你速度的飞行速度，持续 1 分钟。</p>"
+        },
+        "Chorus of the Flock": {
+            "name": "牧群合唱 Chorus of the Flock",
+            "description": "<p>你的麻雀以千百只麻雀汇聚而成的声音歌唱，扶助那些最需要援助者。你的麻雀周围30尺弥漫内所有具有濒死（状态）的生物，其濒死（状态）立即减少2。若该生物在过去10分钟内未对任何其他生物做出过敌对动作，则其濒死（状态）改为减少4。若某生物的濒死（状态）因该效果降至0，则其恢复1点生命值，并立即恢复意识，且其受伤（状态）的数值不增加。</p>"
+        },
+        "Condemn": {
+            "name": "判罪 Condemn",
+            "description": "<p><strong>触发</strong> 你目睹一个生物做出对你的神灵而言属于禁忌的行为</p><hr /><p>你在该生物身上施加一个神灵印记，持续一周。该印记对你可见，并产生一个以目标为范围内的30尺弥漫。处于该灵光内时，即使该生物具有隐蔽、掩蔽或隐形术，你仍能观察到它，因为该印记会穿过这些阻碍向你显现，你对该生物的伤害掷骰获得+2状态加值。灵光内的动物对该生物的态度视为比正常差一级，且目标在此弥漫内对动物进行基于魅力的技能检定时承受–4状态减值。目标可以花费3个动作来识别并反制该印记，以移除印记，并进行一次对抗你的职业DC或法术DC（取较高者）的自然或宗教检定。你对带有你的神灵印记的生物进行追踪时获得+4环境加值。你同一时间只能维持一个生效中的印记；如果你再次使用判罪，任何先前的印记都会立即结束。</p>"
+        },
+        "Effect: Imperial Aura (Soverign)": {
+            "name": "效果：帝国灵气（君主） Effect: Imperial Aura (Soverign)",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">你开始引导你的龙类，获得你的龙类类型的特征。你获得对你的龙类的伤害类型等于你一半等级的抗力，并且对具有该特征的效果进行豁免时获得+1状态加值。</span></p>"
+        },
+        "Effect: Hongali Support Benefit": {
+            "name": "效果：Hongali 支援增益 Effect: Hongali Support Benefit",
+            "description": "<p>直到你下个回合开始前，如果你正骑乘你的动物伙伴，并且你在以弓弩组武器进行一次远程打击前的那个动作中移动了 10 尺或更多，则为那次打击的伤害增添一个环境加值，其数值等于武器伤害骰数量的两倍。</p>"
+        },
+        "Kneel Before the Soverign": {
+            "name": "向君主跪拜 Kneel Before the Soverign",
+            "description": "<p><strong>触发</strong> 你灵光内的一名生物对你进行的打击严重失败</p><p><strong>效果</strong> 你命令目标跪倒在你面前。它必须尝试进行一次对抗你职业DC或法术DC（取较高者）的@Check[will|against:class-spell]豁免。豁免失败的生物会跪下，并以一个自由动作陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{伏卧}。</p>"
+        },
+        "Effect: Ballad of Strength": {
+            "name": "效果：力量歌谣 Effect: Ballad of Strength",
+            "description": "<p><strong>专家</strong> 听到这首歌的盟友，其近战攻击骰获得 +1 状态加值。</p><p><strong>大师</strong> 如同专家，但状态加值改为 +2。</p><p><strong>传奇</strong> 如同专家，但状态加值改为 +3。</p>"
+        },
+        "Effect: Masterful Ranger's Convoy": {
+            "name": "效果：大师级游侠的车队 Effect: Masterful Ranger's Convoy",
+            "description": "<p>你对抗游侠的猎物时，AC和豁免获得+2环境加值。</p>"
+        },
+        "Protect the Meek": {
+            "name": "保护弱者 Protect the Meek",
+            "description": "<p><strong>触发</strong> 30尺内一个生物尝试对一个处于 frightened 或 措手不及（状态）的生物进行打击</p><p><strong>需求</strong> 你正持握着你的 Phi Deva 提灯</p><hr /><p>你将光芒照向那些意图伤害无助者的人。触发生物必须尝试一次对抗你的职业DC或法术DC（取较高者）的 @Check[reflex|against:class-spell] 豁免。豁免失败的生物陷入 @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩}，持续1轮；大失败时则持续1分钟。无论结果如何，该生物随后都会在10分钟内暂时免疫。</p>"
+        },
+        "Effect: Soul Form (Full Manifestation)": {
+            "name": "效果：灵魂形态（完全显现） Effect: Soul Form (Full Manifestation)",
+            "description": "<p>如果你显化了全部三种灵魂武器的精华形态，你获得一个4环变巨术法术的效果，以及等同于你等级的对所有伤害的抗力。</p>"
+        },
+        "Effect: Imperial Aura (Forest)": {
+            "name": "效果：帝国灵气（森林） Effect: Imperial Aura (Forest)",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">你开始导引你的龙类，获得你的龙类类型对应的特征。你获得等同于你等级一半的抗力，以抵抗你的龙类的伤害类型；并且对抗具有该特征的效果时，豁免获得+1状态加值。</span></p>"
+        },
+        "Effect: Moss Cover (Moderate)": {
+            "name": "效果：苔藓掩蔽（中等） Effect: Moss Cover (Moderate)",
+            "description": "<p>将这种油涂抹在自己身上后，由于覆盖在你躯体上的苔藓会保护你，因此你获得 20 点临时生命值，持续 8 小时。</p>"
+        },
+        "Effect: Chun Jo Do": {
+            "name": "效果：春秋道 Effect: Chun Jo Do",
+            "description": "<p>你首次获得此专长时，从以下选项中选择一项，并获得将其贯穿于你躯体的能力。当你使用此动作时，你获得所选项的效果，持续1分钟。</p><hr /><p><strong>Kyung Seong</strong> 你以无拘无束的优雅移动，如飞行中的鸟类。你的各项速度获得+10尺状态加值。如果你至少为13级，则除正常效果外，你还获得飞行术的效果。</p><p><strong>Jung Seong</strong> 你以一种对世界咄咄逼人的感悟移动，将自己牢牢扎根于此刻。你的擒抱检定获得+1状态加值，且对抗强迫移动以及会使你陷入倒地（状态）的效果时，你的强韧豁免获得+1状态加值。如果你至少为13级，则该状态加值提升为+2。</p><p><strong>Chyel Seong</strong> 你的四肢变得如钢铁般耀光，在神术低语的引导下守护自身。你的拳击获得招架特征，且当你使用此动作时，你获得招架的效果。效果持续期间，只要你正受益于招架提供的环境加值，你便可以有一次花费你的反应动作来使伤害减少等同于你等级的数值。如果你至少为13级，则你的拳击招架提供的环境加值为+2而非+1。</p><p><strong>Ma Seong</strong> 你的躯体对痛苦与喜悦一视同仁地感官麻木；当你的躯体衰败时，你的奉献依然坚守。你获得等同于你等级的精准伤害与重击抗力。如果你至少为13级，则该抗力改为等同于你等级的两倍，而非等同于你等级。</p><p><strong>Shin Seong</strong> 你的心智浸润于崇高的警觉之中，使你在险境下依然镇定自若。你对情绪效果获得+1状态加值，且在你的回合结束时，将你的惊惧（状态）值减少2而非1。如果你至少为13级，则该状态加值提升为+2，且每当你获得惊惧（状态）时，其数值减少1。</p>"
+        },
+        "Effect: Imperial Aura (Sky)": {
+            "name": "效果：帝国灵光（空域） Effect: Imperial Aura (Sky)",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">你开始引导你的龙类，获得你的龙类类型对应的特征。你获得等于你等级一半的、针对你的龙类对应伤害类型的抗力，并在对抗具有此特征的效果的豁免上获得+1状态加值。</span></p>"
+        },
+        "Effect: Ranger's Convoy": {
+            "name": "效果：游侠的护送队 Effect: Ranger's Convoy",
+            "description": "<p>你在对抗游侠的猎物时，AC和豁免获得+1环境加值。</p>"
+        },
+        "Stance: Weaving Stance": {
+            "name": "架势：织流架势 Stance: Weaving Stance",
+            "description": "<p>你的武器获得双持特征；如果它们尚未具有该特征，则获得之，即使它们不是相同的武器类型也是如此。当一个位于你触及内的对手对你进行 Strike 失败时，在你的下个回合结束前，你对其进行的下一次近战武器攻击获得 +1 环境加值。</p>"
+        },
+        "Effect: Imperial Aura (Penalty, Sea)": {
+            "name": "效果：帝国灵气（减值，海洋） Effect: Imperial Aura (Penalty, Sea)",
+            "description": "<p>他们获得等同于你帝龙伤害类型一半你等级的弱点，并在对抗心灵效果时承受 –1 状态减值。这些效果会持续到他们停留在该区域内期间，并在离开该区域后持续 1 轮；如果他们的意志豁免大失败，则在离开该区域后持续 4 轮。</p>"
+        },
+        "Effect: Disembody (Spirit Weakness)": {
+            "name": "效果：脱离躯体（精魂弱点） Effect: Disembody (Spirit Weakness)",
+            "description": "<p>目标获得等同于你等级一半的精魂伤害弱点，持续1轮。</p>"
+        },
+        "Spell Effect: Chorus Made Manifest": {
+            "name": "法术效果：显化之颂歌 Spell Effect: Chorus Made Manifest",
+            "description": "<p>持续时间为 1 分钟，你获得将当前形态转变为战斗形态的能力；该战斗形态类似由无数鸟类构成的群 flock，由麻雀形状的暗影与羽毛闪动组成，这些都是超小型生物。你可以在施放此法术时作为其一部分进入该形态，并且在持续时间内以带有专注（特征）的单动作在你的正常形态与战斗形态之间切换。处于此形态时，你获得动物和集群（特征）。你不会获得母巢思维能力，因此你仍会正常受到心灵效果影响。你可以解消该法术。</p><p>你获得以下数据和能力：</p><ul><li><p>你获得对物理伤害的抗力 8，以及对区域和泼水伤害的弱点 8。</p></li><li><p>你可以挤入仅有几英寸宽的空间，让你的鸟群穿过缝隙移动。</p></li><li><p>昏暗视觉，以及 60 尺的飞行速度。</p></li><li><p>你获得“合唱集群攻击”，它对 15 尺锥形内的所有生物造成 4d6 点音波伤害，并需要进行基础强韧豁免；你可以用单动作使用它。强韧豁免大失败的生物还会耳聋 1 轮。处于此形态时，你不能进行打击。</p></li></ul>"
+        },
+        "Cycle Energy": {
+            "name": "循环能量 Cycle Energy",
+            "description": "<p><strong>触发</strong> 你将因一个具有你已调谐特征之一的效果而受到伤害</p><hr /><p>你以涌入的能量为燃料，激发你的气脉网络。你获得对此次触发伤害等于你等级的抗力，且直到你下个回合结束前，你的打击每个武器伤害骰额外造成1点伤害。此伤害类型与触发该效果的特征相同。若触发你的效果具有多个符合条件的特征，你必须从中选择一个特征。</p>"
+        },
+        "Effect: Channel Imperial Dragon": {
+            "name": "效果：引导帝龙 Effect: Channel Imperial Dragon",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">你开始引导你的龙类，获得你的龙类类型对应的特征。你获得等于你等级一半的抗力，以对抗你的龙类的伤害类型；并且对抗具有该特征的效果的豁免获得+1状态加值。</span></p>"
+        },
+        "Effect: Qi-Empowered Blows": {
+            "name": "效果：气劲强化击打 Effect: Qi-Empowered Blows",
+            "description": "<p>将你的生命值减少你所选择的数值，最少为1，最多为2加上你等级的一半（受限于你剩余的生命值总数）。以这种方式减少生命值不算作伤害，且无法被减轻。直到你的回合结束前，你下一次成功的近战 Strike 会造成等同于你所选择生命值数值的额外精魂伤害。</p>"
+        },
+        "Stance: Battle Mediation": {
+            "name": "架势：战斗调解 Stance: Battle Mediation",
+            "description": "<p>在战斗激烈之际，你可以引导比平时更多的气。处于此架势时，每回合你第一次使用气劲强化拳时，不计入你每回合一次气塑的限制。此外，每回合你第一次为气劲强化拳的激发效果使用聚能点时，你不会消耗掉聚能点。</p>"
+        },
+        "Spawn of Kawuk Support Benefit": {
+            "name": "卡乌克之裔支援增益 Spawn of Kawuk Support Benefit",
+            "description": "<p>你的衍体威胁着你的敌人，使他们更容易受到你的攻击伤害。直到你的下个回合结束前，与该衍体相邻的敌人对你的近战攻击处于 @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及}。</p>"
+        },
+        "Effect: Imperial Aura (Penalty, Forest)": {
+            "name": "效果：帝国灵气（减值，森林） Effect: Imperial Aura (Penalty, Forest)",
+            "description": "<p>他们获得对你的帝龙的伤害类型的弱点，数值等于你等级的一半，并在对抗心灵效果时承受 –1 状态减值。这些效果会持续到他们停留在该区域内期间，并在离开该区域后持续 1 轮；如果他们的意志豁免大失败，则在离开该区域后持续 4 轮。</p>"
+        },
+        "Effect: The Power of Friendship": {
+            "name": "效果：友谊的力量 Effect: The Power of Friendship",
+            "description": "<p>你获得对所有伤害的抗力 10，且你的星辉哨卫形态在 10 尺弥漫内散发明亮光照，持续 2 轮。你获得 @UUID[Compendium.pf2e-team-plus-tian-xia.misc.ana9pvkZ63MqBCzQ]{全力友谊爆发！}行动。</p>"
+        },
+        "Effect: Imperial Aura (Sea)": {
+            "name": "效果：帝国灵光（海） Effect: Imperial Aura (Sea)",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">你开始引导你的龙类，获得你龙类类型对应的特征。你获得等于你一半等级的抗力，适用于你龙类的伤害类型；并且对具有该特征的效果进行豁免时，获得+1状态加值。</span></p>"
+        },
+        "Effect: Imperial Aura (Underworld)": {
+            "name": "效果：帝国灵光（地底） Effect: Imperial Aura (Underworld)",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">你开始引导你的龙类，并获得你的龙类类型对应的特征。你获得等同于你等级一半的抗力，以抵抗你龙类的伤害类型；并且对抗具有该特征的效果的豁免获得+1状态加值。</span></p>"
+        },
+        "Whisper of Knowledge": {
+            "name": "知识低语 Whisper of Knowledge",
+            "description": "<p><strong>触发</strong> 你将使用自然进行一次回忆知识检定</p><hr /><p>你的神灵为你提供协助，你在该检定上获得+2状态加值。</p>"
+        },
+        "All-Out Friendship Blast!": {
+            "name": "全力友谊冲击波！ All-Out Friendship Blast!",
+            "description": "<p><strong>需求</strong> 你处于“友谊之力”的效果影响下</p><hr /><p>你释放出一次真正的星光之力爆发。你在一个 @Template[type:emanation|distance:30] 中造成 @Damage[18d6[force]] 伤害，目标需进行一次对抗你职业DC或施法DC（取较高者）的基础反射豁免。你每拥有1个友谊计数器，都可以选择将伤害提高1d6，或者将区域增大10尺，并且你可以为每个计数器分别作出选择。选择相信的生物免疫此效果造成的伤害。</p>"
+        },
+        "Choral Swarm Attack": {
+            "name": "合唱蜂群攻击 Choral Swarm Attack",
+            "description": "<p>你获得一个合唱虫群攻击，对一个 @Template[type:cone|distance:15] 内的所有生物造成 @Damage[4d6[sonic]] 伤害，并可用单动作使用，目标需进行一次 @Check[fortitude|against:class-spell|basic] 强韧豁免。强韧豁免大失败的生物还会陷入 @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋} 1 轮。</p>"
+        },
+        "Effect: Ballad of Resilience": {
+            "name": "效果：坚韧叙事曲 Effect: Ballad of Resilience",
+            "description": "<p><strong>专家</strong> 听到这首歌的盟友，对那些试图强迫他们移动或将其击倒在地的效果，其 AC 和强韧豁免获得 +1 状态加值。</p><p><strong>大师</strong> 如专家，但状态加值变为 +2。</p><p><strong>传奇</strong> 如专家，但状态加值变为 +3。</p>"
+        },
+        "Preserve the Vessel": {
+            "name": "维系容器 Preserve the Vessel",
+            "description": "<p><strong>触发</strong> 你被一次打击大成功命中</p><hr /><p>你的神使击退袭击者。触发生物必须尝试进行一次对抗你职业DC或法术DC（取较高者）的@Check[fortitude|against:class-spell]豁免。若失败，该生物被向远离你的方向推开5尺；若大失败，则被向远离你的方向推开10尺。</p>"
+        },
+        "Effect: Rhythm of a Thousand Souls": {
+            "name": "效果：千魂律动 Effect: Rhythm of a Thousand Souls",
+            "description": "<p>选择一个你能看见的生物并掷一个 d20。在你的下个回合开始之前的下一次中，当你对所选生物进行 Strike，或尝试对其制造的一个效果进行豁免骰时，你可以使用该结果作为你的掷骰结果，而不是重新掷骰。直到你的下个回合开始前，除非你使用这个结果，否则你不能对该生物进行 Strike。</p>"
+        },
+        "Stance: Prong Typhoon Stance": {
+            "name": "架势：双刺台风架势 Stance: Prong Typhoon Stance",
+            "description": "<p>当你处于此架势时，你在进行卸武的运动检定时获得 +1 环境加值，且成功的卸武动作会使后续卸武动作获得 +3 环境加值，而非 +2。此外，你可以尝试对体型比你大至多两级的生物进行卸武。</p>"
+        },
+        "Effect: Energy Attunment": {
+            "name": "效果：能量谐调 Effect: Energy Attunment",
+            "description": "<p>在你的每日准备期间，从以下特征中选择一个：空气（挥砍）、寒冷、大地（钝击）、电击、火焰、金属（挥砍）、毒素、音波、命能、虚能、水（钝击）或木（穿刺）。你与该特征调谐，并且可以选择让你的修行者专长或法术所造成的任意力场或精魂伤害改为获得该特征，并造成对应的伤害类型。若你选择虚能或命能，则你可以将“循环能量”同时用于虚能伤害与命能伤害。</p>"
+        },
+        "Attract Wrath": {
+            "name": "引来愤怒 Attract Wrath",
+            "description": "<p><strong>触发</strong> 你30尺内的一名盟友成为一个大型或更大生物的打击目标，或将被包含在其某个区域效果内</p><p><strong>需求</strong> 你处于怪兽信使之舞架势</p><hr /><p>你呼唤敌人将怒火转而倾泻到你身上，而不是你的盟友。你立即暴露自己，失去你的掩蔽带来的好处，且触发生物必须对你的职业DC或法术DC进行一次 @Check[will|against:class-spell]，取较高者。无论结果如何，触发生物都会对此效果暂时免疫1小时。</p><hr /><p><strong>大成功</strong> 目标不受影响。</p><p><strong>成功</strong> 你的盟友对触发效果的AC和反射豁免获得+1环境加值，但触发生物可以选择以你而非你的盟友作为打击的目标。如果触发效果是区域效果，它们可以选择以你所占据的区域而非其原本选择的区域为目标。</p><p>@UUID[Compendium.pf2e-team-plus-tian-xia.misc.Item.ADJ8OCL344GQFwnx]{效果：吸引怒火}</p><p><strong>失败</strong> 同成功，但你的盟友还会获得你在使用此反应动作（）前所拥有的掩蔽带来的好处，且该生物必须选择以你而非你的盟友为目标，否则其将在1轮内变为 @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{虚弱 2}。你的盟友无需满足掩蔽的需求即可获得这些好处。</p><p><strong>大失败</strong> 同失败，但你会在触发效果生效前立即采取掩蔽。</p>"
+        },
+        "Torrential Flow": {
+            "name": "洪流奔涌 Torrential Flow",
+            "description": "<p><strong>需求 </strong>你处于奔涌河流之魂的效果之下</p><hr /><p>你将水流卷向与你处于同一空间的生物。你进行一次疾行，并在移动结束时与一个生物共享同一空间，然后对该生物造成 @Damage[5d8[bludgeoning]] 伤害，该生物必须进行一次对抗你的职业DC或法术DC（取较高者）的 @Check[reflex|against:class-spell|basic] 豁免。豁免失败的生物会被你朝你选择的方向击退5尺，豁免大失败的生物还会陷入 @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}。这属于强迫移动。</p>"
+        },
+        "Effect: Guile of a Soverign": {
+            "name": "效果：主权者的诡计 Effect: Guile of a Soverign",
+            "description": "<p>你在攻击掷骰或技能检定上承受状态减值。</p>"
+        },
+        "Effect: Soverign Armor": {
+            "name": "效果：君主护甲 Effect: Soverign Armor",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">直到你的下个回合开始前，你获得 AC 的 +2 环境加值。</span></p>"
+        },
+        "Effect: Kiln-Hardened": {
+            "name": "效果：窑炉硬化 Effect: Kiln-Hardened",
+            "description": "<p>直到你的下个回合结束，你获得 AC 和强韧豁免的 +1 状态加值，但承受反射的 –1 状态减值，以及速度的 –5 尺状态减值。在这次硬化之后，使你活动的魔法会让你恢复为更具延展性的形态。</p><p><strong>强化</strong> 当你使用此反应动作时，直到你的下个回合结束，你获得 5 点对火焰、穿刺和挥砍伤害的抗力。</p>"
+        },
+        "Effect: Moss Cover (Major)": {
+            "name": "效果：苔藓掩蔽（强效） Effect: Moss Cover (Major)",
+            "description": "<p>将这种油涂抹在自己身上后，由于覆盖你躯体的苔藓会保护你，你获得 50 点临时生命值，持续 24 小时。</p>"
+        },
+        "Effect: Channel Imperial Dragon (Sustain)": {
+            "name": "效果：引导帝龙（维持） Effect: Channel Imperial Dragon (Sustain)",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">你可以维持该法术，使你在下个回合结束前，进行外交和威吓检定时获得+1状态加值。</span></p><p><strong>升阶（+3）</strong> 外交和威吓的状态加值提高1。</p>"
+        },
+        "Maglalatik Stance": {
+            "name": "玛格拉拉提克架势 Maglalatik Stance",
+            "description": "<p><strong>需求</strong> 你穿着马格拉拉提克护甲，且双手各持一枚椰子壳</p><hr /><p>你运用由椰子壳半片制成的护甲，以及手中的椰子壳，编织出一首由自身躯体敲击声构成的守护之歌。当你处于此架势时，椰子壳的伤害骰提升为 d6，并获得娴熟与招架特征。当你进行表演时，你获得招架特征的效果，视同你花费了一个单动作，但你可以选择将该环境加值给予一名邻接的盟友而非自己。该加值持续至你下个回合开始，或直到其不再与你邻接，以先发生者为准。</p><hr /><p>特殊 如果你拥有 Dueling Parry，则你通过招架特征给予自己与盟友的环境加值提高为 +2。</p>"
+        },
+        "Kyoryū’s Wrath": {
+            "name": "恐龙之怒 Kyoryū’s Wrath",
+            "description": "<p><strong>需求</strong> 你的上一个动作是成功对一个生物进行次颚咬打击</p><hr /><p>以与所需打击相同的多重攻击减值进行一次次颚咬打击。若你命中，目标进行一次对抗你的职业DC或法术DC（取较高者）的 @Check[fortitude|against:class-spell] 豁免。若失败，目标承受额外的 @Damage[5d10[piercing],5d10[@actor.flags.pf2e.imperialDragonEmissary.breathDamage]] 伤害。</p>"
+        },
+        "Proclamation of Authority": {
+            "name": "权威宣告 Proclamation of Authority",
+            "description": "<p><strong>需求</strong> 你拥有一套书写套件以及一个可供书写的地方。</p><hr /><p>你起草一份带有诉诸权威内容的文件，无论其内容是伪造还是真实。你尝试进行一次社交检定，在一个耗时 1 小时的流程中，以某个特定个体的名义制作一份权威文件。你可以使用该文件对任何承认所选个体权威的生物进行 @UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{留下印象}，并以你的社交检定结果作为此次留下印象的结果。如果你使用该文件对一名贵族留下印象，你的检定获得 +2 环境加值；如果你拥有调查员专长职业特性，则改为获得 +3 环境加值。若你并不具备文件中该个体的权威，你可以尝试 @UUID[Compendium.pf2e.actionspf2e.ewwCglB7XOPLUz72]{说谎} 来为该文件辩护，并以你的社交调整值替代欺瞒。如果你已使用某份文件来影响某个生物，则该文件对该生物不再提供任何进一步的好处或效果，且该生物会在 1 小时内暂时免疫于你所创建的其他文件的效果。你获得 @UUID[Compendium.pf2e-team-plus-tian-xia.misc.6i17Cqt3fXwHFT2z]{凭汝权威} 动作。</p>"
+        },
+        "Shepherd's Claws": {
+            "name": "牧人的利爪 Shepherd's Claws",
+            "description": "<p><strong>触发</strong> 你进行先攻掷骰</p><hr /><p>你立刻亮出牧人的尖牙。你可以用一个交互来拔出一把楔子剑，然后可以再用一个交互来拔出另一把楔子剑。如果你已经双持两把楔子剑，你获得招架的效果，如同你花费了一个动作来使用它一样。</p>"
+        },
+        "Stance: Tiger's Tail Stance": {
+            "name": "架势：虎之尾击架势 Stance: Tiger's Tail Stance",
+            "description": "<p>你可以用一个交互来连接或拆开你的钩剑，并且在进入该架势时，你可以用一个自由动作进行此交互。你以单手将已连接的钩剑作为一把武器来持用，并且以这种方式持用时，它们获得触及特征。以这种方式持用已连接的钩剑时，你被视为同时持用两把钩剑，并且你不能再持用另一把武器。如果你的钩剑具有不同的符文或效果，则你只能获得其中一把钩剑的符文和效果；你在第一次进入该架势时选择其中一把。</p>"
+        },
+        "Effect: Cycle Energy": {
+            "name": "效果：循环能量 Effect: Cycle Energy",
+            "description": "<p>你获得等同于你等级的、针对触发该反应之伤害的抗力，并且直到你下个回合结束前，你的打击每个武器伤害骰额外造成 1 点伤害。此伤害的类型与触发该反应之效果的特征相同。</p>"
+        },
+        "Effect: Moss Cover (Lesser)": {
+            "name": "效果：苔藓掩蔽（次等） Effect: Moss Cover (Lesser)",
+            "description": "<p>将这种油涂抹在自己身上后，你会因覆盖在躯体上的苔藓保护你而获得 10 点临时生命值，持续 4 小时。</p>"
+        },
+        "Effect: Verse of Preparation": {
+            "name": "效果：准备诗篇 Effect: Verse of Preparation",
+            "description": "<p><strong>专家</strong> 听到这首歌的盟友获得等同于你等级一半的临时生命值。</p><p><strong>大师</strong> 如同专家，但临时生命值改为等同于 5 + 你等级的一半。</p><p><strong>传奇</strong> 如同专家，但临时生命值改为等同于 10 + 你等级的一半。</p>"
+        },
+        "Effect: Imperial Aura (Penalty, Underworld)": {
+            "name": "效果：帝国灵气（减值，地底） Effect: Imperial Aura (Penalty, Underworld)",
+            "description": "<p>它们获得等同于你等级一半、针对你帝龙的伤害类型的弱点，并且对心灵效果承受 –1 状态减值。这些效果会持续到它们留在该区域内期间，并在离开该区域后再持续 1 轮；若它们的意志豁免大失败，则在离开该区域后持续 4 轮。</p>"
+        },
+        "Banga Swap": {
+            "name": "班加交换 Banga Swap",
+            "description": "<p><strong>触发</strong> 你的回合开始时</p><p><strong>需求</strong> 你的头上顶着一个物品</p><hr /><p>你迅速低头并交换一个物品。你进行一次交互，将该物品从头顶取下并拿到你的一只手中。如果你没有空手，你可以尝试一次对抗 DC 25 加上要交换物品总负载的保持平衡检定来交换这些物品，但如果你的检定失败，你可以选择丢弃其中一个物品，而不是承受正常效果。</p>"
+        },
+        "Stance: Karenza Stance": {
+            "name": "架势：卡伦扎架势 Stance: Karenza Stance",
+            "description": "<p><strong>需求</strong> 你正持握一把短刃或剑</p><hr /><p>你开始在战场上旋转扭动，随着你的移动，武器划破空气。在这个架势中，你唯一能进行的打击只能使用短刃或剑。当你在此架势中持握短刃或剑进行舞蹈来表演时，将你的表演结果与每个邻接敌人的意志DC进行比较。每个你对其意志DC获得成功的生物，每有一个武器伤害骰便受到2点伤害；如果你获得大成功，则每有一个武器伤害骰便受到3点伤害。此伤害必须是穿刺或挥砍伤害，具体取决于所需武器的适当类型。</p>"
+        },
+        "Aura: Imperial Aura": {
+            "name": "灵气：帝国灵气 Aura: Imperial Aura",
+            "description": "<p>当你在引导你的帝龙时，你获得一个具有你引导所对应元素（特征）的5尺灵光。区域内的盟友获得你从引导帝龙得到的抗力和状态加值。回合结束时位于该区域内的敌人必须尝试一次意志豁免；若失败，他们获得等于你等级一半的、针对你帝龙伤害类型的弱点，并且在对抗心灵效果时承受–1状态减值。这些效果会持续到他们留在该区域内期间，并在离开该区域后持续1轮；如果他们的意志豁免大失败，则在离开该区域后持续4轮。当你维持引导帝龙时，你可以选择将你的灵光半径扩大5尺。该效果获得与你的龙类相关联的根源。</p>"
+        },
+        "Effect: Eto... Bleh!": {
+            "name": "效果：呃……呸！ Effect: Eto... Bleh!",
+            "description": "<p>你在 2 轮内对抗该生物时，AC 和豁免获得 +1 状态加值。</p>"
+        },
+        "Effect: Translucent Protection": {
+            "name": "效果：半透明防护 Effect: Translucent Protection",
+            "description": "<p>你获得 20 点火焰抗力，以及对触发该效果的所有物理伤害的抗力。</p>"
+        },
+        "Primordial Regeneration": {
+            "name": "原始再生 Primordial Regeneration",
+            "description": "<p><strong>触发</strong> 你的回合结束</p><p><strong>需求</strong> 你的幻灵在本回合中以其徒手打击造成了超过一种类型的能量伤害</p><hr /><p>你的幻灵通过耗费原初能量恢复自身。你的幻灵恢复等同于其等级的生命值。</p>"
+        },
+        "Effect: Above the Fray": {
+            "name": "效果：超然物外 Effect: Above the Fray",
+            "description": "<p>位于灵光内的生物对你进行攻击掷骰时承受 –2 状态减值。</p>"
+        },
+        "Dance of the Kaiju Caller": {
+            "name": "怪兽信使之舞 Dance of the Kaiju Caller",
+            "description": "<p><strong>需求</strong> 你正处于一场遭遇中，且其中至少有一个大型或更大的生物</p><hr /><p>你已学会避开那些你经常面对的高大而糟糕的敌人。你对大型或更大的生物获得次等掩蔽，并对它们的攻击获得 AC +1 环境加值。即使你不满足“拿取掩蔽”的需求，你也可以使用“拿取掩蔽”，但你只会对大型或更大的生物获得其效果。如果你确实满足其需求，则你对大型或更大的生物获得强化掩蔽的效果。当你处于此架势中时，若一个大型或更大的生物以一次打击对你造成重击，或你对其制造的一个区域效果的豁免大失败，则你的架势结束。</p>"
+        },
+        "Aura: Above the Fray": {
+            "name": "灵光：凌驾纷争之上 Aura: Above the Fray",
+            "description": "<p>你创造一个30尺弥漫灵光，只要你持续引导你的龙类，它就会持续存在。灵光内的生物对你进行的攻击掷骰承受–2状态减值。你在此效果的持续时间内获得“拜倒于君主之前”反应动作（）。</p>"
+        },
+        "Effect: Feed on Wood": {
+            "name": "效果：吸血木材 Effect: Feed on Wood",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">直到你下个回合结束前，你的打击，以及你具有火焰特征的法术或效果，造成的伤害获得+4状态加值。</span></p>"
+        },
+        "Karenza Stance": {
+            "name": "卡伦扎架势 Karenza Stance",
+            "description": "<p><strong>需求</strong> 你正持握一把短刃或剑</p><hr /><p>你开始在战场上旋转扭动，在你移动时，武器划破空气。在此架势中，你能进行的打击只能使用短刃或剑。当你在此架势中持握短刃或剑进行表演舞蹈时，将你的表演结果与每个与你相邻的敌人的意志 DC 进行比较。你对其意志 DC 检定成功的每个生物都会受到每个武器伤害骰 2 点伤害；若你获得大成功，则改为每个武器伤害骰 3 点伤害。此伤害必须是穿刺或挥砍伤害，具体取决于所需武器的适当类型。</p>"
+        },
+        "Eviscerate": {
+            "name": "开膛破肚 Eviscerate",
+            "description": "<p><strong>需求</strong> 衍体已抓住、使一个生物陷入无法移动，或使其处于束缚状态。</p><hr /><p>衍体撕裂其无助的猎物。衍体进行一次利爪攻击，并获得+2环境加值。若命中，则额外造成1d8伤害；若你的衍体为特化，则额外造成2d8伤害。</p>"
+        },
+        "Effect: Moss Cover (Greater)": {
+            "name": "效果：苔藓掩蔽（高等） Effect: Moss Cover (Greater)",
+            "description": "<p>将这种油涂抹在自己身上后，你会因覆盖在躯体上的苔藓保护自己而获得35点临时生命值，持续12小时。</p>"
+        }
+    }
+}

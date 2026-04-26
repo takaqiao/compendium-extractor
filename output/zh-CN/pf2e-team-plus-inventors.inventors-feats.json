@@ -1,0 +1,409 @@
+{
+    "label": "Inventors+ Feats",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Genius Appendages": {
+            "name": "Genius Appendages",
+            "description": "<p>You have added an extra set of limbs to your rig. This second set of mechanical appendages act as the previous, allowing you to use the unstable function of your Mechanical Appendages if up to two of your appendages are holding items. In addition, you gain a climb Speed equal to your land speed and can increase your land Speed by 5 feet. While using this climb Speed or your increased land Speed, you must use all of your appendages and cannot be holding any items with them.</p>"
+        },
+        "Technomantic Breadth": {
+            "name": "Technomantic Breadth",
+            "description": "<p>Your innovation holds greater arcane charge. Increase the spell slots you gain from magitek innovation feats by 1 for each spell rank other than your two highest spell slots.</p>",
+            "prerequisites": [
+                {
+                    "value": "Basic Magitek Spellcasting"
+                }
+            ]
+        },
+        "Basic Magitek Spellcasting": {
+            "name": "Basic Magitek Spellcasting",
+            "description": "<p>You gain the basic spellcasting benefits.</p>",
+            "prerequisites": [
+                {
+                    "value": "magitek innovation"
+                }
+            ]
+        },
+        "Master Magitek Spellcasting": {
+            "name": "Master Magitek Spellcasting",
+            "description": "<p>You gain the master spellcasting benefits.</p>",
+            "prerequisites": [
+                {
+                    "value": "Expert Magitek Spellcasting"
+                }
+            ]
+        },
+        "Initiate Self-Destruct": {
+            "name": "Initiate Self-Destruct",
+            "description": "<p>You have built additional appendages to protrude from your back to aid you in your scientific research. While imperfect, you can perform simple Interact actions with your appendages such as opening an unlocked door or picking up objects. Your appendages can't perform actions that require fingers or significant manual dexterity, including any action that would require a check to accomplish. Your appendages can hold items of up to 1 Bulk, but can't Activate or attack with any items it's holding.</p>\n<p><strong>Unstable Function</strong> You leverage both appendages to perform an action another appendage could perform, despite its weaker state. You can Reposition a creature adjacent to you using both of your appendages. Your appendages must not be holding anything to perform this unstable function.</p>\n<p><strong>Special </strong>If your innovation is a minion, the trigger is when it would be reduced to 0 Hit Points and the emanation is around it instead of you. It can take this reaction instead of you, even though minions can't normally take reactions or act when it's not their turn.</p>"
+        },
+        "Lightning-Paced Productivity": {
+            "name": "Lightning-Paced Productivity",
+            "description": "<p>You visualize detailed schematics as easily as others count to 3, taking mere moments. Once per day, you can attempt to Craft an item as a 3-action activity with the concentrate and manipulate traits. The item must be no higher than half your level and you must know the formula of the item. You must still provide the cost of the item in raw materials to create the item and have at least one hand free to perform this activity.</p>",
+            "prerequisites": [
+                {
+                    "value": "Hyperproductive Focus"
+                }
+            ]
+        },
+        "Expert Magitek Spellcasting": {
+            "name": "Expert Magitek Spellcasting",
+            "description": "<p>You gain the expert spellcasting benefits</p>",
+            "prerequisites": [
+                {
+                    "value": "Basic Magitek Spellcasting"
+                }
+            ]
+        },
+        "Eureka!": {
+            "name": "Eureka!",
+            "description": "<p><strong>Requirements </strong>You’re in a non-trivial encounter.</p>\n<hr />\n<p>You convert knowledge into swift engagement. You @Compendium[pf2e.actionspf2e.1OagaWtBpVXExToo]{Recall Knowledge} on a creature you can see and then use Overdrive.</p>",
+            "prerequisites": [
+                {
+                    "value": "Overdrive"
+                }
+            ]
+        },
+        "Dual-Form Weapon+": {
+            "name": "Dual-Form Weapon+",
+            "description": "<p>You've built your innovation with replaceable interlocking pieces that you can use to transform it into another type of weapon entirely. When you select this feat, choose a level 0 or 1st-level simple or martial weapon. It must be either a common weapon or another to which you have access. This weapon becomes your innovation's second configuration.</p>\n<p>Select a new set of weapon modifications for this new configuration. You can spend an Interact actions to switch your weapon innovation between the two configurations. Your weapon's Bulk is always the greater Bulk of the two configurations, regardless of which configuration it's in-if one weapon is smaller than the other, you still need to keep any weapon parts on hand. Any property runes that can’t apply to the new form are suppressed until the item takes a shape to which they can apply. You can Regrip as part of the Interact actions to change form if the new form requires a different number of hands to wield.</p>"
+        },
+        "Elemental Entanglement Theory": {
+            "name": "Elemental Entanglement Theory",
+            "description": "<p>Your machines’ interactions with their power sources allow you to uncover henceforth unseen ways to trigger interactions between opponents and the elements. You Predict an outcome as part of entertaining this theory.</p>\n<p><strong>Predict</strong>: Just as the cold makes copper contract, and the burning of coal makes smoke, there are undiscovered ways to use the elements on your adversaries. You predict a potential weakness in your enemies. This weakness is of an amount equal to half your level and must be one of the following damage types: acid, cold, electricity, fire, poison, or sonic. At the beginning of your next turn, you proceed to the Test phase of your theory.</p>\n<p><strong>Test</strong>: The first time an enemy within 30 feet would take damage of the same type as the weakness you Predicted, you make a @Check[type:flat|dc:11|showDC:all]. Whether you succeed or fail, you progress to the Analyze phase of your theory.</p>\n<p><strong>Analysis</strong>: If you failed your flat check, you have determined the creature’s weaknesses lie elsewhere. You learn if it has any weaknesses and can then immediately Predict a different damage type, entering the Test phase again at the beginning of your next turn. If you succeeded at your flat check, you have found an unusual interaction between them and your element of choice. When a creature within 30 feet takes damage of the type you chose, they also gain the weakness you predicted until you stop entertaining your theory.</p>\n<p>@UUID[Compendium.pf2e-team-plus-inventors.inventors-effects.Item.Le1So8MIZG3t6NbD]{Effect: Elemental Entanglement Success}</p>"
+        },
+        "Hyperproductive Focus": {
+            "name": "Hyperproductive Focus",
+            "description": "<p>When you get to work, you enter a hyperproductive fugue state, ignoring all distractions as you get the job done. You spend half as much time as normal when you Craft items. If you are legendary in Crafting, have the formula of an item, and you critically succeed at your check, you can reduce the duration it takes to Craft by 1 day to a minimum of 1 hour.</p>"
+        },
+        "Full Metal Sheeting": {
+            "name": "Full Metal Sheeting",
+            "description": "<p>You have leveraged metal sheeting to further apply a special effect based on your choice of suit. You gain the listed effect depending on your armor innovation choice.</p>\n<p><strong>Power Suit</strong>: You enhance your armor with heavy plates. During your daily preparations, you can choose between the following statistics for your armor innovation in addition to its normal statistics. While you are under the effects of Overdrive you remove the penalty to your Speeds entirely instead of reducing it by 5 feet.</p>\n<p>@UUID[Compendium.pf2e-team-plus-inventors.inventors-effects.Item.EGobYeH3R2N6iSP6]{Dynamic Sheeting} AC Bonus +5; Dex Cap +1; Check Penalty –2; Speed Penalty –10 feet; Strength +3; Bulk 3; Group plate.</p>\n<p>@UUID[Compendium.pf2e-team-plus-inventors.inventors-effects.Item.x5kg1rT1E0BLJep3]{Full-Metal Sheeting} AC Bonus +6; Dex Cap +0; Check Penalty –3; Speed Penalty –10 feet; Strength +4; Bulk 4; Group plate.</p>\n<p><strong>Subterfuge Suit</strong>: Your armor not only allows you to engage in stealth, but its reflective nature makes you difficult to target while hidden. The flat check to target you while you are concealed or hidden increases by 1 or by 2 if you are under the effects of Overdrive.</p>\n<p><strong>Special </strong>If you have the @Compendium[pf2e.classfeatures.yEfHCwsbsbP6K13Q]{Heavy Construction} modification, instead of the normal benefits you remove the penalty to your Speeds entirely when you meet its Strength requirement without needing to be under the effects of Overdrive and your armor gains the bulwark trait. In addition, your bonus from the bulwark armor trait applies on all Reflex saves, not just damaging Reflex saves, and while under the effects of Overdrive your bonus from the bulwark armor trait increases from +3 to +4.</p>"
+        },
+        "Body Swap Apparatus": {
+            "name": "Body Swap Apparatus",
+            "description": "<p>You have perfected a device that allows you to trade bodies with others. You place two creatures on paired tables, and bring a metal cap over each creature's head. With the flick of a lever, the process begins! You learn the <em>@Compendium[pf2e.spells-srd.RWwiFnjxoJXn7H6D]{Mind Swap}</em> ritual, except the cost goes to the energy required to power the machine, it loses the magical traits, and the primary and secondary Occultism checks are instead Crafting checks. Because this version of mind swap lacks the magical trait, it cannot be targeted by effects like dispel magic that would counteract magical effects but it can still be counteracted by other means.</p>"
+        },
+        "Remote Activation": {
+            "name": "Remote Activation",
+            "description": "<p>You prepare to activate a gadget on behalf of your ally using a remote trigger. Choose a single gadget within 30 feet that an allied creature is holding or wearing with an Activation cost of two actions or less, and designate a trigger. Your turn then ends. If the trigger you designated occurs before the start of your next turn, you can use the Activation action as a reaction on behalf of the allied creature (provided the creature meets the requirements to use it). The creature wearing the gadget still chooses how to use the effect of the gadget’s Activation.</p>\n<p>If your ally has a multiple attack penalty and the gadget’s Activation is an attack action, your ally still applies their multiple attack penalty to the attack and increases their multiple attack penalty as normal for making an attack.</p>",
+            "prerequisites": [
+                {
+                    "value": "Gadgeteer Dedication"
+                }
+            ]
+        },
+        "Fail-Safe Restoration": {
+            "name": "Fail-Safe Restoration",
+            "description": "<p>You have learned to transfer healing through your innovation by carefully lining up your links. You can use @UUID[Compendium.pf2e-team-plus-inventors.inventors-feats.impC2V1v0OKk7PsU]{Double-Proofed Restoration} once per round instead of once per 10 minutes.</p>",
+            "prerequisites": [
+                {
+                    "value": "Double-Proofed Restoration"
+                }
+            ]
+        },
+        "Variable Core+": {
+            "name": "Variable Core+",
+            "description": "<p>You adjust your innovation's core, changing the way it explodes. When you choose this feat, select acid, cold, electricity, poison, or sonic. Your innovation's core runs on that power source. When using the Explode action, or any time your innovation explodes on a critical failure and damages you, change the damage type from fire damage to the type you chose.</p>\n<p>If you have the offensive boost class feature and retrain Variable Core to a different damage type, you can also switch to a different offensive boost that deals the same damage type if you wish.</p>\n<p><strong>Special </strong>If you have a weapon innovation, you can choose to make the additional damage from Overdrive the damage you chose instead of fire damage.</p>"
+        },
+        "Maniacal Laughter!": {
+            "name": "Maniacal Laughter!",
+            "description": "<p><strong>Trigger </strong>You or your innovation uses an unstable action that targets at least one enemy.</p>\n<hr />\n<p>You throw your head back and laugh maniacally, vindicated by your brilliance. Attempt to @Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} each enemy affected by the triggering action using your Crafting proficiency instead of Intimidation. You roll once for this check and compare your result against each enemy separately. Regardless of the results of your checks, each creature is then temporarily immune to Maniacal Laughter! for 1 minute.</p>"
+        },
+        "Directed Explosion": {
+            "name": "Directed Explosion",
+            "description": "<p>You have learned to channel your explosion into a specific direction. During your daily preparations, you can tune your innovation and choose a line, a cone, or a burst. When you use @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.pEaYSp9o22lE8SHf]{Explode}, you can make its area the area of your choice, gaining a @Template[type:line|distance:15], @Template[type:cone|distance:10], or a @Template[type:burst|distance:5] within 20 feet instead of a 5-foot emanation as choices for its area.</p>\n<p>If you have the breakthrough innovation class feature, you add a @Template[type:line|distance:30], a @Template[type:cone|distance:15], or a @Template[type:burst|distance:10] within 20 feet to your area choices; if you have the revolutionary innovation class feature, you add a @Template[type:line|distance:45], a @Template[type:cone|distance:30], or a @Template[type:burst|distance:15] within 20 feet to your area choices.</p>",
+            "prerequisites": [
+                {
+                    "value": "explode"
+                }
+            ]
+        },
+        "Gadget Conglomeration": {
+            "name": "Gadget Conglomeration",
+            "description": "<p>You’ve learned methods to create multiple use gadgets, sometimes even allowing both activations at once for a more advantageous effect. When you create temporary gadgets during your daily preparations, you can choose to combine two temporary gadgets into a single gadget, consuming both gadgets in the process and merging them into one unit. When the gadget is Activated, either effect or both effects can be used, using the activation with the largest number of actions to determine the number of actions needed to Activate the gadget. The creature using the gadget chooses the order the gadget’s effects occur in.</p>",
+            "prerequisites": [
+                {
+                    "value": "Gadgeteer Dedication"
+                },
+                {
+                    "value": "legendary in Crafting"
+                }
+            ]
+        },
+        "Gadgeteer Dedication": {
+            "name": "Gadgeteer Dedication",
+            "description": "<p><strong>Trigger </strong>You got a failure on the flat check for unstable to use your gadget innovation.</p>\n<hr />\n<p>You have now advanced your gadgetry far enough that you have a reliable fail-safe for when things don’t go according to plan. You reroll the triggering flat check from unstable, taking the new result even if it is worse than the original.</p>"
+        },
+        "Variable Gadgetry": {
+            "name": "Variable Gadgetry",
+            "description": "<p>You adjust your innovation's temporary gadgets, altering their damage types as needed. When you create a temporary gadget that deals damage, you can select between acid, cold, electricity, or fire, altering your gadget so it deals the listed damage type instead of its normal damage type.</p>",
+            "prerequisites": [
+                {
+                    "value": "Gadgeteer Dedication"
+                }
+            ]
+        },
+        "Clockwork Celerity+": {
+            "name": "Clockwork Celerity+",
+            "description": "<p><strong>Trigger</strong> Your turn begins.</p>\n<hr />\n<p>You can use unstable clockwork devices in your innovation to push your invention to act more quickly. You are @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} for this turn. How you can use the extra action depends on your innovation.</p>\n<ul>\n<li><strong>Armor</strong> You can use the extra action to Step, Stride, or use another movement action granted by your innovation (such as Swim if you have the Diving Armor feat).</li>\n<li><strong>Construct</strong> You can use the extra action to Command your construct innovation (or to provide 1 of the actions if you spend 2 actions to Command your construct).</li>\n<li><strong>Weapon</strong> You can use the extra action to Strike with your innovation or Reload your innovation.</li>\n<li><strong>Healing </strong>You can use the extra action for @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.OAJJz0ey8LU37Ghc]{Invigoration Link} or for @Compendium[pf2e.feats-srd.obGGzuPcgO5Xiz6P]{Searing Restoration}.</li>\n<li><strong>Magitek </strong>You can use the extra action to cast technomancy ray.</li>\n<li><strong>Gadget</strong> You can use the extra action to Activate your gadget innovation or to use Quick Gadgetry.</li>\n</ul>",
+            "prerequisites": [
+                {
+                    "value": "armor, construct, weapon, healing, magitek, or gadget innovation"
+                }
+            ]
+        },
+        "Armor Apparatus": {
+            "name": "Armor Apparatus",
+            "description": "<p>You’ve modified your armor with fins, rotors, sensors, and other devices to survive in different terrains and have additional sensory abilities. Choose two of the following options, which you gain while wearing your armor innovation:</p>\n<ul>\n<li>You gain a +2 circumstance bonus against effects that are inhaled or that would require you to breathe.</li>\n<li>You gain a climb Speed equal to your land Speed.</li>\n<li>You gain echolocation as an imprecise sense with a range of 30 feet.</li>\n<li>You gain a swim Speed equal to your land Speed.</li>\n<li>You gain the ability to breathe underwater.</li>\n</ul>",
+            "prerequisites": [
+                {
+                    "value": "armor innovation"
+                }
+            ]
+        },
+        "Megaton Strike+": {
+            "name": "Megaton Strike+",
+            "description": "<p>You activate gears, explosives, and other hidden mechanisms in your innovation to make a powerful attack. You make a Strike, dealing an extra die of weapon damage. If you're at least 10th level, increase this to two extra dice, and if you're at least 18th level, increase it to three extra dice. The type of Strike you can make depends on your innovation.</p>\n<ul>\n<li><strong>Armor</strong> You Strike with a melee unarmed attack or a melee weapon. To use a melee weapon for this, you must have prepared it in advance with special contraptions when you make your daily preparations.</li>\n<li><strong>Construct</strong> Your minion innovation Strikes.</li>\n<li><strong>Weapon</strong> You Strike with your weapon innovation.</li>\n<li><strong>Healing </strong>You Strike with your innovation.</li>\n<li><strong>Magitek </strong>You cast technomancy ray. You add the additional damage dice to a success, or twice that amount to a critical success.</li>\n<li><strong>Gadget </strong>You Strike with a melee unarmed attack or a melee weapon. To use a melee weapon for this, you must have prepared it in advance with special contraptions when you make your daily preparations.</li>\n</ul>\n<p><strong>Unstable Function</strong> You put even more force into the Strike, though you risk stress fractures to your innovation. Add the unstable trait to Megaton Strike. The Strike deals another extra damage die, for a total of two extra dice at 4th level, three at 10th level, and four at 18th level.</p>\n<p><strong>Special</strong> If your innovation is a minion, it can take this action rather than you.</p>",
+            "prerequisites": [
+                {
+                    "value": "armor, construct, weapon, healing, magitek, or gadget innovation"
+                }
+            ]
+        },
+        "Perfect Appendages": {
+            "name": "Perfect Appendages",
+            "description": "<p>Your robotic appendages function nearly as well as real ones—perhaps even stronger. Each individual appendage can lift up to 3 Bulk and are able to perform complex actions in addition to its basic actions (such as @Compendium[pf2e.actionspf2e.cYdz2grcOcRt4jk6]{Disable a Device} or @Compendium[pf2e.actionspf2e.1kGNdIIhuglAjIp9]{Treat Wounds}). In addition, when you use the unstable function of your Mechanical Appendages you only require the use of a single appendage and can Grapple or Strike creatures instead of Repositioning them. If you choose to make a Strike, your appendages are treated as unarmed attacks that deal 1d4 damage of either bludgeoning, piercing, or slashing damage with the reach trait and are in the brawling group. You make the choice of damage when you gain this feat, but you can spend 1 hour adjusting your appendages to change the damage to another type of your choice.</p>\n<p>@UUID[Compendium.pf2e-team-plus-inventors.inventors-effects.Item.K8OvnmW45Z6516jN]{Effect: Perfected Appendages}</p>",
+            "prerequisites": [
+                {
+                    "value": "Genius Appendages"
+                }
+            ]
+        },
+        "Manifold Gadgets": {
+            "name": "Manifold Gadgets",
+            "description": "<p>You've modified your gadget innovation so they have interchangeable parts. You can spend 10 minutes to change your gadget innovation to be a different gadget other than the one you selected as part of your daily preparations.</p>",
+            "prerequisites": [
+                {
+                    "value": "Gadgeteer Dedication"
+                }
+            ]
+        },
+        "Basic Gadgets": {
+            "name": "Basic Gadgets",
+            "description": "<p>Some gadgets are so basic for you, that they are trivial to create. When you create temporary gadgets during your daily preparations, you can use one of your temporary gadgets to create two temporary gadgets of the same type as long as they are no higher than half your level. If you are legendary in Crafting, you can instead create four gadgets of the same type.</p>",
+            "prerequisites": [
+                {
+                    "value": "Gadgeteer Dedication"
+                },
+                {
+                    "value": "master in Crafting"
+                }
+            ]
+        },
+        "Architected Manipulation": {
+            "name": "Architected Manipulation",
+            "description": "<p><strong>Requirements </strong>You are under the effects of Overdrive</p>\n<hr />\n<p>You have constructed a means to retrieve or use your weapon innovation without opening yourself to attacks. You can Interact with your weapon innovation, such as to draw, stow, reload, or similar action, and your Interact does not provoke reactions that would trigger on a manipulate action.</p>\n<p><strong>Unstable Function</strong> Your architected manipulation is enacted on a swift trigger. You use Architected Manipulation as a free action.</p>\n<p><strong>Special </strong>If you have Dual-Weapon Form you can use the Interact action from this feat for changing configurations.</p>",
+            "prerequisites": [
+                {
+                    "value": "weapon innovation"
+                },
+                {
+                    "value": "Overdrive"
+                }
+            ]
+        },
+        "Split Links": {
+            "name": "Split Links",
+            "description": "<p>You have learned to split your links, allowing you to target multiple creatures. You can have two @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.OAJJz0ey8LU37Ghc]{Invigoration Link} active at once. If you are legendary in Crafting, you can instead have four active at once.</p>",
+            "prerequisites": [
+                {
+                    "value": "healing innovation"
+                }
+            ]
+        },
+        "Theory of Everything": {
+            "name": "Theory of Everything",
+            "description": "<p>You propose that all things are connected. With careful mathematical consideration, mechanical manipulation and physical placement of yourself and others, you can quantumly affect the universe and its inhabitants’ actions. You make a Prediction as part of entertaining this theory.</p>\n<p><strong>Prediction</strong>: You theorize that all beings share a bond that stems down to the very fibers of the universe itself and predict @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|basic:false], @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:false], or @Check[type:will|dc:resolve(@actor.attributes.classDC.value)|basic:false]. At the beginning of your next turn, you progress to the Test phase of your theory.</p>\n<p><strong>Test</strong>: The first time an enemy within 30 feet would take an action on its turn, you can attempt a @Check[type:flat|dc:11|showDC:all]. Whether you succeed or fail, you progress to the Analyze phase of your theory.</p>\n<p><strong>Analyze</strong>: When a creature’s turn begins, you can spend your reaction doing something small (taking a half step right, saying a series of seemingly random numbers, or similar) that tugs on the theoretical strings of reality. If you failed your flat check, you note that your calculations were off ever so slightly, but still produce valuable data. You learn the value of the creature’s save you Predicted and the creature attempts a save against your inventor class DC using a save of its choice. Creatures’ that fail their save must take a basic action that takes a single action to perform of your choice. You can then immediately Predict a different save, entering the Test phase at the beginning of your next turn. If you succeeded at your flat check, you have calculated how to influence the universe just enough to redirect the cosmic math of reality. A creature attempts the same save when you spend your reaction, except the creature attempts a save of the type you predicted instead of a save of its choice and you can continue to spend your reaction on subsequent turns to produce this effect.</p>"
+        },
+        "Proximity Scanner": {
+            "name": "Proximity Scanner",
+            "description": "<p>You have added a scanner to your innovation which allows you to detect targets in the area. Your scanner will chime when you are in proximity to other creatures on the same surface, granting you a vague tremorsense of 30 feet. The chime grows louder as you come closer, though it is usually quiet enough that another creature would actively need to listen for it to perceive it, using your Crafting DC for the Perception DC to hear it. You can program the scanner during your daily preparations to ignore specific creatures, such as your allies.</p>\n<p>Additionally, your scanner can narrow its search dramatically to a specific object, creature, or material. You can add a sample or depiction of the target, allowing your tremorsense to exclusively detect targets of the same type and granting you a +1 circumstance bonus to checks to @Compendium[pf2e.actionspf2e.TiNDYUGlMmxzxBYU]{Search}, @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek}, or @Compendium[pf2e.actionspf2e.EA5vuSgJfiHH7plD]{Track} these targets. You can only have one target selected at a time. If you provide your scanner a sample or depiction of another target, it can change to detecting targets of the new type for the remaining duration.</p>\n<p><strong>Unstable Function</strong> You can spend a single action with the manipulate trait to make your tremorsense an imprecise sense of 60 feet for 1 minute and increase its circumstance bonus to checks to +2.</p>\n<p>@UUID[Compendium.pf2e-team-plus-inventors.inventors-effects.Item.x4dx0HDWEs3zMhN1]{Effect: Proximity Scanner}</p>\n<p><strong>Special </strong>If your innovation is a minion, it gains this tremorsense and can use the unstable function rather than you.</p>"
+        },
+        "Fail-Proof Gadgetry": {
+            "name": "Fail-Proof Gadgetry",
+            "description": "<p>You have learned that a quick fix is all that’s needed to turn utter failure into success. You can use the Gadgeteer Dedication reaction once per round instead of once per 10 minutes.</p>",
+            "prerequisites": [
+                {
+                    "value": "Gadgeteer Dedication"
+                }
+            ]
+        },
+        "Unstable Redundancies+": {
+            "name": "Unstable Redundancies+",
+            "description": "<p><strong>Trigger</strong> You would attempt the flat check for an unstable action, but you haven't rolled the flat check yet.</p>\n<hr />\n<p>You've built triple redundancies into your innovation and added all sorts of buffers to protect it from the harm of your unstable experiments. You automatically succeed at the triggering flat check. Since you automatically succeed instead of rolling, you do not increase the DC of your flat check from unstable if you possess more than one unstable action.</p>\n<p>You can't rely on your Unstable Redundancies again until you spend 10 minutes setting them back up. If you spend 10 minutes retuning your innovation so you can use unstable actions again, you can set up your Unstable Redundancies during the same time.</p>"
+        },
+        "Personality Module": {
+            "name": "Personality Module",
+            "description": "<p>You've created an artificial intelligence, which you have built into your innovation. Your innovation becomes an intelligent item with the minion trait that you can Command. Your innovation gains an Intelligence, Wisdom, and Charisma modifier equal to your own and can speak and understand any languages you speak. Your innovation can detect things with the same senses you can, including any senses you gained from inventor class feats. Your innovation can attempt skill checks that use these modifiers as long as they do not require manipulation of any kind, and your innovation uses your skill proficiency for these checks. Your innovation gains a Will save equal to your Will save and it gains a +2 circumstance bonus to Will saves if the effect would force it to perform an action that would harm you.</p>"
+        },
+        "Unstable Gadget Installation": {
+            "name": "Unstable Gadget Installation",
+            "description": "<p>When you install a temporary gadget, you can apply a more dangerous component to extend its effects. When you install one of your temporary gadgets, you can give its Activation the unstable trait by connecting it to your gadget innovation. Your temporary gadget is not consumed after use unless you critically fail the flat check for unstable, allowing it to be Activated once again, consuming it as normal on the second activation. If a creature other than you is holding or wearing your gadget, you must still attempt the flat check and you both take the damage from a critical failure as the connection to your gadget innovation causes it to backfire as well.</p>",
+            "prerequisites": [
+                {
+                    "value": "Gadgeteer Dedication"
+                }
+            ]
+        },
+        "Full Automation+": {
+            "name": "Full Automation+",
+            "description": "<p>You become so entwined with your innovations that you can use them without a second thought. You're permanently @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened}. How you can use the extra action depends on your innovation.</p>\n<ul>\n<li><strong>Armor</strong> Your armor responds to the most subtle stimuli to move you in the right direction as long as you are wearing it. You can use the extra action to Stride, Step, or use a form of movement provided by your innovation (such as Fly or Swim).</li>\n<li><strong>Construct</strong> Your ability to command your construct becomes instinctive. You can use the extra action to Command your construct innovation (or to provide 1 of the actions if you choose to spend 2 actions to Command your construct).</li>\n<li><strong>Weapon</strong> Your weapon becomes easier to wield with deadly efficacy, almost as if it is an extension of your body. It speeds effortlessly toward whatever target you choose as long as you are holding it. You can use the extra action to Strike with your innovation or Reload your innovation.</li>\n<li><strong>Healing </strong>Your innovation is effortlessly directed. You can use the extra action for @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.OAJJz0ey8LU37Ghc]{Invigoration Link} or for @Compendium[pf2e.feats-srd.obGGzuPcgO5Xiz6P]{Searing Restoration}.</li>\n<li><strong>Magitek </strong>Your innovation fills you with magical data. You can use the extra action to cast technomancy ray.</li>\n<li><strong>Gadget </strong>Your gadget is on a hair trigger to activation, a thought away from activating. You can use the extra action to Activate your gadget innovation or to use Quick Gadgetry.</li>\n</ul>\n<p><strong>Special </strong>If you have @UUID[Compendium.pf2e-team-plus-inventors.inventors-feats.MoXof6ptZgNSQT4H]{Clockwork Celerity}, when you use Clockwork Celerity instead of becoming quickened you use one of the listed actions for your innovation instead.</p>",
+            "prerequisites": [
+                {
+                    "value": "armor, construct, weapon, healing, magitek, or gadget innovation"
+                }
+            ]
+        },
+        "Calculated Spellshape": {
+            "name": "Calculated Spellshape",
+            "description": "<p>You shape spells with your innovation. You gain one wizard class feat with the spellshape trait. For the purposes of meeting its prerequisites, your wizard level is equal to your character level.</p>",
+            "prerequisites": [
+                {
+                    "value": "magitek innovation"
+                }
+            ]
+        },
+        "Blast-Proof": {
+            "name": "Blast-Proof",
+            "description": "<p>After being blown up countless times, you've managed to make yourself perfectly resistant to explosions and malfunctions of any sort. You have resistance equal to your level to fire. If you would take damage from a critical failure on your unstable check, you can choose to take the damage as normal, ignoring your resistance to reroll your flat check from unstable. You must take the new result even if it is worse than the original and you cannot use the reroll from Blast-Proof for 10 minutes.</p>\n<p><strong>Special </strong>If you have a Variable Core, you instead have a resistance equal to your level of the damage type of your Variable Core.</p>"
+        },
+        "Kaboom!!": {
+            "name": "Kaboom!!",
+            "description": "<p>When you want something to blow up, you push the explosion to unthinkable heights. You make your innovation @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.pEaYSp9o22lE8SHf]{Explode+} and double its area of effect.</p>"
+        },
+        "Reverse Engineer": {
+            "name": "Reverse Engineer",
+            "description": "<p>You are incredibly skilled at reverse engineering items to learn their formulas, or disassembling them just to disable them. You gain a +2 circumstance bonus to Crafting checks to reverse engineer a formula from an item. If you get a critical success on your Crafting check, you can opt to both create the formula and reassemble the original item at the same time, leaving you with the formula and the item instead of the formula and raw materials equal to half the item's value. Furthermore, you can use Crafting instead of Thievery to Disable a Device or Pick a Lock.</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Crafting"
+                }
+            ]
+        },
+        "Condition Causation Theory": {
+            "name": "Condition Causation Theory",
+            "description": "<p>You believe that, like in a machine, there is a knock-on effect between weak points in a system; exploiting one condition will lead to further flaws being made obvious. You Predict an outcome as part of entertaining this theory.</p>\n<p><strong>Predict</strong>: You predict a condition that would leave enemies open to additional proclivities. Choose one of the following conditions: @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy}, @Compendium[pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened}, @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled}, @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened}, @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened}, or @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied}. At the beginning of your next turn, you progress to the Test phase of your theory.</p>\n<p><strong>Test</strong>: The first time an enemy you can see within 30 feet would gain the condition you Predicted, make a @Check[type:flat|dc:11|showDC:all]. Whether you succeed or fail, you progress to the Analyze phase of your theory.</p>\n<p><strong>Analyze</strong>: If you failed your flat check, you discover that while they are not subject to your theory, there are other ways to exploit it. You learn its weakest save and can then immediately Predict a different condition, entering the Test phase again at the beginning of your next turn. If you succeeded at your flat check, you find that having the condition has reduced your subjects’ overall efficiency. Creature’s are @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Off-Guard} to you as long as they have the listed condition or until you stop entertaining your theory.</p>"
+        },
+        "Voice Modulation": {
+            "name": "Voice Modulation",
+            "description": "<p>You have installed a voice modulator, picking up the frequency of your specific voice and allowing you to adjust it to your needs. You can alter your voice in such a way that attempts to discern your other identity from your voice require a @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} action to attempt a Perception check against your Deception DC, as if you were using the @Compendium[pf2e.actionspf2e.AJstokjdG6iDjVjE]{Impersonate} action. Your Deception DC against such attempts is 20 + your Crafting proficiency modifier instead of the normal DC. You can choose to have your voice replicate that of a specific tonality, frequency, echo, or any other effects, but ultimately the voice that is altered is still you. You gain a +4 circumstance bonus to Impersonate specific voices you’ve heard when using your voice modulation by tuning your voice to a similar frequency.</p>"
+        },
+        "Robotic Familiar": {
+            "name": "Robotic Familiar",
+            "description": "<p>You gain a mechanical familiar, a Tiny construct created through artificial means. You gain a familiar but one of its abilities must be the @Compendium[pf2e.familiar-abilities.5eqcXtPsYunphMOZ]{Construct} familiar ability. If you select a specific familiar that is constructed, you reduce the number of familiar abilities required to gain that specific familiar by 1.</p>"
+        },
+        "Targeting Ray": {
+            "name": "Targeting Ray",
+            "description": "<p>You activate arcane gizmos to fire your ray on a whim. You Recall Knowledge or Seek and then cast technomancy ray.</p>",
+            "prerequisites": [
+                {
+                    "value": "magitek innovation"
+                },
+                {
+                    "value": "Overdrive"
+                }
+            ]
+        },
+        "Double-Proofed Restoration": {
+            "name": "Double-Proofed Restoration",
+            "description": "<p>You understand that failure, in medical circumstances, is unacceptable. You reroll the triggering flat check from unstable, taking the new result even if it is worse than the original.</p>",
+            "prerequisites": [
+                {
+                    "value": "healing innovation"
+                },
+                {
+                    "value": "Searing Restoration"
+                }
+            ]
+        },
+        "Fast Burst": {
+            "name": "Fast Burst",
+            "description": "<p>You have learned a special technique to send your second wave faster than your first. You use @Compendium[pf2e.feats-srd.obGGzuPcgO5Xiz6P]{Searing Restoration}. If this is the first time you have used Searing Restoration on the creature in the last 10 minutes, you do not have to attempt the flat check from the unstable trait.</p>",
+            "prerequisites": [
+                {
+                    "value": "healing innovation"
+                }
+            ]
+        },
+        "Spontaneous Ingenuity Theory": {
+            "name": "Spontaneous Ingenuity Theory",
+            "description": "<p>You find that the best ideas come to you while under severe pressure, and you can rapidly throw together a solution while in such a situation. You Predict a blueprint as part of entertaining this theory.</p>\n<p><strong>Predict</strong>: You predict that a specific blueprint can aid you by creating it from knicknacks you have on your person, choosing a basic skill action of your choice that takes 2 actions or less to perform. At the beginning of your next turn, you progress to the Test phase of your theory.</p>\n<p><strong>Test</strong>: You can spend an Interact action to attempt to create a temporary tool that assists you. Attempt a @Check[type:flat|dc:11|showDC:all]. Whether you succeed or fail, you progress to the Analyze phase of your theory.</p>\n<p><strong>Analyze</strong>: If you failed your flat check, the invention you make applies a +1 circumstance bonus to your next check to make the skill, after which, the item is destroyed and you can Predict a new invention to aid you on another qualifying skill action of your choice. If you succeeded at your flat check, you invent a tool perfect for the situation you are in. You gain a +1 circumstance bonus to checks you make to perform the Predicted skill action as long as you are entertaining this theory, after which the item is destroyed.</p>"
+        },
+        "Stable Instability": {
+            "name": "Stable Instability",
+            "description": "<p>You have learned how to return functionality to your innovation with impeccable speed. When you spend 10 minutes retuning your innovation to return functionality from the unstable trait, you also reduce the flat check from unstable to the minimum value based on the number of unstable actions you possess instead of by 4.</p>"
+        },
+        "Devastating Weaponry+": {
+            "name": "Devastating Weaponry+",
+            "description": "<p>You release a volley of projectiles from your weapon, or power it to fly in every direction across the battlefield and Strike multiple creatures. Make a Strike with your weapon innovation against each foe within 30 feet of you. Don't increase your multiple attack penalty until after making all the attacks. If your innovation is a melee weapon and any of the attacks are outside your reach, you Release the weapon before the Strikes, and it returns to your grasp after all of them. If your hands are full when the weapon returns, it falls to the ground in your space. If your weapon innovation requires one or more actions to reload between Strikes, you can Interact to reload in between Strikes, but your attacks take a cumulative -2 penalty for each time you Interact to reload the weapon.</p>",
+            "prerequisites": [
+                {
+                    "value": "weapon innovation"
+                }
+            ]
+        },
+        "Mechanical Appendages": {
+            "name": "Mechanical Appendages",
+            "description": "<p>You have built additional appendages to protrude from your back to aid you in your scientific research. While imperfect, you can perform simple Interact actions with your appendages such as opening an unlocked door or picking up objects. Your appendages can't perform actions that require fingers or significant manual dexterity, including any action that would require a check to accomplish. Your appendages can hold items of up to 1 Bulk, but can't Activate or attack with any items it's holding.</p>\n<p><strong>Unstable Function</strong> You leverage both appendages to perform an action another appendage could perform, despite its weaker state. You can Reposition a creature adjacent to you using both of your appendages. Your appendages must not be holding anything to perform this unstable function.</p>\n<p><strong>Special </strong>If your innovation is a minion, the trigger is when it would be reduced to 0 Hit Points and the emanation is around it instead of you. It can take this reaction instead of you, even though minions can't normally take reactions or act when it's not their turn.</p>"
+        },
+        "Gateway Engine": {
+            "name": "Gateway Engine",
+            "description": "<p>You have engineered a way to tear open the fabrics of reality to allow quick passage. When you activate the engine, it creates a portal with a radius of 20 feet, contained in a metal ring. The portal leads to a second portal ring. These rings can be collapsed into 2 Bulk cubes, and reconfigured into their original forms as a 10 minute activity. There is no maximum distance between the two rings. As an 8 hour activity, you can link one portal to another plane; the portal then allows passage to a random point on this plane, though a tuning fork can be inserted into its command panel to make it somewhat more accurate, as the <em>@Compendium[pf2e.spells-srd.5bTt2CvYHPvaR7QQ]{Interplanar Teleport}</em> spell. The other ring must be deployed on the other side to stabilize the portal, or it is destroyed within 10 minutes. It takes one week to create another set of Gateway Engines.</p>"
+        },
+        "Unavoidable Ray": {
+            "name": "Unavoidable Ray",
+            "description": "<p>Your <em>@UUID[Compendium.pf2e-team-plus-inventors.inventors-spells.rLpTFGCUUdXtUbaL]{Technomancy Ray}</em> can zig and zag to hit your opponents with surety. The next time you cast technomancy ray before the end of your turn, you gain the effects of sure strike.</p>",
+            "prerequisites": [
+                {
+                    "value": "magitek innovation"
+                }
+            ]
+        },
+        "Stasis Capsule": {
+            "name": "Stasis Capsule",
+            "description": "<p>You can create a stasis capsule that rejuvenates lives back from the edge. You can spend 10 minutes constructing a stasis capsule which can harbor up to four Small or Medium creatures and occupies a @Template[type:square|distance:10]. When creatures are inside the capsule, you can use Crafting instead of Medicine to Treat Wounds, including using your higher Crafting proficiency to attempt more difficult checks to Treat Wounds. When you Treat Wounds in this way, you make a single check and restore the appropriate amount to all creatures inside your Stasis Capsule (including dealing damage on a critical failure). If you are legendary in Crafting, you can expand your capsule to a @Template[type:square|distance:20] and occupy twice the number of Small or Medium creatures or creatures of larger sizes. For the purposes of occupancy, you can treat a Large creature as two Medium creatures and one Huge creature as two Large creatures.</p>",
+            "prerequisites": [
+                {
+                    "value": "trained in Medicine"
+                },
+                {
+                    "value": "expert in Crafting"
+                }
+            ]
+        },
+        "Identify Flaws": {
+            "name": "Identify Flaws",
+            "description": "<p>You can spot faults in construction that are invisible to others. Choose a construct or an obstacle that occupies a 5-foot square such as a door, window, fence or wall. Make a Crafting check against the target's Fortitude DC or the effect’s DC or the item’s level + 10 if it has no DC. If you are a master in Crafting, you can target an obstacle that occupies a 10-foot square, and if you are legendary you can target an obstacle in a 15-foot square.</p>\n<hr />\n<p><strong>Critical Success</strong> Ha! Amateur craftsmanship! You ignore the target's hardness for 1 round. If the target was a construct and it has physical resistance, you can instead ignore an amount of physical resistance equal to your level for 1 round.</p>\n<p><strong>Success </strong>As a success, but you ignore half the target's hardness or half your level in physical resistance if you targeted a construct with physical resistance.</p>\n<p><strong>Critical Failure</strong> You totally underestimate the target's sturdiness. You have a –2 circumstance penalty to attack rolls against the target for 1 round.</p>"
+        },
+        "Death Link": {
+            "name": "Death Link",
+            "description": "<p>You have learned how to target enemies as well as allies with your links. You can target an enemy with your Invigoration Link instead of an ally. If you do, the enemy takes @Damage[(floor((@actor.level)/2) +2)[void]] damage (or @Damage[(floor((@actor.level)/2) +2)[vitality]] damage if the enemy has void healing) of the same amount as temporary Hit Points would be granted with a basic Fortitude save at the beginning of each of your turns your link is active. If the creature critically succeeds its save against your Death Link, the link immediately ends. You can also target enemies with an active link with your Searing Restoration, dealing damage of the same amount as would be restored with a basic Fortitude save and ending the Invigoration Link. Creatures that fail their save against your Searing Restoration are sickened 1 or sickened 2 on a critical failure. You cannot target an enemy with your Invigoration Link after using Searing Restoration in this way for 1 day.</p>",
+            "prerequisites": [
+                {
+                    "value": "healing innovation"
+                }
+            ]
+        }
+    }
+}

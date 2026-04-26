@@ -1,0 +1,14 @@
+{
+  "name": "btfg-extract",
+  "version": "1.0.0",
+  "description": "Extract babele 2.8 translation source files from FoundryVTT v13/v14 LevelDB compendium packs",
+  "type": "module",
+  "main": "extract-babele.mjs",
+  "scripts": {
+    "extract": "node extract-babele.mjs"
+  },
+  "dependencies": {
+    "classic-level": "^1.4.1"
+  },
+  "license": "MIT"
+}

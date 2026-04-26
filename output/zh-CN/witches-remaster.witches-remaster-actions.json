@@ -1,0 +1,24 @@
+{
+    "label": "Actions",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Black Book Hex": {
+            "name": "Black Book Hex",
+            "description": "<p>If your next action is to Cast a hex, the grimoire empowers your hex with dark power. You immediately take spirit damage equal to the rank of the hex and you can Sustain that hex on the following turn as a free action.</p>"
+        },
+        "It Was Foreseen": {
+            "name": "It Was Foreseen",
+            "description": "<p><strong>Trigger</strong> A creature within 60 feet of you would attempt a roll from your reading.</p>\n<hr />\n<p>Choose fortune or misfortune. If you chose fortune, the creature can take the higher result of the two rolls and if you chose misfortune they must take the lower result of the two rolls. This effect gains the fortune or misfortune trait respectively.</p>"
+        }
+    }
+}

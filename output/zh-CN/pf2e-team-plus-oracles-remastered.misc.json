@@ -1,0 +1,312 @@
+{
+    "label": "Misc",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Effect: Moonlit Folly": {
+            "name": "Effect: Moonlit Folly",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.IQsdvAQkL6cYiJL3]{Moonlit Folly}</p><hr /><p>You gain a +10-foot status bonus to your Speed, a +1 status bonus to your Fortitude and Reflex saves, and a –1 status penalty to your Will saves. If the moon is visible, the status bonus to Speed increases by 5 feet and both the bonus and penalty to saves increases to 2.</p>"
+        },
+        "Effect: Glimpse Future": {
+            "name": "Effect: Glimpse Future",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.oEpn9Xj6vcCqdCtG]{Glimpse Future}</p><hr /><p>You take a -2 status penalty to the next attack roll or save you do before the beginning of the origin's next turn.</p>"
+        },
+        "Effect: Well of Joy": {
+            "name": "Effect: Well of Joy",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.mLRt0nJQLvbZkiml]{Well of Joy}</p><hr /><p>You gain temporary Hit Points, and your Frightened condition is suspended while you have these temporary Hit Points.</p>"
+        },
+        "Effect: Orb of Brilliance": {
+            "name": "Effect: Orb of Brilliance",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.tG24AJZm6JF54LaB]{Orb of Brilliance}</p><hr /><p>You take a status penalty to Perception checks equal to the origin's cursebound value.</p>"
+        },
+        "Stance: Embrance Instinct": {
+            "name": "Stance: Embrance Instinct",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.EQYC796SaVzsHZt6]{Embrance Instinct}</p><hr /><p>When you enter this stance, you become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} and become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for as long as you remain in this stance. You can use the additional action only for actions or activities with the cursebound trait.</p>"
+        },
+        "Effect: Aura of Foresight (Finery)": {
+            "name": "Effect: Aura of Foresight (Finery)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.SzHSgHXgBgxhyVsH]{Aura: Aura of Foresight} + @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.YTRa4c1Ye1cVQAM0]{Finery}</p><hr /><p>Depending on the origin, you may gain their status bonus to saves against fear effects, and potentially resistance against mental damage.</p>"
+        },
+        "Effect: Melt in Sunlight": {
+            "name": "Effect: Melt in Sunlight",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.d8WcB9lRceXoCmKl]{Melt In Sunlight}</p><hr /><p>You lose any item bonus to AC and all other effects and bonuses from armor, and you use your proficiency modifier for unarmored defense. You gain resistance 8 to physical damage and are immune to precision damage. You can't cast spells, activate items, or use actions that have the attack or manipulate trait. You can slip through tiny cracks.</p>"
+        },
+        "Effect: Spirit Steps": {
+            "name": "Effect: Spirit Steps",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.qE98bL1xWeENwIYg]{Spirit Steps}</p><hr /><p>You gain the incorporeal trait for 1 minute and a resistance to all damage (except spirit, vitality, or ghost touch) equal to twice your cursebound value.</p>"
+        },
+        "Effect: Terrible Size": {
+            "name": "Effect: Terrible Size",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.Ktv8fnq0j7x4VeFX]{Terrible Size}</p><hr /><p>Your inner beast transforms your physique. You grow to size Large and your equipment grows with you, but returns to natural size if removed. You become clumsy 1 and your reach increases by 5 feet (or by 10 feet if you were Tiny). You gain a +10-foot status bonus to all your Speeds. This does not end morph effects that do not affect your size, such as body of the beast.</p>"
+        },
+        "The Mystery Grows": {
+            "name": "The Mystery Grows",
+            "description": "<p><strong>Requirements</strong> You're benefitting from @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Fg25A68hjadgRefp]{Curio's Foresight}.</p><hr /><p>Your artifact’s power expands out, accomplishing miraculous feats. You grant yourself a status bonus to damage and healing of creatures in the aura of your Curio’s Foresight equal to half your level rounded up until the end of your next turn. The status bonus applies only to your Strikes, oracle spells, or cursebound actions with no duration. An individual creature takes this damage or benefits from this healing only once per effect, even if the effect would damage or heal that creature multiple times.</p>"
+        },
+        "Effect: Aura of Foresight (Script)": {
+            "name": "Effect: Aura of Foresight (Script)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.SzHSgHXgBgxhyVsH]{Aura: Aura of Foresight} + @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.iwnFooF4g1F0QECd]{Script}</p><hr /><p>Depending on the origin, you may gain a status bonus to Recall Knowledge checks.</p>"
+        },
+        "Effect: Enlightening Spell": {
+            "name": "Effect: Enlightening Spell",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.5bgMsNUOOnAwliSa]{Enlightening Spell} if the origin is cursebound</p><hr /><p>You gain a circumstance bonus to your Recall Knowledge check equal to the origin's cursebound value.</p>"
+        },
+        "Effect: Reveal the Mystery (Charm)": {
+            "name": "Effect: Reveal the Mystery (Charm)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Js9vTrVqDJQeZ2uP]{Reveal the Mystery} + @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.YH1hf50LW2Pdj3FV]{Charm} + @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.xWVzGav9VGxTgw5X]{Curio's Revelation}</p><hr /><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Charm.CuriosRevelation]</p>"
+        },
+        "Aura: Lucid Reality": {
+            "name": "Aura: Lucid Reality",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.8BaybMIHaMRs5MAH]{Lucid Reality}</p><hr /><p>You have an aura of dreams. At the beginning of each turn your aura of dreams is in effect, you create one of the illusory effects as described in Lucid Reality, which lasts until the beginning of your next turn. If you are cursebound 3 when you used Lucid Reality, you instead create up to 3 effects at once and each can be of a different type</p>"
+        },
+        "Curio's Foresight": {
+            "name": "Curio's Foresight",
+            "description": "<p><strong>Requirements</strong> You’re wearing or wielding your curio, as appropriate for your curio.</p><hr /><p>By channeling power into your curio, you are given glimpses into the future that may aid you in your journey. You create an aura of foresight in a 15-foot emanation for 1 minute. You increase the emanation’s area by 5 feet x your cursebound value. You gain a +1 status bonus to AC and saves against creatures within your aura of foresight.</p><p>When you use this action and at the beginning of each turn the aura is active, you can choose to attempt a @Check[perception] check using your Charisma modifier instead of your Wisdom modifier to attempt to read the near future of a single enemy creature in your aura that you can see, comparing your result against a standard DC of the creature’s level. An enemy creature that is aware of you can choose to use their @Check[perception|against:deception]{Deception DC} or @Check[perception|against:stealth]{Stealth DC} instead of a standard DC of their level.</p><p><strong>Critical Success</strong> The status bonus to AC and saves from your aura of foresight increases to +2 against that creature. You foresee the creature's dangerous attacks, seeing brief images of potential threats in the near future. You foresee the potential threats of the creature, immediately learn all of the following pieces of information: one of its Strikes including its attack modifier and damage, one action or activity the creature possesses, and the effects of any ongoing auras the creature possesses. When determining which Strike, action, or activity, you typically learn the most dangerous Strike, action, or activity the creature possesses if it has more than one that would qualify (subject to GM discretion). These effects last against the target creature until you use Curio’s Foresight again. @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.cP1cpKmDvv4STce2]{Effect: Future Read}</p><p><strong>Success</strong> As critical success, except you learn only one piece of information. @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.cP1cpKmDvv4STce2]{Effect: Future Read}</p><p><strong>Failure</strong> The vision is hazy, you gain no additional effects.</p><p><strong>Critical Failure</strong> The vision rebukes you, leaving you unprepared. You are @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the beginning of your next turn.</p><hr /><p><strong>Special</strong> If you have a penalty to Perception checks from your oracle curse, you do not apply these penalties to the Perception checks of your Curio’s Foresight. <strong>Foundry Note</strong> And you will have to disable these penalties manually.</p>"
+        },
+        "Effect: Reveal the Mystery (Armament)": {
+            "name": "Effect: Reveal the Mystery (Armament)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Js9vTrVqDJQeZ2uP]{Reveal the Mystery} + @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.nlRmgSMAd773kDNN]{Armament} + @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.xWVzGav9VGxTgw5X]{Curio's Revelation}</p><hr /><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Armament.CuriosRevelation]</p>"
+        },
+        "Effect: Recalled Knowledge on from Script Curio": {
+            "name": "Effect: Recalled Knowledge on from Script Curio",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.iwnFooF4g1F0QECd]{Script}</p><hr /><p>While within the origin's Aura of Foresight, you deal extra damage to the target based on the origin's cursebound value.</p>"
+        },
+        "Effect: Amplified Accompaniment": {
+            "name": "Effect: Amplified Accompaniment",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.xWqIJGRUveOJPJm9]{Aura: Amplified Accompaniment}</p><hr /><p>You gain a weakness to sonic damage equal to the origin's cursebound value.</p>"
+        },
+        "Effect: Mind's Eye Wink": {
+            "name": "Effect: Mind's Eye Wink",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.OpJmCs3zAXmN4mnX]{Mind's Eye Wink (target variant)} </p><hr /><p>Depending on your saving throw, you take a -1 or -2 circumstance penalty to all checks involving the target object.</p>"
+        },
+        "Effect: Appear Dead": {
+            "name": "Effect: Appear Dead",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.0mnwXrMmu6fDiwpR]{Appear Dead}</p><hr /><p>You gain a +4 circumstance bonus to Deception checks to appear as a corpse, and you appear dead to senses like lifesense.</p>"
+        },
+        "Reveal the Mystery": {
+            "name": "Reveal the Mystery",
+            "description": "<p><strong>Trigger</strong> Your turn begins.</p><p><strong>Requirements</strong> You have an aura from @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Fg25A68hjadgRefp]{Curio's Foresight}.</p><hr /><p>You protect an ally from a danger you have foreseen. The ally gains the status bonuses from your Curio’s Foresight until the beginning of your next turn or until they leave your aura of foresight, as you point out the follies of your enemies. This includes the increased status bonus against creatures you successfully made your Perception check from Curio’s Foresight against.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Lq5m1jSwLBkuFuiW]{Effect: Reveal the Mystery}</p><hr /><p><strong>Foundry Note</strong> To grant the increased status bonuses, simply add the Future Read effect from Curio's Foresight to your ally, targeting the same creature, as you would to yourself.</p>"
+        },
+        "Effect: Flesh of Cinders": {
+            "name": "Effect: Flesh of Cinders",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.Dcb55j1JkfRQ1Ab5]{Flesh of Cinders}</p><hr /><p>You gain resistance equal to your level against all physical damage, and you gain a status bonus equal to your cursebound condition to saves and DCs against Grapple or effects that would give you the immobilized, grabbed, or restrained conditions.</p>"
+        },
+        "Effect: Familiar Dark": {
+            "name": "Effect: Familiar Dark",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.vuB01OQwGNLaGwmR]{Familiar Dark}</p><hr /><p>You gain greater darkvision and create darkness in an emanation depending on your cursebound value.</p>"
+        },
+        "Effect: Reveal the Mystery": {
+            "name": "Effect: Reveal the Mystery",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Js9vTrVqDJQeZ2uP]{Reveal the Mystery}</p><hr /><p>You gain the status bonuses from the origin's Curio's Foresight until the beginning of the origin's next turn or until you leave their aura of foresight.</p>"
+        },
+        "Effect: Juggernaut of Jagged Stone": {
+            "name": "Effect: Juggernaut of Jagged Stone",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.VK8P3zkoyrVI1RO7]{Juggernaut of Jagged Stone}</p><hr /><p>You gain resistance 6 to physical damage, except adamantine. You're immune to death effects, disease, drained, fatigued, healing, nonlethal attacks, paralyzed, poison, sickened, vitality, and void; any of those conditions you had when the spell is cast are suspended until the spell ends, then return with their remaining duration when the spell ends.</p><p>Your fist Strikes have a 1d10 damage die, lose the finesse and agile traits, and gain the shove trait, and you become Large in size and are clumsy 1.</p><p>In this form, you don't need to breathe. Your Bulk is 24, and you become too dense to Swim in water, automatically sinking to the bottom. You can Dismiss the spell.</p>"
+        },
+        "Effect: Garden of Crystals": {
+            "name": "Effect: Garden of Crystals",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.vFbQPjMNt7QXj6Do]{Garden of Crystals} while standing adjacent to one of the clusters it creates</p><hr /><p>Your critical hits deal an extra 1d10 force damage.</p>"
+        },
+        "Effect: Fractal Frosting": {
+            "name": "Effect: Fractal Frosting",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.UmP8nuC0f2DiMZOB]{Fractal Frosting}'s 9th rank effect</p><hr /><p>You take a status penalty to your Speed for 1 round.</p>"
+        },
+        "Effect: Reveal the Mystery (Script)": {
+            "name": "Effect: Reveal the Mystery (Script)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Js9vTrVqDJQeZ2uP]{Reveal the Mystery} + @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.iwnFooF4g1F0QECd]{Script} + @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.xWVzGav9VGxTgw5X]{Curio's Revelation}</p><hr /><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Script.CuriosRevelation]</p>"
+        },
+        "Effect: Preparatory Cremation": {
+            "name": "Effect: Preparatory Cremation",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.sJFANB5KEFjGI4KK]{Preparatory Cremation}</p><hr /><p>You gain a weakness to physical damage equal to twice the origin's cursebound value, and attacks that deal physical damage gain the death trait against you.</p>"
+        },
+        "Effect: Glimpse of Redemption (Weeping Heart)": {
+            "name": "Effect: Glimpse of Redemption (Weeping Heart)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.nLR4sEYoybOz3eax]{Vision of the Weeping Heart}</p><hr /><p>The ally gains resistance to all damage against the triggering damage equal to your level.</p>"
+        },
+        "Aura: Aura of Foresight": {
+            "name": "Aura: Aura of Foresight",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Fg25A68hjadgRefp]{Curio's Foresight}</p><hr /><p>You gain a +1 status bonus to AC and saves against creatures within your aura of foresight.</p>"
+        },
+        "Effect: Golden Touch": {
+            "name": "Effect: Golden Touch",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.UKJK9vQwjd44WNcR]{Golden Touch}</p><hr /><p>You or an object you hold is partially transmuted into gold. You gain a weakness to bludgeoning and electricity damage. You also take a 2 circumstance penalty to Stealth checks. You might also take a –2 circumstance penalty to checks or DCs made with the object if it is not already made of gold. You might also become @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} or @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken}.</p>"
+        },
+        "Effect: Divine Eclipse": {
+            "name": "Effect: Divine Eclipse",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.On86WPSyTK9jPkGS]{Divine Eclipse}</p><hr /><p>You gain fast healing and emanate light.</p>"
+        },
+        "Effect: Comfort of Struggle": {
+            "name": "Effect: Comfort of Struggle",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.iWueJXoM6ZFHULZj]{Comfort of Struggle} to either the caster or the target enemy</p><hr /><p>You gain either a +1 status bonus to the next spell attack roll you attempt before the end of your turn, or a -1 status penalty to your next saving throw against a spell the origin casts.</p>"
+        },
+        "Effect: Body of the Beast": {
+            "name": "Effect: Body of the Beast",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.yCoJlIIopuCPi4Vw]{Body of the Beast}</p><hr /><p>Animalistic power surges through you as you channel your divinity. You gain an unarmed attack in the brawling group as the beast within you emerges. The unarmed attack’s Strikes deal additional damage equal to your cursebound condition value. If your cursebound value is 2, you gain a +1 status bonus to Strikes with your unarmed attack while the spell is active, or a +2 if you are cursebound value is 3 or greater.</p><ul><li><p>Jaws that deal 1d8 piercing damage</p></li><li><p>Claws that deal 1d4 slashing damage with the agile and finesse traits</p></li><li><p>Horns or antlers that deal 1d6 piercing damage with the shove trait</p></li><li><p>Tentacles or tail that deal 1d4 bludgeoning damage with the reach trait</p></li></ul>"
+        },
+        "Effect: Promised Renewal": {
+            "name": "Effect: Promised Renewal",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.EQYDCV6Llp7qvEmf]{Promised Renewal} to select minions in the emanation</p><hr /><p>You gain fast healing [[/r 3 + 2 * (@item.level - 3)]] while in the emanation.</p>"
+        },
+        "Stance: Divine Gnosis": {
+            "name": "Stance: Divine Gnosis",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.FZ1lE34yTDwC1FBR]{Divine Gnosis}</p><hr /><p>You can Recall Knowledge with a circumstance bonus to your check equal to your cursebound value and you treat your degree of success on this check as one better. You can Recall Knowledge as a free action while in this stance by giving it the cursebound trait. You must Recall Knowledge on subjects relevant to the current encounter. You do not take the penalties from being stupefied on checks to Recall Knowledge while in this stance.</p>"
+        },
+        "Finery Curio": {
+            "name": "Finery Curio",
+            "description": "<p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Finery.AccursedCurio]</p><h3>Curio Adept</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Finery.CurioAdept]</p><h3>Wielder of Mysteries</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Finery.WielderOfMysteries]</p><h3>Curio's Revelation</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Finery.CuriosRevelation]</p><h3>Curio's Form</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Finery.CuriosForm]</p>"
+        },
+        "Effect: Future Read": {
+            "name": "Effect: Future Read",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Fg25A68hjadgRefp]{Curio's Foresight}</p><hr /><p>Your bonus from your Aura of Foresight against the target increases to +2.</p>"
+        },
+        "Effect: Reverse Movement": {
+            "name": "Effect: Reverse Movement",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.q3psDM7xuBPVrnVX]{Reverse Movement}</p><hr /><p></p>"
+        },
+        "Effect: Forefathers' Lessons": {
+            "name": "Effect: Forefathers' Lessons",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.5MYvbDWzTMzvr8AL]{Forefathers' Lessons}</p><hr /><p>You are treated as having the heritage you selected.</p>"
+        },
+        "Effect: Dream Logic - Warped Energy": {
+            "name": "Effect: Dream Logic - Warped Energy",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.IOIBGIvKtLsit2dZ]{Dream Logic} on a roll of 4</p><hr /><p>If the you deal acid, cold, electricity, fire or sonic damage, you instead deal another energy damage type (roll [[/r 1d4 #damage type]] randomly to determine which other damage type). If a creature would deal more than one type of these damage types, the origin chooses which damage type is altered.</p>"
+        },
+        "Spell Effect: Weapon Trance (Team+)": {
+            "name": "Spell Effect: Weapon Trance (Team+)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.hWVNfDCFS8dekbX5]{Weapon Trance (Team+)}</p><p>For the duration, your proficiency with the target weapons is equal to your proficiency with simple weapons, or to your proficiency with martial weapons if the target weapons are advanced. You automatically Sustain this spell as a free action the first time you attempt a Strike with the target weapon each round. If your cursebound value is 2, you gain a +1 status bonus to Strikes with the target weapons while the spell is active, or a +2 if you are cursebound value is 3 or greater.</p>"
+        },
+        "Effect: Curse of Vengeful Darkness (Mount Penalty)": {
+            "name": "Effect: Curse of Vengeful Darkness (Mount Penalty)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.ZBNdYIBcV5qsn4UH]{Curse of Vengeful Darkness}</p><hr /><p>If the origin is mounted, you will take their status penalty to your Speeds.</p>"
+        },
+        "Effect: Wishful Thinking": {
+            "name": "Effect: Wishful Thinking",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.kRd321XLgebXcpni]{Wishful Thinking}</p><hr /><p>Based on the caster's choice, you gain one of the following effects:</p><ul><li><p>A +1 status bonus to attack rolls and saving throws.</p></li><li><p>A +2 status bonus to skill checks for a specific skill of your choice.</p></li><li><p>A climb Speed of 30 feet and scent as an imprecise scent with a range of 30 feet.</p></li><li><p>A swim Speed of 30 feet with the ability to breath underwater.</p></li></ul>"
+        },
+        "Effect: Divine Rampage": {
+            "name": "Effect: Divine Rampage",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.xCpOfmUcUsUMSDnK]{Divine Rampage}</p><hr /><p>The following effects apply until after you reduce a creature to 0 Hit Points and then attempt a @Check[will|against:spell-dc] to end this destructive state. You can choose to forgo this Will save and continue your rampage. If you have not been targeted or included in the area of effect of a hostile action for 1 round, you can attempt a Will save to end this destructive state at the end of your turn.</p><ul><li><p>You don’t treat anyone as your ally, except for flanking enemies (though they might still treat you as theirs).</p></li><li><p>You must use all your actions to Strike, cast offensive cantrips, use offensive cursebound actions, or to facilitate attacking, such as drawing a weapon, moving so a target is in reach, and so forth.</p></li><li><p>Your unarmed attacks gain the forceful trait.</p></li><li><p>When you reduce a creature to 0 Hit Points, you regain Hit Points equal to half your level plus your cursebound value.</p></li></ul>"
+        },
+        "Effect: Halt Steps": {
+            "name": "Effect: Halt Steps",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.2f8ri4nftq4z8oJh]{Halt Steps}</p><hr /><p>You take a -10 foot status penalty to your Speed until the end of the origin's next turn.</p>"
+        },
+        "Effect: Dream Logic - Object Fallacy": {
+            "name": "Effect: Dream Logic - Object Fallacy",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.IOIBGIvKtLsit2dZ]{Dream Logic} on a roll of 1</p><hr /><p>You have a +1 circumstance bonus to Make a Request or Demoralize while this effect is active.</p>"
+        },
+        "Aura: Overwhelming Festivities": {
+            "name": "Aura: Overwhelming Festivities",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.LsoSNdvocpMcOZLv]{Overwhelming Festivities}</p><hr /><p>Enemies in the aura take @Damage[(2 + (ceil(@item.level /2)-1))d4[mental,persistent]] damage if they fail a save against an emotion effect or gain the frightened condition.</p>"
+        },
+        "Effect: Web of Darkness": {
+            "name": "Effect: Web of Darkness",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.ygUiIHPC2ZQEMcl0]{Web of Darkness}</p><hr /><p>You take a circumstance penalty to your Speed depending on your degree of success.</p>"
+        },
+        "Effect: Overwhelming Festivities": {
+            "name": "Effect: Overwhelming Festivities",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.m7RLoqSYkgvv8pyz]{Aura: Overwhelming Festivities}</p><hr /><p>You take @Damage[(2 + (ceil(@item.level /2)-1))d4[mental,persistent]] damage if you fail a save against an emotion effect or gain the frightened condition.</p>"
+        },
+        "Effect: Reveal the Mystery (Tool)": {
+            "name": "Effect: Reveal the Mystery (Tool)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Js9vTrVqDJQeZ2uP]{Reveal the Mystery} + @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.unktIfBngeF55LrH]{Tool} + @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.xWVzGav9VGxTgw5X]{Curio's Revelation}</p><hr /><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Tool.CuriosRevelation]</p>"
+        },
+        "Ephemeral Effect: Preparatory Cremation": {
+            "name": "Ephemeral Effect: Preparatory Cremation",
+            "description": "<p><strong>DO NOT USE DIRECTLY!</strong></p><p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Qkrxlll3LxBXBXup]{Effect: Preparatory Cremation}</p><hr /><p>Gives your attack the death trait.</p>"
+        },
+        "Charm Curio": {
+            "name": "Charm Curio",
+            "description": "<p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Charm.AccursedCurio]</p><h3>Curio Adept</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Charm.CurioAdept]</p><h3>Wielder of Mysteries</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Charm.WielderOfMysteries]</p><h3>Curio's Revelation</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Charm.CuriosRevelation]</p><h3>Curio's Form</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Charm.CuriosForm]</p>"
+        },
+        "Effect: Dream Logic - Untethered to Ground": {
+            "name": "Effect: Dream Logic - Untethered to Ground",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.IOIBGIvKtLsit2dZ]{Dream Logic} on a roll of 3</p><hr /><p>You gain a fly speed equal to your land speed until the end of your next turn.</p>"
+        },
+        "Effect: Seeds of Divinity (Bountiful Bush)": {
+            "name": "Effect: Seeds of Divinity (Bountiful Bush)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.6eJzIrMiNtOTzhCR]{Seeds of Divinity}, when choosing the \"Bountiful\" option</p><hr /><p>You gain [[/r 4 + 2 * (@item.level -1)]] temporary Hit Points for the duration.</p>"
+        },
+        "Effect: The Mystery Grows": {
+            "name": "Effect: The Mystery Grows",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.A7RfY8hjBQ4qYReT]{The Mystery Grows}</p><hr /><p>You grant yourself a status bonus to damage and healing of creatures in the aura of your Curio’s Foresight equal to half your level rounded up until the end of your next turn. The status bonus applies only to your Strikes, oracle spells, or cursebound actions with no duration. An individual creature takes this damage or benefits from this healing only once per effect, even if the effect would damage or heal that creature multiple times.</p>"
+        },
+        "Effect: Life of the Party": {
+            "name": "Effect: Life of the Party",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.IwJEKkV4PX7pY3V9]{Life of the Party}</p><hr /><p>You gain temporary Hit Points for 1 minute and a +2 status bonus to damage until the temporary Hit Points are lost.</p>"
+        },
+        "Effect: Automummification": {
+            "name": "Effect: Automummification",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.1CQxDxHbTcGwoojQ]{Automummification}</p><hr /><p>You become a mummy, gaining the basic undead benefits. While the spell is active, if you have not used an action with the auditory, manipulate, or move traits, you automatically extend the duration of the spell at the end of this duration by 10 minutes and continue to do so each time the spell’s duration would normally elapse. You have a +4 circumstance bonus to your Perception DC while in this form if a creature has not seen you move since you Cast the Spell.</p>"
+        },
+        "Effect: Self-Stitching Wounds": {
+            "name": "Effect: Self-Stitching Wounds",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.cnmps3P2DZSaME5C]{Self-Stitching Wounds}</p><hr /><p> You gain fast healing equal to 4 x your cursebound value.</p>"
+        },
+        "Effect: Spirit Squire": {
+            "name": "Effect: Spirit Squire",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.XvQ1DfNuSiwI5U1B]{Spirit Squire}</p><hr /><p>You gain a +1 circumstance bonus to your AC.</p>"
+        },
+        "Effect: Speak in Tongues (Gain One Language)": {
+            "name": "Effect: Speak in Tongues (Gain One Language)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.hcj2HQSwgRXUEDKz]{Speak in Tongues}</p><hr /><p>You learn one language while you're cursebound.</p>"
+        },
+        "Script Curio": {
+            "name": "Script Curio",
+            "description": "<p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Script.AccursedCurio]</p><h3>Curio Adept</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Script.CurioAdept]</p><h3>Wielder of Mysteries</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Script.WielderOfMysteries]</p><h3>Curio's Revelation</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Script.CuriosRevelation]</p><h3>Curio's Form</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Script.CuriosForm]</p>"
+        },
+        "Effect: Cryptic Murmurings": {
+            "name": "Effect: Cryptic Murmurings",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.MOIyXI1N05xHErEb]{Cryptic Murmurings}</p><hr /><p>You gain either a circumstance bonus or penalty to your Initiative on the relevant encounter within the next day.</p>"
+        },
+        "Effect: Aura of Foresight": {
+            "name": "Effect: Aura of Foresight",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.SzHSgHXgBgxhyVsH]{Aura: Aura of Foresight}</p><hr /><p>The origin receives various benefits against you as long as you are in their aura.</p>"
+        },
+        "Utensil Curio: Advanced Alchemy": {
+            "name": "Utensil Curio: Advanced Alchemy",
+            "description": "<p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Utensil.CurioAdept]</p><hr /><p><strong>Foundry Note</strong> Separated into its own feature due to a PF2e system bug(?) (oversight?) that makes CraftingAbility REs completely ignore predicates.</p>"
+        },
+        "Effect: Awakened State": {
+            "name": "Effect: Awakened State",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.GmJ5oShNqLUg4JqB]{Vision} mechanics</p><hr /><p>You can use this effect to represent being in your Awakened State.</p><p>To replicate its mechanics fully, set your cursebound state to one below its maximum (for cursebound actions). Visions will try and use your maximum cursebound value instead.</p>"
+        },
+        "Aura: Amplified Accompaniment": {
+            "name": "Aura: Amplified Accompaniment",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.u5ZHCGWZtZjpEdSJ]{Amplified Accompaniment}</p><hr /><p>Auditory and sonic effects originating within this area increase their range by 30 feet and linguistic effects no longer require that the target share a language while within the area. Creatures within the area gain a weakness to sonic damage equal to your cursebound value or increase their weakness to sonic damage by the same amount. Creatures with immunity to sonic damage are still immune.</p>"
+        },
+        "Effect: Reveal the Mystery (Weapon)": {
+            "name": "Effect: Reveal the Mystery (Weapon)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Js9vTrVqDJQeZ2uP]{Reveal the Mystery} + @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.iOygFdgebKxOf857]{Weapon} + @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.xWVzGav9VGxTgw5X]{Curio's Revelation}</p><hr /><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Weapon.CuriosRevelation]</p>"
+        },
+        "Utensil Curio": {
+            "name": "Utensil Curio",
+            "description": "<p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Utensil.AccursedCurio]</p><h3>Curio Adept</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Utensil.CurioAdept]</p><h3>Wielder of Mysteries</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Utensil.WielderOfMysteries]</p><h3>Curio's Revelation</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Utensil.CuriosRevelation]</p><h3>Curio's Form</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Utensil.CuriosForm]</p>"
+        },
+        "Effect: Enchanting Rhapsody": {
+            "name": "Effect: Enchanting Rhapsody",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.jdkPJ3JOhCyjdxu5]{Enchanting Rhapsody}</p><hr /><p>You take a status penalty to saving throws against mental effects until you leave the area and 1 round after.</p>"
+        },
+        "Effect: Curse of Gelid Presence": {
+            "name": "Effect: Curse of Gelid Presence",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.WkHeAsDV5cy2JkSr]{Curse of Gelid Presence}</p><hr /><p>You reduce your Speeds by 10 feet to a minimum of 0 feet.</p>"
+        },
+        "Effect: Foreseen Retaliation": {
+            "name": "Effect: Foreseen Retaliation",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.ncDfIGvZ4X74q3Tb]{Foreseen Retaliation}</p><hr /><p>You gain a status bonus to your Strikes equal to half the origin's level rounded up against the target whose future the origin has read.</p>"
+        },
+        "Effect: Contagious Festivities": {
+            "name": "Effect: Contagious Festivities",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.Lfw8veumNzl5xXVk]{Contagious Festivities}</p><hr /><p>You gain a status bonus to damage equal to twice the origin's cursebound value.</p>"
+        }
+    }
+}
