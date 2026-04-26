@@ -1,4 +1,4 @@
-# btfg-extract
+# compendium-extractor
 
 Extract [babele 2.8](https://gitlab.com/riccisi/foundryvtt-babele) translation source files directly from FoundryVTT v13 / v14 LevelDB compendium packs — no Foundry instance required.
 
@@ -57,7 +57,7 @@ For JournalEntry packs (no `mapping`, matching official zh-CN convention):
 
 ```bash
 git clone <this-repo>
-cd btfg-extract
+cd compendium-extractor
 npm install
 ```
 
