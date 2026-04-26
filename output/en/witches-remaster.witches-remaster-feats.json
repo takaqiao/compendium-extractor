@@ -1,0 +1,306 @@
+{
+    "label": "Feats",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Peculiar Vestige": {
+            "name": "Peculiar Vestige",
+            "description": "<p>Your familiar has learned that shaping itself to appear more mundane, becoming with your vestige in a manner suiting your tastes. Your familiar can transform into a worn or held item of your choice, like a hat, cloak, book, or necklace. Your familiar looks like an item version of itself, using similar colors and fixtures. It can't take actions with the manipulate trait while in this form, and isn't affected by area effects. It must be targeted separately to affect it, which requires knowledge that it's a creature. This means you and your allies can heal or assist the familiar while most enemies stay unaware of its true nature. Creatures must attempt a @Check[type:perception|dc:resolve(@actor.attributes.classOrSpellDC.value)|showDC:owner|traits:action:seek] check to Seek to realize the item is actually a familiar, which would usually only be prompted if the object takes any actions or uses any abilities, with a Perception DC equal to your class DC or spell DC, whichever is higher. Transforming into the worn item or back to familiar form is a 1-minute activity that has the concentrate trait.</p>",
+            "prerequisites": [
+                {
+                    "value": "a familiar"
+                }
+            ]
+        },
+        "Mutable Familiar": {
+            "name": "Mutable Familiar",
+            "description": "<p>Your familiar can mold its form like clay, allowing it to take on whatever appearance you wish. You can spend 10 minutes to change one of your familiar's abilities. If you are interrupted during such a swap, the original ability remains and you do not gain the new ability. You can try again to swap out the ability later, but you must start the process over again. You cannot swap out abilities that can only be used once per day once you have used them, and you cannot swap in abilities your familiar previously had in the day.</p>",
+            "prerequisites": [
+                {
+                    "value": "a familiar"
+                }
+            ]
+        },
+        "Accursed Armaments": {
+            "name": "Accursed Armaments",
+            "description": "<p>Your armaments have become augmenters of your hex magic and your magic enhances your armaments abilities. You gain a +1 circumstance bonus to Strike creatures with your @UUID[Compendium.witches-remaster.witches-remaster-feats.Item.OAKFEmT9z1Y6IGIH]{Witch's Armaments} if they are affected by one of your hexes.</p>\n<p>In addition, when you successfully Strike a creature affected by one of your hexes with the unarmed attack gained from your Witch's Armaments, they take additional persistent bleed damage equal to twice the rank of the hex.</p>\n<p>If you have @UUID[Compendium.pf2e.feats-srd.Item.VOgAiCqC5kpIpLaf]{Sympathetic Strike}, the penalty to saves against your hexes lasts as long as they are suffering from persistent bleed damage caused by Accursed Armaments.</p>",
+            "prerequisites": [
+                {
+                    "value": "Witch's Armaments"
+                },
+                {
+                    "value": "ability to cast hexes"
+                }
+            ]
+        },
+        "Protection Circle": {
+            "name": "Protection Circle",
+            "description": "<p>You have a mysterious ritual involving hanging paper dolls, marking out perimeters with chalk and similar warding practices to keep creatures away. You take 10 minutes to mark out a space in a @Template[type:burst|distance:15], keeping you safe from danger. Make a secret check with the skill associated with your patron skill and choose a creature type you could identify using this skill. Your GM might allow you to target a creature type that your tradition would not allow, such as using Occultism to target humanoids of a specific cult or Religion to target a cambion. Creatures inside the area of the circle are invisible to creatures of the chosen type outside of the circle if your secret check exceeds their Perception DC. You also gain a +1 status bonus to saves against effects from those creatures as long as you and your allies remain in the area (+2 if you are legendary in your patron skill).</p>\n<p>If a creature inside the circle takes a hostile action against a creature outside the circle or any of the creatures inside the circle leave the circle, the invisibility condition immediately ends for all creatures inside the circle. A creature can spend a single Interact action to break the circle by touching the area. The circle lasts 8 hours, until you create another circle, or the circle is broken, whichever comes first. While resting in the circle overnight, you restore double the amount of Hit Points you normally would.</p>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-effects.Item.GsUkq5v4rsBvpN1t]{Effect: Protection Circle}</p>"
+        },
+        "Witch Dedication+": {
+            "name": "Witch Dedication+",
+            "description": "<p>You cast spells like a witch. Choose a @UUID[Compendium.pf2e.classfeatures.Item.KPtF29AaeX2sJW0K]{Patron}; you gain a familiar with two common cantrips of your choice from your chosen patron's tradition, but aside from the tradition, you don't gain any other effects the patron would usually grant. Your familiar has one familiar ability, but if you select another feat from the @UUID[Compendium.pf2e.journals.JournalEntry.vx5FGEG34AxI2dow.JournalEntryPage.eNTStXeuABNPSLjw]{Witch Archetype} your familiar gains two familiar abilities as normal.</p>\n<p>You gain the @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} activity. You can prepare one cantrip each day from your familiar. You're trained in the spell attack modifier and spell DC statistics. Your key spellcasting attribute for witch archetype spells is Intelligence, and they are witch spells of your patron's tradition.</p>\n<p>You become trained in the skill associated with the patron's tradition; if you were already trained in it, you instead become trained in a skill of your choice.</p>",
+            "prerequisites": [
+                {
+                    "value": "Intelligence +2"
+                }
+            ]
+        },
+        "Rites Of Transfiguration+": {
+            "name": "Rites Of Transfiguration+",
+            "description": "<p>You can adapt your patron's power to transform other creatures into forms more befitting their behavior or your whims. Your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis}, even if <em>cursed metamorphosis</em> isn't on your tradition's spell list. By spending 10 minutes in communion with your familiar, you can replace one spell of 6th-rank or higher you've prepared in one of your witch spell slots with a cursed metamorphosis spell of the same rank.</p>\n<p>Once per day, you can swap out an appropriate spell as a single action with the concentrate trait.</p>"
+        },
+        "Monstrous Familiar": {
+            "name": "Monstrous Familiar",
+            "description": "<p>You transform your familiar into a terrible creature, unleashing the true fury of your patron upon your foes. When you Cast a Spell from your spell slots that grants a battle form such as @UUID[Compendium.pf2e.spells-srd.Item.5c692cCcTDXjSEzk]{Dragon Form} or @UUID[Compendium.pf2e.spells-srd.Item.8AMvNVOUEtxBCDvJ]{Monstrosity Form}, you may cast it on your familiar rather than yourself. In this form, on top of the temporary Hit Points it gained from the battle form, your familiar gains an additional 4 Hit Points for every level you have. Your familiar still has the minion trait while in this form, but cannot use actions or activities that would require it to be given a Command while in this battleform. While in this form, your familiar can make Strikes with attacks it gains from its battleform.</p>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-effects.Item.mno6c7vQg8UET8rg]{Effect: Monstrous Familiar}</p>"
+        },
+        "Arch-Familiar": {
+            "name": "Arch-Familiar",
+            "description": "<p>Your familiar has evolved to become a true monster in its own right, not merely an assistant to your ways. Your familiar gains 2 additional familiar abilities each day from the following list: independent, manual dexterity, master’s form, skilled, speech, or spellcasting.</p>\n<p>In addition, during your daily preparations you can choose to have your familiar grow in size up to a Medium creature. It gains an unarmed attack and can make Strikes with this unarmed attack with 5 feet of reach. Your familiar’s unarmed attack deals 1d6 damage of your choice of bludgeoning, piercing, or slashing damage, is in the brawling group, and has the agile, finesse, and unarmed traits. Your familiar uses your modifier to unarmed attacks for its own unarmed attacks and applies any runes from your handwraps of mighty blows also apply to your familiar’s unarmed attack.</p>\n<hr />\n<p><strong>Special</strong> If you have @UUID[Compendium.witches-remaster.witches-remaster-feats.Item.OAKFEmT9z1Y6IGIH]{Witch's Armaments}, your familiar also gains the unarmed attack you gained from that feat as another unarmed attack.</p>",
+            "prerequisites": [
+                {
+                    "value": "a familiar"
+                }
+            ]
+        },
+        "Guarded Sanctuary": {
+            "name": "Guarded Sanctuary",
+            "description": "<p>Your familiar gains the ability to provide protection within an area of its choosing. Your familiar gains the @UUID[Compendium.witches-remaster.witches-remaster-familiar-abilities.Item.XrVSnUkDRqzrOC6G]{Sanctum of Spirit} activity.</p>",
+            "prerequisites": [
+                {
+                    "value": "divine or primal patron"
+                },
+                {
+                    "value": "a familiar"
+                }
+            ]
+        },
+        "Bargain Soul": {
+            "name": "Bargain Soul",
+            "description": "<p>You've earned enough respect in the eyes of your patron to now be able to broker additional minor pacts with them. You can offer a portion of your life energy to your patron in exchange for greater power. You become @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1} and @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} or increase these values by 1 if you already had them, and you gain a -1 circumstance penalty to saving throws against death effects. In exchange, you can regain a spell slot at least one rank lower than your highest spell level, and you regain a 1 Focus Point. These penalties last until your next daily preparations and cannot be removed by any means. If you die while under the effects of your patron's bargain, your soul is forfeit, likely turned into an extraplanar creature with no memories of your last life to further your patron's agendas more directly. You can only be restored via resurrect or other magic if your patron is contacted and bargained with beforehand.</p>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-effects.Item.AGTwxqEmV3MjZB9s]{Effect: Bargain Soul}</p>"
+        },
+        "Shared Mindscape": {
+            "name": "Shared Mindscape",
+            "description": "<p>Your shared realm becomes so formulated, it transcends existing simply in your mind's eye and becomes a mindscape. Your shared realm becomes an immersive mindscape that exists in a plane appropriate for your patron and you gain the ability to travel to it and exist there instead of merely through your mind's eye. Your patron gains the ability to physically manifest within your mindscape, but may or may not choose to do so and it can choose what form it appears in if it does. You can bring a number of willing creatures equal to half your level with you into your mindscape, but those creatures are immediately expelled from your mindscape after 1 hour, you go unconscious, or die, whichever comes first.</p>",
+            "prerequisites": [
+                {
+                    "value": "Hexmarked Witch Dedication"
+                }
+            ]
+        },
+        "Vermin Eye": {
+            "name": "Vermin Eye",
+            "description": "<p>You have eyes everywhere–in the skies, in the gutters, anywhere animals run. You call the surrounding wildlife of the area to offer its eyes, calling a Tiny animal appropriate for the area comes to your side by succeeding at a standard DC check against the skill granted by your patron. Once called, the creature allows you to see from the creature's position using your own senses for 10 minutes. You can use your sight or any of its senses to perceive, and the creature follows your directions when you give it Commands, but it refuses any actions that would be obviously harmful and it flees if threatened in any way.</p>\n<p>While this is in effect, your eyes manifest on the creature's body, usually in place of its eyes. Creatures that see the animal can detect your presence if they succeed at an additional @Check[type:perception|dc:resolve(@actor.attributes.spellDC.value)|showDC:owner] check, though they only learn that creature is being used for observation. This effect lasts until you Dismiss it, afterwhich, the animal returns to normal.</p>"
+        },
+        "Greater Essence Practicum": {
+            "name": "Greater Essence Practicum",
+            "description": "<p>Your cross-essence magic knowledge develops further. You can prepare an additional spell slot of 6th-rank or lower which you can only use to cast one of the spells you gained from @UUID[Compendium.witches-remaster.witches-remaster-feats.Item.IFja5U3E6DHivhJW]{Essence Practicum}. At 14th level, and every 2 levels thereafter, the rank of this additional spell slot increases by 1.</p>",
+            "prerequisites": [
+                {
+                    "value": "Essence Practicum"
+                }
+            ]
+        },
+        "Wayward Gifts": {
+            "name": "Wayward Gifts",
+            "description": "<p>Your patron has bestowed upon you a supernatural gift derived from its mysterious teachings. While in an encounter and you have at least one hex active, you gain the listed effect depending on your tradition.</p>\n<ul style=\"list-style-type:none\">\n<li><strong>Arcane</strong> Your magic ripples with untamed power. You gain a +1 status bonus to Arcana checks and when you Cast a Spell from your spell slots that deals damage and doesn't have a duration, you gain a status bonus to that spell's damage equal to the spell's rank.</li>\n<li><strong>Divine</strong> You gain the might of divinity. You gain a +1 status bonus to Religion checks and you gain either the holy trait or the unholy trait. If you follow a deity, you must choose the trait of your deity's divine sanctification if it requires one.</li>\n<li><strong>Occult</strong> You have begun your journey into some truly dark magick. You gain a +1 status bonus to Occultism checks and you gain resistance to mental damage equal to half your level (minimum 1).</li>\n<li><strong>Primal</strong> Your magic is like that of a spirit of nature. You gain a +1 status bonus to Nature checks and you gain temporary Hit Points each time you Sustain a hex equal to its rank that last until the beginning of your next turn.</li>\n</ul>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-effects.Item.phm5kEBTaUT9hjDo]{Effect: Wayward Gifts}</p>",
+            "prerequisites": [
+                {
+                    "value": "initial lesson"
+                }
+            ]
+        },
+        "Fortune Reader": {
+            "name": "Fortune Reader",
+            "description": "<p>You've mastered the art of the reading fortunes, and can use its powers to control your own fate. You gain a special deck, dice, or crystal ball bestowed with power granted by your patron.The object appears on your person every morning, even if given away or destroyed. When you make your daily preparations, you may predict a fortune using the object by rolling 1d20, and gaining the @UUID[Compendium.witches-remaster.witches-remaster-actions.Item.lr0mrp6v4TNFbUQr]{It Was Foreseen} reaction until your next daily preparations when you would read a new fortune. If you would get a result that would require you to roll additional times, you ignore results of 1 and 20 on any additional rolls.</p>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-roll-tables.RollTable.RCxt9EzDj3qFPzKD]{Fortune Reader}</p>"
+        },
+        "Essence Practicum": {
+            "name": "Essence Practicum",
+            "description": "<p>You have learned to manipulate the essences of magic to learn spells that are otherwise unavailable to you. Choose a spellcasting tradition based on the list below and your familiar learns two 1st-rank spells from that tradition and you can cast and prepare these spells as one of your witch spells. Each time you gain a level, you can choose to replace one of the spells you learned with another spell from that tradition with a spell rank 1 below the highest rank spell you can cast and you can cast and prepare the newly selected spell as one of your witch spells.</p>\n<ul style=\"list-style-type:none\">\n<li><strong>Arcane</strong> Occult or Primal</li>\n<li><strong>Divine</strong> Occult or Primal</li>\n<li><strong>Occult</strong> Arcane or Divine</li>\n<li><strong>Primal</strong> Arcane or Divine</li>\n</ul>",
+            "prerequisites": [
+                {
+                    "value": "initial lesson"
+                }
+            ]
+        },
+        "Final Lesson": {
+            "name": "Final Lesson",
+            "description": "<p>Your Patron reveals an ultimate truth about their nature, and gives you untold powers to reconcile with your new knowledge. Choose a final lesson. You gain its associated hex, and your familiar learns the associated spell.</p>"
+        },
+        "Watchful Patron": {
+            "name": "Watchful Patron",
+            "description": "<p>Your mark warns you when danger is near, granting you advanced knowledge of impending peril. Your mark gains lifesense (imprecise, 15 feet) in the form of your patron’s watchful eye, which is the only means by which it can perceive others. Your mark gains a Perception DC and has a Perception modifier equal to your level plus your spellcasting modifier. Your mark can perceive things even when you normally couldn't, such as when you are blinded, dazzled, or unconscious. You can use your mark to Seek if you spend an action to Interact with it, but it can only target the area around you. When a creature is detected by your mark, it alerts you to its presence and that creature becomes hidden to you instead of undetected or observed if the creature has no means to hide. If you are sleeping and your mark detects danger, it will automatically attempt to wake you at a DC 5 Perception each turn if it believes you are in danger. Over time, your mark learns the difference between your allies and other creatures, though it will still alert you to danger if it believes an ally is hostile.</p>",
+            "prerequisites": [
+                {
+                    "value": "Hexmarked Witch Dedication"
+                }
+            ]
+        },
+        "Witch's Hut+": {
+            "name": "Witch's Hut+",
+            "description": "<p>Your home is an animated structure that obeys your commands. By performing a rite that takes 1 day, you create an animated object from a hut, small house, covered wagon, tent, or similar construction of up to Huge size.</p>\n<p>The hut uses your AC, saving throw modifiers, and Perception modifier and has 150 HP and Hardness 10. It has the construct armor ability, meaning once it's reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its AC is reduced by 4 until it is repaired.</p>\n<p>You can give the hut a command as a single action, which has the auditory and concentrate traits.</p>\n<ul>\n<li><strong>Attack</strong> The hut makes an attack against an adjacent enemy using one of the portions of its construction to bludgeon the target. This attack is a melee spell attack roll that uses your spell attack roll modifier and deals 4d8 plus your spellcasting modifier in bludgeoning damage on a success or double damage on a critical success.</li>\n<li><strong>Guard</strong> The hut watches for trespassers within 120 feet using your Perception modifier and screams if it spots any.</li>\n<li><strong>Hide</strong> The hut appears to be a normal, mundane object of its type. This is a 10th-rank illusion effect.</li>\n<li><strong>Leap</strong> The hut spins around or leaps into the air, then casts 10th-rank @UUID[Compendium.pf2e.spells-srd.Item.69L70wKfGDY66Mk9]{Teleport}, transporting itself and all creatures within it.</li>\n<li><strong>Lock</strong> With a slam, each entrance to the hut becomes sealed with a lock spell. You can give this command again to unlock its entrances.</li>\n<li><strong>Move</strong> The hut gains a Speed of 60 feet, growing giant bird or bone legs, if necessary, and follows an extremely basic movement command you give it, such as \"follow me\" or \"move that direction.\"</li>\n<li><strong>Shift</strong>  The hut spends 24 hours stationary before traveling to another plane of existence as a 7th-level <em><a class=\"content-link\" draggable=\"true\" data-pack=\"pf2e.spells-srd\" data-uuid=\"Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ\" data-id=\"5bTt2CvYHPvaR7QQ\">Plane Shift</a></em> spell. You must select the destination as part of issuing the command and you must have specific knowledge of the destination plane in order to travel there. You must be inside the hut when it completes this command or your hut immediately reverts to a normal structure of its kind upon arriving in the new plane.</li>\n</ul>\n<p>You can have only one witch's hut at a time. If you animate a new hut, your previous hut immediately reverts to its original, mundane form. If you die, the hut continues following the last order you gave it indefinitely.</p>"
+        },
+        "Borrowed Lesson": {
+            "name": "Borrowed Lesson",
+            "description": "<p>You, your patron, or your familiar have brokered a deal for magic that only the most resourceful can claim for themselves. Select one hex cantrip spell from a patron other than your own. You gain the hex cantrip of that patron and can cast that spell as a spell of your tradition, regardless of the tradition of the chosen patron.</p>",
+            "prerequisites": [
+                {
+                    "value": "initial lesson"
+                }
+            ]
+        },
+        "Witch's Armaments+": {
+            "name": "Witch's Armaments+",
+            "description": "<p>Your patron's power changes your body to ensure you are never defenseless. You gain one of the following unarmed attacks.</p>\n<ul>\n<li><strong>Eldritch Nails</strong> Your nails are supernaturally long and sharp. You gain a nails unarmed attack that deals 1d6 slashing damage, is in the brawling group, and has the unarmed trait. When you first gain this feat, you choose for your nails to be fierce or slender, gaining either the agile or finesse traits depending on your choice. You can spend 1 day of downtime to alter your nails to swap these traits.</li>\n<li><strong>Iron Teeth</strong> With a click of your jaw, your teeth transform into long metallic points. You gain a jaws unarmed attack that deals 1d8 piercing damage and is in the brawling group.</li>\n<li><strong>Living Hair</strong> You can instantly grow or shrink your hair, eyebrows, beard, or mustache by up to several feet and manipulate your hair for use as a weapon, though your control isn't fine enough for more dexterous tasks. You gain a hair unarmed attack that deals 1d4 bludgeoning damage; is in the brawling group; and has the agile, disarm, finesse, trip, and unarmed traits.</li>\n</ul>\n<hr />\n<p><strong>Special</strong> You can take this feat more than once, gaining a different unarmed attack each time.</p>"
+        },
+        "Marked Territory": {
+            "name": "Marked Territory",
+            "description": "<p>You have learned to bind your patron's power to an area you can see, transferring the power of your mark to the target area. When you Cast @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.7QcvUZh4dPjP8r3K]{Mark of Mystery}, you can choose to target a @Template[type:burst|distance:5] within 30 feet instead of an ally and all allies in the area gain the effect of being targeted by the spell and the area serves as your mark's position. On subsequent turns, you can Sustain a mark of mystery you have Cast this way to move the burst to another area within 30 feet of you.</p>",
+            "prerequisites": [
+                {
+                    "value": "Hexmarked Witch Dedication"
+                },
+                {
+                    "value": "divine or primal patron"
+                }
+            ]
+        },
+        "Hexmarked Witch Dedication": {
+            "name": "Hexmarked Witch Dedication",
+            "description": "<p>As a hexmarked witch, you brandish your mark and promptly apply it to another creature. You learn a basic lesson.</p>"
+        },
+        "Accursed Formation": {
+            "name": "Accursed Formation",
+            "description": "<p>You have learned how to bind structures you conjure for longer periods of time. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.7tWv2AsrGat2h6Ge]{Accursed Formation} hex.</p>"
+        },
+        "Crystal Sage": {
+            "name": "Crystal Sage",
+            "description": "<p>You've learned the secrets that a crystal can impart through conversations with your patron. You keep crystalline implements on your person at all times, whether in the form of crystal balls, magic mirrors, or even bags of loose gemstones. You can spend 10 minutes to produce the effects of @UUID[Compendium.pf2e.spells-srd.Item.HXhWYJviWalN5tQ2]{Clairaudience}. If you are a master in spellcasting, you can choose to instead produce the effects of @UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]{Clairvoyance} instead, and if you are legendary in spellcasting, you can produce the effects of both, but both spells must target the same location.</p>"
+        },
+        "Chant": {
+            "name": "Chant",
+            "description": "<p>You can channel one of your hexes through a powerful chant that affects those around you. You learn the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.UHo5FPTAGkw8r8qs]{Chant} focus spell.</p>"
+        },
+        "Rites of Shapeshifting": {
+            "name": "Rites of Shapeshifting",
+            "description": "<p>Your patron gives you the power of the creatures of their realm. You can spend 10 minutes in communion with your familiar to replace one spell you've prepared in one of your witch spell slots with a battleform spell (such as @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form}, @UUID[Compendium.pf2e.spells-srd.Item.5c692cCcTDXjSEzk]{Dragon Form}, etc.) that appears on the spell list of your spellcasting tradition. The spell you replaced must be of at least the battleform spell's minimum spell rank.</p>"
+        },
+        "Forbidden Grimoire": {
+            "name": "Forbidden Grimoire",
+            "description": "<p>Your familiar guards an ancient tome that your patron will not allow you to read on your own. This book contains dark secrets of your patron, and without your familiar present, you could damn yourself with its knowledge... or gain more power than your patron could hope to control. During your daily preparations, you can ask your familiar to bring you the grimoire to prepare your spells. Once this is complete, the dark book is spirited away by your familiar.</p>\n<p>Once per week, you can attempt to request a specific common spell for the Learn a Spell activity from your patron's grimoire by making a @Check[type:diplomacy|dc:@self.level|showDC:owner|traits:action:request]{Request against the standard DC of your level}, or a higher DC for spells with higher rarity (subject to GM discretion). You can use the skill granted by your patron instead of Diplomacy for this Request. You must still provide any of the other requirements to Learn the Spell if you are successful in your Request your patron allots you the appropriate amount of time with the grimoire to do so.</p>\n<p>Your patron's grimoire grants you @UUID[Compendium.witches-remaster.witches-remaster-actions.Item.fuVn1ygSBm06cSD6]{Black Book Hex} and it does not count as your one grimoire for the day.</p>",
+            "prerequisites": [
+                {
+                    "value": "a familiar"
+                }
+            ]
+        },
+        "Spirited Reprisal": {
+            "name": "Spirited Reprisal",
+            "description": "<p><strong>Trigger</strong> An enemy damages an ally affected by your mark of mystery.</p>\n<hr />\n<p>The spiritual essences of your mark allow you to tap into surrounding spirits for protection. Your ally gains resistance to all damage against the triggering damage equal to 2 plus your level. After you use this reaction, your mark of mystery spell immediately ends and you cannot target the ally with your mark of mystery for 10 minutes.</p>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-effects.Item.nxDSuTK0KFSbPwWB]{Effect: Spirited Reprisal}</p>",
+            "prerequisites": [
+                {
+                    "value": "Hexmarked Witch Dedication"
+                },
+                {
+                    "value": "divine or occult patron"
+                }
+            ]
+        },
+        "Conduit of Illusions": {
+            "name": "Conduit of Illusions",
+            "description": "<p>Your familiar gains the ability to appear as something other than itself for a brief period, creating a masterful vision cloaked by illusion. Your familiar gains the @UUID[Compendium.witches-remaster.witches-remaster-familiar-abilities.Item.q0enTUW1KeZsQFan]{Illusory Projection} activity.</p>",
+            "prerequisites": [
+                {
+                    "value": "arcane or occult patron"
+                },
+                {
+                    "value": "a familiar"
+                }
+            ]
+        },
+        "Hexmarked Object": {
+            "name": "Hexmarked Object",
+            "description": "<p>You have learned to mark an object in your possession. During your daily preparations, you can place your patron's mark on a single object of 1 Bulk or less in your possession, allowing you to automatically succeed at the Stealth check to hide your mark so long as the item is stowed.</p>\n<p>In addition, the object serves as your mark and its position can be used when determining effects that are dependent on your mark's position (such as your mark's abilities).</p>",
+            "prerequisites": [
+                {
+                    "value": "Hexmarked Witch Dedication"
+                },
+                {
+                    "value": "arcane or occult patron"
+                }
+            ]
+        },
+        "Material Binding": {
+            "name": "Material Binding",
+            "description": "<p>You have learned to wield the material essences to keep your allies protected. Your mark of mystery hex makes you and your allies more resilient and harder to manipulate. You or a creature affected by your mark of mystery gain a +1 circumstance bonus to AC and a +2 circumstance bonus against forced movement or effects that would give them the prone condition.</p>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-effects.Item.V1mhfm5is6KUjXju]{Effect: Material Binding}</p>",
+            "prerequisites": [
+                {
+                    "value": "Hexmarked Witch Dedication"
+                },
+                {
+                    "value": "arcane or primal patron"
+                }
+            ]
+        },
+        "Ceremonial Knife+": {
+            "name": "Ceremonial Knife+",
+            "description": "<p>You have prepared a special knife to direct energies when spellcasting. During your daily preparations, you and your familiar can perform a short ritual over a weapon in the knife group—typically a dagger. This causes the knife to function as a magic wand, containing any one 1st-rank spell your familiar knows. You, and only you, can Activate the knife to Cast the Spell within it, as normal for a wand. You can attempt to overcharge the knife, and this can break or destroy the knife as normal.</p>\n<p>You can only have one ceremonial knife at a time and your ceremonial knife cannot contain a spell of a rank higher than the highest rank of spell you can cast. If you create another ceremonial knife, any ceremonial knife created loses its magic and returns to its state before you gave it power.</p>\n<p>At 8th level, and every 2 levels thereafter, the maximum rank of spell your ceremonial knife can hold increases by 1.</p>"
+        },
+        "Devour Misfortune": {
+            "name": "Devour Misfortune",
+            "description": "<p><strong>Trigger</strong> You would be affected by a mental or misfortune effect.</p>\n<hr />\n<p>You consume bad luck before it can even affect you. If the effect requires a save, you treat your degree of success as one better and if the effect requires you to roll twice and take the worse result, you only roll once. In addition, you gain temporary Hit Points equal to half your level that last for 1 minute.</p>"
+        },
+        "Hexed Name": {
+            "name": "Hexed Name",
+            "description": "<p>You have enchanted your name in such a way that if it is ever uttered aloud, you are aware of it. When a creature utters your name aloud, they must attempt a @Check[type:will|dc:resolve(@actor.system.attributes.spellDC.value)]. If a creature fails its save, you learn their name and vague details about the creature, and if the creature critically fails their save you also learn their exact location.</p>\n<p>Once per day, if a creature utters your name 3 times in quick succession, you can transport yourself to their location as a 3-action activity with the effects of @UUID[Compendium.pf2e.spells-srd.Item.69L70wKfGDY66Mk9]{Teleport} cast at a spell rank equal to the highest rank spell you can cast. You can choose to ignore the use of your name by specific creatures or the use of your name entirely, but if you do so, they remain ignored until you decide to allow it again.</p>"
+        },
+        "Witch's Bottle+": {
+            "name": "Witch's Bottle+",
+            "description": "<p>You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.0LjAMzxSwfJbNEE4]{Witch's Bottle} hex.</p>",
+            "prerequisites": [
+                {
+                    "value": "Cauldron"
+                }
+            ]
+        },
+        "Murksight+": {
+            "name": "Murksight+",
+            "description": "<p>Your vision pierces through darkness, illusions, weather, and other effects. You don't take circumstance penalties to attacks or Perception checks if a creature is concealed to you, and when you target concealed creatures you don't require a flat check to succeed.</p>"
+        },
+        "Major Essence Practicum": {
+            "name": "Major Essence Practicum",
+            "description": "<p>You have learned to wield the essences of magic so easily, you blur the lines between spellcasting traditions. You gain another spell slot from your @UUID[Compendium.witches-remaster.witches-remaster-feats.Item.CrHzj4rzXMwt5AdJ]{Greater Essence Practicum} which you can only use to prepare the other spell you gained from @UUID[Compendium.witches-remaster.witches-remaster-feats.Item.IFja5U3E6DHivhJW]{Essence Practicum}.</p>",
+            "prerequisites": [
+                {
+                    "value": "Greater Essence Practicum"
+                }
+            ]
+        },
+        "Hexing Familiar": {
+            "name": "Hexing Familiar",
+            "description": "<p>You prioritize your hexes so that your familiar is able to operate more effectively and safely. You learn the other hex spell you did not choose at level 1, typically either @UUID[Compendium.pf2e.spells-srd.Item.aq1yonHeYpbaj3XI]{Patron's Puppet} or @UUID[Compendium.pf2e.spells-srd.Item.rMOI8JFJ0nT2mrCF]{Phase Familiar}.</p>",
+            "prerequisites": [
+                {
+                    "value": "initial lesson"
+                }
+            ]
+        },
+        "Rites Of Convocation+": {
+            "name": "Rites Of Convocation+",
+            "description": "<p>Your patron grants you the power to summon other creatures to aid you. Choose one summon spell (such as @UUID[Compendium.pf2e.spells-srd.Item.4YnON9JHYqtLzccu]{Summon Animal}, @UUID[Compendium.pf2e.spells-srd.Item.lKcsmeOrgHtK4xQa]{Summon Construct}, and so forth) that appears on the spell list of your spellcasting tradition. You can spend 10 minutes in communion with your familiar to replace one spell you've prepared in one of your witch spell slots with the spell you chose, heightened to the same rank. The spell you replaced must be of at least the summon spell's minimum spell rank.</p>\n<p>Once per day, you can swap out an appropriate spell as a single action with the concentrate trait.</p>"
+        },
+        "Patron's Form": {
+            "name": "Patron's Form",
+            "description": "<p>You transform as your patron so desires, giving you new grand powers to come with your change in appearance. For example, a servant to the @UUID[Compendium.witches-remaster.witches-remaster-patrons.Item.J4sdoSsxrw2X5e4k]{Silhouette of the Leviathan} may grow scales and gills, a @UUID[Compendium.witches-remaster.witches-remaster-patrons.Item.wkg52K59bnXdlqPV]{Calamity Incarnate} witch might sprout monstrous wings and horns and a @UUID[Compendium.pf2e.classfeatures.Item.ghIsqhEsJTvjJiNl]{Spinner of Threads} witch may grow a third eye. When you choose the abilities your familiar has during your daily preparations, you also gain any pet abilities your familiar has until your next daily preparations. If your familiar is a specific familiar, you gain any granted pet abilities it has.</p>\n<p>Once per day, you can cast a battleform spell that appears on your tradition’s spell list heightened to a rank equal to half your level rounded up that would be appropriate for your patron.</p>"
+        }
+    }
+}

@@ -1,0 +1,462 @@
+{
+    "label": "Clerics+ Features",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Keeper": {
+            "name": "Keeper",
+            "description": "<p>Your vocation is to protect that which your deity and faith holds dear. You might be responsible for a particular shrine, a person bequeathed with a particularly important text, or the personal guard for a chosen of the faith, but whatever your methods, your end goal is keep the safety of a ward of your faith.</p>\n<p><strong>Requirements </strong>Choose an item or location that is sacred to your faith when you select this vocation as your faith’s ward.</p>\n<p><strong>Additional Edict</strong> You must protect your faith’s ward from harm or from falling into the wrong hands.</p>\n<p><strong>Additional Anathema</strong> You must never allow harm to come to your ward or recklessly risk it being harmed.</p>\n<p><strong>Alternate Domains</strong> You replace your alternate domains with the duty or protection domains.</p>\n<p><strong>Cleric Spells</strong> You replace a spell of equal or higher rank with <em>@UUID[Compendium.pf2e.spells-srd.onjZCEHs3JJJRTD0]{Peaceful Bubble}</em> as a 4th-rank spell. If your deity would already grant you a 4th-rank spell, you must select that spell when choosing what spell to replace. If you do not have a spell of equal or higher rank, you must replace your highest rank spell.</p>\n<p><strong>Divine Skill</strong> You replace your deity’s divine skill with Crafting if you selected an item or Society if you selected a location.</p>\n<p><strong>Favored Weapon</strong> For you, your deity does not have a favored weapon. When you make a skill check with your divine skill that involves the use of your ward or your ward as a target, you gain a +1 circumstance bonus to your check. When you would become an expert in your deity’s favored weapon, when you get a critical failure on these checks with your ward, you get a failure instead.</p>"
+        },
+        "Divine Interrogation": {
+            "name": "Divine Interrogation",
+            "description": "<p>You use a divinely inspired line of questions to interrogate with cold ease. You can spend 1 minute to @UUID[Compendium.pf2e.actionspf2e.tHCqgwjtQtzNqVvd]{Coerce} a creature using Religion instead of Intimidation in order to gain the answer of a single question. If you end the interrogation there, the creature will not worsen their attitude later. If the target of your Coerce is a creature that violates your deity’s edicts or anathema, either by their nature or from acts they have committed, you treat your degree of success as one better.</p>"
+        },
+        "Final Doctrine (Armorclad)": {
+            "name": "Final Doctrine (Armorclad)",
+            "description": "<p>You gain master proficiency with unarmored, light, medium, and heavy armor, spell attack modifier, and spell DC.</p>"
+        },
+        "Exocommunication": {
+            "name": "Exocommunication",
+            "description": "<p>You have studied the teachings of practically all faiths by now—specifically in order to tear down the mistakes of other faithful folk. When you successfully Strike the target of your @UUID[Compendium.clerics-remaster.clerics-actions.yq3ipSNC3UJQW6C9]{Wield the Will}, you can use your reaction to rebuke by making a Religion check against their Will DC. If you succeed, the creature takes a –2 status penalty to their Religion checks and to attacks, checks, or DCs with the divine trait for 1 round, or 1 minute if your check was a critical success. Regardless of the result, the target is then immune to this effect for 10 minutes.</p>\n<p>@UUID[Item.NflEp2MZhDrakaNe]{Effect: Excommunication}</p>"
+        },
+        "Second Decree (Secrets)": {
+            "name": "Second Decree (Secrets)",
+            "description": "<p>You have employed expert strategy in your attacks. You become an expert with your deity's favored weapon, martial weapons of your deity’s favored weapon group, simple weapons, unarmed attacks. When you make a Strike using your result from Wield the Will, you deal an additional 1d4 spirit damage. At 7th level when you would normally gain these benefits, you instead become a master in Perception. When you would become a master in Perception at 15th level you instead become legendary in Perception in addition to the normal benefits of your fifth doctrine.</p>"
+        },
+        "Decree of Secrets": {
+            "name": "Decree of Secrets",
+            "description": "<p>Your deity has granted you a decree that divinely empowers your mind with a mysterious and shadowy calling. This call can manifest in returning a stolen coin of Cailean, infiltrating angelic cults as an acolyte of Asmodeus, or assassinating those that would gain immortality as a servant to Pharasma. No matter the task, you are willing to take lethal measures to ensure it is complete.</p>",
+            "prerequisites": [
+                {
+                    "value": "Seeker Doctrine"
+                }
+            ]
+        },
+        "Battle-Lust": {
+            "name": "Battle-Lust",
+            "description": "<p>The divine ecstasy of warfare surges through you in combat, and you embrace it wholly. You gain the zeal domain as an alternate domain, and gain the <em>@UUID[Compendium.pf2e.spells-srd.W37iBXLsY2trJ1rS]{Weapon Surge}</em> focus spell.</p>"
+        },
+        "Fifth Doctrine (Armorclad)": {
+            "name": "Fifth Doctrine (Armorclad)",
+            "description": "<p>Your proficiency rank for Fortitude saves increases to master. When you roll a success at a Fortitude save, you get a critical success instead.</p>"
+        },
+        "Sacred Lair": {
+            "name": "Sacred Lair",
+            "description": "<p>Your sacred animal creates a small demiplane that you and your allies can enter. It can create a rift to this demiplane (which has an area of 40 feet and resembles the creature's natural habitat) as a 1 minute activity. Delicious and refreshing food and water can be found in this demiplane, and resting here feels supernaturally comfortable. You can leave items in the demiplane and retrieve them later. When you wish to leave the demiplane, you may do so as a 1 minute activity, returning to where you were before you left. When you and your allies rest within your sacred animal’s lair, you regain twice the number of Hit Points you normally would and you gain a +2 status bonus to saves against diseases that are afflicting you or your allies.</p>"
+        },
+        "Proselytizer": {
+            "name": "Proselytizer",
+            "description": "<p>Your vocation is to pronounce your faith when given opportunities to spread it. You might do this through giving powerful speeches to congregations, subtle destabilization of opposing churches, or simply by spreading the word of your deity to anyone who will listen. Whatever your methods, your end goal is to draw more to your faith.</p>\n<p><strong>Additional Edict</strong> You must attempt to convert ideal candidates to your faith when presented an opportunity.</p>\n<p><strong>Additional Anathema</strong> You must never cause an existing devotee in your deity’s favor to leave the faith or fall out of favor.</p>\n<p><strong>Alternate Domains</strong> You replace your alternate domains with the cities or confidence domains.</p>\n<p><strong>Cleric Spells</strong> You replace a spell of equal or higher rank with <em>@UUID[Compendium.pf2e.spells-srd.IihxWhRfpsBgQ5jS]{Enthrall}</em> as a 3rd-rank spell. If your deity would already grant you a 3rd-rank spell, you must select that spell when choosing what spell to replace.</p>\n<p><strong>Divine Skill</strong> You replace your deity’s divine skill with Diplomacy.</p>\n<p><strong>Favored Weapon</strong> For you, your deity does not have a favored weapon but instead you gain a common 1st-level skill feat for Diplomacy. When you would become an expert in your deity’s favored weapon, you instead select another common 1st-level skill feat for Diplomacy.</p>"
+        },
+        "Super Toughness": {
+            "name": "Super Toughness",
+            "description": "<p>SUPER TOUGH!</p>"
+        },
+        "Warrior's Commitment": {
+            "name": "Warrior's Commitment",
+            "description": "<p>You gain a fighter class feat equal to half your level for which you meet the prerequisites and you can select additional fighter feats in place of cleric feats that meet this criteria. You must have the warrior’s focus blessing to select this.</p>"
+        },
+        "Speak Before God": {
+            "name": "Speak Before God",
+            "description": "<p>Your questions are pointed and chilling. When you use Religion to @UUID[Compendium.pf2e.actionspf2e.tHCqgwjtQtzNqVvd]{Coerce}, you can do so as a 3-action activity instead of taking 1 minute but you take a –5 penalty to the check. If you succeed at the check the creature answers one of your questions as normal and the target becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}. You must have the divine interrogation blessing to select this.</p>"
+        },
+        "Whisphered Prayer": {
+            "name": "Whisphered Prayer",
+            "description": "<p>Even in silence, you guide from the shadows. Once per hour when you use @UUID[Compendium.clerics-remaster.clerics-actions.yq3ipSNC3UJQW6C9]{Wield the Will}, you can choose to spend a single action to whisper a prayer, granting the result of your Wield the Will to a willing ally within 30 feet instead of yourself. The ally must be willing to accept your whispered prayer and they must target the subject of your Seek the Will with a Strike to use the result. You can choose to whisper this prayer after you know the result of your Wield the Will. This has the auditory trait.</p>"
+        },
+        "Warrior's Reaction": {
+            "name": "Warrior's Reaction",
+            "description": "<p>Your god opens your insights to allow warrior responses. You gain @UUID[Compendium.pf2e.actionspf2e.KAVf7AmRnbCAHrkT]{Reactive Strike}.</p>"
+        },
+        "Blessed Support": {
+            "name": "Blessed Support",
+            "description": "<p>Your sacred animal has learned to support you in unique ways. During your daily preparations, choose an ally to be blessed by your sacred animal. Your sacred animal can apply the benefits of its support activity to the chosen ally instead of yourself when it takes the support action.</p>"
+        },
+        "Many Eyes of God": {
+            "name": "Many Eyes of God",
+            "description": "<p>There's no hiding from you or your deity. You gain the ability to cast <em>@UUID[Compendium.pf2e.spells-srd.LQzlKbYjZSMFQawP]{Locate}</em> by expending a harm or heal spell slot from your divine font slots. The spell rank is equal to the expended spell. You can Sustain the spell when you @UUID[Compendium.clerics-remaster.clerics-actions.Z1OhAfxlOY718JP3]{Seek the Will} or @UUID[Compendium.clerics-remaster.clerics-actions.yq3ipSNC3UJQW6C9]{Wield the Will} actions, so long as the target creature is the subject of the spell or is in possession of the subject of your spell.</p>"
+        },
+        "Deific Operative": {
+            "name": "Deific Operative",
+            "description": "<p>You are among the most trusted agents of the church, and are shielded from detection by your god. Detection, revelation, and scrying effects pass right over you, your possessions, and your auras, detecting nothing unless the detecting effect has a counteract level of 10 or higher. For example, detect magic would still detect other magic in the area but not any magic on you, truesight wouldn't reveal you, locate or scrying wouldn't find you, and so on.</p>"
+        },
+        "Third Doctrine (Seeker)": {
+            "name": "Third Doctrine (Seeker)",
+            "description": "<p>You gain expert proficiency with your deity's favored weapon, simple weapons, and unarmed attacks. When you make a Strike using your result from Wield the Will, you deal an additional 1d4 spirit damage. When you critically succeed at an attack roll using these weapons, you apply the weapon’s critical specialization effect; you can use your spell DC in place of your class DC.</p>"
+        },
+        "Fist of the Acolyte": {
+            "name": "Fist of the Acolyte",
+            "description": "<p>Your weapon flies from your hand into your foes, before swinging back into your grasp. Choose a weapon which you have used @UUID[Compendium.pf2e.feats-srd.7RFjTTzznsdPcaYB]{Emblazon Armament}. The weapon gains the thrown 20 feet trait and functions as if it had the returning rune while you are wielding it. If the weapon is a one-handed weapon, the range of its thrown trait increases to 40 feet.</p>\n<p>@UUID[Compendium.clerics-remaster.clerics-effects.Item.Nwj8rKx1QpilQft6]{Effect: Fist of the Acolyte}</p>"
+        },
+        "Many Faces of God": {
+            "name": "Many Faces of God",
+            "description": "<p>Your deity guides you to walk anywhere, no matter the risks. You gain the ability to cast <em>@UUID[Compendium.pf2e.spells-srd.i35dpZFI7jZcRoBo]{Illusory Disguise}</em> by expending a harm or heal spell slot from your divine font slots and it gains the subtle trait. The spell rank is equal to the expended spell.</p>"
+        },
+        "Fourth Doctrine (Armorclad)": {
+            "name": "Fourth Doctrine (Armorclad)",
+            "description": "<p>Your proficiency ranks for the spell attack modifier and spell DC statistics to expert.</p>"
+        },
+        "Armorclad": {
+            "name": "Armorclad",
+            "description": "<p>You follow your deity’s will into places of danger, combining divine protection with sacred steel to protect you from all threats. This doctrine functions as the warpriest doctrine for prerequisites and for the purposes of abilities that function based on your doctrine.</p>\n<hr />\n<p>The armorclad is an alternate option for the warpriest doctrine which leans into a more defensive nature than the original doctrine. When selecting feats or options, such as the Paragon class archetype, the armorclad and warpriests doctrines can be used interchangeably for the purposes of selection and prerequisites.</p>\n<hr />\n<p><strong>First Doctrine (1st): </strong>You’re trained in light, medium and heavy armor, simple weapons and martial weapons of your deity’s favored weapon group, and your deity’s favored weapon if it is advanced. You also gain the @UUID[Compendium.pf2e.classfeatures.eZNCckLzbH3GyncH]{Shield Block} general feat. If your deity’s weapon is simple, you gain the @UUID[Compendium.pf2e.feats-srd.DfLkIIg2reyYW3a8]{Deadly Simplicity} cleric feat. At 13th level, if you gain the divine defense class feature, you also gain expert proficiency in light, medium, and heavy armor.</p>\n<p><strong>Second Doctrine (3rd):</strong> Your proficiency rank for Fortitude saves increases to expert.</p>\n<p><strong>Third Doctrine (7th): </strong>You gain expert proficiency with unarmed attacks, simple weapons, and martial weapons of your deity’s favored weapon group, and your deity’s favored weapon if it is advanced. When you critically succeed at an attack roll using these weapons, you apply the weapon’s critical specialization effect; you can use your spell DC in place of your class DC.</p>\n<p><strong>Fourth Doctrine (11th):</strong> Your proficiency ranks for the spell attack modifier and spell DC statistics to expert.</p>\n<p><strong>Fifth Doctrine (15th):</strong> Your proficiency rank for Fortitude saves increases to master. When you roll a success at a Fortitude save, you get a critical success instead.</p>\n<p><strong>Final Doctrine (19th):</strong> You gain master proficiency with unarmored, light, medium, and heavy armor, spell attack modifier, and spell DC.</p>"
+        },
+        "Third Doctrine (Armorclad)": {
+            "name": "Third Doctrine (Armorclad)",
+            "description": "<p>You gain expert proficiency with unarmed attacks, simple weapons, and martial weapons of your deity’s favored weapon group, and your deity’s favored weapon if it is advanced. When you critically succeed at an attack roll using these weapons, you apply the weapon’s critical specialization effect; you can use your spell DC in place of your class DC.</p>"
+        },
+        "Strength to Stand": {
+            "name": "Strength to Stand",
+            "description": "<p>Divine power bolsters your body, keeping you from falling to your foes. Once per hour, as a reaction when you would be reduced to 0 Hit Points, you may expend one of your harm or heal to Cast the 1-action version of the spell on yourself that does not provoke reactions. You regain Hit Points before the triggering damage is dealt.</p>"
+        },
+        "Final Decree (Secrets)": {
+            "name": "Final Decree (Secrets)",
+            "description": "<p>Choose one major blessing of secrets, either from the following or from other deific blessings to which you have access.</p>"
+        },
+        "Divine Flight": {
+            "name": "Divine Flight",
+            "description": "<p>Your sacred animal grows wings, levitates, or another means by which it can fly. Your sacred animal gains a fly Speed of 25 feet. If your sacred animal already possessed a means to fly, it increases its fly Speed by 15 feet.</p>\n<p>@UUID[Compendium.clerics-remaster.clerics-effects.Item.1jgAeCC94vDUEYL7]{Effect: Divine Flight}</p>"
+        },
+        "Clinician": {
+            "name": "Clinician",
+            "description": "<p>You are sworn to help those who are wounded, sick or otherwise in need of medical treatment. From selfless healers of Sarenrae to extortionate practitioners of Asmodeus, you walk among those who safeguard the faithful wherever you travel.</p>\n<p><strong>Additional Edict</strong> heal those who are in need according to the will of your deity.</p>\n<p><strong>Additional Anathema</strong> intentionally worsen the condition of your patient.</p>\n<p><strong>Alternate Domains</strong> You replace your alternate domains with the healing or pain domains.</p>\n<p><strong>Cleric Spells</strong> You replace a spell of equal or higher rank with <em>@UUID[Compendium.pf2e.spells-srd.szIyEsvihc5e1w8n]{Soothe}</em> as a 1st-rank spell. If your deity would already grant you a 1st-rank spell, you must select that spell when choosing what spell to replace.</p>\n<p><strong>Divine Skill</strong> You replace your deity’s divine skill with Medicine.</p>\n<p><strong>Favored Weapon</strong> For you, your deity does not have a favored weapon but instead you gain a common 1st-level skill feat for Medicine. When you would become an expert in your deity’s favored weapon, you instead select another common 1st-level skill feat for Medicine.</p>"
+        },
+        "First Decree (Might)": {
+            "name": "First Decree (Might)",
+            "description": "<p>Your key ability attribute is either Strength or Dexterity. You gain your second doctrine at 1st level instead of 3rd. When you would gain the benefits of your second doctrine, you instead gain the @UUID[Compendium.pf2e.feats-srd.7RFjTTzznsdPcaYB]{Emblazon Armament} cleric feat or another class feat to which you have access if you already possessed Emblazon Armament.</p>\n<p>Choose one blessing of might.</p>"
+        },
+        "Destined Strike": {
+            "name": "Destined Strike",
+            "description": "<p>our deity guides your blade in times of strife. You gain the ability to cast sure strike by expending a harm or heal spell slot from your divine font spell slots. The spell rank is equal to the expended spell.</p>"
+        },
+        "Fifth Doctrine (Seeker)": {
+            "name": "Fifth Doctrine (Seeker)",
+            "description": "<p>Your proficiency rank in Perception increases to master. Your Perception DC to lie to you increases by 2 and you gain a +2 circumstance bonus to Sense Motive and to see through disguises.</p>"
+        },
+        "Final Doctrine (Seeker)": {
+            "name": "Final Doctrine (Seeker)",
+            "description": "<p>You gain master proficiency with your deity’s favored weapon, simple weapons, unarmed attacks, spell attack modifier, and spell DC. The additional spirit damage to your Strikes when you use the result of your Wield the Will increases to 2d4.</p>"
+        },
+        "Final Decree (Might)": {
+            "name": "Final Decree (Might)",
+            "description": "<p>Choose one major blessing of might, either from the following or from other deific blessings to which you have access.</p>"
+        },
+        "Aspect of War": {
+            "name": "Aspect of War",
+            "description": "<p>You channel the fury of the gods directly through you, leaving you nigh-invulnerable. When you use the @UUID[Compendium.clerics-remaster.clerics-actions.7oi9FIzMHsI7Jgm6]{Fervor} action, you gain resistance equal to half your level to physical damage until the end of your next turn.</p>"
+        },
+        "Proselytizer Skill Feat": {
+            "name": "Proselytizer Skill Feat",
+            "description": "<p>When you would become an expert in your deity’s favored weapon, you instead select another common 1st-level skill feat for Diplomacy.</p>"
+        },
+        "Greater Enchanted Strikes": {
+            "name": "Greater Enchanted Strikes",
+            "description": "<p>Your sacred animal’s enchanted strikes become more powerful. You gain the effects of the greater weapon property rune you selected for your enchanted strikes blessing. You must have the enchanted strikes blessing to take this blessing.</p>"
+        },
+        "Godspeaker": {
+            "name": "Godspeaker",
+            "description": "<p>Your sacred animal speaks an ancient language that can be understood by all that hear it. It is permanently under the effects of the <em>@UUID[Compendium.pf2e.spells-srd.SwUiVavHKMWG7t5K]{Truespeech}</em> spell. Once per week, you may commune with your sacred animal to glean divine guidance from it by spending 1 hour in prayer with your sacred animal. This produces the effect of a 6th-rank <em>@UUID[Compendium.pf2e.spells-srd.7DN13ILADW2N9Z1t]{Commune}</em> ritual. You must have the Outer Speech blessing to take this blessing.</p>"
+        },
+        "Clinician Skill Feat": {
+            "name": "Clinician Skill Feat",
+            "description": "<p>When you would become an expert in your deity’s<br />favored weapon, you instead select another common 1st-level<br />skill feat for Medicine.</p>"
+        },
+        "Feared by the Other": {
+            "name": "Feared by the Other",
+            "description": "<p>Your sacred animal gains a @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.etMnv73EIdEZrYYu]{Frightful Presence} against specific creatures determined by your deity. Your sacred animal’s frightful presence applies to aeons, celestials, fiends, proteans, or another thematic creature type appropriate for your deity, such as undead for Pharasma (subject to GM discretion).</p>"
+        },
+        "First Decree (Secrets)": {
+            "name": "First Decree (Secrets)",
+            "description": "<p>Your key ability attribute is either Strength or Dexterity. You’re also trained in martial weapons of your deity’s favored weapon group in addition to the weapons from your first doctrine. You gain the Wield the Will action at 1st level instead of 3rd level. When you would gain Wield the Will at 3rd level, you instead gain an additional skill increase in a skill of your choice. When you use Fervor you can Seek the Will against one creature you can see as part of the same action.</p>\n<p>Choose one blessing of secrets.</p>"
+        },
+        "Steel-Wielder": {
+            "name": "Steel-Wielder",
+            "description": "<p>Your sacred animal gains the ability to manifest your deity’s weapon. Your animal companion gains an unarmed attack that has the same damage die and traits as your deity’s favored weapon. It can manifest or dismiss this unarmed attack as a single action with the concentration trait and it cannot make Strikes with other unarmed attacks while this unarmed attack is manifested. You can only select this blessing if your deity’s favored weapon is a simple weapon or a one-handed martial weapon.</p>"
+        },
+        "Beacon": {
+            "name": "Beacon",
+            "description": "<p>You are a leader, an inspiration and a guide to the members of your flock. Empowered by the divine, you do what you can to motivate others to do as you do; fighting on the front lines, acting with honor and always upholding your faith. With your deity's symbol in one hand and the heart of a lion, none shall keep you or your allies from accomplishing your goals.</p>\n<p><strong>Additional Edict</strong> lead and inspire others to do great things as dictated by your deity's goals.</p>\n<p><strong>Additional Anathema</strong> show weakness or hesitation that leads to consequences of significant nature.</p>\n<p><strong>Alternate Domains</strong> You replace your alternate domains with the honor or hope domains.</p>\n<p><strong>Cleric Spells</strong> You replace a spell of equal or higher level with endure as a 1st-rank spell. If your deity would already grant you a 1st-rank spell, you must select that spell when choosing what spell to replace.</p>\n<p><strong>Divine Skill</strong> You replace your deity’s divine skill with Diplomacy</p>\n<p><strong>Favored Weapon</strong> For you, your deity does not have a favored weapon. Instead, you can spend a single action to raise your deity's focus to grant allies within 15 feet a +1 status bonus against emotion effects until the beginning of your next turn. When you would become an expert in your deity’s favored weapon, you instead increase the range to 30 feet.</p>"
+        },
+        "Fourth Decree (Unity)": {
+            "name": "Fourth Decree (Unity)",
+            "description": "<p>You gain a 4th-rank spell slot which you can use to prepare cleric spells. At 15th level, you gain a 5th-rank spell slot, at 17th level you gain a 6th-rank spell slot, and at 19th level when you would gain a 10th-rank slot you instead gain 1 additional slot of your highest rank spell.</p>"
+        },
+        "Clergy Detective": {
+            "name": "Clergy Detective",
+            "description": "<p>You have been entrusted with several investigations on behalf of the church. During your daily preparations, you can pray to your deity to become temporarily trained in two skills with the Recall Knowledge action. This proficiency lasts until you prepare again. As this proficiency is temporary, you can't use it as a prerequisite for a skill increase or a permanent character option like a feat.</p>"
+        },
+        "Flawless Onslaught": {
+            "name": "Flawless Onslaught",
+            "description": "<p>You strike an opponent in such a way that it pierces through their greatest defenses. When you @UUID[Compendium.clerics-remaster.clerics-actions.yq3ipSNC3UJQW6C9]{Wield the Will}, you can attempt a Recall Knowledge using your Perception modifier to learn of a creature's highest weakness value. If you succeed you can alter the spirit damage against creatures you Strike with the result of your Wield the Will to the damage type of the weakness you learned for 1 minute or until you Dismiss it.</p>"
+        },
+        "Advanced Favored Weapon": {
+            "name": "Advanced Favored Weapon",
+            "description": "<p>Choose a single advanced weapon within the same weapon group as your deity’s favored weapon. You gain access to that weapon, and for the purpose of determining your proficiency, that weapon is a martial weapon.</p>"
+        },
+        "Sacred Sight": {
+            "name": "Sacred Sight",
+            "description": "<p>Your sacred animal allows you to see as it sees. Once per 10 minutes, you can use a single action with the concentrate trait to project your senses into your sacred animal. When you do, you lose all sensory information from your own body, but can sense through your sacred animal’s body for up to 1 minute. You can Dismiss this effect.</p>"
+        },
+        "Empowering Presence": {
+            "name": "Empowering Presence",
+            "description": "<p>Your fierce battle presence influences your allies or enemies. Weapons you wield gain the following critical specialization effect: You gain the benefits of a 1st-rank <em>@UUID[Compendium.pf2e.spells-srd.7ZinJNzxq0XF0oMx]{Bane}</em> or <em>@UUID[Compendium.pf2e.spells-srd.XSujb7EsSwKl19Uu]{Bless}</em> spell for 1 minute, bane if your divine font is harm or bless if your divine font is heal. When you get a successful Strike while this effect is active, the emanation increases by 5 feet.</p>"
+        },
+        "First Doctrine (Armorclad)": {
+            "name": "First Doctrine (Armorclad)",
+            "description": "<p>You’re trained in light, medium and heavy armor, simple weapons and martial weapons of your deity’s favored weapon group, and your deity’s favored weapon if it is advanced. You also gain the @UUID[Compendium.pf2e.classfeatures.eZNCckLzbH3GyncH]{Shield Block} general feat. If your deity’s weapon is simple, you gain the @UUID[Compendium.pf2e.feats-srd.DfLkIIg2reyYW3a8]{Deadly Simplicity} cleric feat. At 13th level, if you gain the divine defense class feature, you also gain expert proficiency in light, medium, and heavy armor.</p>"
+        },
+        "Wall of Iron": {
+            "name": "Wall of Iron",
+            "description": "<p>You become a veritable bulwark while your shield is raised. While your shield is raised, adjacent allies also benefit from your circumstance bonus to AC. Additionally, your circumstance bonus to AC from your shield also applies to your saves against spells and other magical effects.</p>"
+        },
+        "Reckless Conquest": {
+            "name": "Reckless Conquest",
+            "description": "<p>As you wade into battle, all that concerns you is victory. When you expend a <em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{Harm}</em> or <em>@UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{Heal}</em> spell slot to use @UUID[Compendium.clerics-remaster.clerics-actions.7oi9FIzMHsI7Jgm6]{Fervor}, you can choose to make your attacks radiate energy. Your Strikes gain the splash trait for the duration of your Fervor and deal splash damage equal to half your level until the end of your next turn. This splash damage is spirit damage or the same type as your Fervor damage if your choice of Fervor deals damage. You are immune to your own splash damage from Fervor.</p>\n<p>@UUID[Compendium.clerics-remaster.clerics-effects.Item.WjmYalwPFEfzsSD9]{Effect: Reckless Conquest}</p>"
+        },
+        "Teacher": {
+            "name": "Teacher",
+            "description": "<p>Your vocation is to instruct others within your faith and guide them through the teachings. You might do this through strict lessons held in a classroom, challenges of might performed by way of physical obstacles, or by presenting the standard teaching from an unusual perspective to emphasize its meaning, but whatever your methods, your end goal is to teach others of your faith.</p>\n<p><strong>Additional Edict</strong> You must seek to drive understanding of your deity at all turns, and challenge those that misunderstand your faith.</p>\n<p><strong>Additional Anathema</strong> You must never destroy, hide, or otherwise prevent others from learning about your faith unless the object of learning is by its nature meant to be secret.</p>\n<p><strong>Alternate Domains</strong> You replace your alternate domains with the knowledge or truth domains.</p>\n<p><strong>Cleric Spells </strong>You replace a spell of equal or higher rank with <em>@UUID[Compendium.pf2e.spells-srd.ZYoC630tNGutgbE0]{Hypercognition}</em> as a 3rd-rank spell. If your deity would already grant you a 3rd-rank spell, you must select that spell when choosing what spell to replace.</p>\n<p><strong>Divine Skill </strong>You replace your deity’s divine skill with a Lore skill associated with your deity.</p>\n<p><strong>Favored Weapon</strong> For you, your deity does not have a favored weapon but instead you gain the @UUID[Compendium.pf2e.feats-srd.sMm0UfYxEPpq2Yzd]{Experienced Professional} skill feat for your divine skill. When you would gain increased proficiency in your deity’s favored weapon, you instead become an expert in your divine skill and gain the @UUID[Compendium.pf2e.feats-srd.H3I2X0f7v4EzwxuN]{Automatic Knowledge} skill feat for that skill. If you were already an expert in your divine skill, you instead become trained in another Lore skill appropriate for your deity.</p>"
+        },
+        "Deific Beam": {
+            "name": "Deific Beam",
+            "description": "<p>Your sacred animal gains a mighty beam of sacred energy they can blast into others. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 spirit damage with the kickback, spirit, and unarmed traits. Your sacred animal does not take the –2 penalty for firing a kickback weapon while prone, even if their Strength isn't high enough to avoid the penalty.</p>\n<p>@UUID[Compendium.clerics-remaster.clerics-effects.Item.Pn3bqVeLEd0HVfu0]{Effect: Deific Beam}</p>"
+        },
+        "Fourth Doctrine (Seeker)": {
+            "name": "Fourth Doctrine (Seeker)",
+            "description": "<p>Your proficiency ranks for the spell attack modifier and spell DC statistics to expert.</p>"
+        },
+        "Fourth Decree (Might)": {
+            "name": "Fourth Decree (Might)",
+            "description": "<p>Your proficiency ranks for weapons you gained proficiency from your doctrine increases to master. At 15th level, you gain greater weapon specialization. At 19th level, if your doctrine would grant you master proficiency in your deity’s favored weapon, you instead gain master proficiency with unarmored, light, and medium armor.</p>"
+        },
+        "Sacred Executioner": {
+            "name": "Sacred Executioner",
+            "description": "<p>You can sense the presence of shapeshifters and invisible creatures through a honed sense of suspicion. When in the presence of creatures that are hidden, or undetected, you automatically detect that something is amiss after spending at least 1 round within 30 feet of them. This acts as an imprecise sense. In addition, you gain a +4 status bonus to Perception checks to detect when a creature is disguised or is using Impersonate. When you detect a creature with this sense, you may use @UUID[Compendium.clerics-remaster.clerics-actions.Z1OhAfxlOY718JP3]{Seek the Will} on them as a free action.</p>"
+        },
+        "Seeker": {
+            "name": "Seeker",
+            "description": "<p>You are an agent of the church, tasked with seeking out the interests of your faith; lost knowledge, abandoned relics, enemies of your god and heretics within the flock itself.</p>\n<p><strong>First Doctrine (1st): </strong>You’re trained in light armor, and you have expert proficiency in Perception. You gain the Seek the Will action. At 5th level when you would gain the perception expertise class feature, you instead gain expert proficiency in Reflex saves and at 11th level when you would gain the reflex expertise class feature, you instead become expert in Fortitude saves. At 13th level, if you gain the divine defense class feature, you also gain expert proficiency in light armor.</p>\n<p><strong>Second Doctrine (3rd):</strong> You gain the Wield the Will action.</p>\n<p><strong>Third Doctrine (7th): </strong>You gain expert proficiency with your deity's favored weapon, simple weapons, and unarmed attacks. When you make a Strike using your result from Wield the Will, you deal an additional 1d4 spirit damage. When you critically succeed at an attack roll using these weapons, you apply the weapon’s critical specialization effect; you can use your spell DC in place of your class DC.</p>\n<p><strong>Fourth Doctrine (11th):</strong> Your proficiency ranks for the spell attack modifier and spell DC statistics to expert.</p>\n<p><strong>Fifth Doctrine (15th):</strong> Your proficiency rank in Perception increases to master. Your Perception DC to lie to you increases by 2 and you gain a +2 circumstance bonus to Sense Motive and to see through disguises.</p>\n<p><strong>Final Doctrine (19th):</strong> You gain master proficiency with your deity’s favored weapon, simple weapons, unarmed attacks, spell attack modifier, and spell DC. The additional spirit damage to your Strikes when you use the result of your Wield the Will increases to 2d4.</p>"
+        },
+        "Font Connected": {
+            "name": "Font Connected",
+            "description": "<p>Your deity has connected you and your sacred animal through your divine font. When you cast spells from the slots of your divine font, you can use your position or your sacred animal’s position for the spell’s range and area of effect.</p>"
+        },
+        "Show Thyself!": {
+            "name": "Show Thyself!",
+            "description": "<p>Strikes against a creature using your result from Wield the Will have the death trait, causing them to be instantly killed when reduced to 0 Hit Points. When killed in this way, attempts to communicate with it, return it to life, turn it into an undead, or otherwise disturb its afterlife fail unless the effect's counteract level is higher than half your level when you killed the creature (rounded up), or originates from an artifact or a deity. You must have the sacred assassin blessing to select this.</p>"
+        },
+        "Esotericist": {
+            "name": "Esotericist",
+            "description": "<p>Your calling is to investigate the mysterious and unusual aspects of your faith. Whether through being a member of an obscure cult, investigating strange phenomenons associated with your deity or studying long forgotten esoterica your religion has left behind, you are drawn to the more unusual and sometimes bizarre sides of religion.</p>\n<p><strong>Additional Edict</strong> You must seek out strange truths associated with your deity and church.</p>\n<p><strong>Additional Anathema</strong> Allow others outside of your faith to fully understand the secrets of your deity.</p>\n<p><strong>Alternate Domains</strong> You replace your alternate domains with the secrecy or void domains.</p>\n<p><strong>Cleric Spells</strong> You replace a spell of equal or higher rank with one of the following: <em>@UUID[Compendium.pf2e.spells-srd.Mkbq9xlAUxHUHyR2]{Paranoia}</em>, <em>@UUID[Compendium.pf2e.spells-srd.R8bqnYiThB6MYTxD]{Phantom Pain}</em>, <em>@UUID[Compendium.pf2e.spells-srd.xFp4EwVcYwSG336t]{Slither}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.i1TvBID5QLyXrUCa]{Summon Entity}</em>. If your deity would already grant you a spell of that rank, you must select that spell when choosing what spell to replace. If you do not have a spell of equal or higher rank, you must replace your highest rank spell.</p>\n<p><strong>Divine Skill</strong> You replace your deity's divine skill with Occultism.</p>\n<p><strong>Favored Weapon</strong> For you, your deity does not have a favored weapon but instead you gain one of the following skill feats: @UUID[Compendium.pf2e.feats-srd.6O8MoMheHs5hNHX1]{Crystal Healing}, @UUID[Compendium.pf2e.feats-srd.22P7IFyhrF7Fbw8B]{Root Magic}, or @UUID[Compendium.pf2e.feats-srd.lEgYzFHransLkSvI]{Schooled In Secrets}. When you would become an expert in your deity’s favored weapon, you instead select one of the skill feats you didn’t select at first level.</p>"
+        },
+        "Third Decree (Unity)": {
+            "name": "Third Decree (Unity)",
+            "description": "<p>Choose one greater blessing of unity, either from the following or from other deific blessings to which you have access.</p>"
+        },
+        "Passage Finder": {
+            "name": "Passage Finder",
+            "description": "<p>Your deity whispers to draw your attention to secret doors. You gain a +1 circumstance bonus to Perception checks to find secret doors, and Thievery checks to pick locks. Even if you aren’t @UUID[Compendium.pf2e.actionspf2e.TiNDYUGlMmxzxBYU]{Searching}, you get a check to find secret doors that normally require you to be Searching.</p>"
+        },
+        "Heraldic Statue": {
+            "name": "Heraldic Statue",
+            "description": "<p>Your sacred animal turns itself into a physical statue of your deity. It can transform as a 2-action activity that has the manipulate trait, changing from its usual form into a beast-headed statue of stone or other material appropriate for your god. While your sacred animal is a statue, it can't take any actions except to use the same activity to transform back, and it can't defend itself easily, making it off-guard and giving it an additional –2 status penalty to its AC, but gains resistance 5 to all damage . While in this form, all allies within 30 feet receive a +4 status bonus to damage rolls and a +1 status bonus to Will saves and all enemies within 30 feet take a –1 status penalty to their AC and Will saves. If your sacred animal is reduced to 0 Hit Points while in this form, it immediately reverts to its animal form.</p>\n<p>@UUID[Compendium.clerics-remaster.clerics-effects.Item.N0pH4HEBpW35cr1p]{Effect: Heraldic Statue}</p>"
+        },
+        "First Decree (Unity)": {
+            "name": "First Decree (Unity)",
+            "description": "<p>Your key ability attribute is Wisdom. You gain an animal companion which serves as an avatar of your deity or one of its servitors called your sacred animal. When you use Fervor you can also issue a single action Command to your sacred animal as part of the same action, granting it 2 actions for the turn.</p>\n<p>Choose one blessing of unity.</p>"
+        },
+        "Gray Shepherd": {
+            "name": "Gray Shepherd",
+            "description": "<p>In order to carry out the will of your deity and protect the souls of the faithful, you must do what they cannot. You may use your divine font slots to cast either <em>@UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{Heal}</em>  or <em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{Harm}</em>, regardless of font granted by your deity. Once per week, you may make perform an action or activity that would violate one of your edicts or anathema without losing the favor of your deity, though you must still perform the atone ritual within 1 weeks time or the normal consequences of your actions apply.</p>"
+        },
+        "Third Decree (Secrets)": {
+            "name": "Third Decree (Secrets)",
+            "description": "<p>Choose one greater blessing of secrets, either from the following or from other deific blessings to which you have access.</p>"
+        },
+        "Sacred Assassin": {
+            "name": "Sacred Assassin",
+            "description": "<p>You are the blade of your deity, and are skilled with undertaking covert slayings at the behest of the church. When you @UUID[Compendium.clerics-remaster.clerics-actions.yq3ipSNC3UJQW6C9]{Wield the Will}, your agile and finesse weapons and unarmed attacks gain the backstabber and deadly d6 weapon traits. If the weapon or unarmed attack already has the deadly trait, increase the size of the deadly damage die by one step instead of giving it deadly d6.</p>"
+        },
+        "Body of the Chosen": {
+            "name": "Body of the Chosen",
+            "description": "<p>Your deity has blessed the body of your sacred animal. Choose two of the following: acid, cold, electricity, fire, poison, or sonic. Your sacred animal gains resistance equal to half your level against the chosen damage types and gains a weakness equal to half your level to one of its choice.</p>\n<p>@UUID[Compendium.clerics-remaster.clerics-effects.Item.IkCZh6hbFnz162g1]{Effect: Body of the Chosen}</p>"
+        },
+        "Iconoclastic Judgment": {
+            "name": "Iconoclastic Judgment",
+            "description": "<p>Sinful artifacts have no place in this world. You gain the ability to cast <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> by expending a harm or heal spell slot from your divine font slots. The spell rank is equal to the expended spell. If you've had an artifact in your possession for a week, you may perform a sacred ritual to destroy it without meeting the criteria of its Destruction by making a Religion check with a DC equal to the item's level + 20. If you fail, you cannot attempt this again for 1 year.</p>"
+        },
+        "Final Decree (Unity)": {
+            "name": "Final Decree (Unity)",
+            "description": "<p>Choose one major blessing of unity, either from the following or from other deific blessings to which you have access.</p>"
+        },
+        "Fear of God": {
+            "name": "Fear of God",
+            "description": "<p>Your fervor grows more powerful against those in fear. While you are under the effects of Fervor, you deal 4 additional damage to creatures who are @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened} or 6 additional damage if you have master proficiency with the weapon. The type of damage dealt is spirit damage.</p>"
+        },
+        "Hunted by Faith": {
+            "name": "Hunted by Faith",
+            "description": "<p>Your deity leads you to the locations of others by way of prayer. You can use Religion instead of Survival to Track and you gain the @UUID[Compendium.pf2e.feats-srd.urQZwmzg2kS53vd5]{Experienced Tracker} skill feat. If the creature you are tracking is the subject of your @UUID[Compendium.clerics-remaster.clerics-actions.Z1OhAfxlOY718JP3]{Seek the Will} class feature, your circumstance bonus to your check increases to +2.</p>"
+        },
+        "Multiheaded-Form": {
+            "name": "Multiheaded-Form",
+            "description": "<p>Your sacred animal's form shifts wildly, giving it multiple heads. Any ability that would sever a sacred animal’s (such as the @UUID[Compendium.pf2e.equipment-srd.6xaxxKfvXED6LfIY]{Vorpal} weapon property) doesn’t cause the creature to die if it still has its other head, but does cause it to lose one of its actions when it is given commands. Mental effects that target a single creature affect only one of the sacred animal’s heads and the effects apply to only one of its actions each turn. If only one of your sacred animal’s heads was severed, it regrows during your next daily preparations when your deity would normally send you a new companion if it died. If your sacred animal would ever gain more than 2 actions, you decide which head gains the additional action, but action restrictions (such as using Support and attacking in the same turn) apply to both heads.</p>"
+        },
+        "Eater of Avatars": {
+            "name": "Eater of Avatars",
+            "description": "<p>Your sacred animal is feared among servants of enemy faiths, written down in ancient tales as a bringer of great justice or terrible doom. Your sacred animal can choose to gain the benefits of your sanctification and its unarmed attacks gain the appropriate trait for its sanctification. You must be sanctified to select this.</p>\n<p>@UUID[Compendium.clerics-remaster.clerics-effects.Item.aYsgtt7xTtx6QTUx]{Effect: Eater of Avatars (Holy)}</p>\n<p>@UUID[Compendium.clerics-remaster.clerics-effects.Item.EmQNRQGlEeC6O8kb]{Effect: Eater of Avatars (Unholy)}</p>"
+        },
+        "Condemn": {
+            "name": "Condemn",
+            "description": "<p>Your deity gives you the power to condemn others. You can use Religion instead of Intimidation to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} creatures that violate your deity’s edicts or anathema, either by their nature or from acts they have committed. You don’t take a penalty if the creature doesn’t understand your language and mindless creatures are not immune to this Demoralize due to being mindless. You can use your proficiency rank in Religion to meet the requirements of skill feats that require a particular rank in Intimidation.</p>"
+        },
+        "Mighty Justiciar": {
+            "name": "Mighty Justiciar",
+            "description": "<p>You judge the souls of those you slay with steel and determination. When you reduce an enemy creature that damaged you or your allies within the last minute to 0 Hit Points with a Strike, you gain a number of temporary Hit Points equal to your level for 1 minute.</p>"
+        },
+        "Blessed Skill": {
+            "name": "Blessed Skill",
+            "description": "<p>Your deity has imprinted the powers of its divine skill onto your sacred animal. Your sacred animal becomes trained in the divine skill of your deity. At 9th level, it becomes expert in your deity’s divine skill, and at 17th level it becomes a master.</p>\n<p>@UUID[Compendium.clerics-remaster.clerics-effects.Item.M3JteiXSOxREazxy]{Effect: Blessed Skill}</p>"
+        },
+        "Precise Instructions": {
+            "name": "Precise Instructions",
+            "description": "<p>When you use @UUID[Compendium.clerics-remaster.clerics-actions.yq3ipSNC3UJQW6C9]{Wield the Will}, you can choose to Aid an ally on an attack using Religion, so long as they target the subject of your @UUID[Compendium.clerics-remaster.clerics-actions.Z1OhAfxlOY718JP3]{Seek the Will} with the attack.</p>"
+        },
+        "Aesthete": {
+            "name": "Aesthete",
+            "description": "<p>Your vocation is to create beauty in the name of your god, though that definition is often subjective. You might do this through erection of monuments in your deities image, celebrate your deity through magnificent feasts of food you cook, or by simply protecting artistic works of your god. Whatever your methods, your end goal is to spread the beauty of your faith.</p>\n<p><strong>Additional Edict</strong> You must seek to create beauty on behalf of your god that can be witnessed or enjoyed by others or yourself.</p>\n<p><strong>Additional Anathema</strong> You must never destroy art, deface a monument of a non-enemy faith, or otherwise curtail the expression of beauty.</p>\n<p><strong>Alternate Domains </strong>You replace your alternate domains with the creation or artifice domains.</p>\n<p><strong>Cleric Spells</strong> You replace a spell of equal or higher rank with <em>@UUID[Compendium.pf2e.spells-srd.TUj8eugNqAvB1vVR]{Creation}</em> as a 4th-rank spell. If your deity would already grant you a 4th-rank spell, you must select that spell when choosing what spell to replace. If you do not have a spell of equal or higher rank, you must replace your highest rank spell.</p>\n<p><strong>Divine Skill</strong> You replace your deity’s divine skill with Crafting or a Lore associated with your art.</p>\n<p><strong>Favored Weapon</strong> You replace your deity's favored weapon with one of the following weapons most closely associated with your art: @UUID[Compendium.pf2e.equipment-srd.rQWaJhI5Bko5x14Z]{Dagger} or @UUID[Compendium.pf2e.equipment-srd.FibwLZ12EIEwLGhw]{Light Hammer}.</p>"
+        },
+        "Chimeric Beast": {
+            "name": "Chimeric Beast",
+            "description": "<p>Your sacred animal becomes a hybrid between itself and another type of creature. It gains the support benefit of another animal companion type appropriate to this new form.</p>"
+        },
+        "Imposing Hand": {
+            "name": "Imposing Hand",
+            "description": "<p>You gain the ability to cast @UUID[Compendium.pf2e.spells-srd.wzctak6BxOW8xvFV]{Enlarge} by expending a harm or heal spell slot from your divine font slots. If you choose to target yourself with the spell, you reduce the number of actions to Cast the Spell by 1 and it loses the manipulate trait. If you are at least 13th level, this enlarge is heightened to 4th-rank</p>"
+        },
+        "Esotericist Skill Feat": {
+            "name": "Esotericist Skill Feat",
+            "description": "<p>When you would become an expert in your deity’s favored weapon, you instead select one of the skill feats you didn’t select at first level.</p>"
+        },
+        "Faithful Athame": {
+            "name": "Faithful Athame",
+            "description": "<p>Your deity has blessed you with a special knife which has ceremonial powers. You gain a weapon of the knife group which is granted to you by your deity. This weapon becomes your deity’s favored weapon and you gain the @UUID[Compendium.pf2e.feats-srd.DfLkIIg2reyYW3a8]{Deadly Simplicity} cleric feat. While you are wielding this weapon you gain a +1 status bonus to saves against haunts and to skill checks required for casting rituals.</p>"
+        },
+        "Precentor": {
+            "name": "Precentor",
+            "description": "<p>Your vocation is to create music in the name of your god. You might do this through careful composition, celebratory dances or theatrical performances of your deity’s accomplishments, or by simply playing songs on a street corner. Whatever your methods, your end goal is to spread the sound and music of your faith.</p>\n<p><strong>Additional Edict</strong> You must seek to play or spread music of your god that can be witnessed by others or yourself.</p>\n<p><strong>Additional Anathema</strong> You must never disrupt performances for entertainment, or otherwise prevent someone from enjoying good music.</p>\n<p><strong>Alternate Domains</strong> You replace your alternate domains with the passion or soul domains.</p>\n<p><strong>Cleric Spells</strong> You replace a spell of equal or higher rank with <em>@UUID[Compendium.pf2e.spells-srd.Yv3AFIO55FONQYMH]{Sonata Span}</em> as a 2nd-rank spell. If your deity would already grant you a 2nd-rank spell, you must select that spell when choosing what spell to replace.</p>\n<p><strong>Divine Skill</strong> You replace your deity’s divine skill with Performance.</p>\n<p><strong>Favored Weapon</strong> You replace your deity's favored weapon with the following weapon most closely associated with your performance: @UUID[Compendium.pf2e.equipment-srd.79krBL334Kp1RMNB]{Battle Lute} or @UUID[Compendium.pf2e.equipment-srd.0lCXehyFlXdYxDfA]{Bladed Diabolo}.</p>"
+        },
+        "Glorious Purpose": {
+            "name": "Glorious Purpose",
+            "description": "<p>You call down the might of the gods, channeling their awesome power to empower an ally. Instead of targeting yourself with Fervor, you can select an ally within 30 feet to gain the effects of your @UUID[Compendium.clerics-remaster.clerics-effects.nbtHjMtgtxGrl5IK]{Fervor} instead of yourself.</p>"
+        },
+        "Decree of Might": {
+            "name": "Decree of Might",
+            "description": "<p>Your deity has blessed your body, binding you to battle as an ever constant testament to your journey as a herald of your deity. Paragons of might are most common among deities who call clerics to fight, from being called to competitive bouts as a cleric of Irori or constantly striving to achieve justice under the banner of Iomedae. Your arms serve as your scripture, and its words are written in the many dents and stains it collects during your tenure as a paragon.</p>",
+            "prerequisites": [
+                {
+                    "value": "Warpriest Doctrine"
+                }
+            ]
+        },
+        "Ferverent Shield": {
+            "name": "Ferverent Shield",
+            "description": "<p>Your deity grants you fast reflexes with your shield. When you use @UUID[Compendium.clerics-remaster.clerics-actions.7oi9FIzMHsI7Jgm6]{Fervor} you can @UUID[Compendium.pf2e.actionspf2e.xjGwis0uaC2305pm]{Raise a Shield} as part of the same action.</p>"
+        },
+        "Many Bodies of God": {
+            "name": "Many Bodies of God",
+            "description": "<p>The faith of the many is present in the few. You gain the ability to cast <em>@UUID[Compendium.pf2e.spells-srd.2qGqa33E4GPUCbMV]{Humanoid Form}</em> by expending a harm or heal spell slot from your divine font slots and it gains the subtle trait. If you are at least 9th level this humanoid form is heightened to 3rd-rank, and if you are at least 15th level it is heightened to 5th-rank.</p>"
+        },
+        "Summon Weapon": {
+            "name": "Summon Weapon",
+            "description": "<p>Your weapon is summoned to your side by calling on your deity. You can store or retrieve a single weapon you designate during your daily preparations as an Interact action, spawning it in and out of existence on a whim. When you use @UUID[Compendium.clerics-remaster.clerics-actions.7oi9FIzMHsI7Jgm6]{Fervor}, you can Interact to summon your weapon as part of the same action.</p>"
+        },
+        "First Doctrine (Seeker)": {
+            "name": "First Doctrine (Seeker)",
+            "description": "<p>You’re trained in light armor, and you have expert proficiency in Perception. You gain the Seek the Will action. At 5th level when you would gain the perception expertise class feature, you instead gain expert proficiency in Reflex saves and at 11th level when you would gain the reflex expertise class feature, you instead become expert in Fortitude saves. At 13th level, if you gain the divine defense class feature, you also gain expert proficiency in light armor.</p>"
+        },
+        "Second Doctrine (Seeker)": {
+            "name": "Second Doctrine (Seeker)",
+            "description": "<p>You gain the Wield the Will action.</p>"
+        },
+        "Second Decree (Unity)": {
+            "name": "Second Decree (Unity)",
+            "description": "<p>You gain a 1st-rank spell slot which you can use to prepare cleric spells. At 7th level, you gain a 2nd-rank spell slot, and at 9th level you gain a 3rd-rank spell slot.</p>"
+        },
+        "Second Decree (Might)": {
+            "name": "Second Decree (Might)",
+            "description": "<p>You've become an expert in your weapons at the behest of your god. Your proficiency ranks for weapons you gained proficiency from your doctrine increases to expert. At 7th level when you would normally gain expert proficiency in the weapons granted by your doctrine, you instead gain weapon specialization.</p>"
+        },
+        "Warrior's Focus": {
+            "name": "Warrior's Focus",
+            "description": "<p>You gain a level 1 fighter class feat for which you meet the prerequisites.</p>"
+        },
+        "Third Decree (Might)": {
+            "name": "Third Decree (Might)",
+            "description": "<p>Choose one greater blessing of might, either from the following or from other deific blessings to which you have access.</p>"
+        },
+        "Transcendent Mobility": {
+            "name": "Transcendent Mobility",
+            "description": "<p>Your deity has blessed your sacred animal with great speed. Your sacred animal increases its climb Speed, Speed, or swim Speed by 15 feet.</p>\n<p>@UUID[Compendium.clerics-remaster.clerics-effects.Item.Wj57lsWiiesLLb02]{Effect: Transcendent Mobility}</p>"
+        },
+        "Decree of Unity": {
+            "name": "Decree of Unity",
+            "description": "<p>Your deity has blessed your soul, binding you to an extraplanar herald that embodies the will of your deity. This herald uses the mechanics of an animal companion. It usually takes a form that would be appropriate for your deity such as a stag for Erastil, a bird of paradise for Shelyn, or a serpent for Asmodeus (subject to GM discretion).</p>\n<p>Your animal companion is bound by your deity's edicts and anathema and gains a trait that is appropriate for servitors of your deity (such as the fiend trait for Zon-Kuthon or the psychopomp trait for Pharasma). If your animal companion dies or otherwise leaves your service, your deity sends you a new animal companion during your next daily preparations.</p>"
+        },
+        "Bestowed with Shadow": {
+            "name": "Bestowed with Shadow",
+            "description": "<p>The blessings of a deity sometimes come under the guise of darkness. You gain the darkness domain as an alternate domain, and gain the <em>@UUID[Compendium.pf2e.spells-srd.SE0fbgBj7atuukdv]{Cloak of Shadow}</em> focus spell.</p>"
+        },
+        "Cloaked Fervor": {
+            "name": "Cloaked Fervor",
+            "description": "<p>You are adept at ambush and your deity’s fervor aids you in your endeavors. When you take the @UUID[Compendium.pf2e.actionspf2e.IE2nThCmoyhQA0Jn]{Avoid Notice} exploration activity and enter combat, you may use @UUID[Compendium.clerics-remaster.clerics-actions.7oi9FIzMHsI7Jgm6]{Fervor} as a free-action with a trigger of rolling initiative and when you do creatures that haven't acted are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Off-Guard} to you.</p>"
+        },
+        "Godspeed": {
+            "name": "Godspeed",
+            "description": "<p>You gain the ability to cast <em>@UUID[Compendium.pf2e.spells-srd.o6YCGx4lycsYpww4]{Haste}</em> by expending a harm or heal spell slot from your divine font slots. If you choose to target yourself with the spell, you reduce the number of actions to Cast the Spell by 1 and it loses the manipulate trait.</p>"
+        },
+        "Second Doctrine (Armorclad)": {
+            "name": "Second Doctrine (Armorclad)",
+            "description": "<p>Your proficiency rank for Fortitude saves increases to expert.</p>"
+        },
+        "Otherworldly Awareness": {
+            "name": "Otherworldly Awareness",
+            "description": "<p>Your sacred animal tenses up and alerts your presence to the unseen. Your sacred animal gains an imprecise sense out to 30 feet to potentially notice celestials, fiends, monitors, or spirits. Your sacred animal can detect these creatures even if they are not visible or are in disguise.</p>"
+        },
+        "Wayfarer": {
+            "name": "Wayfarer",
+            "description": "<p>Your vocation is to journey and witness the glory of your deity. You might do this by searching to find a hidden temple of your god, seeking to witness your god’s glory among the people, or simply taking in the bountiful influence it exerts on the mortal world, but whatever your methods, your end goal is to go on pilgrimages to witness and see locations and acts of your faith.</p>\n<p><strong>Additional Edict</strong> You must journey to find acts, testaments, or monuments to your faith as a means to further your understanding of it.</p>\n<p><strong>Additional Anathema</strong> You must never end your journey permanently or inhibit the spiritual journeys of others.</p>\n<p><strong>Alternate Domains</strong> You replace your alternate domains with the luck or travel domains.</p>\n<p><strong>Cleric Spells</strong> You replace a spell of equal or higher rank with <em>@UUID[Compendium.pf2e.spells-srd.o6YCGx4lycsYpww4]{Haste}</em> as a 3rd-rank spell. If your deity would already grant you a 3rd-rank spell, you must select that spell when choosing what spell to replace.</p>\n<p><strong>Divine Skill</strong> You replace your deity’s divine skill with Survival.</p>\n<p><strong>Favored Weapon</strong> For you, your deity does not have a favored weapon but instead you gain a +2 status bonus against severe cold, heat, or weather. When you would gain increased proficiency in your deity’s favored weapon, instead of the normal bonus you treat your degree of success against severe cold, heat, and weather as one better.</p>"
+        },
+        "Fourth Decree (Secrets)": {
+            "name": "Fourth Decree (Secrets)",
+            "description": "<p>You gain master proficiency with your deity’s favored weapon, martial weapons of your deity’s favored weapon group, simple weapons, and unarmed attacks. The additional spirit damage to your Strike when you use the result of your Wield the Will increases to 2d4. At 19th level when you would normally gain master proficiency in your deity’s favored weapon, simple weapons, and unarmed attacks, you instead gain master proficiency in light armor and unarmored defense.</p>"
+        },
+        "Sheathed in Light": {
+            "name": "Sheathed in Light",
+            "description": "<p>Your deity has a bestowed light to your companion in the form of a halo, flames, or an aura. It emits bright light from within a 20-foot emanation and dim light 20 feet beyond that. Your sacred animal can suppress or resume this ability by spending a single action with the concentrate trait.</p>\n<p>@Compendium[pf2e.spell-effects.cVVZXNbV0nElVOPZ]{Spell Effect: Light}</p>"
+        },
+        "Unstoppable Advance": {
+            "name": "Unstoppable Advance",
+            "description": "<p>The weight of your armor, weapons and past never slow you down. While under the effects of @UUID[Compendium.clerics-remaster.clerics-actions.7oi9FIzMHsI7Jgm6]{Fervor}, you ignore all effects that would give you a status penalty to Speed including penalties you take to your Speed from wearing armor.</p>"
+        },
+        "Enchanted Strikes": {
+            "name": "Enchanted Strikes",
+            "description": "<p>Your sacred animal’s unarmed attacks gain additional power. Your sacred animals unarmed Strikes gain the effects of one of the following weapon property runes: @UUID[Compendium.pf2e.equipment-srd.JY8X4RSfg6xIqAC9]{Crushing}, @UUID[Compendium.pf2e.equipment-srd.LwQb7ryTC8FlOXgX]{Vitalizing}, or @UUID[Compendium.pf2e.equipment-srd.P6v2AtJw7AUwaDzf]{Fearsome}.</p>"
+        },
+        "Heretic": {
+            "name": "Heretic",
+            "description": "<p>Your vocation is to subvert the notoriety of another faith under the guise of being a member of it despite following the edicts of your true deity. You might prominently display or profess your counter concepts, undermine teachings through mild mannered opposition, or secretly masquerade as a true believer looking for the perfect opportunity to enact your heresy. Whatever the case, your goal is to spread discord among your opposition faith.</p>\n<p><strong>Requirements </strong>When you select this vocation, choose another deity whose edicts or anathema contradict with that of your deity. You can use the symbol of your opposing deity as if it were that of your deity.</p>\n<p><strong>Additional Edict</strong> You must follow the edicts of your opposing deity while observed, and doing so does not violate the anathema of your deity as long as you do so to remain undiscovered.</p>\n<p><strong>Additional Anathema</strong> You must never openly admit you are under the guise of another deity unless the person is a member of your actual faith or a trusted individual who will keep your secret. If you do so, you do not lose your deity's blessing, but lose access to the benefits of this vocation.</p>\n<p><strong>Alternate Domains</strong> You replace your alternate domains with the intrigue or trickery domains.</p>\n<p><strong>Cleric Spells</strong> You replace a spell of equal or higher rank with <em>@UUID[Compendium.pf2e.spells-srd.PRrZ7anETWPm90YY]{Disguise Magic}</em> as a 1st-rank spell. If your deity would already grant you a 1st-rank spell, you must select that spell when choosing what spell to replace.</p>\n<p><strong>Divine Skill</strong> You replace your deity’s divine skill with Deception.</p>\n<p><strong>Favored Weapon</strong> You replace your deity's favored weapon with the favored weapon of your opposing deity.</p>"
+        },
+        "Outer Speech": {
+            "name": "Outer Speech",
+            "description": "<p>Your deity has given your sacred animal the ability to speak. Your sacred animal gains the ability to speak one language appropriate for your deity from the following languages: aklo, chthonian, diabolic, empyrean, necril, petran, pyric, sussuran, or thalassic. Its intelligence Attribute is boosted to +0 or increases by 1, whichever is higher.</p>"
+        }
+    }
+}

@@ -1,0 +1,404 @@
+{
+    "label": "Inventors+ Features",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Temporary Animation": {
+            "name": "Temporary Animation",
+            "description": "<p>You have perverted the power of medicine to raise the dead. Once per day, you can use @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.OAJJz0ey8LU37Ghc]{Invigoration Link} on a corpse instead of an ally to produce the effects of an <em>@Compendium[pf2e.spells-srd.9WGeBwIIbbUuWKq0]{Animate Dead}</em> spell of a rank equal to half your level rounded up. The undead remains active so long as it is targeted by your Invigoration Link, and the creature gains its actions for the turn at the beginning of each of your turns the link is active.</p>"
+        },
+        "Acoustics": {
+            "name": "Acoustics",
+            "description": "<p>You have learned the methods to produce effects on creatures through sound waves, manipulating them to produce both harmful and helpful effects.</p>\n<p>You gain the @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.uViPiCqhppdXjyoG]{Reverberate} and @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.YwKxiN4mAzHVaiXw]{Cacophony} class features.</p>"
+        },
+        "Arcane Generator": {
+            "name": "Arcane Generator",
+            "description": "<p>You have mastered the magic of relevant energies. While under the effects of @Compendium[pf2e.classfeatures.oP5zM5Yu41xcx3iu]{Overdrive}, when you Cast a Spell that requires a save that deals damage, has no duration, and targets a single creature, you add the damage from your Overdrive to the damage of a failure, or twice that amount on a critical failure. If a spell deals damage multiple times or has multiple saves, you apply this damage only to the first failed save that dealt damage.</p>"
+        },
+        "Wand Overcharge Insulator": {
+            "name": "Wand Overcharge Insulator",
+            "description": "<p>You have bolstered your control over wands, allowing you to use them additional times per day. You can add the unstable trait to the Activation to an overcharged wand by using magic from your innovation. If you do, you automatically succeed at the DC 10 flat check to prevent the wand from being destroyed. In addition, you can store a single wand inside your innovation, allowing you to to wield both your magitek innovation and the wand you chose at the same time. You can remove or insert a wand into your innovation as an Interact action.</p>"
+        },
+        "Industrialization": {
+            "name": "Industrialization",
+            "description": "<p>Great, powerful machines that burn great, powerful fuels will bring forth an age of industrialization henceforth unknown. Your inventions are at the forefront of this revolution of progress, despite the awful fumes they tend to produce.</p>\n<p>You gain the @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.plxpwTtJJ617EoPA]{Crank Up} and @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.3AECqca7NsKMv3N7]{Smog Cloud} class features.</p>"
+        },
+        "Smog Cloud": {
+            "name": "Smog Cloud",
+            "description": "<p>Your innovation belches out waste fumes in a choking cloud around you. @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.ShxvVLs8JanYPVZs]{Smog Cloud} replaces @Compendium[pf2e.classfeatures.pEm1RTNuzzQVKkR0]{Explode}.</p>"
+        },
+        "Mutagenic Unlock": {
+            "name": "Mutagenic Unlock",
+            "description": "<p>Your link can have unusual effects on allies. Once per day, you can give a willing ally targeted by your @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.OAJJz0ey8LU37Ghc]{Invigoration Link} the effects of a @Compendium[pf2e.equipment-effects.xFQRiVU6h8EA6Lw9]{Effect: Bestial Mutagen (Moderate)}. At 11th level, you can instead use the effects of a @Compendium[pf2e.equipment-effects.kwD0wuW5Ndkc9YXB]{Effect: Bestial Mutagen (Greater)}, and at 17th, you can use a @Compendium[pf2e.equipment-srd.nS75vsM3x5jxlUqn]{Bestial Mutagen (Major)}. You must declare you are granting this effect when you use Invigoration Link and the effects last for as long as they are affected by your Invigoration Link.</p>"
+        },
+        "Overheal Drive": {
+            "name": "Overheal Drive",
+            "description": "<p>Your healing does not simply bring targets back to full health, but improves them. When your @Compendium[pf2e.feats-srd.obGGzuPcgO5Xiz6P]{Searing Restoration} would heal a creature above their maximum Hit Points, the excess is granted as temporary Hit Points. These temporary Hit Points can be no higher than double the creature's level, and last for 1 minute.</p>"
+        },
+        "Frigerate": {
+            "name": "Frigerate",
+            "description": "<p>You use strange metals powered by perfectly condensed energy—but to do so you must keep them impossibly cold. You vent the excess cold into your enemies to slow them down. @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.NZoXaeZ4hKXg5Iv2]{Frigerate} replaces @UUID[Compendium.pf2e.actionspf2e.3D9kGfwg4LUZBR9A]{Overdrive}.</p>\n<p>If you have a @Compendium[pf2e.classfeatures.bok3P78CMchFibxC]{Weapon Innovation}, you can choose to change the damage from Frigerate to cold damage.</p>"
+        },
+        "Mechanical Trinkets": {
+            "name": "Mechanical Trinkets",
+            "description": "<p>You make little distinction between tools that work through science or magic. You can use your innovation to make talismans by attuning energies to mundane things. You gain the @Compendium[pf2e.feats-srd.1t5479E6bdvFs4E7]{Talisman Dabbler Dedication} ignoring its level requirements. When you become a master in Crafting, you gain an additional talisman during your daily preparations.</p>"
+        },
+        "Revolutionary Healing Modifications": {
+            "name": "Revolutionary Healing Modifications",
+            "description": "<h3>Revolutionary Healing Modifications</h3>\n<ul>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.b11M1l7JjIYBDZsx]{Extended Charge}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.EDCbYdae8ZDefpZh]{Immortality Matrix}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.pLWbPfYV0zSDGGli]{Lateral Patterned Reach}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.3hQCWAMec0XpvO2Y]{Overheal Drive}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.hIvMeLOskX7i8S3T]{Panacean Ray}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.dS9vI1BxqUKcU4s9]{Planar Focus}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.7wwch0y0RBjwmyHi]{Ultima Charge}</li>\n</ul>"
+        },
+        "Ultima Charge": {
+            "name": "Ultima Charge",
+            "description": "<p>You render your ally absolutely invincible. While your @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.OAJJz0ey8LU37Ghc]{Invigoration Link} is active, your ally can choose to end your link immediately to reroll a Fortitude or Will save they failed as their reaction. An ally can only benefit from this effect once per day. This is a fortune effect.</p>"
+        },
+        "Healing Fog": {
+            "name": "Healing Fog",
+            "description": "<p>During rest, you can configure your innovation to release healing particles into the air around you and your companions, aiding recovery. You and creatures who sleep for 8 hours within 30 feet of your innovation gain a +1 circumstance bonus to their next Fortitude saving throw against a disease or poison for 1 day and regain twice the number of Hit Points they would receive from resting.</p>\n<p>@UUID[Compendium.pf2e-team-plus-inventors.inventors-effects.Item.t1kzHg9k7sP9bFJ2]{Effect: Healing Fog}</p>"
+        },
+        "Biotic Booster": {
+            "name": "Biotic Booster",
+            "description": "<p>Your innovation aids in the body's healing from other sources. When a target of your @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.OAJJz0ey8LU37Ghc]{Invigoration Link} would regain Hit Points from an effect requiring rolling dice, you can choose to have the target roll twice and take the better result. If you have Death Link, you can instead choose to have the target roll twice and take the worse result.</p>"
+        },
+        "Freeze Ray": {
+            "name": "Freeze Ray",
+            "description": "<p>You concentrate your frigeration into a powerful, directed attack. @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.ORfTjmiEifQ4AXAZ]{Freeze Ray} replaces @Compendium[pf2e.classfeatures.pEm1RTNuzzQVKkR0]{Explode}.</p>"
+        },
+        "Health Estimator": {
+            "name": "Health Estimator",
+            "description": "<p>Your innovation scans the biochemistry of the creature. You can use Crafting to Recall Knowledge on living creatures you can see instead of the normal skill to Recall Knowledge. Any information you learn from this check must be related to the biochemistry of the creature, such as learning a creature’s weaknesses, how to deactivate its regeneration, its senses, or its weakest saving throw.</p>"
+        },
+        "Statistical Prophecy": {
+            "name": "Statistical Prophecy",
+            "description": "<p>You spend 10 minutes engaging with your innovation to produce a modeled emulation that weaves probability with divination. You gain the effects of <em>@Compendium[pf2e.spells-srd.41TZEjhO6D1nWw2X]{Augury}</em>, except you choose a specific scenario that could conceivably happen within the next 24 hours; any results of “good” are instead “nothing,” and results of “mixed” are instead “bad.” If you are legendary in Crafting, you take only 1 minute to use Statistical Prophecy.</p>"
+        },
+        "Technomancy Blast": {
+            "name": "Technomancy Blast",
+            "description": "<p>You unleash a wave of energy at your opponent. As a 2-action activity with the manipulate trait you can deal @Damage[max(floor(@actor.level / 2),1)d6[@actor.flags.pf2e.inventor.explode]] fire damage for every 2 levels you possess to all creatures in a @Template[type:cone|distance:15], @Template[type:line|distance:30], or @Template[type:burst|distance:10] within 30 feet (@Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]). You can’t use Technomancy Blast again for 1d4 rounds. If you have a Variable Core, you can replace the fire trait with a trait appropriate for your Variable Core.</p>"
+        },
+        "Diagnostic Reader": {
+            "name": "Diagnostic Reader",
+            "description": "<p>Your innovation senses disease. Your innovation gains a special sense called a plaguesense, which allows you to detect diseased creatures or creatures that carry disease within 30 feet of you as a vague sense. If your innovation detects a creature with its plaguesense, you know whether they are a carrier or diseased.</p>"
+        },
+        "Enhanced Physiology": {
+            "name": "Enhanced Physiology",
+            "description": "<p>Your innovation boosts the natural core strength of your target. When a creature gains temporary Hit Points from Invigoration Link, the creature can immediately retch as a free action or attempt the flat check to end a single source of persistent damage.</p>"
+        },
+        "Gadgeteer Innovation": {
+            "name": "Gadgeteer Innovation",
+            "description": "<p>You find the idea of dedicating your brilliance to a single invention is an ineffective path to discovery. After all, does it not take failure to create success? Iterative and expansive test cases in constructing gadgets; that is the means by which you choose to measure your successes and failures.</p>\n<p>You can create gadgets that do not become permanently broken, even allowing your temporary gadgets to survive under the right conditions.</p>"
+        },
+        "Immortality Matrix": {
+            "name": "Immortality Matrix",
+            "description": "<p>Your invention staves off death, even in impossible moments. When an ally affected by your Invigoration Link is reduced to 0 Hit Points but does not die, you can spend your reaction to immediately use @Compendium[pf2e.feats-srd.obGGzuPcgO5Xiz6P]{Searing Restoration} on that ally. These Hit Points are gained after the damage is taken, allowing them to remain standing and without increasing their wounded condition for losing the dying condition.</p>"
+        },
+        "World-Warp Rig": {
+            "name": "World-Warp Rig",
+            "description": "<p>You supercharge your innovation to teleport you through space. You can teleport up to twice your Speed in any direction within line of sight as a 2-action activity with the manipulate and teleport traits. While under the effects of Overdrive, you can choose to have all creatures take fire damage equal to your level in a @Template[type:emanation|distance:5] both at your arrival and departure.</p>"
+        },
+        "Mana-Scrambling Feedback": {
+            "name": "Mana-Scrambling Feedback",
+            "description": "<p>Your touch deploys tech that totally scrambles the magic of an enemy. You can spend a single Interact action with the spellshape trait to empower your next technomancy ray. If you hit and deal damage with technomancy ray, you can attempt to counteract a single spell active on the target (your choice). Your counteract rank is equal to half your level (rounded up), and your counteract check modifier is equal to your class DC – 10.</p>"
+        },
+        "Fail-Safe Operator": {
+            "name": "Fail-Safe Operator",
+            "description": "<p>Once per day when you would gain the unconscious condition, your armor innovation takes over for you. You can continue to act as if you were not unconscious and you don’t take its normal penalties, as your innovation operates on your subconscious thoughts, moving your body for you for 1 minute or until you regain consciousness. If you were dying, you do not increase your dying value from getting a failure on a recovery check, though you still increase your dying value on a critical failure or if you take damage.</p>"
+        },
+        "Massive Frame": {
+            "name": "Massive Frame",
+            "description": "<p>Your armor is more akin to a construct you wear than traditional plating. Once per day, you can produce the effects of <em>@Compendium[pf2e.spells-srd.wzctak6BxOW8xvFV]{Enlarge}</em> on yourself by spending an Interact action to expand your armor’s frame. If you are legendary in Crafting, you can use the effect of enlarge heightened to half your level rounded up (though you can still only target yourself) and you can use the effect once per hour instead of once per day.</p>"
+        },
+        "Storage Compartment": {
+            "name": "Storage Compartment",
+            "description": "<p>Your construct can open up a part of itself to store objects within. It can carry up to 10 Bulk of items or objects, with a maximum Bulk value of 5 per item. Creatures can spend a single Interact action to draw an item from your construct innovation if it is adjacent to you, or your construct innovation can expel the item in an adjacent square as a single Interact action. If a creature is occupying the square the item is expelled into and has sufficient hands to hold the item, it can spend its reaction to grasp the item with a trigger of your construct’s Interact to expel.</p>"
+        },
+        "Polarity": {
+            "name": "Polarity",
+            "description": "<p>You understand that science can change things in seemingly invisible ways, and the power to move others without even touching them is a power worth possessing. Magnetism and electric fields have the power to move the form in ways only science can conceive.</p>\n<p>You gain the @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.MSUlC6Vfg8F8xCxJ]{Repulse} and @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.PMAOXinlgEZZHkiQ]{Magnetic Pulse} class features.</p>"
+        },
+        "Foreign Agent Anti-pattern": {
+            "name": "Foreign Agent Anti-pattern",
+            "description": "<p>You designed your armor to detect anomalies that would attempt to enter your body. You gain resistance equal to 3 + half your level to poison damage and you gain a +1 circumstance bonus to saves against disease; if you're a master in Crafting, this increases to a +2 circumstance bonus. When under the effects of Overdrive, the resistance increases by 2.</p>"
+        },
+        "Extended Reach": {
+            "name": "Extended Reach",
+            "description": "<p>Your link stays stronger for longer. You can target allies with your Invigoration Link if they are within 60 feet and the maximum range of your link is 120 feet.</p>"
+        },
+        "Repulse": {
+            "name": "Repulse",
+            "description": "<p>You affix yourself with magnets, coils, and rods. When it's necessary, you can charge them into a repulsive state to assist you in combat. @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.PmErCVFJk0umTe9u]{Repulse} replaces @UUID[Compendium.pf2e.actionspf2e.3D9kGfwg4LUZBR9A]{Overdrive}.</p>\n<p>If you have a @Compendium[pf2e.classfeatures.bok3P78CMchFibxC]{Weapon Innovation}, you can choose to change the additional damage from Repulse to electricity damage and you apply the additional damage when the critical specialization from your weapon innovation would cause forced movement.</p>"
+        },
+        "Overdrive/Explode": {
+            "name": "Overdrive/Explode",
+            "description": "<p>You gain the @UUID[Compendium.pf2e.actionspf2e.3D9kGfwg4LUZBR9A]{Overdrive} and @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.pEaYSp9o22lE8SHf]{Explode+} class features.</p>"
+        },
+        "Climbing Limbs+": {
+            "name": "Climbing Limbs+",
+            "description": "<p>With appendages that can claw or create suction, your construct becomes a capable climber. Your innovation gains a climb Speed equal to your land Speed.</p>"
+        },
+        "Energize Spell Slot": {
+            "name": "Energize Spell Slot",
+            "description": "<p>Your gizmos channel energy into your depleted arcane wells. Once per day, you can attempt to refill a spell slot. Make a Crafting check against a very hard DC for your level. On a success, you regain that spell slot, with the spell originally prepared in it. On a critical success, you may do so again in 1 hour. This function only applies to spells you gain from your inventor spell slots and you must have spell slots from inventor class feats to select this modification.</p>"
+        },
+        "Rise, My Minion!": {
+            "name": "Rise, My Minion!",
+            "description": "<p>You combine necromancy and galvanic jolts to raise a corpse as your perfect creation. You can spend 10 minutes transforming a suitable corpse into an undead companion as if you had gained one from the @Compendium[pf2e.feats-srd.M6cWLywN0aWnX5Gl]{Undead Master Dedication}. Your undead companion remains active until your next daily preparations, and you can give it Commands by Interacting with your innovation. You can continue to animate the same corpse each day, each time becoming your undead companion in the process again, retaining its current Hit Points from its previous animation. You must spend 1 week recalibrating your innovation before animating a different corpse to become your companion. This innovation counts as the Undead Master Dedication for the purpose of prerequisites and feats from the Undead Master archetype apply to this companion and to your limit of companions.</p>"
+        },
+        "Metaphysical Materials": {
+            "name": "Metaphysical Materials",
+            "description": "<p>Once per day, you can spend 2 Interact actions on your armor innovation to give yourself the incorporeal trait for 1 minute. You gain resistance to all damage equal to half your level while incorporeal and are immune to precision damage. Since you are incorporeal, you cannot make Strikes unless your Strikes would have the @Compendium[pf2e.equipment-srd.JQdwHECogcTzdd8R]{Ghost Touch} property.</p>\n<p>@UUID[Compendium.pf2e-team-plus-inventors.inventors-effects.Item.jTHwXxjpEadwGrJT]{Effect: Metaphysical Materials}</p>"
+        },
+        "Void Medic": {
+            "name": "Void Medic",
+            "description": "<p>You've taken into account the needs of patients who heal from dark powers, not bright ones. An ally affected by your Invigoration Beam that has void healing loses this ability for the duration of your link, allowing them to be healed by vitality effects.</p>"
+        },
+        "Magnetic Pulse": {
+            "name": "Magnetic Pulse",
+            "description": "<p>You harness the motion of electrical charges to control magnetic fields with your innovation. @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.TnjWvLVpAypmiPTI]{Magnetic Pulse} replaces @Compendium[pf2e.classfeatures.pEm1RTNuzzQVKkR0]{Explode}.</p>"
+        },
+        "Magitek Innovation": {
+            "name": "Magitek Innovation",
+            "description": "<p>Sufficiently advanced science is indistinguishable from magic. You have engineered a device capable of casting spells or interacting with the arcane through mechanical means. You can cast arcane spells, and your innovation contains the data of four common arcane cantrips. You gain the Cast a Spell activity. You can prepare two arcane cantrips each day. You use your inventor class proficiency for your spell DCs and spell attack rolls you gained from the magitek innovation. You become trained in Arcana and your spellcasting attribute modifier for inventor spells is Intelligence. Your modifications and actions you gain from the magitek innovation also have the arcane trait in addition to any traits they would normally have. You gain the <em>@UUID[Compendium.pf2e-team-plus-inventors.inventors-spells.rLpTFGCUUdXtUbaL]{Technomancy Ray}</em> focus cantrip.</p>\n<p>Your magitek innovation is an object of your design that weighs 1 Bulk and must be worn, held, or wielded to be able to use your unstable actions and to Cast technomancy ray.</p>\n<p>When you use Overdrive, you do not apply the normal effects for your Overdrive on Strikes, but instead apply the effects of Overdrive to spell attack rolls that deal damage, have no duration, and target a single creature.</p>\n<p>You can only apply the damage from your overdrive once if your spell would deal damage more than once to the same creature. If you gain Overdrive Ally or similar effects that would provide Overdrive’s effects to allies, your allies still only apply effects of Overdrive to their Strikes.</p>\n<p>Choose one initial magitek modification to apply to your innovation, either from the following or from other initial magitek modifications to which you have access.</p>\n<ul>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.0yYGGmFdluqiMQpo]{Arcane Generator}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.yRdTQRvubpxblu5O]{Concealing Holograms}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.4f6PHXTlAis96JlB]{Mechanical Trinkets}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.inASnJPnyrLdSF7A]{Motorarcana}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.NVkWPIr93Vqhze3D]{Rise, My Minion!}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.WtSv0xK40rEYb9Nj]{Spirit of Artifice}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.tQzmCpBLNbgYAWM8]{Technomancy Swing}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.232lqg5CQAuHrirt]{Wand Overcharge Insulator}</li>\n</ul>"
+        },
+        "Transmogrification Boost": {
+            "name": "Transmogrification Boost",
+            "description": "<p>They called you mad, but you've done it! You've broken the boundaries of magic… through science! When you Cast a Spell that requires a save that deals damage, has no duration, and targets a single creature, you add the damage from your Offensive Boost to creatures that fail their save, or twice that amount if they critically fail their save. If a spell deals damage multiple times or has multiple saves, you apply this damage to the first failed save that dealt damage.</p>"
+        },
+        "Greater Motorarcana": {
+            "name": "Greater Motorarcana",
+            "description": "<p>You learn deeper arcane secrets. You learn the greater domain spell of the @Compendium[pf2e.journals.EEZvDB1Z7ezwaxIr]{Domain} from your Motorcana as an arcane focus spell. You must have Motorarcana to select this modification.</p>"
+        },
+        "Weapon Innovation+": {
+            "name": "Weapon Innovation+",
+            "description": "<p>Your innovation is an impossible-looking weapon augmented by numerous unusual mechanisms. It begins with the same statistics as a level 0 common simple or martial weapon of your choice, or another level 0 simple or martial weapon to which you have access. You can instead use the statistics of a 1st-level common simple or martial weapon of your choice, or another 1st-level simple or martial weapon to which you have access, but you must pay the monetary Price for the weapon. An innovation weapon can have fundamental and property runes added to it in the same way as an ordinary weapon and you can integrate special materials into your innovation by Crafting with an appropriate amount of raw materials. Because of the unique features of your innovation, everyone except you is untrained in it, even if they would normally be trained (or better) in simple or martial weapons. If you use the Overdrive action, you can choose to change the additional damage from Overdrive to fire damage. Choose one initial weapon modification to apply to your innovation, either from the following or from other initial weapon modifications to which you have access. These modifications grant additional weapon traits, sometimes with extra abilities. A modification might give your weapon the versatile trait with a damage type that the weapon could already deal, either from its base damage type or from an existing versatile trait. In that case, if you select that modification, you can instead choose to give the weapon the versatile trait for a different damage type: bludgeoning, piercing, or slashing.</p>\n<ul>\n<li><strong>Blunt Shot (Ranged Only)</strong> Your weapon innovation can file the edges off your ammunition and adjust the blunt force of the shot to deliver a bludgeoning attack when necessary, as well as to avoid striking a lethal blow with an otherwise deadly shot. Your innovation gains the nonlethal and versatile B traits. You can choose whether to apply the nonlethal trait on each attack with your innovation.</li>\n<li><strong>Complex Simplicity (Simple Weapon Only)</strong> Increase your innovation's weapon damage die by one step (d4 to d6, d6 to d8, d8 to d10, d10 to d12). In addition, it gains one of the following traits of your choice: versatile B, versatile P, or versatile S.</li>\n<li><strong>Dynamic Weighting (One-handed Melee Weapon Only; Can't Have the Agile, Attached, or Free-hand Trait)</strong> Your weapon's modified weight distribution can increase power in exchange for taking more hands to wield. Your innovation gains the two-hand trait, with a damage die one size higher than the weapon's normal weapon damage die size (for instance, a longsword would gain the two-hand d10 trait). Your innovation also gains the versatile B trait.</li>\n<li><strong>Entangling Form (Melee Only)</strong> You've altered your weapon to including tangling wires or straps, or to have a flexible construction. Your innovation gains the grapple and trip traits.</li>\n<li><strong>Hampering Spikes (Melee Only)</strong> You've added long, snagging spikes to your weapon, which you can use to impede your foes' movement. Your innovation gains the hampering and versatile P traits.</li>\n<li><strong>Hefty Composition (Melee Only)</strong> Blunt surfaces and sturdy construction make your weapon hefty and mace-like. Your innovation gains the shove and versatile B traits.</li>\n<li><strong>Modular Head</strong> You've constructed a multi-purpose, adjustable striking surface for your weapon, or you've made special ammunition you can swiftly alter. Your innovation gains the modular trait for bludgeoning, piercing, and slashing. When you Interact to use the modular trait, you can also choose to give the weapon the nonlethal trait if it doesn't currently have it, or to remove that trait if it's currently nonlethal.</li>\n<li><strong>Pacification Tools (Melee Only)</strong> Softer materials make your weapon suited to knock out instead of kill, and special protrusions let you catch weapons and disarm your foes. Your innovation gains the disarm and nonlethal traits. You can choose whether to apply the nonlethal trait on each attack with your innovation.</li>\n<li><strong>Razor Prongs (Melee Only)</strong> You can knock down and slash your foes with sharp, curved blades added to your weapon. Your innovation gains the trip and versatile S traits.</li>\n<li><strong>Segmented Frame</strong> Hinges, clamps, and telescoping parts make your innovation collapsible and adjustable. It gains the modular trait for bludgeoning, piercing, and slashing. You can Interact to collapse the item down to light Bulk or to return it to your normal form. When it's collapsed to light Bulk, it has the concealable trait, which grants you a +2 circumstance bonus to Stealth checks and DCs to hide or conceal the weapon.</li>\n</ul>"
+        },
+        "Unstable Magic Mastery": {
+            "name": "Unstable Magic Mastery",
+            "description": "<p>You have woven your magic to your machines in such a way as to make them truly interchangeable. You can use Focus Points to use unstable actions at no risk, and you can attempt to use a focus spell when you are out of Focus Points by adding the unstable trait to your spell. You must have a focus pool to select this.</p>"
+        },
+        "Ankle-weighted Stabilizers": {
+            "name": "Ankle-weighted Stabilizers",
+            "description": "<p>You have installed counter-weights to prevent falling. You gain a +2 circumstance bonus to your Fortitude or Reflex DC against attempts to @Compendium[pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} or @Compendium[pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} you. This bonus also applies to saving throws against spells or effects that attempt to knock you @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+        },
+        "Bolster Self": {
+            "name": "Bolster Self",
+            "description": "<p>Your innovation redirects healing energy into you. When you use Invigoration Link, you can give yourself temporary Hit Points instead of your ally.</p>"
+        },
+        "Rebounding Mechanism": {
+            "name": "Rebounding Mechanism",
+            "description": "<p>When you use your innovation to make a ranged Strike to deal damage, it immediately returns to your hand, enabling you to use it for additional Strikes. You must be within the innovation’s first range increment and have a hand free to catch the weapon. If you make a ranged Strike with a thrown weapon outside of its first range increment, it instead flies back toward you a number of feet equal to its listed range increment and then falls to the ground.</p>"
+        },
+        "Mutate": {
+            "name": "Mutate",
+            "description": "<p>You apply your organic material to spontaneously alter itself to spew chemicals. @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.VQkGnAT8NcoMf5cm]{Mutate} replaces @UUID[Compendium.pf2e.actionspf2e.3D9kGfwg4LUZBR9A]{Overdrive}.</p>\n<p>You apply your organic material to spontaneously alter itself to spew chemicals. This action replaces Overdrive. If you have a @Compendium[pf2e.classfeatures.bok3P78CMchFibxC]{Weapon Innovation}, you can choose to change the persistent damage from Mutate to poison damage.</p>"
+        },
+        "Imposing Mechanisms": {
+            "name": "Imposing Mechanisms",
+            "description": "<p>Your armor is designed to inspire fear in others. When you send your armor into overdrive, the mechanisms produce amplified aesthetics and phonetics that make it easier to intimidate. When under the effects of Overdrive, you gain a +1 circumstance bonus to Intimidation checks; if you're a master in Crafting, this increases to a +2 circumstance bonus.</p>"
+        },
+        "Mounting Operator": {
+            "name": "Mounting Operator",
+            "description": "<p>You have configured your innovation to be more operable while on a mount. Your innovation gains the jousting d6 trait. If your innovation already had the jousting trait, you instead increase the die size from its jousting trait by one step.</p>"
+        },
+        "Breakthrough Healing Modifications": {
+            "name": "Breakthrough Healing Modifications",
+            "description": "<h3>Breakthrough Healing Modifications</h3>\n<ul>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.9wTdTC6ZOE6jk2R6]{Biotic Booster}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.c0NOWRH6eV1dYJgk]{Critical Enhancement}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.yyXP3J3fWSh24ySd]{Medicinal Cannon}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.3C1rx6OGXWvby5qG]{Mutagenic Unlock}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.aAhqQ2D5a8RyyExd]{Resistance Engine}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.04aVXBJTxltvDAzi]{Temporary Animation}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.qVNOputAxn1UTC3y]{Vital Core}</li>\n</ul>"
+        },
+        "Trigger-Directed Programming": {
+            "name": "Trigger-Directed Programming",
+            "description": "<p>You have given your innovation the ability to make distinctions on when it should act, regardless of its state. On the first round of combat, you can Command your construct innovation as a free action or to use a single action Command to give your construct 3 actions for the turn.</p>"
+        },
+        "Spirit of Artifice": {
+            "name": "Spirit of Artifice",
+            "description": "<p>You have attracted a spirit which inhabits your innovation, or a frame you have built for it. You gain an elemental familiar that powers a small machine. Your familiar must select the @Compendium[pf2e.familiar-abilities.FcQQLMAJMgOLjnSv]{Resistance} and elemental familiar abilities corresponding to the resistance element you chose. Your magitek innovation also serves as a suitable @Compendium[pf2e.equipment-srd.xE2CGurZp4eHc1Oc]{Familiar Satchel} for your elemental familiar.</p>"
+        },
+        "Manifold Alloy+": {
+            "name": "Manifold Alloy+",
+            "description": "<p>You've devised several alloys that contain useful properties of various metals, and you replace a number of parts of your weapon or its ammunition with pieces from these alloys. Your weapon innovation functions as cold iron and silver in addition to any special materials it has. This means you deal more damage to a variety of supernatural creatures, such as demons, devils, and fey.</p>"
+        },
+        "Breakthrough Magitek Modifications": {
+            "name": "Breakthrough Magitek Modifications",
+            "description": "<h3>Breakthrough Magitek Modifications</h3>\n<ul>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.xWZ3PDGqIKqOUvMl]{Conducting Alloys}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.Mh5AxrdLQ6wPrR7N]{Energize Spell Slot}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.RVbopikzLppMLpIB]{Greater Motorarcana}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.YDspJogqOR3ahY9m]{Integrate Magic Item}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.pTcWGMz4Z7Q6gwoF]{Runic Upgrade}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.AfikMFKIFyCxCEkf]{Statistical Prophecy}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.maw9aBk9ZYP4NvFt]{Summoning Engine}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.C9CQ7z9jhYWBj3fF]{Technomancy Blast}</li>\n</ul>"
+        },
+        "Integrate Magic Item": {
+            "name": "Integrate Magic Item",
+            "description": "<p>Your innovation builds around and integrates the key parts of a magic item. During your daily preparations, you can merge your innovation with a permanent magic item of your choice, such as robe, staff, or wand. The item operates as your innovation and the item you selected and your innovation gains the properties of this item, using its own Bulk or the item’s Bulk, whichever is higher. If the item you chose needs to be held, wielded, or worn, you must still meet those requirements to use the item. If your innovation possessed the ability to store other things, such as a familiar or a wand, it retains that ability even while merged.</p>"
+        },
+        "Cacophony": {
+            "name": "Cacophony",
+            "description": "<p>You can emit an overwhelmingly loud wave of sound to debilitate your foes. @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.kOLgnepenLORuhbn]{Cacophony} replaces @Compendium[pf2e.classfeatures.pEm1RTNuzzQVKkR0]{Explode}.</p>"
+        },
+        "Implausible Self-Protector": {
+            "name": "Implausible Self-Protector",
+            "description": "<p>You have installed a protective spring barrier in your innovation. Your innovation gains the parry trait. If your innovation is a one-handed weapon with the parry trait, you increase the circumstance bonus to AC from parry to +2.</p>"
+        },
+        "Resistance Engine": {
+            "name": "Resistance Engine",
+            "description": "<p>Your link helps mitigate incoming damage. A creature that gains temporary Hit Points from your @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.OAJJz0ey8LU37Ghc]{Invigoration Link} gains a resistance to an energy type of your choosing (acid, cold, electricity, fire, poison, or sonic) equal to half your level until the beginning of your next turn. When under the effects of Overdrive, the resistance increases by 2. You select this damage type when you gain Resistance Engine, but you can Reconfigure the energy type as normal.</p>\n<p>@UUID[Compendium.pf2e-team-plus-inventors.inventors-effects.Item.W1Szx0lKcAIMInT1]{Effect: Resistance Engine}</p>"
+        },
+        "Spring-loaded Reformatting": {
+            "name": "Spring-loaded Reformatting",
+            "description": "<p>You have installed springs and gears into your innovation that allow it to shift between modes quickly. When you successfully Strike a creature with your innovation in its melee mode, you can Interact to shift it to its ranged mode as a reaction. When you Interact to reload your innovation, you can shift it to your melee mode as a part of the same action.</p>"
+        },
+        "Phase Frame": {
+            "name": "Phase Frame",
+            "description": "<p>Your armor can adopt the image of its surroundings, rendering you unseen. Once per day, you can produce the effects of <em>@Compendium[pf2e.spells-srd.XXqE1eY3w3z6xJCB]{Invisibility}</em> on yourself by spending an Interact action to phase light around your armor. If you are legendary in Crafting, you can use the effect of invisibility heightened to half your level rounded up (though you can still only target yourself) and you can use the effect once per hour instead of once per day.</p>"
+        },
+        "Extended Charge": {
+            "name": "Extended Charge",
+            "description": "<p>Your innovation has an incredibly strong power source. Your @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.OAJJz0ey8LU37Ghc]{Invigoration Link} lasts for 1 minute instead of 4 rounds.</p>"
+        },
+        "Critical Enhancement": {
+            "name": "Critical Enhancement",
+            "description": "<p>Power surges into your patients. Any ally affected by your @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.OAJJz0ey8LU37Ghc]{Invigoration Link} gets a +1 status bonus to their attack and damage rolls.</p>\n<p>@UUID[Compendium.pf2e-team-plus-inventors.inventors-effects.Item.WQtRptNlKEn3Kmef]{Effect: Critical Enhancement}</p>"
+        },
+        "Elemental Weapon Systems": {
+            "name": "Elemental Weapon Systems",
+            "description": "<p>Your construct's attacks are enhanced by elemental power. Its strikes deal 1 additional fire damage. If you have a @Compendium[pf2e.feats-srd.4KkzwOu2OKYLKSXQ]{Variable Core}, you can replace the fire damage with a damage type appropriate for your Variable Core.</p>\n<p>@UUID[Compendium.pf2e-team-plus-inventors.inventors-effects.Item.cnZPrhP0Kt9oyRDh]{Effect: Elemental Weapon Systems}</p>"
+        },
+        "Self-Modulation Form": {
+            "name": "Self-Modulation Form",
+            "description": "<p>Your armor innovation unravels parts from underneath to replicate a battle form spell. Choose one arcane or primal battleform spell with a rank equal to half your level rounded up that takes 2 actions or less to cast. Once per day, you can spend 2 Interact actions to produce the effects of the chosen spell. If you were under the effects of Overdrive, your battleform gains the effects of your Overdrive.</p>"
+        },
+        "Ammunition Expellerant": {
+            "name": "Ammunition Expellerant",
+            "description": "<p>You have added extra capacity for your ammunition. Your innovation gains the kickback trait and increases its range increment by 10 feet. If your innovation already has the kickback trait, you reduce the Strength modifier requirement by 2.</p>"
+        },
+        "Cryonization": {
+            "name": "Cryonization",
+            "description": "<p>The power of combustion does the job for some, but you are far more interested in the removal of heat from a system. Some of your superconductive power sources falter at regular temperatures, so you cool them down to boreal levels to continue your research.</p>\n<p>You gain the @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.4LVuv0BZYCOGMUjl]{Frigerate} and @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.9xt6C6lHnqzeRymA]{Freeze Ray} class features.</p>"
+        },
+        "Divisible Swarm State": {
+            "name": "Divisible Swarm State",
+            "description": "<p>Once per hour, your construct can break down into smaller versions of itself, gaining the swarm trait, swarm immunities, and a Swarm Attack for 1 minute. Its Swarm Attack is a single action that damages all creatures within your innovation’s space using the damage die and damage type of one of its unarmed attacks on a basic Reflex save. While in this state, it cannot make Strikes, but it can use other actions it would normally have access to as long as they do not require a Strike. Your innovation can revert to its normal form by spending 2 actions with the concentrate trait reassembling itself.</p>"
+        },
+        "Planar Focus": {
+            "name": "Planar Focus",
+            "description": "<p>Your innovation contains a compressed gateway to the Creation’s Forge, which you can use to supercharge your healing. When you use Searing Restoration, you grant the target creature spirit and void resistance equal to 3 plus your level for 3 rounds. If the target of your @Compendium[pf2e.feats-srd.obGGzuPcgO5Xiz6P]{Searing Restoration} has void healing, you can instead grant them spirit and vitality resistance of the same amount.</p>\n<p>@UUID[Compendium.pf2e-team-plus-inventors.inventors-effects.Item.M3eRVfUcmtZZRyUN]{Effect: Planar Focus}</p>"
+        },
+        "Healing Innovation": {
+            "name": "Healing Innovation",
+            "description": "<p>Your innovation is a piece of medical genius; a machine that allows you to treat patients instantly. Your innovation is 1 Bulk and it functions as a martial one-handed melee weapon. When you first gain your healing innovation, you choose its form to be a 1d6 bludgeoning damage with the shove trait in the club group or a 1d4 piercing damage with the agile and finesse traits in the knife group. You gain the @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.OAJJz0ey8LU37Ghc]{Invigorating Link} action and the @Compendium[pf2e.feats-srd.obGGzuPcgO5Xiz6P]{Searing Restoration} inventor feat. Choose one initial healing modification to apply to your innovation, either from the following or from other initial healing modifications to which you have access.</p>\n<ul>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.qIhYSq6H2wL1OUds]{Bi-Adapted Build}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.THkmgsDIXX2af6aQ]{Bolster Self}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.COuFgQTNTpvw8GBU]{Diagnostic Reader}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.LgeKs6KS6ptw2J3q]{Extended Reach}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.8j0p8pQ0j300oBFj]{Healing Fog}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.AQqK6ksEgjApxNU3]{Health Estimator}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.itQiUohWTn8OOrpS]{Recovery Pulse}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.NsnK9zlOJFLjjklE]{Void Medic}</li>\n</ul>"
+        },
+        "Gadget Innovations": {
+            "name": "Gadget Innovations",
+            "description": "<p>Your innovation is created each day by using a special set of mechanical tools: gadgets. You can create both temporary and permanent gadgets. These machines serve respective purposes for your ventures, build your formula book as you progress in your adventures and push the limits of engineering. If you choose this class archetype, you must select Gadgeteer Dedication as your 2nd-level class feat.</p>\n<p><strong>Prerequisites:</strong> You must be an Inventor.</p>\n<p><strong>Gadgeteer Adjustments:</strong> Rather than gain a normal innovation, you designate gadgets as your innovations. You do not gain the Reconfigure or Complete Reconfiguration class features. Instead, you learn the formulas for two common or uncommon gadgets or other gadgets to which you have access each time you gain a level.</p>\n<p>Each day during your daily preparations, you can select one gadget of your level or lower that you know the formula for to become your gadget innovation. Only you can Activate your gadget innovation. As your innovation, you use the gadget’s location or the creature wearing the gadget for the purposes of abilities that originate from your gadget (such as Explode).</p>\n<p>Your gadget innovation’s Activation gains the unstable trait, and the gadget is not consumed after you use this Activation. Instead, your gadget gains the normal effects of using an action with the unstable trait. You can restore use of your gadget innovation if you spend 10 minutes retuning your gadget innovation and making adjustments to return it to functionality. Your gadget remains usable for the duration of its Activation and if your gadget would require you to Sustain the activation effect, only the first Activation has the unstable trait. If you select a gadget whose Activated effect has a duration longer than 1 minute as your gadget innovation, it lasts 1 minute instead of the normal duration.</p>\n<p>Each day during your daily preparations, you gain one temporary gadget from your formula book. Gadgets prepared in this way don't cost you any resources to Craft and don't have any sale value. They are temporary items and fall apart the next time you make your daily preparations if you haven't already used them. You gain this temporary gadget in addition to any temporary gadgets you would gain from class feats, such as Gadget Specialist. These temporary gadgets must be of your level or lower. You gain the Quick Gadgetry action.</p>\n<p>At 7th level when you would normally gain the breakthrough innovation class feature, and again at 15th level when you would normally gain the revolutionary innovation class feature, you instead can create an additional gadget innovation you can use each day. These gadgets are also considered to be part of your gadget innovation, as they form a carefully constructed network of tools with organized triggers.</p>\n<p>If your gadget innovation would become unusable or broken, such as from an unstable action, all of your gadget innovations become unusable as well. For the purposes of determining the location of your gadget innovation for abilities, such as Explode, you can use the location of any one of your gadget innovations.</p>"
+        },
+        "Organics": {
+            "name": "Organics",
+            "description": "<p>You build with the most unusual of materials: living things. You might wear a suit of armor made of strange fungus, have a weapon which resembles a hybrid between a sword and a squid, or otherwise carry gizmos and gadgets made of flora and flesh rather than steel. Your innovation is an organic construction, and otherwise still functions as a construct, but it is made of organic material instead of metal.</p>\n<p>If your innovation is a construct companion, it loses immunity to bleed, @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained}, @Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued}, healing, and nonlethal effects. Choose one creature trait: aberration, beast, fungus, or plant. For the purposes of effects, it can choose between the construct trait and the trait you chose for what type of creature it is. Your construct can change the additional damage from Mutate to poison damage.</p>\n<p>You gain the @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.UaRBlU5HkEaYfPIR]{Mutate} and @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.pKXVSUrfRmkfETLn]{Vent Byproduct} class features.</p>"
+        },
+        "Bestial Emulation": {
+            "name": "Bestial Emulation",
+            "description": "<p>Your construct innovation is enhanced with animal features. Your construct companion gains the Support action and grants you the Support Benefit of an Animal Companion of your choosing. If you select the Support Benefit of an Animal Companion with the mount special ability, your construct companion also gains the mount special ability.</p>"
+        },
+        "Panacean Ray": {
+            "name": "Panacean Ray",
+            "description": "<p>Your innovation cures afflictions effortlessly. When you use Searing Restoration, you may also attempt to counteract one condition, disease, or poison affecting the target of your Searing Restoration using your Crafting modifier for your counteract modifier.</p>"
+        },
+        "Revolutionary Magitek Modifications": {
+            "name": "Revolutionary Magitek Modifications",
+            "description": "<h3>Revolutionary Healing Modifications</h3>\n<ul>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.m4gRK3iLLGQACLXu]{Instant Preparation}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.GPAZA5YUX2gR1fqe]{Mana-Scrambling Feedback}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.R0XzMGwrNgtDCwHC]{Transmogrification Boost}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.iz56bbu0VVM7Dlnn]{Stasis Vector}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.SxZUCE5cDdcvUoWY]{Unstable Magic Mastery}</li>\n<li>@UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.G1vSjlohvJMNkPjR]{World-Warp Rig}</li>\n</ul>"
+        },
+        "Motorarcana": {
+            "name": "Motorarcana",
+            "description": "<p>You learn a focus spell aligned with your expertise. Choose between the @UUID[Compendium.pf2e.journals.JournalEntry.EEZvDB1Z7ezwaxIr.JournalEntryPage.7xrNAgAnBqBgE3yM]{Change}, @UUID[Compendium.pf2e.journals.JournalEntry.EEZvDB1Z7ezwaxIr.JournalEntryPage.0GwpYEjCHWyfQvgg]{Knowledge}, Metal, and @UUID[Compendium.pf2e.journals.JournalEntry.EEZvDB1Z7ezwaxIr.JournalEntryPage.EQfZepZX6rxxBRqG]{Toil} domain. You learn the initial domain spell as an arcane focus spell, and gain a focus pool if you did not already have one.</p>"
+        },
+        "Ricochet Projectile": {
+            "name": "Ricochet Projectile",
+            "description": "<p>When determining whether a target has cover from your innovation’s ranged attacks, you can choose one solid surface within your weapon's first or second range increment to ricochet your shot off of. If you do, you determine the target's cover from the point where you ricochet your shot instead of from you.</p>"
+        },
+        "Recovery Pulse": {
+            "name": "Recovery Pulse",
+            "description": "<p>Your Invigoration Link closes wounds, soothes burns and clears the mind. When you use Invigoration Link, you can also choose to reduce the DC of a creature’s recovery checks and checks to remove persistent damage by 5 for as long as they are affected by your link.</p>"
+        },
+        "Stasis Vector": {
+            "name": "Stasis Vector",
+            "description": "<p>You have learned to stifle the flow of time, halting it completely, by isolating the current vector of time and space that you occupy from its flow. Once per day, you can spend 3 Interact actions to produce the effects of <em>@Compendium[pf2e.spells-srd.1dsahW4g1ggXtypx]{Time Stop}</em> on one creature of your choice, except the creature only gains 2 sets of 3 actions instead of the normal amount. If you are at least 19th level, this effect produces the normal number of actions for time stop. After you use Stasis Vector, your turn immediately ends and the creature you selected can spend the listed number of actions and their order in initiative moves to be right after your turn.</p>"
+        },
+        "Duplicitous Nature": {
+            "name": "Duplicitous Nature",
+            "description": "<p>You have configured your innovation to be able to split into a duplicate of itself, allowing you to wield it as two separate weapons of the same type. Your innovation gains the twin trait. You must still apply any runes or properties to each weapon separately as normal.</p>"
+        },
+        "Instant Preparation": {
+            "name": "Instant Preparation",
+            "description": "<p>Your innovation can store infinite spells, and prepare them at a moment's notice. You can choose to leave up to two of your spell slots unprepared during your daily preparations, allowing you to prepare them as needed as a 3-action activity. These spell slots must be of different rank. This function only applies to spells you gain from your inventor spell slots and you must have spell slots from inventor class feats to select this.</p>"
+        },
+        "Summoning Engine": {
+            "name": "Summoning Engine",
+            "description": "<p>Your innovation clanks and grinds to summon a construct. Once per day, you can use your innovation to spontaneously create a construct from 1 Bulk of raw materials to produce the effects of a @Compendium[pf2e.spells-srd.lKcsmeOrgHtK4xQa]{Summon Construct} spell of a rank equal to half your level rounded up. While under the effects of Overdrive, your summoned construct adds half your Intelligence modifier to its Strike damage or your Intelligence modifier if you are under the effects of a critical Overdrive.</p>"
+        },
+        "Vehicular Mode": {
+            "name": "Vehicular Mode",
+            "description": "<p>Your construct has integrated parts of vehicles into its build, and can reformat itself to function as a vehicle quickly. Choose a common or uncommon vehicle of half your level or lower of size Large or smaller. Your construct can spend three Interact actions to transform into this vehicle or to transform back to its construct form. You can Reconfigure your construct innovation to give it a new vehicle form.</p>"
+        },
+        "Conductive Energy": {
+            "name": "Conductive Energy",
+            "description": "<p>You have found a way to utilize conductive energy in your innovation. Your innovation gains the resonant trait.</p>"
+        },
+        "Vent Byproduct": {
+            "name": "Vent Byproduct",
+            "description": "<p>As your innovation consumes and grows, it must dispose of its built up waste. @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.7fv8E8xgkmYqa0jL]{Vent Byproduct} replaces @Compendium[pf2e.classfeatures.pEm1RTNuzzQVKkR0]{Explode}.</p>"
+        },
+        "Lateral Patterned Reach": {
+            "name": "Lateral Patterned Reach",
+            "description": "<p>Once your link is connected, it cannot be broken. You can target creatures with your @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.OAJJz0ey8LU37Ghc]{Invigoration Link} up to 120 feet and the maximum range of your link is 240 feet. In addition, you can target creatures you cannot see by targeting a space they occupy instead, latching onto an appropriate creature in the target square and ignoring any flat check to target them. If you target a square without a creature, your link fails to form. You must have the @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.LgeKs6KS6ptw2J3q]{Extended Reach} initial modification to select this modification.</p>"
+        },
+        "Advanced Bestial Form": {
+            "name": "Advanced Bestial Form",
+            "description": "<p>Your construct performs just like an animal, but even more efficiently. Your construct innovation gains the advanced maneuver of the animal you emulated with Bestial Emulation. Your construct innovation must have Beastial Emulation and you must have the Incredible Construct Companion feat to select this.</p>"
+        },
+        "Runic Upgrade": {
+            "name": "Runic Upgrade",
+            "description": "<p>Your innovation technologically scribes runes. Once per hour, you can give one weapon you or a willing ally is wielding within 30 feet the benefits of a weapon rune you choose for 1 minute by spending an Interact action with your innovation. The following runes can be chosen: @Compendium[pf2e.equipment-srd.Wm0X7Pfd1bfocPSv]{Corrosive}, @Compendium[pf2e.equipment-srd.XszNvxnymWYRaoTp]{Flaming}, @Compendium[pf2e.equipment-srd.M5M1WJ5KzbYfRGsY]{Frost}, @Compendium[pf2e.equipment-srd.JQdwHECogcTzdd8R]{Ghost Touch}, @Compendium[pf2e.equipment-srd.qlunQzfnzPQpMG6U]{Returning}, @Compendium[pf2e.equipment-srd.NVst7e69agGG9Qwd]{Shock}, or @Compendium[pf2e.equipment-srd.dTxbaa7HSiJbIuNN]{Thundering}. If this effect would give a weapon more property runes than its normal maximum, one of the existing property runes (you choose) is suppressed for the duration. For unarmed attacks, if this would give the unarmed attack more property runes than it could have from handwraps of mighty blows, one of the existing property runes is similarly suppressed.</p>"
+        },
+        "Crank Up": {
+            "name": "Crank Up",
+            "description": "<p>You fuel your gizmos with coal, tar, or some other combustible fuel that empowers you to great strength and emit terrible smoggy clouds. @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.9jXdjrR7CWe0eohb]{Crank Up} replaces @UUID[Compendium.pf2e.actionspf2e.3D9kGfwg4LUZBR9A]{Overdrive}.</p>\n<p>If you have a @Compendium[pf2e.classfeatures.bok3P78CMchFibxC]{Weapon Innovation}, you can choose to change the damage of your hazardous terrain to fire damage.</p>"
+        },
+        "Bi-Adapted Build": {
+            "name": "Bi-Adapted Build",
+            "description": "<p>You adapt your innovation for further combat prowess. Your innovation gains the two-hand d10 trait if it was a club or the versatile S and deadly d6 traits if it was a knife.</p>"
+        },
+        "Vital Core": {
+            "name": "Vital Core",
+            "description": "<p>Your innovation can pack exceptionally powerful bursts of healing. When you use @Compendium[pf2e.feats-srd.obGGzuPcgO5Xiz6P]{Searing Restoration} on a target of your Invigoration Link, you increase the die of the healing to [[/r ceil(@actor.level/2)d11[healing]]]{d12 level based healing} instead of d10.</p>"
+        },
+        "Sonar Alert System": {
+            "name": "Sonar Alert System",
+            "description": "<p>Your construct innovation gains extra-sensory perception for audio that it uses to alert you and your allies. Your construct innovation gains echolocation as an imprecise sense out to 30 feet. If your construct companion detects a creature with one of its senses, either by using the @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} action or detecting the creature normally, it can @Compendium[pf2e.actionspf2e.sn2hIy1iIJX9Vpgj]{Point Out} the location of the creature it detected as a free action to all of its allies within 60 feet. This is an auditory effect.</p>\n<p>@UUID[Compendium.pf2e-team-plus-inventors.inventors-effects.Item.RKuoPIv8IRprcRqL]{Effect: Sonar Alert System}</p>"
+        },
+        "Technomancy Swing": {
+            "name": "Technomancy Swing",
+            "description": "<p>When you cast <em>@UUID[Compendium.pf2e-team-plus-inventors.inventors-spells.rLpTFGCUUdXtUbaL]{Technomancy Ray}</em>, you can instead make your attack a melee spell attack roll instead of a ranged spell attack roll. If you do, you increase the damage dice of your technomancy ray by one step.</p>"
+        },
+        "Unconvention": {
+            "name": "Unconvention",
+            "description": "<p>The birth of innovation is pursuing alternatives, and inventors are always seeking to push the limits of what is possible. While some may regard them as unconventional, they prove effective and derive results nonetheless.</p>\n<p>When you first become an inventor, you can choose to gain an Unconvention. When you select an Unconvention, you lose the Overdrive and Explode Inventor class features and gain the listed class features instead. When you gain additional damage from Expert Overdrive, Master Overdrive, and Legendary Overdrive, you instead increase the damage you deal from the listed action. When using the listed actions, or any time your innovation explodes on a critical failure and damages you, change the damage type from fire damage to the type of damage used for your Overdrive’s replacement. If a feat or ability would use or require the use of Overdrive or Explode, you instead use your Unconventions replacement for any effects or prerequisites for those actions.</p>\n<p>If you take Variable Core or Variable Gadgetry class feats, you add fire to the possible choices for damage types instead of the damage type that corresponds to your Unconvention’s unstable action if those feats include its damage type as a choice. In addition, if you gain an ability that deals fire damage from an inventor class feature or class feat, you instead deal the damage associated with the unstable action you gained from your choice of Unconvention.</p>\n<p>When under the effects of a replacement for Overdrive, you can still use the replacement action. You can't extend your replacement Overdrive’s duration this way, but you can turn a replacement overdrive into a critical replacement overdrive if you critically succeed. A failure has no effect on your current replacement Overdrive, and you end your Overdrive on a critical failure.</p>"
+        },
+        "Reverberate": {
+            "name": "Reverberate",
+            "description": "<p>You are fitted with acoustic devices of your own invention, bells, whistles, and other noisy accouterments. You use these tools to produce sound waves, providing you a levy of power. @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.xzEHcJhjq8Q6QSTj]{Reverberate} replaces @UUID[Compendium.pf2e.actionspf2e.3D9kGfwg4LUZBR9A]{Overdrive}.</p><p>If you have a @Compendium[pf2e.classfeatures.bok3P78CMchFibxC]{Weapon Innovation}, you can choose to change the additional damage from Reverberate to sonic damage.</p>"
+        },
+        "Conducting Alloys": {
+            "name": "Conducting Alloys",
+            "description": "<p>Skymetal alloys allow you to supercharge your wielded items. You gain the @Compendium[pf2e.feats-srd.uR62fVC9FyQAMCO1]{Trick Magic Item} feat and can use Crafting instead of the skill required for your check. If you Activate a metallic invested item that has a saving throw DC, you can add the unstable trait to your Activation to use your inventor DC instead of the item's DC if it is higher.</p>"
+        },
+        "Concealing Holograms": {
+            "name": "Concealing Holograms",
+            "description": "<p>You can use your innovation's holo-projections to make your spells difficult to notice. You can spend 2 Interact actions to create a @Template[type:emanation|distance:10] of holograms until the end of your next turn. These holograms hide your spell effects while within the area, giving any spells you Cast the subtle trait.</p>"
+        },
+        "Medicinal Cannon": {
+            "name": "Medicinal Cannon",
+            "description": "<p>You can charge up a blast of vital energy. Your innovation gains the combination trait. While in its ranged form, it deals 1d6 damage, has the modular (bludgeoning and vitality) trait, a range increment of 20 feet, a reload of 1, and is in the firearm group. Your cannon does not require ammunition. If you have Bi-adapted Build, when you can wield your cannon in two hands to give it the kickback trait.</p>"
+        }
+    }
+}

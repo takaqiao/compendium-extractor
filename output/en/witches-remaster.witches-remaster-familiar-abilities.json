@@ -1,0 +1,152 @@
+{
+    "label": "Familiar Abilities",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Familiar of Churning Saltwater": {
+            "name": "Familiar of Churning Saltwater",
+            "description": "<p>Your familiar has aquatic traits like scales, fins or gills. When you Cast or Sustain a hex, the air around you feels thick with sea water causing others to be easily manipulated by water for 1 round. All creatures within a @Template[type:emanation|distance:10] of the familiar take a -1 circumstance penalty to their Fortitude DC and AC against water effects, and non-magical fires in the area are extinguished.</p>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-effects.Item.26gnYBUo83UkIPYr]{Effect: Familiar of Churning Saltwater}</p>"
+        },
+        "Familiar of Faraway Worlds": {
+            "name": "Familiar of Faraway Worlds",
+            "description": "<p>Your familiar has constant swirling illusory effects and changes colors on a whim. When you Cast or Sustain a hex, your familiar generates illusions that resemble your story's setting for 1 round in a @Template[type:emanation|distance:15], giving creatures in the area a -1 status penalty to checks to disbelieve illusions and granting illusions you cast within the area the subtle trait.</p>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-effects.Item.YK3mVpz74OdcEaEK]{Effect: Familiar of Faraway Worlds}</p>"
+        },
+        "Familiar of Ticking Parts": {
+            "name": "Familiar of Ticking Parts",
+            "description": "<p>Your familiar is clearly mechanical in some way, with mechanisms far more complex than even the most extraordinary clock. Your familiar has the constructed familiar ability even if it doesn't meet the requirements. When you Cast or Sustain a hex, your familiar fills one of its adjacent squares with steam creating concealment, though creatures in the square can't use this concealment to Hide or Sneak. The steam remains for 1 round.</p>"
+        },
+        "Fungus+": {
+            "name": "Fungus+",
+            "description": "<p>Your familiar has the fungus trait instead of the animal trait. Your familiar gains resistance equal to half your level against acid damage (minimum resistance 1).</p>"
+        },
+        "Undead": {
+            "name": "Undead",
+            "description": "<p>Your familiar has the undead trait instead of the animal trait. It has void healing and is immune to death effects, disease, poison, and unconscious. It’s destroyed at 0 HP.</p>"
+        },
+        "Familiar of Armageddon's Favor": {
+            "name": "Familiar of Armageddon's Favor",
+            "description": "<p>Your familiar seems to be a conduit of disasters, with things breaking or catching fire around them suspiciously often. When you Cast or Sustain a hex, your familiar can cause a creature within 30 feet that is suffering from persistent damage to create hazardous terrain in a @Template[type:burst|distance:5] centered on a square of its space. The hazardous terrain deals damage equal to @Damage[2+floor(@actor.level/2)] of the same damage type as one of the persistent damages affecting the target that lasts for 1 round.</p>"
+        },
+        "Familiar of Disorienting Proximity": {
+            "name": "Familiar of Disorienting Proximity",
+            "description": "<p>Your familiar’s presence or appearance is sometimes difficult to stomach due to the feeling of disorientation and pressure that seems to float around it. When you Cast or Sustain a hex, your familiar places a painful scourge onto the mind of creatures within a @Template[type:emanation|distance:10], causing creatures to become @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round whenever they take an action with the concentrate or manipulate traits.</p>"
+        },
+        "Familiar of Entrancing Temptation": {
+            "name": "Familiar of Entrancing Temptation",
+            "description": "<p>Your familiar causes longing stares and enhanced feelings as long as it is present. When you Cast or Sustain a hex, your familiar causes one fascinated creature within 15 feet to become passive, and it cannot use reactions until the beginning of your next turn or until it is no longer fascinated, whichever comes first.</p>"
+        },
+        "Flora Form": {
+            "name": "Flora Form",
+            "description": "<p>Your plant or fungus familiar can change shape as a single action, transforming into a Tiny plant or fungus of a type roughly similar to the familiar's nature. This otherwise uses the effects of @UUID[Compendium.pf2e.spells-srd.Item.dileJ0Yxqg76LMvu]{One with Plants}. You must have a familiar with the plant or fungus trait to select this ability.</p>"
+        },
+        "Familiar of Reprising Melody": {
+            "name": "Familiar of Reprising Melody",
+            "description": "<p>Your familiar seems to be constantly surrounded by music, filling the minds of others with rhapsodic melodies. When you Cast or Sustain a hex, your familiar can flood a single creature within 15 feet with music, reducing their @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition by 1 or giving them the @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} condition until the beginning of their next turn, your choice.</p>"
+        },
+        "Familiar of Flowing Script+": {
+            "name": "Familiar of Flowing Script+",
+            "description": "<p>Your familiar is covered in a pattern that looks similar to letters in an unknown language, one that seems to draw attention even as it eludes understanding. When you Cast or Sustain a hex, the letters imprinted on your familiar form in the shape of a creature in a square within 15 feet, causing a distraction. Until the start of your next turn, the square counts as a creature threatening your enemies and provides flanking for you and your allies as though it were able to attack and had a reach of 5 feet; this is a visual effect.</p>"
+        },
+        "Glow": {
+            "name": "Glow",
+            "description": "<p>Your familiar emanates light like a torch which it can suppress or resume as a single action with the concentrate trait.</p>"
+        },
+        "Sanctum of Spirit": {
+            "name": "Sanctum of Spirit",
+            "description": "<p>Your familiar creates a sanctum of blessed spirits that protect and nourish those inside its aura in a 15-foot emanation until the end of your next turn. Your familiar can Sustain the aura on subsequent turns up to 1 minute. You and your allies inside the aura gain a +1 status bonus to saves and resistance to mental damage equal to your level. Creatures take a -2 circumstance penalty to attacks against you and allies within the sanctum as long as you or your allies have not taken a hostile action since the sanctum was created.</p>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-effects.Item.8Z1lbN4kP84vKcUq]{Aura: Sanctum of Spirit}</p>"
+        },
+        "Track Assistant": {
+            "name": "Track Assistant",
+            "description": "<p>Whenever you attempt a Survival check to Track, if your familiar is nearby and can act, it lends its senses. This grants you a +1 circumstance bonus, or +2 if you're a master in Survival. If your familiar possesses senses you do not, such as scent, you can Track creatures usings its senses as well as your own.</p>"
+        },
+        "Self-Preservation Magic": {
+            "name": "Self-Preservation Magic",
+            "description": "<p>Once per hour, your familiar can cast one spell of its choice on itself: @UUID[Compendium.pf2e.spells-srd.Item.3JG1t3T4mWn6vTke]{Blur} or @UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility}. They cast this spell as an innate spell of your tradition. You must be at least 8th level and be able to cast spells to select this.</p>"
+        },
+        "Familiar of Soul Consumption": {
+            "name": "Familiar of Soul Consumption",
+            "description": "<p>Your familiar appears skeletal, spectral, or perhaps even decomposing. When you Cast or Sustain a hex, your familiar chooses an ally within 15 feet to protect until the beginning of your next turn. If the chosen ally is hit by a Strike, your familiar siphons the soul of the creature that made the Strike, dealing @Damage[(max(1,(floor(@actor.level/2))))[spirit]] and healing itself for an equal amount.</p>"
+        },
+        "Plant+": {
+            "name": "Plant+",
+            "description": "<p>Your familiar has the plant trait instead of the animal trait. Your familiar gains resistance equal to half your level against poison damage (minimum resistance 1).</p>"
+        },
+        "Familiar of Murky Worlds": {
+            "name": "Familiar of Murky Worlds",
+            "description": "<p>Your murky familiar guides you and allies to the safest paths through treacherous land with unwavering accuracy. When you Cast or Sustain a hex, your familiar can grant a creature within 30 feet the ability to ignore non-magical concealment and circumstance bonuses to AC due to cover for 1 round.</p>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-effects.Item.l15SCSWGttzPOPOO]{Effect: Familiar of Murky Worlds}</p>"
+        },
+        "Ooze": {
+            "name": "Ooze",
+            "description": "<p>Your familiar has the ooze trait instead of the animal trait. It is immune to critical hits and precision damage, but its AC is only 10 + your level (instead of an AC equal to yours).</p>"
+        },
+        "Dragon+": {
+            "name": "Dragon+",
+            "description": "<p>Your familiar has the dragon trait instead of the animal trait. Choose one of the following: acid, cold, electricity, fire, or poison. Your familiar gains resistance equal to half your level (minimum resistance 1) against the chosen damage type.</p>"
+        },
+        "Familiar of Illogical Forms": {
+            "name": "Familiar of Illogical Forms",
+            "description": "<p>Your familiar's body is irrational, and can change itself quickly. When you Cast or Sustain a hex, your familiar gains one of the following familiar abilities and grants the same familiar ability to one ally of your choice within 30 feet that lasts 1 round: amphibious, climber, darkvision, echolocation, gills, jet, levitator, or scent.</p>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-effects.Item.uMsJf4gXNiRKki6V]{Effect: Familiar of Illogical Forms}</p>"
+        },
+        "Magic Item Adept": {
+            "name": "Magic Item Adept",
+            "description": "<p>You can command your familiar to Activate a scroll or wand of an item level 10 levels lower than your level, despite familiars normally being unable to Activate items. You must be able to Activate the item for your familiar to be able to Activate it, and if Activating the item requires a check, your familiar must be @UUID[Compendium.pf2e.familiar-abilities.Item.jevzf9JbJJibpqaI]{Skilled} in the appropriate skill and must attempt the appropriate check. You must be at least 11th level and your familiar must have the @UUID[Compendium.pf2e.familiar-abilities.Item.cT5octWchU4gjrhP]{Manual Dexterity} and @UUID[Compendium.pf2e.familiar-abilities.Item.zyMRLQnFCQVpltiR]{Speech} abilities to select this.</p>"
+        },
+        "Illusory Projection": {
+            "name": "Illusory Projection",
+            "description": "<p>Your familiar creates an illusion with accompanied sound that comes from it in a @Template[type:burst|distance:30] that includes the space of your familiar, @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{concealing} it while inside and providing a convincing illusion of your choice within the area. Your familiar can appear as another creature while within the area and the illusion lasts until the end of your next turn. Your familiar can Sustain the illusion on subsequent turns up to 1 minute, moving illusory objects or other entities as part of the Sustain. Creatures that would target your familiar can attempt to Seek for it within your illusion or attempt to disbelieve your illusion entirely, rolling against your familiar’s Stealth DC to Seek for it or against your spell DC to disbelieve your illusion. Once a creature has disbelieved your illusion, it can target your familiar normally for the duration, but if your familiar is merely detected with a Seek, it can still Hide within the illusion again or Sustain the effect to alter its appearance once more.</p>"
+        },
+        "Produce Sustenance": {
+            "name": "Produce Sustenance",
+            "description": "<p>When your familiar uses plant form it can produce fruits, nuts, or some other form of sustenance if it spends 1 hour in this form. The produce generated from this ability functions as a @UUID[Compendium.pf2e.spells-srd.Item.vQuwLqtFFYt0K15N]{Cornucopia} spell heightened to a rank equal to half your level rounded up. The produce can be harvested from the familiar by spending a single Interact action to remove it, but once the produce is removed it must be consumed within 10 minutes or it withers away. If your familiar assumes its normal form while produce is still attached, it falls to the ground and begins to wither in 10 minutes as if it was harvested. You must be at least 4th level and your familiar must have the @UUID[Compendium.witches-remaster.witches-remaster-familiar-abilities.Item.Tjoy8m9g4hbpjsHb]{Plant Form} ability to select this.</p>"
+        },
+        "Familiar of Conflicting Authority": {
+            "name": "Familiar of Conflicting Authority",
+            "description": "<p>Your familiar seems to watch people in a way that makes them feel surveilled. When you Cast or Sustain a hex, your familiar can target one creature within 15 feet to give the creature a @Check[type:flat|dc:15] to its next Interact, Step, or Stride until the end of its next turn. On a failure, the creature cannot take that action as its next action and on a critical failure the creature loses the action entirely. If the action was part of an activity, only the subordinate action is lost if the activity could still be completed without the action (such as the first Stride of Sudden Charge).</p>"
+        },
+        "Familiar of Desires Granted": {
+            "name": "Familiar of Desires Granted",
+            "description": "<p>Your familiar seems almost too luxurious and pampered to be real—here to monitor your own wishes, naturally. When you Cast or Sustain a hex, your familiar can offer another creature reprieve from discomfort within 15 feet, allowing it to reduce a condition with a value by 1 if it spends its reaction with the linguistic trait to speak a wish for it to be removed. If the condition has a duration, it is reduced by 1 for 1 round, and returns to its normal condition value after 1 round has passed.</p>"
+        },
+        "Familiar of Stumbling Steps": {
+            "name": "Familiar of Stumbling Steps",
+            "description": "<p>Your familiar is right at home with the animals of a city, and others subconsciously find themselves stumbling towards it. When you Cast or Sustain a hex, your familiar can cause a creature within 15 feet that is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to you to move 5 feet in a direction of your choice. If the creature is unable to move in the direction you chose, it instead becomes off-guard until the beginning of its next turn. This is forced movement.</p>"
+        },
+        "Tool Savant": {
+            "name": "Tool Savant",
+            "description": "<p>Your familiar can carry a toolkit of up to 1 Bulk instead of only L Bulk. Your familiar can use the tools to perform skill actions or activities that would require it to be trained with its worn tools. If the action is an exploration activity, you must be able to give it consistent Commands for the duration for it to perform the activity on your behalf, using your own exploration activity to Command your familiar. Your familiar must have the @UUID[Compendium.pf2e.familiar-abilities.Item.cT5octWchU4gjrhP]{Manual Dexterity} and @UUID[Compendium.pf2e.familiar-abilities.Item.uUrsZ4WvhjKjFjnt]{Toolbearer} abilities to select this and must be @UUID[Compendium.pf2e.familiar-abilities.Item.jevzf9JbJJibpqaI]{Skilled} in the required skill to use the tools to perform the trained action.</p>"
+        },
+        "Familiar of Keen Senses+": {
+            "name": "Familiar of Keen Senses+",
+            "description": "<p>Your familiar has glinting eyes, twitching ears, or some other sign of a beast's powerful senses. When you Cast or Sustain a hex, your familiar gains your choice of a precise scent, tremorsense, or wavesense, with a range of 60 feet until the start of your next turn, and it can immediately @UUID[Compendium.pf2e.actionspf2e.Item.sn2hIy1iIJX9Vpgj]{Point Out} as a free action.</p>\n<p>@UUID[Compendium.witches-remaster.witches-remaster-effects.Item.DD0PQvN8azmegb01]{Effect: Familiar of Keen senses}</p>"
+        },
+        "Familiar of Ongoing Misery+": {
+            "name": "Familiar of Ongoing Misery+",
+            "description": "<p>Your familiar seems hostile to all creatures other than you, hissing at them if they get too near. When you Cast or Sustain a hex, your familiar can curse a creature within 15 feet of it, prolonging the duration of any negative effects caused by a hex you cast by 1 round. This is a curse effect. This prolongs only effects that require a Sustain to remain in effect or with a timed duration (such as \"1 round\" or \"until the end of your next turn\") and doesn't prevent effects from being removed by other means.</p>"
+        },
+        "Fungal Expulsion": {
+            "name": "Fungal Expulsion",
+            "description": "<p>Once per hour, you can Command your fungus familiar to spend its 2 actions for the turn to expel a cloud of refuse in a @Template[distance:10|type:emanation] that lasts 3 rounds or until dispersed by a strong wind. All creatures that end their turn within the area must attempt a @Check[type:fortitude|dc:resolve(@actor.master.attributes.classOrSpellDC.value)] save. Creatures that fail their save become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure. You must be at least 4th level and your familiar must be a fungus to select this.</p>"
+        },
+        "Breath Weapon": {
+            "name": "Breath Weapon",
+            "description": "<p>Once per hour, you can Command your dragon familiar to spend its 2 actions for the turn to breath an element in a @Template[distance:10|type:cone], a @Template[distance:15|type:line], or a @Template[distance:5|type:burst] within 20 feet. Each creature in the area takes @Damage[(floor(@actor.level / 2))d6[@actor.flags.witches-remaster.dragon.damage]] damage for every 2 levels you have with a @Check[type:reflex|dc:resolve(@actor.master.attributes.classOrSpellDC.value)|basic:true] save. The damage type must be of the same type as one of its resistances. You must be at least 6th level and your familiar must have a resistance and be a dragon to select this. You select the shape of the breath weapon during your daily preparations.</p>"
+        },
+        "Menacing": {
+            "name": "Menacing",
+            "description": "<p>Your familiar can add the visual trait to its Demoralize to remove the linguistic and auditory traits, and it does not take a penalty to its Demoralize if it doesn't share a language. If your familiar is undetected or hidden to the target of its Demoralize, it gains a +1 circumstance bonus to its check. Your familiar must have the @UUID[Compendium.pf2e.familiar-abilities.Item.jevzf9JbJJibpqaI]{Skilled (Intimidation)} familiar ability to select this.</p>"
+        },
+        "Familiar of Sunlit Dawn": {
+            "name": "Familiar of Sunlit Dawn",
+            "description": "<p>Your familiar glows faintly at all times and shimmers in sunlight. When you Cast or Sustain a hex, your familiar chooses one creature within 15 feet that can see it and is also in bright light, and the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the beginning of your next turn or until it spends an Interact action to rub its eyes.</p>"
+        }
+    }
+}

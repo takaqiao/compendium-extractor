@@ -1,0 +1,360 @@
+{
+    "label": "Misc",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Qi-Empowered Blows": {
+            "name": "Qi-Empowered Blows",
+            "description": "<p>You use your life force to empower your attack. Reduce your Hit Points by an amount of your choice, with a minimum of 1 and a maximum of 2 plus half your level (limited by your total remaining Hit Points). Reducing your Hit Points in this way doesn’t count as damage and can’t be mitigated. The next successful melee Strike you make before the end of your turn deals additional spirit damage equal to the amount of Hit Points you chose.</p><p><strong>Energize</strong> Strikes that deal additional damage leave a spiritual imprint on the target’s body for 1 minute, allowing you to perceive the creature as long as it is within 30 feet of you. This is an imprecise sense. If you reduced your Hit Points by at least 5 when you used Qi-Empowered Blows, this sense is precise instead of imprecise</p>"
+        },
+        "Stance: Dance of the Kaiju Caller": {
+            "name": "Stance: Dance of the Kaiju Caller",
+            "description": "<p>You have lesser cover to Large or larger creatures and gain a +1 circumstance bonus to AC against them. You can use Take Cover even if you do not meet its requirements, but you only gain the effects against creatures that are Large or larger. If you do meet its requirements, you gain the effects of greater cover against Large or larger creatures. If a Large or larger creature critically hits a Strike against you or you critically fail a save against an area effect it produced while you are in this stance, your stance ends.</p>"
+        },
+        "Secure Convoy": {
+            "name": "Secure Convoy",
+            "description": "<p>You focus your senses and efforts on protecting the convoy. Designate a single non-hostile creature, unattended item, or vehicle piloted by a non-hostile creature as your convoy. You must be able to see or hear the convoy, or you must be tracking the convoy during exploration. You gain a +2 circumstance bonus to Perception checks when you Seek your convoy and a +2 circumstance bonus to Survival checks when you Track your convoy. While traveling with your convoy, your convoy can Hustle for as long as you can. When you @UUID[Compendium.pf2e.actionspf2e.JYi4MnsdFu618hPm]{Hunt Prey}, your convoy gains a +1 circumstance bonus to their AC and saves against your prey and you deal 1 additional damage per weapon damage die on Strikes against your prey. If your prey targeted your convoy with a hostile action within the last round, this additional damage doubled.</p><p>You can have only one creature, item, or vehicle designated as your convoy at a time. If you use Secure Convoy against a creature, item, or vehicle when you already have one designated, the prior creature, item, or vehicle loses the designation and the new one gains the designation. Your designation lasts until your next daily preparations.</p><p>@UUID[Compendium.pf2e-team-plus-tian-xia.misc.ODEHKZ7u0CaZsR8P]{Effect: Ranger's Convoy}</p>"
+        },
+        "Effect: Ballad of Focus": {
+            "name": "Effect: Ballad of Focus",
+            "description": "<p><strong>Expert</strong> Allies who heard the song gain a +1 status bonus to their ranged attack rolls and to Will saves against emotion effects.</p><p><strong>Master</strong> As expert, except the status bonus is +2.</p><p><strong>Legendary</strong> As expert, except the status bonus is +3.</p>"
+        },
+        "Effect: Counterwit": {
+            "name": "Effect: Counterwit",
+            "description": "<p>You gain a +2 status bonus against mental effects until the beginning of your next turn.</p>"
+        },
+        "By Thine Authority": {
+            "name": "By Thine Authority",
+            "description": "<p><strong>Requirements</strong> You have a document you created with @UUID[Compendium.pf2e-team-plus-tian-xia.misc.jtAILwSlLZIpjB9g]{Proclamation of Authority} stowed and a free hand or are holding the document.</p><hr /><p>You present the document in a triumphant manner, confidently brandishing its authenticity with authority. Make a @Check[society|against:will] check against the Will DC of creatures within 15 feet of you that would respect the authority of the document. You can Lie about the authority of the document when presenting it as part of the same check, but you take a –2 circumstance penalty to your attempt if you do. Regardless of the result, creatures are temporarily immune to this effect for 1 day.</p><hr /><p><strong>Critical Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} and can’t take hostile actions against you while frightened. If you or your allies take hostile actions against the creature, the creature can take hostile actions as normal but remains frightened.</p><p><strong>Success</strong> As critical success, but the creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>"
+        },
+        "Effect: Imperial Aura (Penalty, Soverign)": {
+            "name": "Effect: Imperial Aura (Penalty, Soverign)",
+            "description": "<p>They gain a weakness to the damage type of your imperial dragon equal to half your level and a –1 status penalty against mental effects. These effects last for as long as they remain in the area and for 1 round after they leave the area, or for 4 rounds after they leave the area if they got a critical failure on their Will save.</p>"
+        },
+        "Effect: Dance Upon the Soaring Blade (Animated Rune)": {
+            "name": "Effect: Dance Upon the Soaring Blade (Animated Rune)",
+            "description": "<p>During your daily preparations, you can select a single weapon you hold and grant it the animated property rune, which doesn’t count toward your maximum limit of runes.</p>"
+        },
+        "Disrupting Riposte": {
+            "name": "Disrupting Riposte",
+            "description": "<p><strong>Trigger</strong> An enemy targeted by Destabilizing Guard targets you with a Strike</p><hr /><p>You gain a +2 circumstance bonus to AC to Strikes from the target until the start of your next turn. You lose this circumstance bonus if you no longer meet this feat’s requirement. If the triggering attack misses you, the triggering creature is @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} until the end of your next turn.</p>"
+        },
+        "Effect: Attract Wrath": {
+            "name": "Effect: Attract Wrath",
+            "description": "<p>Your ally gains a +1 circumstance bonus to AC and to Reflex saves against the triggering effect</p>"
+        },
+        "Effect: Guide to Freedom": {
+            "name": "Effect: Guide to Freedom",
+            "description": "<p>Your kami calls on nearby vines and roots to impede your target, granting a +1 status bonus to your roll.</p>"
+        },
+        "Effect: Feed on Water": {
+            "name": "Effect: Feed on Water",
+            "description": "<p>You gain temporary Hit Points equal to your level that last for as long as you are channeling your dragon.</p>"
+        },
+        "Effect: Spirit of the Rushing River": {
+            "name": "Effect: Spirit of the Rushing River",
+            "description": "<p>This grants you the swarm and water traits, immunity to the immobilized, grabbed, and restrained conditions, you have resistance equal to half your level to fire and physical damage, and weakness equal to half your level to area and splash damage. You can fit into spaces only a few inches wide. You don't gain the swarm mind ability, so you're still affected normally by mental effects. As a swarm, you can't speak, cast spells, use manipulate actions requiring your hands, activate your magic items, or make any of your Strikes with your normal body. You gain the Torrential Flow action.</p>"
+        },
+        "Effect: Feed on Metal": {
+            "name": "Effect: Feed on Metal",
+            "description": "<p>You gain a +1 item bonus to AC or increase your item bonus to AC by 1 until the end of your next turn.</p>"
+        },
+        "Stance: Maglalatik Stance": {
+            "name": "Stance: Maglalatik Stance",
+            "description": "<p><strong>Requirements</strong> You are wearing maglalatik armor and wielding coconut shells in both hands</p><hr /><p>You use your armor made of coconut shell halves and the shells in your hands to weave together a song of protection composed of the percussion of your own body. While in this stance, coconut shells increase their damage die to d6 and gain the finesse and parry traits. When you Perform you gain the effects of the parry trait as if you’d spend a single action, except you can choose to give the circumstance bonus to an adjacent ally instead of yourself that lasts until the beginning of your next turn or until they are no longer adjacent, whichever comes first.</p><hr /><p>Special If you have Dueling Parry, the circumstance bonus from the parry trait you grant to both yourself and allies increases to +2.</p>"
+        },
+        "Bestow Favor": {
+            "name": "Bestow Favor",
+            "description": "<p><strong>Trigger</strong> You attempt a Nature check to Hide</p><hr /><p>Your kami assists you by calling on nature to help you avoid being spotted. Roll the triggering check twice and use the better result.</p>"
+        },
+        "Effect: Imperial Aura (Penalty, Sky)": {
+            "name": "Effect: Imperial Aura (Penalty, Sky)",
+            "description": "<p>They gain a weakness to the damage type of your imperial dragon equal to half your level and a –1 status penalty against mental effects. These effects last for as long as they remain in the area and for 1 round after they leave the area, or for 4 rounds after they leave the area if they got a critical failure on their Will save.</p>"
+        },
+        "Effect: Line of Succession": {
+            "name": "Effect: Line of Succession",
+            "description": "<p>The ally gains a 40 temporary Hit Points, a +2 status bonus to AC and to skill checks for actions or activities that would bring it closer to you for 1 minute</p>"
+        },
+        "Guide to Freedom": {
+            "name": "Guide to Freedom",
+            "description": "<p><strong>Trigger</strong> You attempt to Escape or make a Reflex save to avoid being grabbed, immobilized, or restrained</p><p><strong>Requirements</strong> You are in natural terrain</p><hr /><p>Your kami calls on nearby vines and roots to impede your target, granting a +1 status bonus to your roll.</p>"
+        },
+        "Effect: Whisper of Knowledge": {
+            "name": "Effect: Whisper of Knowledge",
+            "description": "<p>Your kami provides you assistance, and you gain a +2 status bonus to the check.</p>"
+        },
+        "Hongali Support Benefit": {
+            "name": "Hongali Support Benefit",
+            "description": "<p>Until the start of your next turn, if you're mounted on your animal companion and moved 10 feet or more on the action before a ranged Strike with a weapon in the bow group, add a circumstance bonus to damage for that Strike equal to twice the number of weapon damage dice.</p><p>@UUID[Compendium.pf2e-team-plus-tian-xia.misc.Item.L6Uz6Hgz85dOQZFa]{Effect: Hongali Support Benefit}</p>"
+        },
+        "Effect: Step on the Wind (Energize)": {
+            "name": "Effect: Step on the Wind (Energize)",
+            "description": "<p>You Fly instead of Leap and gain a fly Speed equal to your Speed that lasts for 1 minute.</p>"
+        },
+        "Chorus of the Flock": {
+            "name": "Chorus of the Flock",
+            "description": "<p>Your sparrow sings with the voice of a thousand sparrows to raise those in most need. All creatures within a 30-foot emanation of your sparrow that have the dying condition immediately reduce their dying condition by 2. If the creature has not made a hostile action against any other creatures in the last 10 minutes, they reduce their dying condition by 4 instead. If a creature’s dying condition is reduced to 0 from this effect, they regain 1 Hit Point and immediately regain consciousness without increasing the value of their wounded condition.</p>"
+        },
+        "Condemn": {
+            "name": "Condemn",
+            "description": "<p><strong>Trigger</strong> You observe a creature commit an act of anathema to your kami</p><hr /><p>You place a kami's mark on the creature that lasts for one week. The mark is visible to you and creates a 30-foot emanation that includes the target. While within the aura, you can observe the creature even if it has concealment, cover, or invisibility, as the mark reveals itself to you through these obstacles and you gain a +2 status bonus to damage rolls against the creature. Animals within the aura treat their attitude towards the creature as one step worse than normal and the target takes a –4 status penalty to Charisma-based skill checks against animals within this emanation. The target can attempt to Identify and counteract the mark by spending 3 actions to remove the mark and making a Nature or Religion check against your class DC or spell DC, whichever is higher. You gain a +4 circumstance bonus to Track creatures with your kami’s mark active. You can only have one mark active at a time and if you use Condemn again, any previous marks immediately end.</p>"
+        },
+        "Effect: Imperial Aura (Soverign)": {
+            "name": "Effect: Imperial Aura (Soverign)",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">You begin channeling your dragon, gaining the traits for your dragon type. You gain resistance equal to half your level to the damage type of your dragon and a +1 status bonus to saves against effects with this trait.</span></p>"
+        },
+        "Effect: Hongali Support Benefit": {
+            "name": "Effect: Hongali Support Benefit",
+            "description": "<p>Until the start of your next turn, if you're mounted on your animal companion and moved 10 feet or more on the action before a ranged Strike with a weapon in the bow group, add a circumstance bonus to damage for that Strike equal to twice the number of weapon damage dice.</p>"
+        },
+        "Kneel Before the Soverign": {
+            "name": "Kneel Before the Soverign",
+            "description": "<p><strong>Trigger</strong> A creature within your aura critically fails a Strike against you</p><p><strong>Effect</strong> You command the target to kneel before you. It must attempt a @Check[will|against:class-spell] save against your class DC or spell DC, whichever is higher. Creatures that fail their save kneel and drop @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} as a free action.</p>"
+        },
+        "Effect: Ballad of Strength": {
+            "name": "Effect: Ballad of Strength",
+            "description": "<p><strong>Expert</strong> Allies who heard the song gain a +1 status bonus to their melee attack rolls.</p><p><strong>Master</strong> As expert, except the status bonus is +2.</p><p><strong>Legendary</strong> As expert, except the status bonus is +3.</p>"
+        },
+        "Effect: Masterful Ranger's Convoy": {
+            "name": "Effect: Masterful Ranger's Convoy",
+            "description": "<p>You gain a +2 circumstance bonus to your AC and saves against the ranger's hunted prey.</p>"
+        },
+        "Protect the Meek": {
+            "name": "Protect the Meek",
+            "description": "<p><strong>Trigger</strong> A creature within 30 feet attempts to Strike against a creature with the frightened or off-guard condition</p><p><strong>Requirements</strong> You are holding your lantern of Phi Deva</p><hr /><p>You shine the light on those that would harm the defenseless. The triggering creature must attempt a @Check[reflex|against:class-spell] save against your class DC or spell DC, whichever is higher. Creature’s that fail their save are @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round, or 1 minute on a critical failure. Regardless of the result, the creature is temporarily immune for 10 minutes.</p>"
+        },
+        "Effect: Soul Form (Full Manifestation)": {
+            "name": "Effect: Soul Form (Full Manifestation)",
+            "description": "<p>If you manifested the essence form of all three soul armaments, you gain the effects of a 4th-rank enlarge spell and resistance equal to your level to all damage.</p>"
+        },
+        "Effect: Imperial Aura (Forest)": {
+            "name": "Effect: Imperial Aura (Forest)",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">You begin channeling your dragon, gaining the traits for your dragon type. You gain resistance equal to half your level to the damage type of your dragon and a +1 status bonus to saves against effects with this trait.</span></p>"
+        },
+        "Effect: Moss Cover (Moderate)": {
+            "name": "Effect: Moss Cover (Moderate)",
+            "description": "<p>Applying this oil to yourself grants you 20 temporary Hit Points for 8 hours due to the moss cover on your body protecting you.</p>"
+        },
+        "Effect: Chun Jo Do": {
+            "name": "Effect: Chun Jo Do",
+            "description": "<p>Choose one of the following options when you first gain this feat, gaining the ability to channel it through your body. When you use this action, you gain the effects of your choice for 1 minute.</p><hr /><p><strong>Kyung Seong</strong> You move with an untethered grace, as a bird in flight. You gain a +10-foot status bonus to your Speeds. If you are at least 13th level, you gain the effects of fly in addition to the normal effects.</p><p><strong>Jung Seong</strong> You move with a belligerent appreciation for the world, firmly rooting yourself in the moment. You gain a +1 status bonus to Grapple checks and to Fortitude saves against forced movement and effects that would give you the prone condition. If you are at least 13th level, the status bonus increases to +2.</p><p><strong>Chyel Seong</strong> Your limbs become as radiant as steel, guided by divine murmuration to your defense. Your fist gains the parry trait and you gain the effects of parry when you use this action. Once while the effect is active and you are benefiting from a parry circumstance bonus, you can spend your reaction to reduce the damage by your level. If you are at least 13th level, the circumstance bonus of your fist’s parry is +2 instead of +1.</p><p><strong>Ma Seong</strong> Your body becomes numb to pain and joy alike, your devotion endures while your body fails. You gain resistance to precision damage and critical hits equal to your level. If you are at least 13th level, the resistance is equal to twice your level instead of your level.</p><p><strong>Shin Seong</strong> Your mind becomes awash with sublime vigilance, granting you composure in dire circumstances. You gain a +1 status bonus against emotion effects and at the end of your turn, reduce your frightened condition by 2 instead of 1. If you are at least 13th level, the status bonus increases to +2 and anytime you gain the frightened condition, reduce its value by 1.</p>"
+        },
+        "Effect: Imperial Aura (Sky)": {
+            "name": "Effect: Imperial Aura (Sky)",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">You begin channeling your dragon, gaining the traits for your dragon type. You gain resistance equal to half your level to the damage type of your dragon and a +1 status bonus to saves against effects with this trait.</span></p>"
+        },
+        "Effect: Ranger's Convoy": {
+            "name": "Effect: Ranger's Convoy",
+            "description": "<p>You gain a +1 circumstance bonus to your AC and saves against the ranger's hunted prey.</p>"
+        },
+        "Stance: Weaving Stance": {
+            "name": "Stance: Weaving Stance",
+            "description": "<p>Your weapons gain the twin trait if they don’t already have it, even if they’re not the same weapon type. When an opponent within your reach fails a Strike against you, you gain a +1 circumstance bonus to your next melee weapon attack against them before the end of your next turn.</p>"
+        },
+        "Effect: Imperial Aura (Penalty, Sea)": {
+            "name": "Effect: Imperial Aura (Penalty, Sea)",
+            "description": "<p>They gain a weakness to the damage type of your imperial dragon equal to half your level and a –1 status penalty against mental effects. These effects last for as long as they remain in the area and for 1 round after they leave the area, or for 4 rounds after they leave the area if they got a critical failure on their Will save.</p>"
+        },
+        "Effect: Disembody (Spirit Weakness)": {
+            "name": "Effect: Disembody (Spirit Weakness)",
+            "description": "<p>The target gains a weakness to spirit damage equal to half your level for 1 round.</p><p></p>"
+        },
+        "Spell Effect: Chorus Made Manifest": {
+            "name": "Spell Effect: Chorus Made Manifest",
+            "description": "<p>For 1 minute, you gain the ability to shift form from your current form to a battle form that resembles a chiliad flock of birds, sparrow-shaped flickers of shadow and feather that are Tiny creatures. You can assume this form as part of casting this spell and you can alternate between your normal form and your battle form as a single action with the concentrate trait for the duration. While in this form, you gain the animal and swarm traits. You don’t gain the swarm mind ability, so you are still affected normally by mental effects. You can Dismiss the spell.</p><p>You gain the following statistics and abilities:</p><ul><li><p>You gain resistance 8 to physical damage and a weakness 8 to area and splash damage.</p></li><li><p>You can fit into spaces only a few inches wide, moving your birds through the gap.</p></li><li><p>Low-light vision and a fly Speed of 60 feet.</p></li><li><p>You gain a Choral Swarm Attack which deals 4d6 sonic damage with a basic Fortitude save to all creatures in a 15-foot cone which you can use a single action. Creatures that critically fail their Fortitude save are also deafened for 1 round. You cannot make Strikes while in this form.</p></li></ul>"
+        },
+        "Cycle Energy": {
+            "name": "Cycle Energy",
+            "description": "<p><strong>Trigger</strong> You would take damage from an effect with one of your attuned traits</p><hr /><p>You fuel your qi network with incoming energy. You gain resistance to the triggering damage equal to your level, and your Strikes deal 1 additional damage per weapon damage die until the end of your next turn. This damage type matches the trait of the triggering effect. If your triggering effect had multiple eligible traits, you must select one of those traits.</p>"
+        },
+        "Effect: Channel Imperial Dragon": {
+            "name": "Effect: Channel Imperial Dragon",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">You begin channeling your dragon, gaining the traits for your dragon type. You gain resistance equal to half your level to the damage type of your dragon and a +1 status bonus to saves against effects with this trait.</span></p>"
+        },
+        "Effect: Qi-Empowered Blows": {
+            "name": "Effect: Qi-Empowered Blows",
+            "description": "<p>Reduce your Hit Points by an amount of your choice, with a minimum of 1 and a maximum of 2 plus half your level (limited by your total remaining Hit Points). Reducing your Hit Points in this way doesn’t count as damage and can’t be mitigated. The next successful melee Strike you make before the end of your turn deals additional spirit damage equal to the amount of Hit Points you chose. </p>"
+        },
+        "Stance: Battle Mediation": {
+            "name": "Stance: Battle Mediation",
+            "description": "<p>In the heat of battle allows you can channel more qi than usual. While in this stance, the first time each turn you use Qi- Empowered Blows does not count towards your limit of one qi- shape per turn. In addition, the first time each turn you use a Focus Point for the Energize effect of Qi-Empowered Blows, you don’t expend a Focus Point.</p>"
+        },
+        "Spawn of Kawuk Support Benefit": {
+            "name": "Spawn of Kawuk Support Benefit",
+            "description": "<p>Your spawn menaces your foes, rendering them vulnerable to your attacks. Until the end of your next turn, foes adjacent to the Spawn are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Off-Guard} against your melee attacks.</p>"
+        },
+        "Effect: Imperial Aura (Penalty, Forest)": {
+            "name": "Effect: Imperial Aura (Penalty, Forest)",
+            "description": "<p>They gain a weakness to the damage type of your imperial dragon equal to half your level and a –1 status penalty against mental effects. These effects last for as long as they remain in the area and for 1 round after they leave the area, or for 4 rounds after they leave the area if they got a critical failure on their Will save.</p>"
+        },
+        "Effect: The Power of Friendship": {
+            "name": "Effect: The Power of Friendship",
+            "description": "<p>You gain resistance 10 to all damage and your starlit sentinel form exudes bright light in a 10-foot emanation for 2 rounds. You gain the @UUID[Compendium.pf2e-team-plus-tian-xia.misc.ana9pvkZ63MqBCzQ]{All-Out Friendship Blast!} activity.</p>"
+        },
+        "Effect: Imperial Aura (Sea)": {
+            "name": "Effect: Imperial Aura (Sea)",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">You begin channeling your dragon, gaining the traits for your dragon type. You gain resistance equal to half your level to the damage type of your dragon and a +1 status bonus to saves against effects with this trait.</span></p>"
+        },
+        "Effect: Imperial Aura (Underworld)": {
+            "name": "Effect: Imperial Aura (Underworld)",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">You begin channeling your dragon, gaining the traits for your dragon type. You gain resistance equal to half your level to the damage type of your dragon and a +1 status bonus to saves against effects with this trait.</span></p>"
+        },
+        "Whisper of Knowledge": {
+            "name": "Whisper of Knowledge",
+            "description": "<p><strong>Trigger</strong> You would attempt a Recall Knowledge check using Nature</p><hr /><p>Your kami provides you assistance, and you gain a +2 status bonus to the check.</p>"
+        },
+        "All-Out Friendship Blast!": {
+            "name": "All-Out Friendship Blast!",
+            "description": "<p><strong>Requirements</strong> You are under the effects of The Power of Friendship</p><hr /><p>You unleash an eruption of true starlit power. You deal @Damage[18d6[force]] damage in a @Template[type:emanation|distance:30] with a basic Reflex save against your class DC or spellcasting DC (whichever is higher). For each friendship counter you have, you can choose to either increase the damage by 1d6 or you can increase the area by 10 feet and you can choose separately for each counter. Creatures who choose to believe are immune to the damage of this effect.</p>"
+        },
+        "Choral Swarm Attack": {
+            "name": "Choral Swarm Attack",
+            "description": "<p>You gain a Choral Swarm Attack which deals @Damage[4d6[sonic]] damage with a @Check[fortitude|against:class-spell|basic] save to all creatures in a @Template[type:cone|distance:15] which you can use a single action. Creatures that critically fail their Fortitude save are also @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>"
+        },
+        "Effect: Ballad of Resilience": {
+            "name": "Effect: Ballad of Resilience",
+            "description": "<p><strong>Expert</strong> Allies who heard the song gain a +1 status bonus to their AC and Fortitude saves against effects that attempt to force them to move or knock them prone.</p><p><strong>Master</strong> As expert, except the status bonus is +2.</p><p><strong>Legendary</strong> As expert, except the status bonus is +3.</p>"
+        },
+        "Preserve the Vessel": {
+            "name": "Preserve the Vessel",
+            "description": "<p><strong>Trigger</strong> You are critically hit with a Strike</p><hr /><p>Your kami repels the assailant. The triggering creature must attempt a @Check[fortitude|against:class-spell] save against your class DC or spell DC (whichever is higher). On a failure, the creature is pushed 5 feet away from you, or 10 feet away from you on a critical failure.</p>"
+        },
+        "Effect: Rhythm of a Thousand Souls": {
+            "name": "Effect: Rhythm of a Thousand Souls",
+            "description": "<p>Choose a creature you can see and roll a d20. The next time before the beginning of your next turn you Strike the chosen creature or attempt a saving throw against an effect it created, you can use the result for your roll instead of rolling. You cannot make a Strike against the creature until the beginning of your next turn unless you use your result.</p>"
+        },
+        "Stance: Prong Typhoon Stance": {
+            "name": "Stance: Prong Typhoon Stance",
+            "description": "<p>While you are in this stance, you gain a +1 circumstance bonus to Athletics checks to Disarm, and successful Disarm actions grant a +3 circumstance bonus to further Disarm actions instead of +2. In addition, you can attempt to Disarm creatures up to two sizes larger than you.</p>"
+        },
+        "Effect: Energy Attunment": {
+            "name": "Effect: Energy Attunment",
+            "description": "<p>During your daily preparations, choose one of the following traits: air (slashing), cold, earth (bludgeoning), electricity, fire, metal (slashing), poison, sonic, vitality, void, water (bludgeoning), or wood (piercing). You become attuned to this trait and can choose for any force or spirit damage dealt by your cultivator feats or spells to instead gain the trait and deal the corresponding damage type. If you choose void or vitality, you can use Cycle Energy with both void and vitality damage.</p>"
+        },
+        "Attract Wrath": {
+            "name": "Attract Wrath",
+            "description": "<p><strong>Trigger</strong> An ally within 30 feet of you is targeted by a Large or larger creature with a Strike or would be included in one of its area effects</p><p><strong>Requirements</strong> You’re in dance of the kaiju caller stance</p><hr /><p>You call the enemy to target you with its wrath instead of your ally. You immediately reveal yourself, losing the benefits of your cover and the triggering creature must attempt a @Check[will|against:class-spell] against your class DC or spell DC, whichever is higher. Regardless of the result, the triggering creature is temporarily immune to this effect for 1 hour.</p><hr /><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> Your ally gains a +1 circumstance bonus to AC and to Reflex saves against the triggering effect, but the triggering creature can choose to target you with the Strike instead of your ally. If the triggering effect was an area effect, they can choose to target an area you occupy instead of the area it originally chose.</p><p>@UUID[Compendium.pf2e-team-plus-tian-xia.misc.Item.ADJ8OCL344GQFwnx]{Effect: Attract Wrath}</p><p><strong>Failure</strong> As success, except your ally also gains the benefits of the cover you had before you used this reaction and the creature must choose to target you instead of your ally or it becomes @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 round. Your ally does not need to meet the requirements of cover to gain these benefits.</p><p><strong>Critical Failure</strong> As failure, except you Take Cover immediately before the triggering effect.</p>"
+        },
+        "Torrential Flow": {
+            "name": "Torrential Flow",
+            "description": "<p><strong>Requirements </strong>You're under the effects of Spirit of the Rushing River</p><hr /><p>You swirl your waters on those in your space. You Stride, ending your movement sharing a space with a creature, and deal @Damage[5d8[bludgeoning]] damage to the creature with a @Check[reflex|against:class-spell|basic] save against your class DC or spell DC, whichever is higher. Creatures that fail their save are knocked 5 feet in a direction of your choice and creatures that critically fail their save are also knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. This is forced movement.</p>"
+        },
+        "Effect: Guile of a Soverign": {
+            "name": "Effect: Guile of a Soverign",
+            "description": "<p>You take a status penalty to attack rolls or skill checks.</p>"
+        },
+        "Effect: Soverign Armor": {
+            "name": "Effect: Soverign Armor",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">You gain a +2 circumstance bonus to AC until the beginning of your next turn.</span></p>"
+        },
+        "Effect: Kiln-Hardened": {
+            "name": "Effect: Kiln-Hardened",
+            "description": "<p>Until the end of your next turn, you gain a +1 status bonus to AC and to Fortitude saves, but suffer a –1 status penalty to Reflex and a –5-foot status penalty to your Speed. After this hardening, the magic animating you returns you to its more malleable form.</p><p><strong>Enhancement</strong> When using this reaction, you gain resistance 5 to fire, piercing, and slashing damage until the end of your next turn.</p>"
+        },
+        "Effect: Moss Cover (Major)": {
+            "name": "Effect: Moss Cover (Major)",
+            "description": "<p>Applying this oil to yourself grants you 50 temporary Hit Points for 24 hours due to the moss cover on your body protecting you.</p>"
+        },
+        "Effect: Channel Imperial Dragon (Sustain)": {
+            "name": "Effect: Channel Imperial Dragon (Sustain)",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">You can Sustain the spell to gain a +1 status bonus to checks to Diplomacy and Intimidation until the end of your next turn.</span></p><p><strong>Heightened (+3)</strong> The status bonus to Diplomacy and Intimidation increases by 1.</p>"
+        },
+        "Maglalatik Stance": {
+            "name": "Maglalatik Stance",
+            "description": "<p><strong>Requirements</strong> You are wearing maglalatik armor and wielding coconut shells in both hands</p><hr /><p>You use your armor made of coconut shell halves and the shells in your hands to weave together a song of protection composed of the percussion of your own body. While in this stance, coconut shells increase their damage die to d6 and gain the finesse and parry traits. When you Perform you gain the effects of the parry trait as if you’d spend a single action, except you can choose to give the circumstance bonus to an adjacent ally instead of yourself that lasts until the beginning of your next turn or until they are no longer adjacent, whichever comes first.</p><hr /><p>Special If you have Dueling Parry, the circumstance bonus from the parry trait you grant to both yourself and allies increases to +2.</p>"
+        },
+        "Kyoryū’s Wrath": {
+            "name": "Kyoryū’s Wrath",
+            "description": "<p><strong>Requirements</strong> Your last action was a successful jaws Strike against a creature</p><hr /><p>Make a jaws Strike at the same multiple attack penalty as the required Strike. If you hit, the target makes a @Check[fortitude|against:class-spell] save against your class DC or spell DC, whichever is higher. On a failure, the target takes an additional @Damage[5d10[piercing],5d10[@actor.flags.pf2e.imperialDragonEmissary.breathDamage]] damage.</p>"
+        },
+        "Proclamation of Authority": {
+            "name": "Proclamation of Authority",
+            "description": "<p><strong>Requirements</strong> You have a writing set and a place to write.</p><hr /><p>You draft a document with an appeal to authority, whether it be fabricated or truthful. Attempt a Society check to create a document of authority from a specific individual in a process that takes 1 hour. You can use the document to @UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{Make an Impression} on any creature that recognizes the authority of the individual chosen using your result from your Society check as the result for your Make an Impression. If you attempt to Make an Impression on a noble with the document, you gain a +2 circumstance bonus to your check or a +3 if you have the investigator expertise class feature. If you do not have the authority of the individual of the document, you can attempt to @UUID[Compendium.pf2e.actionspf2e.ewwCglB7XOPLUz72]{Lie} to defend the document using your modifier in Society instead of Deception. Once you have used a document to influence a creature, the document grants no further benefits or effects against that creature and it is temporarily immune to the effects of other documents you create for 1 hour. You gain the @UUID[Compendium.pf2e-team-plus-tian-xia.misc.6i17Cqt3fXwHFT2z]{By Thine Authority} action.</p>"
+        },
+        "Shepherd's Claws": {
+            "name": "Shepherd's Claws",
+            "description": "<p><strong>Trigger</strong> You roll initiative</p><hr /><p>You immediately bare the fangs of the shepherd. You can Interact to draw a hook sword and can then Interact to draw another hook sword. If you were already wielding two hook swords, you gain the effects of a parry as if you had spent an action to use it.</p>"
+        },
+        "Stance: Tiger's Tail Stance": {
+            "name": "Stance: Tiger's Tail Stance",
+            "description": "<p>You can Interact to link or unlink your swords, and may Interact to do so as a free action when entering the stance. You wield the linked hook swords as a single weapon in 1 hand and they gain the reach trait when wielded in this way. You are treated as wielding two hook swords while wielding linked hook swords and you cannot wield another weapon while wielding hook swords in this way. If your hook swords would have different runes or effects, you gain only the runes and effects of one of your swords which you choose when you first enter this stance.</p>"
+        },
+        "Effect: Cycle Energy": {
+            "name": "Effect: Cycle Energy",
+            "description": "<p>You gain resistance to the triggering damage equal to your level, and your Strikes deal 1 additional damage per weapon damage die until the end of your next turn. This damage type matches the trait of the triggering effect.</p>"
+        },
+        "Effect: Moss Cover (Lesser)": {
+            "name": "Effect: Moss Cover (Lesser)",
+            "description": "<p>Applying this oil to yourself grants you 10 temporary Hit Points for 4 hours due to the moss cover on your body protecting you.</p>"
+        },
+        "Effect: Verse of Preparation": {
+            "name": "Effect: Verse of Preparation",
+            "description": "<p><strong>Expert</strong> Allies who heard the song gain temporary Hit Points equal to half your level.</p><p><strong>Master</strong> As expert, except the temporary Hit Points are equal to 5 plus half your level.</p><p><strong>Legendary</strong> As expert, except the temporary Hit Points are equal to 10 plus half your level.</p>"
+        },
+        "Effect: Imperial Aura (Penalty, Underworld)": {
+            "name": "Effect: Imperial Aura (Penalty, Underworld)",
+            "description": "<p>They gain a weakness to the damage type of your imperial dragon equal to half your level and a –1 status penalty against mental effects. These effects last for as long as they remain in the area and for 1 round after they leave the area, or for 4 rounds after they leave the area if they got a critical failure on their Will save.</p>"
+        },
+        "Banga Swap": {
+            "name": "Banga Swap",
+            "description": "<p><strong>Trigger</strong> Your turn begins</p><p><strong>Requirements</strong> You are carrying an item on the top of your head</p><hr /><p>You make a quick duck and swap an item. You Interact to draw the item from the top of your head and into one of your hands. If you do not have a free hand, you can attempt a Balance check against a DC 25 plus the combined Bulk of the items to swap the items, but if you fail your check you can choose to drop one of the items instead of the normal effects.</p>"
+        },
+        "Stance: Karenza Stance": {
+            "name": "Stance: Karenza Stance",
+            "description": "<p><strong>Requirements</strong> You’re wielding a knife or sword</p><hr /><p>You begin to spin and twist around the battlefield, weapons slicing through the air as you move. While in this stance, the only Strikes you can make are with knives or swords. When you dance to Perform while wielding a knife or sword in this stance, you compare the result of your Perform to the Will DC of each enemy adjacent to you. Each creature whose Will DC you succeed against takes 2 damage per weapon damage die, or 3 damage per weapon damage die if you got a critical success. This damage must be either piercing or slashing damage, as appropriate for the required weapon.</p>"
+        },
+        "Aura: Imperial Aura": {
+            "name": "Aura: Imperial Aura",
+            "description": "<p>You gain a 5-foot aura with the elemental trait of your channel while you’re channeling your imperial dragon. Allies within the area gain the resistances and status bonus granted to you from channel imperial dragon. Enemies that end their turn within the area must attempt a Will save, and on a failure they gain a weakness to the damage type of your imperial dragon equal to half your level and a –1 status penalty against mental effects. These effects last for as long as they remain in the area and for 1 round after they leave the area, or for 4 rounds after they leave the area if they got a critical failure on their Will save. You can choose to expand the radius of your aura by 5 feet when you Sustain channel imperial dragon. This effect gains the tradition associated with your dragon.</p>"
+        },
+        "Effect: Eto... Bleh!": {
+            "name": "Effect: Eto... Bleh!",
+            "description": "<p>You gain a +1 status bonus to your AC and saves against the creature for 2 rounds.</p>"
+        },
+        "Effect: Translucent Protection": {
+            "name": "Effect: Translucent Protection",
+            "description": "<p>You gain resistance 20 to fire and to all physical damage from the triggering effect.</p>"
+        },
+        "Primordial Regeneration": {
+            "name": "Primordial Regeneration",
+            "description": "<p><strong>Trigger</strong> Your turn ends</p><p><strong>Requirements</strong> Your eidolon dealt more than one type of energy damage with its unarmed Strikes this turn</p><hr /><p>Your eidolon regains its health through expending primordial energy. Your eidolon regains Hit Points equal to its level.</p>"
+        },
+        "Effect: Above the Fray": {
+            "name": "Effect: Above the Fray",
+            "description": "<p>Creatures within the aura take a –2 status penalty to attack rolls against you. </p>"
+        },
+        "Dance of the Kaiju Caller": {
+            "name": "Dance of the Kaiju Caller",
+            "description": "<p><strong>Requirements</strong> You are in an encounter with at least one Large or larger creature</p><hr /><p>You have learned to avoid the large and terrible enemies you so often face. You have lesser cover to Large or larger creatures and gain a +1 circumstance bonus to AC against them. You can use Take Cover even if you do not meet its requirements, but you only gain the effects against creatures that are Large or larger. If you do meet its requirements, you gain the effects of greater cover against Large or larger creatures. If a Large or larger creature critically hits a Strike against you or you critically fail a save against an area effect it produced while you are in this stance, your stance ends.</p>"
+        },
+        "Aura: Above the Fray": {
+            "name": "Aura: Above the Fray",
+            "description": "<p>You create an aura in a 30-foot emanation that lasts until while you’re channeling your dragon. Creatures within the aura take a –2 status penalty to attack rolls against you. You gain the Kneel Before the Sovereign reaction for the duration of this effect.</p>"
+        },
+        "Effect: Feed on Wood": {
+            "name": "Effect: Feed on Wood",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">You gain a +4 status bonus to damage to your Strikes and to your spells or effects with the fire trait until the end of your next turn.</span></p>"
+        },
+        "Karenza Stance": {
+            "name": "Karenza Stance",
+            "description": "<p><strong>Requirements</strong> You’re wielding a knife or sword</p><hr /><p>You begin to spin and twist around the battlefield, weapons slicing through the air as you move. While in this stance, the only Strikes you can make are with knives or swords. When you dance to Perform while wielding a knife or sword in this stance, you compare the result of your Perform to the Will DC of each enemy adjacent to you. Each creature whose Will DC you succeed against takes 2 damage per weapon damage die, or 3 damage per weapon damage die if you got a critical success. This damage must be either piercing or slashing damage, as appropriate for the required weapon.</p>"
+        },
+        "Eviscerate": {
+            "name": "Eviscerate",
+            "description": "<p><strong>Requirements</strong> The spawn has a creature grabbed, immobilized, or restrained.</p><hr /><p>The spawn rips apart its helpless prey. The spawn makes a claw attack with a +2 circumstance bonus. If it hits, it deals an additional 1d8 damage, or 2d8 additional damage if your spawn is specialized.</p>"
+        },
+        "Effect: Moss Cover (Greater)": {
+            "name": "Effect: Moss Cover (Greater)",
+            "description": "<p>Applying this oil to yourself grants you 35 temporary Hit Points for 12 hours due to the moss cover on your body protecting you.</p>"
+        }
+    }
+}

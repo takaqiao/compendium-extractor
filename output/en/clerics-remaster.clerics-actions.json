@@ -1,0 +1,28 @@
+{
+    "label": "Clerics+ Actions",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Fervor": {
+            "name": "Fervor",
+            "description": "<p>You have learned to forge your font energy into powerful boons. When you use this action, you gain one of the chosen fervor benefits listed below which lasts until the end of your next turn. You can extend the duration of this effect to 1 minute if you expend a divine font slot. You cannot benefit from more than one fervor benefit at a time and you immediately end the effects of a previous fervor if you use this action again before the duration has expired. If you have the holy or unholy trait, you can choose to give your Fervor the corresponding trait and any damage dealt from Fervor only applies to creatures with the opposing trait.</p>\n<ul>\n<li>You gain a +1 status bonus to your AC and to saves against mental effects.</li>\n<li>Your weapon and unarmed attacks deal an additional 1d4 spirit damage. This damage increases by 1d4 for each additional weapon damage die your weapon deals.</li>\n</ul>\n<hr />\n<p><strong>Special </strong>If you have been given the decree of unity by your deity, you may apply the benefits of Fervor to your sacred animal instead of yourself.</p>"
+        },
+        "Seek the Will": {
+            "name": "Seek the Will",
+            "description": "<p>You note a single creature, item, or small location as a target of interest of your deity. You don't need to know the identity, purpose, or nature of the subject, but you do need to be aware of its existence; for example, discovering a destroyed shrine would allow you to target the creature or group responsible, and seeing a hasty sketch of an item or location can be enough to gauge your deities plans for that subject. Your subject remains your subject until you choose a new subject or you spend a single action to clear the subject from your mind.</p>\n<p>You gain a +1 status bonus on checks to Recall Knowledge on your subject and to checks with your deity’s divine skill against your subject. You can use your modifier in Perception to Recall Knowledge on your subject against a hard DC of the creatures level instead of the normal associated skill, but you must be able to observe the subject or evidence related to the subject to do so.</p>"
+        },
+        "Wield the Will": {
+            "name": "Wield the Will",
+            "description": "<p><strong>Frequency </strong>once per round</p>\n<p><strong>Requirements </strong>You are in an encounter with a subject of your Seek the Will.</p>\n<hr />\n<p>You call to your deity to aid you in your endeavors against a foe, allowing you to capture its will into a tangible result. Roll a d20. If you attempt a Strike or a basic skill action for Religion or your deity’s divine skill against the subject of your Seek the Will later this round, you must use the result of the roll you made to Wield the Will for your roll instead of rolling. You make this substitution only for the first roll of the listed types you make against the creature this round, not any subsequent rolls of the listed types. If you use your result and you would get a critical failure, you get a failure instead. If you possess the holy or unholy trait, you can choose to give a Strike that used your result from Wield the Will the same trait.</p>"
+        }
+    }
+}

@@ -1,0 +1,1052 @@
+{
+    "label": "Player Options",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {
+        "Curios": "Curios",
+        "Visions": "Visions",
+        "Features": "Features",
+        "Spells": "Spells",
+        "Enlightened Reliquarian": "Enlightened Reliquarian",
+        "Erratas": "Erratas",
+        "Feats": "Feats",
+        "Curses": "Curses",
+        "Oracle Focus Spells": "Oracle Focus Spells",
+        "New": "New",
+        "Apocryphal Domain Spells": "Apocryphal Domain Spells",
+        "Mysteries": "Mysteries"
+    },
+    "entries": {
+        "The Lurking Storm": {
+            "name": "The Lurking Storm",
+            "description": "<p>In every puddle near you, in every breeze of wind, the crackle of lightning lingers. If your next action is to Cast a Spell with the air, cold, electricity, or water traits that has no duration and deals either physical damage or electricity damage, you choose to deal half of the damage as bludgeoning damage and half the damage as electricity damage.</p>",
+            "prerequisites": [
+                {
+                    "value": "tempest mystery"
+                }
+            ]
+        },
+        "Explosive Crescendo": {
+            "name": "Explosive Crescendo",
+            "description": "<p><strong>Trigger</strong> A creature within range takes sonic damage.</p><hr /><p>You cause an explosion of music as an erupting climactic finish. The target must attempt a Fortitude save.</p><p>Success The target is unaffected.</p><p>Failure The target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p><p>Critical Failure As failure, except the target is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3}.</p>"
+        },
+        "Vital Pululation": {
+            "name": "Vital Pululation",
+            "description": "<p><strong>Requirements</strong> Your cursebound value is 2 or greater and you’re in an encounter.</p><hr /><p>Your life force explodes outward from you. You cast a 3-action @UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal} of a rank equal to the second highest rank spell you can cast without expending a spell slot. You are excluded from the effects of this heal.</p>",
+            "prerequisites": [
+                {
+                    "value": "life mystery"
+                }
+            ]
+        },
+        "Appear Dead": {
+            "name": "Appear Dead",
+            "description": "<p>Life drains from your face and your heart slows to nothing as you stop looking like a living creature. For 1 minute, you gain a +4 circumstance bonus to Deception checks to appear as a corpse, and you appear dead to senses like lifesense. Mindless undead treat you as @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} for the duration of the effect unless they Seek to detect you.</p>",
+            "prerequisites": [
+                {
+                    "value": "bones mystery"
+                }
+            ]
+        },
+        "Cease to Be": {
+            "name": "Cease to Be",
+            "description": "<p><strong>Domain</strong> nothingness (apocryphal)</p><hr /><p>You are briefly erased from existence completely. You become invisible and incorporeal, though you cannot pass through solid surfaces. Allied creatures do not treat you as allied for the duration and enemy creatures must succeed at a Recall Knowledge check against your spell DC to identify you as an enemy. You cannot Cast a Spell or target creatures with hostile actions while under the effects of cease to be.</p>"
+        },
+        "Automummification": {
+            "name": "Automummification",
+            "description": "<p><strong>Domain</strong> vigil (apocryphal)</p><hr /><p>You dehydrate and preserve yourself perfectly, so that you can guard over the lost for centuries to come. You become a mummy, gaining the basic undead benefits. While the spell is active, if you have not used an action with the auditory, manipulate, or move traits, you automatically extend the duration of the spell at the end of this duration by 10 minutes and continue to do so each time the spell’s duration would normally elapse. You have a +4 circumstance bonus to your Deception DC while in this form if a creature has not seen you move since you Cast the Spell.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.qdp6T1X5GyRp7raX]{Effect: Automummification}</p>"
+        },
+        "Enlightened Reliquarian Dedication": {
+            "name": "Enlightened Reliquarian Dedication",
+            "description": "<p>You are an enlightened reliquarian, an oracle who reveals your mystery to others. You gain the @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Js9vTrVqDJQeZ2uP]{Reveal the Mystery} free action.</p>",
+            "prerequisites": [
+                {
+                    "value": "curse of the reliquarian"
+                }
+            ]
+        },
+        "Vision of the All-Devouring End": {
+            "name": "Vision of the All-Devouring End",
+            "description": "<p>Your vision showed you possible futures of unspeakable horrors, terrible changes to our world and massive loss of life. It is only through you that this end can be stopped. A flame oracle might see a massive draconic figure burning the world to ash, but a gloom oracle might see a never-ending night infested by the undead.</p><p><strong>Alternate Domain</strong> nightmares</p><p><strong>Alternate Granted Spell</strong> 1st: @UUID[Compendium.pf2e.spells-srd.Item.4koZzrnMXhhosn0D]{Fear}</p><p><strong>Granted Skill</strong> Intimidation</p><p><strong>Vision State</strong> You must embrace the fear. You gain a status bonus to Intimidation checks equal to half your cursebound value (minimum 1). After the first turn in an encounter, if you end a turn without giving at least 1 creature the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition or using a cursebound action that turn, you increase your cursebound value by 1 up to your maximum cursebound value.</p><p><strong>Awakened State</strong> You can @UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize} creatures that are temporarily immune to your Demoralize. If your cursebound value is 3, you can Demoralize as a free action with the flourish trait. If your cursebound value is 4, you can cast 3rd rank fear as an innate spell at will.</p>"
+        },
+        "Past Lives": {
+            "name": "Past Lives",
+            "description": "<p>Through intense study of your mystery, you have unlocked memories of your past lives. Once per day, you can spend 10 minutes to gain the effects of a successful @UUID[Compendium.pf2e.spells-srd.Item.hp6Q64dl7xbdn4gQ]{Collective Memories} ritual by calling upon a past life—a mortal from a long time ago, whose soul spent time as a shade in the afterlife before fading into quintessence and becoming the building blocks for your soul. Typically, the youngest a creature like this can be is 1,000 years old, but the creature may have learned information on topics newer than this by conversing with other shades and souls. You retain this past life's appearance for 1 day with the effects of a10th-rank @UUID[Compendium.pf2e.spells-srd.Item.2qGqa33E4GPUCbMV]{Humanoid Form} spell with you emulating the appearance of your past life and you become legendary in one skill appropriate for your past life for the duration.</p><p>Additionally, if you remain dead for 1 year, you are automatically reincarnated as through a critical success with the @UUID[Compendium.pf2e.spells-srd.Item.gIVaSCrLhhBzGHQY]{Reincarnate} ritual. Your new face may have a different personality or name, but shares all your memories and most of your ideals.</p>"
+        },
+        "Dream Come True": {
+            "name": "Dream Come True",
+            "description": "<p>You dive into the mind of a creature, making it appear as if one of its fantasies has come true, or perhaps one of its nightmares. Choose either fantasy or nightmare when you Cast the Spell and the target must attempt a Will save as you create figments from one of its dreams.</p><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of your next turn. If you chose a fantasy, the target is also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for as long as it is off-guard. If you chose a nightmare, the target is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} in addition to being off-guard and it cannot reduce its frightened condition below 1 while off-guard from this effect. The target can attempt to disbelieve the effect with a single action with the concentrate trait.</p><p><strong>Failure</strong> As success, except the duration of the off-guard condition is 1 minute.</p><p><strong>Critical Failure</strong> As failure, except the frightened and stupefied values increase to 2. If you chose fantasy, the target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the effect and the fascinated condition does not end until the target disbelieves the illusion. If you chose nightmare, the target is also @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for as long as it is frightened.</p>"
+        },
+        "Halt Steps": {
+            "name": "Halt Steps",
+            "description": "<p><strong>Trigger</strong> A creature moves within 10 feet of you.</p><p><strong>Requirements</strong> Your cursebound value is 2 or greater.</p><hr /><p>Even your exhales are enough to halt an enemy when your curse is at its most chilling. The triggering creature must attempt a @Check[fortitude|against:spell] save against your spell DC.</p><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes a –10-foot status penalty to its Speed until the end of your next turn. @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.lt6p04NLLhCEj13r]{Effect: Halt Steps}</p><p><strong>Failure</strong> The creature halts its movement and is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round or until it Escapes against your spell DC.</p><p><strong>Critical Failure</strong> As failure, except the creature is @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} instead of immobilized.</p>",
+            "prerequisites": [
+                {
+                    "value": "ice mystery"
+                }
+            ]
+        },
+        "Hide From Doom": {
+            "name": "Hide From Doom",
+            "description": "<p><strong>Trigger</strong> You would take damage.</p><hr /><p>You see disaster before it strikes, and weave the strings of fate to keep you from harm. You gain resistance to all damage against the triggering damage equal to [[/r 3 * @item.level + 2 * @actor.conditions.cursebound.value]]. If the damage was the result of a critical hit or a critical failure on a basic save, the resistance is doubled.</p><hr /><p><strong>Heightened (+1)</strong> Increase the resistance by 3.</p>"
+        },
+        "Prophecy": {
+            "name": "Prophecy",
+            "description": "<p>You have the gift of foresight, seeing glimpses of futures yet to pass. However, prophecy has become uncertain since the death of Aroden a century ago, and certainly your own divinations do not come to pass. You've also come to terms with a grave truth; there are far more doomed futures than safe ones, and you are plagued by visions of disaster. You may be blessed by gods such as Pharasma, Magdh, or simply born under a chosen star.</p><p><strong>Granted Spells</strong></p><ul><li><strong>cantrip: </strong>@UUID[Compendium.pf2e.spells-srd.Item.lmHmKGs1N3yNAvln]{Wash Your Luck}</li><li><strong>1st: </strong>@UUID[Compendium.pf2e.spells-srd.Item.6ZIKB0151LUR19Rw]{Ill Omen}</li><li><strong>3rd: </strong>@UUID[Compendium.pf2e.spells-srd.Item.rfFZKfeCSweFv7P3]{Impending Doom}</li><li><strong>5th: </strong>@UUID[Compendium.pf2e.spells-srd.Item.8THDHP0UC7SgOYYF]{Inevitable Disaster}</li></ul><p><strong>Revelation Spells</strong></p><ul><li><strong>initial: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.2k0tHIzzZGq3Wub4]{Hide From Doom}</li><li><strong>advanced: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.TGvay9scp7R51wrS]{Assume Destiny}</li><li><strong>greater: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.NmmMauepJ21ToqlW]{The End is Nigh}</li></ul><p><strong>Related Domains </strong>disorientation, fate, time, vigil</p><p><strong>Mystery Skill </strong>Occultism</p><p><strong>Oracle Feat </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.oEpn9Xj6vcCqdCtG]{Glimpse Future}</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.Xyt2MJEPNkCbzpBW]{Curse of Countless Fates}</p>"
+        },
+        "Frigid Journey": {
+            "name": "Frigid Journey",
+            "description": "<p>Your steps cause ice to spread out around you, freezing and preserving the fleeting world and hastening your journey through it. You Stride up to your Speed in a straight line in any direction and across any surface, but if you choose to move up, you must do so at a 45-degree angle. This creates a thin layer of ice in the spaces you pass through which forms a solid structure until the beginning of your next turn. You and creatures can attempt to move along the ice, which is uneven ground, as if it were a solid surface for as long as it remains in effect. If you are cursebound 2 when you use Frigid Journey, the ice lasts until the end of your next turn and if you are cursebound 3, you can Stride up to twice your Speed.</p>",
+            "prerequisites": [
+                {
+                    "value": "ice mystery"
+                }
+            ]
+        },
+        "The Bell Tolls Three Times": {
+            "name": "The Bell Tolls Three Times",
+            "description": "<p><strong>Trigger</strong> You would be reduced to 0 Hit Points or be killed.</p><hr /><p>You deny the tolling of your death as the divine powers that fuel your mystery flare. You avoid being knocked out and remain at 1 Hit Point. If the trigger was from a death effect, your wounded condition increases by 1.</p>"
+        },
+        "Arrange the Board": {
+            "name": "Arrange the Board",
+            "description": "<p>You see the sequence of events unfold before your eyes, and you alter it slightly to influence the outcome of the battle. Choose [[/r 2+ @actor.conditions.cursebound.value * 2]] creatures within 30 feet of you. These creatures must attempt a @Check[will|against:spell] save against your spell DC. Creatures that fail their save immediately Step in a direction of your choice. Allies can choose to get a failure on their result.</p>",
+            "prerequisites": [
+                {
+                    "value": "prophecy mystery"
+                }
+            ]
+        },
+        "Forefathers' Lessons": {
+            "name": "Forefathers' Lessons",
+            "description": "<p>You evoke the traits of ancestors whose lives were especially different to yours. When you gain this feat, choose a common heritage of your ancestry or another heritage to which you have access. If your heritage allows a selection, you must make these selections when you gain this feat. For 1 minute, you are treated as having that heritage in addition to your heritage.</p><p><strong>Special</strong> You can take this feat an additional time if you’re at least 12th level and again if you’re at least 18th level, gaining another heritage you could choose to assume when you use Forefather’s Lesson. You can choose between any heritages you have access to when you use this action.</p>",
+            "prerequisites": [
+                {
+                    "value": "ancestors mystery"
+                }
+            ]
+        },
+        "Enlightening Spell": {
+            "name": "Enlightening Spell",
+            "description": "<p>You are able to enlighten creatures in the process of applying your magic. If your next action is to Cast a Spell from one of your oracle spell slots that targets an ally, they can Recall Knowledge as a free action after receiving the effects of the spell. If you are cursebound, they gain a circumstance bonus to their check equal to your cursebound value.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.BgVgR3Jnc7zUNeVX]{Effect: Enlightening Spell}</p>"
+        },
+        "Fall Upwards": {
+            "name": "Fall Upwards",
+            "description": "<p>The sky calls to you as much as the ground does. Until the start of your next turn, you treat falls as [[/r 20 * @actor.conditions.cursebound.value + 0]] shorter, and you increase the distance you Long Jump by [[/r 10 * @actor.conditions.cursebound.value + 0]] and High Jump by [[/r 5 * @actor.conditions.cursebound.value + 0]]. If your cursebound value is 3 when you use Fall Upwards, you gain a fly Speed equal to your land Speed.</p>",
+            "prerequisites": [
+                {
+                    "value": "cosmos mystery"
+                }
+            ]
+        },
+        "Cursed with Sanctity": {
+            "name": "Cursed with Sanctity",
+            "description": "<p>When your mystery takes hold, you become sanctified. When you first gain this feat, choose holy or unholy. When you have the cursebound condition, you are sanctified and gain the corresponding trait as well as a weakness to the opposite trait equal to your level. Your cursebound actions gain your sanctified trait.</p>"
+        },
+        "Seeds of Divinity": {
+            "name": "Seeds of Divinity",
+            "description": "<p>You create four powerful seeds infused with divine magic. You create 4 seeds of negligible Bulk which appear in one of your open hands, or immediately in 4 squares adjacent to you when you Cast the Spell. You can Release a seed into an adjacent square or Interact to throw the seed at a space within 10 feet. When a seed comes in contact with the ground, it sprouts into a small bush which occupies a 5-foot square and provides concealment. Each bush has [[/r (@item.level - 1) * 10 + 10]] Hit Points and [[/r 10 + 2 * @item.level]] AC.</p><p>After 1 round has passed since a bush has sprouted, you can Sustain the spell to force a bush to grow, becoming your choice of hazardous or bountiful when you do, and once a bush has been grown in this way it cannot be selected again.</p><ul><li><p><strong>Hazardous</strong> The bush becomes hazardous terrain in addition to providing concealment, dealing 2 piercing and poison damage to creatures each time they move through its space.</p></li><li><p><strong>Bountiful</strong> The bush produces a single fruit which grants creatures that consume it a status bonus to damage equal to your maximum cursebound value and [[/r 4 + 2 * (@item.level -1)]] temporary Hit Points. These effects last for the duration and fruit produced by the bush decomposes into nothing after the duration has elapsed. A creature can harvest and consume a fruit from a bush as a single Interact action. @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.p1kH1shqzQNnBaBJ]{Effect: Seeds of Divinity (Bountiful Bush)}</p></li></ul><hr /><p><strong>Heightened (+1)</strong> The Hit Points of the bushes increases by 10 and their AC increases by 2. The temporary Hit Points, piercing, and poison damage each increase by 2.</p>"
+        },
+        "Inevitable Foresight": {
+            "name": "Inevitable Foresight",
+            "description": "<p>Your curio’s foresight is undeniable, the futures written as plainly as text. When you attempt the Perception check from Curio’s Foresight, you treat your degree of success as one step better.</p>"
+        },
+        "Lucid Reality": {
+            "name": "Lucid Reality",
+            "description": "<p><strong>Trigger</strong> Your turn begins.</p><p><strong>Requirements</strong> Your cursebound value is 2 or greater and you’re in an encounter.</p><hr /><p>The fabric of reality begins to break, as you shape reality with your dreams. For 1 minute, you have an aura of dreams with a range of 30 feet. When you use Lucid Reality and at the beginning of each turn your aura of dreams is in effect, you create one of the illusory effects described below which lasts until the beginning of your next turn. If you are cursebound 3 when you use Lucid Reality, you instead create up to 3 effects at once and each can be of a different type</p><ul><li><p>You create an illusory creature as if you had cast an @UUID[Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly]{Illusory Creature} spell with a rank heightened to half your level rounded up. The creature gains its 2 actions for the turn when you spend a single action with the concentrate trait to direct it.</p></li><li><p>You create an illusory barrier that is up to 10 feet high and 10 feet wide. The illusion can be disbelieved if the creature attempts to [[/act seek]], Interact, or otherwise move through the barrier.</p></li><li><p>You create an illusory object as if you had cast an @UUID[Compendium.pf2e.spells-srd.Item.2oH5IufzdESuYxat]{Illusory Object} spell with a rank heightened to half your level rounded up.</p></li></ul>",
+            "prerequisites": [
+                {
+                    "value": "dream mystery"
+                }
+            ]
+        },
+        "Raise Mountain": {
+            "name": "Raise Mountain",
+            "description": "<p><strong>Area</strong> the cone must be in an area of earth or stone</p><hr /><p>You feel the weight of your mystery on your shoulders, and move the world to create a mountain. Each square in the area rises 5 feet higher than the previous square, creating a rocky triangular rising or stair-step formation with a height equal to the length of the cone. You can choose to make the area difficult terrain or an easily traversable. If an area of terrain’s height would touch or exceed an obstacle above it, it instead stops within 5 feet of the obstacle, and the area of the spell near the obstacle becomes greater difficult terrain. Creatures in the area must attempt a Reflex save.</p><p><strong>Critical Success</strong> The creature can choose to move to the nearest edge or remain in its space.</p><p><strong>Success</strong> As critical success, but the creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of your turn.</p><p><strong>Failure</strong> The creature is moved to the nearest adjacent space that is not in the area. If this would cause the creature to fall from the raised area, it can attempt to [[/act grab-an-edge]] with the same DC as the spell.</p><p><strong>Critical Failure</strong> The creature falls prone in the area. If the creature is in an area of greater difficult terrain, it is also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} until it Escapes.</p><hr /><p><strong>Heightened (+2)</strong> The cone length increases by 5 feet.</p>"
+        },
+        "The Mystery Grows": {
+            "name": "The Mystery Grows",
+            "description": "<p>Your curio’s power is growing rapidly, reawakening ancient powers or becoming a conduit of power to your allies. You gain the following action.</p><h2>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.A7RfY8hjBQ4qYReT]{The Mystery Grows}</h2><p>@Embed[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.A7RfY8hjBQ4qYReT inline]</p>"
+        },
+        "All-Seer": {
+            "name": "All-Seer",
+            "description": "<p>You have visions of things far beyond yourself. You learn @UUID[Compendium.pf2e.spells-srd.Item.zvKWclOZ7A53DObE]{Clairvoyance} as a divine spell and add it to your oracle spell repertoire and it is a signature spell for you. When you cast clairvoyance, it gains the following heightened effect:</p><p><strong>Heightened (+1)</strong> Increase the range by 250 feet.</p>",
+            "prerequisites": [
+                {
+                    "value": "The ability to cast spells from spell slots"
+                }
+            ]
+        },
+        "Sacrificial Spell": {
+            "name": "Sacrificial Spell",
+            "description": "<p>Your healing is extraordinarily powerful, but it saps at your own life force. If your next action is to cast heal and all your targets are living creatures, you roll d12s instead of d8s for the amount of healing.</p>",
+            "prerequisites": [
+                {
+                    "value": "life mystery"
+                }
+            ]
+        },
+        "The Vision is Clear": {
+            "name": "The Vision is Clear",
+            "description": "<p>The artifact sends you visions to protect you, even from the unseen. You become a master in Perception. You aren’t off-guard to hidden, undetected, or flanking creatures that you have a +2 status bonus to AC and saves against from @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Fg25A68hjadgRefp]{Curio’s Foresight}. These creatures can still help their allies flank.</p>"
+        },
+        "Curse of Impossible Radiance": {
+            "name": "Curse of Impossible Radiance",
+            "description": "<p>Your inner light shines so bright that it exudes from your eyes, ears, mouth, and fingertips with blinding extravagance. At all times you exhibit a faint glow of a color that reflects the energy of where your magic originates. When you gain the cursebound condition, you glow so bright that it becomes impossible to hide. You create bright light with a radius equal to your cursebound condition’s value times five, and dim light for an equal number of feet beyond that. You take a status penalty to sight-based Perception checks, Stealth checks to Hide or Sneak, and to Reflex saves against area effects equal to your cursebound value.</p>"
+        },
+        "Flesh of Cinders": {
+            "name": "Flesh of Cinders",
+            "description": "<p>Your flesh flows around physical threats like a cloud of ash. Until the end of your next turn you gain resistance equal to your level against all physical damage, and you gain a status bonus equal to your cursebound condition to saves and DCs against Grapple or effects that would give you the immobilized, grabbed, or restrained conditions.</p>",
+            "prerequisites": [
+                {
+                    "value": "ash mystery"
+                }
+            ]
+        },
+        "Curse of Monstrous Change": {
+            "name": "Curse of Monstrous Change",
+            "description": "<p>You struggle to keep a powerful beast deep within you at bay, and at times, you lose. Even when you are fully in control, marks of the beast can be seen: sharp fangs, slit pupils, more or less hair, scales, and so on. When you are cursebound you take a status penalty to checks with the linguistic trait and to saves against emotion effects equal to your cursebound value, and you take a status penalty equal to half your cursebound value to Will saves (minimum 0).</p>"
+        },
+        "Embrace Instinct": {
+            "name": "Embrace Instinct",
+            "description": "<p><strong>Trigger</strong> Your turn begins.</p><p><strong>Requirements</strong> Your cursebound value is 2 or greater.</p><hr /><p>Entering a dissociative haze, you allow your body to act entirely on instinct and do the fighting for you. When you enter this stance, you become @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened} and become @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} for as long as you remain in this stance. You can use the additional action only for actions or activities with the cursebound trait.</p>"
+        },
+        "Promised Renewal": {
+            "name": "Promised Renewal",
+            "description": "<p>You cause the body of a creature to be consumed by sporadic growth. If the target was a living creature with the dying condition, it must attempt a Fortitude save against your spell DC or it increases its dying condition by 2 (or by 3 if it critically failed). If the target was a corpse or a living creature that died from failing its Fortitude save, you immediately create an abundant growth of natural plant life in a @Template[emanation|distance:15] of the target, including enveloping the target. The area becomes difficult terrain and minions with the fungus, plant, or wood traits gain fast healing [[/r 3 + 2 * (@item.level - 3)]] while within the emanation. This fast healing applies to effects you create with these traits as well if they have Hit Points, such as the @UUID[Compendium.pf2e.spells-srd.Item.K9gI08enGtmih5X1]{Protector Tree} spell.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.bAixyu6lyYtnqQGo]{Effect: Promised Renewal}</p><hr /><p><strong>Heightened (+2)</strong> Increase the emanation by 5 feet and the fast healing by 2.</p>"
+        },
+        "Forest": {
+            "name": "Forest",
+            "description": "<p>Strange things live in the woods, and you often find yourself drawn to go to them and never return. You might once have stumbled into an ancient grove touched by the Plane of Wood, or a chance encounter with the fey may linger with you to this day. Deities like Erastil, Baekho, Gendowyn or the Eldest are commonly venerated by forest oracles, teaching them to look between the trees and find the answers they seek.</p><p><strong>Granted Spells</strong></p><ul><li><strong>cantrip: </strong>@UUID[Compendium.pf2e.spells-srd.Item.BX5UIAUarWG43Fg2]{Root Reading}</li><li><strong>1st: </strong>@UUID[Compendium.pf2e.spells-srd.Item.K9gI08enGtmih5X1]{Protector Tree}</li><li><strong>2nd: </strong>@UUID[Compendium.pf2e.spells-srd.Item.YWrfKetOqDwVFut7]{Oaken Resilience}</li><li><strong>6th: </strong>@UUID[Compendium.pf2e.spells-srd.Item.2hMy9ROM2dOZB8Jq]{Lignify}</li></ul><p><strong>Revelation Spells</strong></p><ul><li><strong>initial: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.6eJzIrMiNtOTzhCR]{Seeds of Divinity}</li><li><strong>advanced:</strong> @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.EQYDCV6Llp7qvEmf]{Promised Renewal}</li><li><strong>greater: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.Y8qMgfEFPGlbuN9K]{Wooden Engulfment}</li></ul><p><strong>Related Domains </strong>nature, travel, trickery, wood</p><p><strong>Mystery Skill </strong>Nature</p><p><strong>Oracle Feat </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.iWueJXoM6ZFHULZj]{Comfort of Struggle}</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.U6pxB24CFi1YhvKe]{Curse of Ancient Growth}</p>"
+        },
+        "Divine Gnosis": {
+            "name": "Divine Gnosis",
+            "description": "<p><strong>Requirements</strong> Your cursebound value is 2 or greater and you're in an encounter.</p><hr /><p>You open up your mind to otherworldly knowledge. When you enter this stance, you can Recall Knowledge with a circumstance bonus to your check equal to your cursebound value and you treat your degree of success on this check as one better. You can Recall Knowledge as a free action while in this stance by giving it the cursebound trait. You must Recall Knowledge on subjects relevant to the current encounter. You do not take the penalties from being stupefied on checks to Recall Knowledge while in this stance.</p>",
+            "prerequisites": [
+                {
+                    "value": "lore mystery"
+                }
+            ]
+        },
+        "Intuitive Reveal": {
+            "name": "Intuitive Reveal",
+            "description": "<p>You intuit the future without a thought. You gain an additional reaction each turn which you can only use for Reflexive Reveal.</p>",
+            "prerequisites": [
+                {
+                    "value": "Reflexive Reveal"
+                }
+            ]
+        },
+        "Mystery Cultist": {
+            "name": "Mystery Cultist",
+            "description": "<p>Your divine powers have garnered the attention of a disciple. This follower may see you as a nascent deity, might be someone you have performed secretive rites with, or otherwise be dedicated to following you on your journey. They have the minion trait and begin as a novice follower.</p><p><strong>Special</strong> You gain access to the following additional feats as oracle class feats: @UUID[Compendium.pf2e.feats-srd.Item.PPbTc7LjWcH9rhrI]{Additional Follower} (4th), @UUID[Compendium.pf2e.feats-srd.Item.UTGVGcpgAbZONOf5]{Experienced Follower} (4th), @UUID[Compendium.pf2e.feats-srd.Item.EhKeGvsxotMarUt0]{Veteran Follower} (8th), @UUID[Compendium.pf2e.feats-srd.Item.upsDl9drHCoH6jrz]{Exceptional Follower} (14th)</p>",
+            "prerequisites": [
+                {
+                    "value": "You don’t have an animal companion, construct\r\ncompanion, or other companion that functions similarly"
+                },
+                {
+                    "value": "oracle spellcasting or enlightened reliquarian spellcasting"
+                }
+            ]
+        },
+        "Vision": {
+            "name": "Vision",
+            "description": "<p>Often, when an oracle is bestowed a mystery, it is without exact purpose. An oracle of flame is given the divine secrets of fire to ruminate on, or an oracle of beasts may be saddled with a monstrous truth. But, on occasion, something accompanies these oracular powers: a vision. A divine message that warns of an avoidable, a great feat that must be done, or something beyond that. The vision grants the oracle gifts, and a heavy responsibility they cannot ignore forever.</p><p>An oracle may only have one vision selected, which must be chosen when they first become a member of the oracle class. This vision cannot be changed and represents the goal of your mystery, and how you interact with it.</p><p>Your vision provides an alternate domain and granted spell, replacing one domain and spell of your choice associated with your mystery. If the spell you would gain from your vision has the same rank as one of the spells granted by your mystery, you must replace that spell with your vision’s granted spell. You also become trained in the skill granted by your vision instead of becoming trained in Religion from the oracle class, or another skill of your choice if you are already trained in the skill granted by your vision.</p><p>When you roll initiative in an encounter, you immediately incur a cursebound value of 1 or increase your cursebound value by 1 if you were already cursebound. While cursebound during an encounter, you are under the effects of your Vision State.</p><p>Unlike other oracles, you can use a cursebound action when you are at your maximum cursebound value while within a Vision State, but you treat the effects of your cursebound actions as if your cursebound value was 1 lower than its normal value. If you are at your maximum cursebound value and you use a cursebound action or your cursebound value would increase from your Vision State, you enter your Awakened State instead of increasing your cursebound value and gain its effects then you cannot use cursebound actions until you Refocus after you enter your Awakened State.</p><p>When in your Awakened State, you gain all of the effects for your Vision State and Awakened State based on your maximum cursebound value. You remain awakened for a number of rounds equal to your maximum cursebound value, until you would increase your cursebound value due to failing to meet the requirements of your Vision State, until you are knocked unconscious, or the encounter ends, whichever comes first. You cannot use the Cast a Spell activity while awakened unless the spell being cast is granted to you from your mystery granted spells, your Awakened State, an oracle feat, or the Divine Access class feature. After your Awakened State ends, you lose your Vision State effects and cannot enter a Vision State or Awakened State again until you have Refocused.</p><p>When your maximum cursebound increases, your Vision and Awakened States becomes more pronounced and powerful, granting you additional benefits as you deepen your relationship with your mystery.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.wJs7ftC4yUiRkm54]{Effect: Awakened State}</p>"
+        },
+        "Patristic Followers": {
+            "name": "Patristic Followers",
+            "description": "<p>Your followers are the start of a new church, based around your prophetic teachings. Choose a divine spell of each of the spell ranks from 1 to 7. Your follower can cast each once per day as divine spells. If you have multiple followers, you can distribute these spells among them.</p>",
+            "prerequisites": [
+                {
+                    "value": "Chosen Disciples"
+                }
+            ]
+        },
+        "Gloom": {
+            "name": "Gloom",
+            "description": "<p>The shadows adopted you into the folds of its endless nothingness, as a babe in the arms of a mother of darkness. Perhaps a god of darkness like Count Ranalc or Nocticula saw you as a proper emissary of the dark, or perhaps you were damned by the likes of Zon-Kuthon or Nyarlathotep. Perhaps the netherworld itself made its influence upon you, its powerful energies binding with the likes of your soul. However it happened, the abyss returned your gaze, and now darkness follows your steps.</p><p><strong>Granted Spells</strong></p><ul><li><strong>cantrip: </strong>@UUID[Compendium.pf2e.spells-srd.Item.0zU8CPejjQFnhZFI]{Figment}</li><li><strong>1st: </strong>@UUID[Compendium.pf2e.spells-srd.Item.k34hDOfIIMAxNL4a]{Grim Tendrils}</li><li><strong>2nd: </strong>@UUID[Compendium.pf2e.spells-srd.Item.QZ7OHptO1xnwaruq]{Penumbral Disguise}</li><li><strong>3rd:</strong> @UUID[Compendium.pf2e.spells-srd.Item.DeF63UTmr7rchF60]{Wall of Shadow}</li></ul><p><strong>Revelation Spells</strong></p><ul><li><strong>initial: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.SQu3XaMn5u6fzQos]{Hand in the Dark}</li><li><strong>advanced: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.NFsi2f90SRFobe7H]{Shadowcopy}</li><li><strong>greater: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.ygUiIHPC2ZQEMcl0]{Web of Darkness}</li></ul><p><strong>Related Domains </strong>darkness, nightmares, nothingness, secrecy</p><p><strong>Mystery Skill </strong>Stealth</p><p><strong>Oracle Feat </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.iWueJXoM6ZFHULZj]{Comfort of Struggle}</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.ZBNdYIBcV5qsn4UH]{Curse of Vengeful Darkness}</p>"
+        },
+        "Dream Logic": {
+            "name": "Dream Logic",
+            "description": "<p><strong>Domain</strong> dreams (apocryphal)</p><hr /><p>In the world of dreams, cause and effect are often disconnected, and the impossible becomes real. You bring dream logic into the real world, filling it with peculiar visions and lapses in logic. All creatures within the aura must make a Will save; on a failure, roll [[/r 1d4]] to determine the results on the table below. On a critical failure, roll twice, taking the result chosen by the caster. Creatures can choose to get the result of a failure on their save.</p><p></p><table class=\"pf2e\"><thead><tr><th style=\"width:10%\"><p>Roll</p></th><th><p>Effect</p></th></tr></thead><tbody><tr><td><p>1</p></td><td><p><strong>Object Fallacy</strong> Even things without minds seem to speak here. Until the start of your next turn, you can speak to inanimate objects; they will respond only to you using a language you understand that only you can hear. You have a +1 circumstance bonus to Make a Request or Demoralize while this effect is active.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.lyYMV9N9mRqRxQ5F]{Effect: Dream Logic - Object Fallacy}</p></td></tr><tr><td><p>2</p></td><td><p><strong>Static Time</strong> Clocks tick irregularly, moving backwards as often as forwards. Effects and conditions with a duration affecting you are extended by 1d4 rounds.</p></td></tr><tr><td><p>3</p></td><td><p><strong>Untethered To Ground</strong> Gravity acts as more of a suggestion than a rule. The creature gains a fly Speed equal to its land Speed until the end of its next turn.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.oDiqzXcbYLuT1bN7]{Effect: Dream Logic - Untethered to Ground}</p></td></tr><tr><td><p>4</p></td><td><p><strong>Warped Energy</strong> Energies are maladapted in the area. Until the end of the creature's turn, if the creature deals acid, cold, electricity, fire or sonic damage, it instead deals another energy damage type (roll 1d4 randomly to determine which other damage type). If a creature would deal more than one type of these damage types, you choose which damage type is altered.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.eAwv3v3Ww9qxsU4W]{Effect: Dream Logic - Warped Energy}</p></td></tr></tbody></table>"
+        },
+        "Moonlit Folly": {
+            "name": "Moonlit Folly",
+            "description": "<p><strong>Domain</strong> moon (apocryphal)</p><hr /><p>The moon's influence far above becomes noticeable, and you find your emotions and body altered because of it. You gain a +10-foot status bonus to your Speed, a +1 status bonus to your Fortitude and Reflex saves, and a –1 status penalty to your Will saves. If the moon is visible, the status bonus to Speed increases by 5 feet and both the bonus and penalty to saves increases to 2. If you Cast the Spell at night during a full moon, you also become quickened and can use the additional action only to Stride.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.08EMkXoFIiMaJcF5]{Effect: Moonlit Folly}</p>"
+        },
+        "Life of the Party": {
+            "name": "Life of the Party",
+            "description": "<p>You bring party favors for your allies, boosting their morale with potentially overwhelming effects. When you Cast the Spell and at the end of each of your turns for the duration, you immediately fill up to two of your open hands with festive treats for consumption. At any time during the duration, you or an ally within your reach can Interact to consume one of the treats in your hands, gaining 5 temporary Hit Points for 1 minute and a +2 status bonus to damage until the temporary Hit Points are lost. If a creature that has consumed one of your festive treats attempts to consume another before 10 minutes has passed, it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. When the spell ends, these effects end and any remaining festive treats you have disappear.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.paSKF0DGRrWtRhXo]{Effect: Life of the Party}</p><hr /><p><strong>Heightened (+1)</strong> The temporary Hit Points increases by 2.</p>"
+        },
+        "Perfect Understanding": {
+            "name": "Perfect Understanding",
+            "description": "<p>The vision reveals the ultimate truths to you. You become legendary in Perception. You aren’t off-guard to hidden, undetected, or flanking creatures in your aura of foresight.</p>"
+        },
+        "Urge Clemency": {
+            "name": "Urge Clemency",
+            "description": "<p>With a silky smooth voice, you can tell others to forget about what they've seen and move on. You make a check with your @Check[spell|against:will]{spell attack modifier} and compare it against the Will DC of up to 4 creatures within 30 feet of you, with a status bonus to your check equal to your cursebound value. You take a –4 circumstance penalty to this roll if you or an ally recently threatened or harmed any of the target creatures. Regardless of the results of a creature’s save, it is temporarily immune to Urge Clemency for 1 day.</p><p><strong>Critical Success</strong> Any emotion effects that would affect the creature are suppressed and the creature can't use hostile actions. If the target is subject to hostility from any other creature, this effect ends. The creatures will otherwise ignore you unless threatened while in this state, which lasts for 1 minute. If you and your allies are no longer perceived by the creatures when this effect ends, they forget about encountering you entirely.</p><p><strong>Success</strong> As a critical success, but the creature remembers the encounter after 1 day has passed.</p><p><strong>Failure</strong> The creature is aware you tried to affect its mind.</p>"
+        },
+        "Sense Mystery": {
+            "name": "Sense Mystery",
+            "description": "<p>You innately know when your mystery has touched someone or something. When you come within 30 feet of a creature, location, or object that is somehow involved in your mystery, the GM rolls a secret @Check[perception|traits:secret] check for you to realize it, even if you didn't spend an action to Sense Motive against that creature or if you aren’t Searching for that object or location. This feat does not tell you how your mystery is involved; for example, a bones oracle would not be told if the hooded figure they passed is a necromancer, an undead creature, or an undercover cleric of Pharasma. Meanwhile, a flame oracle would not know what a door touched by their mystery hides, only that it is somehow associated with fire.</p>"
+        },
+        "Pantraditional Knowledge": {
+            "name": "Pantraditional Knowledge",
+            "description": "<p>You have studied spells from all traditions, and your mystery grants them to you in your time of need. You keep a book of spells, similar to a wizard’s spellbook, and can use its spells to supplement your spell repertoire. Add all the spells in your repertoire to this book for free. You can use [[/act learn-a-spell statistic=religion]] to Learn Spells and add them to your spellbook by paying the appropriate cost.</p><p>During your daily preparations, choose any one spell from your book of spells. If that spell is already in your spell repertoire, you can treat it as an additional signature spell that day. If it isn’t in your repertoire, treat it as though it were until your next daily preparations. You can cast spells that are not of the divine tradition if they are prepared in this manner, however, when you Cast a Spell you learned in this way from another tradition, it gains the cursebound trait.</p>",
+            "prerequisites": [
+                {
+                    "value": "lore mystery"
+                }
+            ]
+        },
+        "Song": {
+            "name": "Song",
+            "description": "<p>You are haunted by a mysterious piece of music wherever you go. It plays in the winds, in the voices of your friends, in the echo of your own voice. Perhaps it is a gift from a deity like Shelyn or Gogunta. Maybe you were witness to an occult masterpiece that has stayed with you for years. Though nobody else can hear it, all other sound bends into its tune—subtly or not.</p><p><strong>Granted Spells</strong></p><ul><li><strong>cantrip: </strong>@UUID[Compendium.pf2e.spells-srd.Item.b5BQbwmuBhgPXTyi]{Haunting Hymn}</li><li><strong>1st: </strong>@UUID[Compendium.pf2e.spells-srd.Item.TSyFZNAbqfkRrcq0]{Concordant Choir}</li><li><strong>2nd: </strong>@UUID[Compendium.pf2e.spells-srd.Item.Yv3AFIO55FONQYMH]{Sonata Span}</li><li><strong>6th: </strong>@UUID[Compendium.pf2e.spells-srd.Item.7idCEYHnPpVNL9vX]{Phantom Orchestra}</li></ul><p><strong>Revelation Spells</strong></p><ul><li><strong>initial: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.Pky8fbDXBT5OpVjA]{Sharp Note}</li><li><strong>advanced: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.jdkPJ3JOhCyjdxu5]{Enchanting Rhapsody}</li><li><strong>greater: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.0Ci1ZNGdai65PdiA]{Explosive Crescendo}</li></ul><p><strong>Related Domains </strong>introspection, passion, perfection, sorrow</p><p><strong>Mystery Skill </strong>Performance</p><p><strong>Oracle Feat </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.mLRt0nJQLvbZkiml]{Well of Joy}</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.n2k5sQMwOlL0qxDB]{Curse of the Everpresent Sonata}</p>"
+        },
+        "Terrible Size": {
+            "name": "Terrible Size",
+            "description": "<p>Your inner beast transforms your physique. You grow to size Large and your equipment grows with you, but returns to natural size if removed. You become clumsy 1 and your reach increases by 5 feet (or by 10 feet if you were Tiny). You gain a +10-foot status bonus to all your Speeds. This does not end morph effects that do not affect your size, such as body of the beast.</p><hr /><p><strong>Heightened (5th)</strong> You can choose to instead grow to size Huge. The status bonus to Speeds increases to a +20-foot status bonus, and your reach increases by 10 feet (or 15 feet if you were Tiny).</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.9mDckQWMjaJjxL79]{Effect: Terrible Size}</p>"
+        },
+        "Enlightened Reliquarian": {
+            "name": "Enlightened Reliquarian",
+            "description": "<p>When magic is too great to sustain with the body, it is imbued into an object. With time, the power within these items grows, and they become artifacts. While some artifacts are lost over the millenia, and others are sealed away, some are found again. And sometimes, one becomes the focus of an oracle’s mystery.</p><p>Whether guided to the relic by fate or by creating a miraculous tool themselves, Enlightened Reliquarians channel the power of the divine through a strange curio. These curios are sacred artifacts and relics, and are generally associated with the mystery of the oracle. For example, a battle mystery oracle with a weapon curio may be wielding a sword once used by Iomedae herself. Meanwhile, a flame oracle’s utensil might be a bottle of lit oil carrying an ancient ritual fire, kept alight for centuries.</p><h2>Curse of the Reliquarian <span style=\"float:right\">1st</span></h2><p>As the oracle shares its mystery with the relic, there is simultaneously more and less strain from their powers placed on them. With less raw divine magic flowing through them, the oracle is less ravaged by their curse. Without the clouding haze of magic a traditional oracle suffers through, an enlightened reliquarian can truly see and understand their mystery. You must select @UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.1EUmjV0gH1eYFizZ]{Enlightened Reliquarian Dedication} as your 2nd-level class feat.</p><p><strong>Prerequisites</strong> You must be an oracle.</p><p><strong>Class Feature Adustments:</strong></p><ul style=\"list-style-type:none\"><li><p>You don't gain the @UUID[Compendium.pf2e.classfeatures.Item.iwAzV1IlQ2pMHQoB]{Divine Access} class feature.</p></li><li><p>You don't gain the @UUID[Compendium.pf2e.classfeatures.Item.571c1aGnvNVwfF6b]{Oracular Clarity} class feature.</p></li><li><p>You gain the @UUID[Compendium.pf2e.classfeatures.Item.eTQZQGPMIZJHIR6J]{Oracular Senses} class feature at 1st level instead of 11th level.</p></li><li><p>You also gain the following class features and adjustments:</p></li></ul><p><strong>Spellcasting Adjustment:</strong> Your spellcasting capabilities are more restricted. At 1st level, you can cast one 1st-rank spell and five cantrips. As you increase in level, your number of spell slots and the highest rank of spells you can cast from spell slots increases, shown in Enlightened Reliquarian Spells per Day. Because the power of your mystery is mostly contained within your sibylline artifact, you have no more than two spell slots of your highest rank and, if you can cast 2nd-rank spells or higher, two spell slots of 1 rank lower than your highest spell rank. For anything that requires the ability to cast spells of a certain rank that's lower than the highest slots you have, you still qualify even if you no longer have spell slots at those ranks.</p><table class=\"pf2e\"><thead><tr><th>Your Level</th><th>Cantrips</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th><th>7th</th><th>8th</th><th>9th</th><th>10th</th></tr></thead><tbody><tr><td>1</td><td>5</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>2</td><td>5</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>3</td><td>5</td><td>2</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>4</td><td>5</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>5</td><td>5</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>6</td><td>5</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>7</td><td>5</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>8</td><td>5</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>9</td><td>5</td><td>-</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>10</td><td>5</td><td>-</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>11</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>12</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>13</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td></tr><tr><td>14</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td></tr><tr><td>15</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td></tr><tr><td>16</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td><td>-</td></tr><tr><td>17</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td></tr><tr><td>18</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td></tr><tr><td>19</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td></tr><tr><td>20</td><td>5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>2</td><td>2</td><td>-</td></tr></tbody></table><p><strong>Spellcasting Repertoire Adjustment:</strong> The collection of spells you can cast is called your spell repertoire. At 1st level, you learn two 1st-rank spells of your choice and five cantrips of your choice. You choose these from the common spells from the divine tradition, or from other spells from that tradition to which you have access. You can cast any spell in your spell repertoire by using a spell slot of an appropriate spell level. Your spell slots and the spells in your spell repertoire are separate. If a feat or other ability adds a spell to your spell repertoire, such as granted spells from your oracle mystery, it doesn't give you another spell slot, and vice versa.</p><p>You add to this spell repertoire as you increase in level. Each time you get a spell slot, you add a spell of the same level to your spell repertoire. At 2nd level, you select another 1st-rank spell. At 3rd level, you add the first 2nd-rank spell to your repertoire. At 4th level you gain your second and your spell repertoire reaches its maximum size of five spells.</p><p>At 5th level, in addition to adding two 3rd-rank spells to your repertoire, you lose your lowest rank of spell slots. Any time you lose a rank of spell slots, you lose two spells in your repertoire as well. These can come from spells you already know or out of the number of new spells you're learning. On levels in which you don't change your spell slots, you can swap out multiple spells, as described below.</p><p><strong>Swapping Spells in Your Repertoire:</strong> As you gain new spells in your repertoire, you might want to replace some of the spells you previously learned. Each time you gain a level and learn new spells, you can swap out one of your old spells for a different spell of the same rank. If it's a level at which you lose a set of lower-rank slots, you can replace the two in either order. You can also instead swap a cantrip. You can also swap out spells by retraining during downtime.</p><p>At 6th level and every even level thereafter, you can swap out any number of your spells for different spells of a level you can cast. When you do, you must keep at least one spell you can cast with your lowest level of spell slots so you don't end up with slots you can't use. For instance, at 6th level you would need to keep at least one 2nd-rank spell, but all your other spells could be 3rd rank.</p>",
+            "prerequisites": [
+                {
+                    "value": "You must be an oracle."
+                }
+            ]
+        },
+        "Contagious Festivities": {
+            "name": "Contagious Festivities",
+            "description": "<p>You know how to kick things off when it gets hectic, dancing around the battlefield, consuming to your hearts content, and getting others to partake in the festivities. You attempt to coax a creature within 10 feet of you into engaging in festivities by having the target attempt a @Check|will|against:spell] save. If you target an ally, they can choose to get a result of a failure on their save without rolling.</p><p><strong>Critical Success</strong> The creature rebukes your attempts to coax it and is temporarily immune to future attempts for 1 minute.</p><p><strong>Success</strong> The creature is slightly bemused by your attempts, it cannot take hostile action against you until the end of its next turn. If you take a hostile action against the creature, it becomes temporarily immune to this effect for 1 minute.</p><p><strong>Failure</strong> The creature indulges you. As success, the creature must also use one of its actions to [[/act perform]] or to consume food or drink or it becomes @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}. After it completes the action, it gains a status bonus to damage equal to twice your cursebound value until the end of your next turn. @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.z6Hq3CfTIt2XoSx8]{Effect: Contagious Festivities}</p><p><strong>Critical Failure</strong> The creature becomes lost in the moment. As failure, except the creature must use all of its actions to engage in the festivities and is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the end of your next turn.</p>",
+            "prerequisites": [
+                {
+                    "value": "revelry mystery"
+                }
+            ]
+        },
+        "Overwhelming Festivities": {
+            "name": "Overwhelming Festivities",
+            "description": "<p>You exude festivity and resplendent indulgence, throttling emotions, causing them to overwhelm the mind. When an enemy in the emanation fails a save against an emotion effect or gains the frightened condition from an effect, it also takes 3d4 persistent mental damage.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.m7RLoqSYkgvv8pyz]{Aura: Overwhelming Festivities}</p><hr /><p><strong>Heightened (+2)</strong> The persistent damage increases by 1d4 and the radius of the emanation increases by 5 feet.</p>"
+        },
+        "Sensory Roots": {
+            "name": "Sensory Roots",
+            "description": "<p>Your curse takes root on the ground beneath you, allowing you to sense the surrounding area. You force the growths of your curse to take root beneath you. You gain tremorsense as an imprecise sense with a range of 30 feet for as long as you are cursebound. At the end of each turn you are cursebound, you become immobilized by your roots if you have not used an action with the move trait this turn. If you are cursebound 2 when you use Sensory Roots, your tremorsense is a precise sense in the first 15 feet of its range instead of an imprecise sense, and if you are cursebound 3, your tremorsense has a range of 60 feet instead of 30 feet.</p><hr /><p><strong>Foundry Note</strong> Due to system implementation, a precise sense will always \"beat\" an imprecise sense, thus, you will never be able to see or make use of the imprecise tremorsense from this feat at cursebound 2 or above. You must handle this manually.</p>",
+            "prerequisites": [
+                {
+                    "value": "forest mystery"
+                }
+            ]
+        },
+        "Cryptic Murmurings": {
+            "name": "Cryptic Murmurings",
+            "description": "<p><strong>Trigger</strong> You end an encounter in which your cursebound value was 2 or greater and you are conscious.</p><hr /><p>At times, you mutter grim warnings of things to come—and not even you might understand what you mean. You or an ally within 15 feet of you when you uttered the murmur, can spend 10 minutes to attempt a @Check[religion|against:spell|overrideTraits:true|traits:secret] check against your spellcasting DC to decipher what the murmur might mean. This check must be attempted in the next hour, or the murmur’s meaning is lost. This check has the secret trait and the following results.</p><p><strong>Critical Success</strong> You learn of something desperately important. Your GM warns you of an upcoming encounter or danger; for example, if your murmur was “the shell walks the steps”, you would learn of a graveknight lurking near a nearby stairwell. You gain the effects of a critical success with Recall Knowledge on a creature or subject of the encounter or danger. You and your allies gain a +2 circumstance bonus to Initiative for the relevant encounter as long as it occurs within the next day.</p><p><strong>Success</strong> Deciphering your riddle is vague, but gives you some glimpses into what could come to pass. You learn two interpretations of your riddle, one correct and one incorrect. For example, with “the shell walks the steps”, it may hint at a graveknight, or it may be about a crab-like jah-tohl patrolling the area. You and your allies gain a +1 circumstance bonus to Initiative for the relevant encounter as long as it occurs within the next day.</p><p><strong>Failure</strong> You fail to decipher the riddle.</p><p><strong>Critical Failure</strong> You come to the wrong understanding. You learn an incorrect piece of information, such as only learning about jah-tohls. You and your allies have a –2 circumstance penalty to Initiative for the relevant encounter as long as it occurs within the next day.</p>"
+        },
+        "Shadowcopy": {
+            "name": "Shadowcopy",
+            "description": "<p>You shed your shadow as a snake sheds its skin, producing a silhouette of you that walks autonomously. You create a shadowcopy of yourself in an adjacent space which is the same size as you, but otherwise can be moved through normally. All creatures within the area of the shadowcopy become concealed, and all creatures outside the area become concealed to creatures within it. You can move the shadowcopy up to your Speed to an area you can see when you Cast the Spell and when you Sustain the spell. Once during the duration of the spell, you can use the Shadow Swap free action, after which the spell ends and the shadowcopy disappears.</p><p><strong>Shadow Swap</strong> <span class=\"action-glyph\">f</span> (concentrate, darkness, oracle, shadow)</p><hr /><p><strong>Effect</strong> You swap places with your shadow in a burst of darkness. You create magical darkness that lasts until the end of your next turn in a @Template[emanation|distance:15] around the position of your shadowy duplicate and yourself. You can choose to change positions with your shadow when you use this action, and if you do, the spell gains the teleportation trait.</p>"
+        },
+        "Curse of Ancestral Meddling (Team+)": {
+            "name": "Curse of Ancestral Meddling (Team+)",
+            "description": "<p>The ancestral spirits you commune with haunt you and meddle with your belongings and actions, either out of a wellintentioned (but ultimately detrimental) attempt to assist you, as punishment for your audacity in circumventing the traditional means of achieving divine power, for their own amusement, or a mixture of the above. When you have the @UUID[Compendium.pf2e.conditionitems.Item.zXZjC8HLaRoLR17U]{Cursebound} condition, you are @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy} with a value equal to your cursebound value. When you use a cursebound action, you immediately suppress the clumsy condition from your curse until the end of your next turn.</p>"
+        },
+        "Cursebound Foresight": {
+            "name": "Cursebound Foresight",
+            "description": "<p><strong>Actions</strong> <span class=\"action-glyph\">1</span> to <span class=\"action-glyph\">3</span></p><hr /><p>Your artifact enables you to tap into its power while foreseeing danger. You use Curio’s Foresight and then a cursebound action or activity that requires 1-, 2-, or 3-actions to use, using the same number of actions as the cursebound action.</p>",
+            "prerequisites": [
+                {
+                    "value": "Enlightened Reliquarian Dedication"
+                }
+            ]
+        },
+        "The End is Nigh": {
+            "name": "The End is Nigh",
+            "description": "<p>You call out the terrible futures that await the target, sharing the doom you suffer from with them. Your target must attempt a Will save. Regardless of the result, a creature is then temporarily immune for 10 minutes.</p><p><strong>Critical Success</strong> You see your own fate closing in on you and become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p><p><strong>Success</strong> The target is unaffected.</p><p><strong>Failure</strong> The target fears the inevitability of their future and becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and cannot reduce their frightened condition below 1 for the duration of the spell. The next time the target attempts an attack roll or save, it must roll twice and take the lower result, after which the spell ends.</p><p><strong>Critical Failure</strong> As failure, except the creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>"
+        },
+        "The Land Protects Us": {
+            "name": "The Land Protects Us",
+            "description": "<p>Though you often serve as a protector of the land, the land can also serve to protect you. You create a wall of natural terrain that sprouts from the ground in a 15-foot radius around you that is 10 feet high and lasts for 1 minute. Creatures that attempt to pass through the barrier must attempt a @Check[reflex|against:spell] save, or they take @Damage[2d8[persistent,bleed]]{2d8 persistent bleed} damage. If you’re cursebound 2 when you use The Land Protects Us, the barrier is 20 feet high and the persistent bleed damage is @Damage[3d8[persistent,bleed]]{3d8}, and if you’re cursebound 3, it is instead 30 feet high and the persistent bleed damage increases to @Damage[4d8[persistent,bleed]]{4d8}.</p>",
+            "prerequisites": [
+                {
+                    "value": "forest mystery, or mountain mystery"
+                }
+            ]
+        },
+        "Glacial Sculpting": {
+            "name": "Glacial Sculpting",
+            "description": "<p><strong>Domain</strong> cold (apocryphal)</p><hr /><p>You create a temporary object out of ice. It must be a solid object and 5 cubic feet or smaller. It can't rely on intricate artistry or complex moving parts, never fulfills a cost or the like, has a hardness of 5, and is made entirely of ice. It is obviously temporarily constructed of ice, and thus can't be sold or passed off as a genuine item. If the object is exposed to fire or heat, the duration is reduced 1 round for each round it remains exposed.</p><hr /><p><strong>Heightened (+1)</strong> The amount of cubic feet you can create increases by 3.</p>"
+        },
+        "Divine Eclipse": {
+            "name": "Divine Eclipse",
+            "description": "<p>The world around you falls as dark as the night, leaving you a glowing portal to Creation’s Forge eclipsed only by your own mortal form. You extinguish all non-magical light effects and attempt to counteract any other magical light in the area.</p><p>Select up to 5 creatures in the area; you grant them the eclipse’s blessing, they exude bright light in a 5-foot emanation (and dim light 5 feet thereafter) and gain fast healing 6 while within the emanation. All other creatures in the area that end their turn in an area of dim light or darkness take 6d4 cold damage with a basic Reflex save.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.WbVS2UZMIINwpNBZ]{Effect: Divine Eclipse}</p><hr /><p><strong>Heightened (+1)</strong> The cold damage increases by 1d4 and the fast healing increases by 1.</p>"
+        },
+        "Mind's Eye Wink": {
+            "name": "Mind's Eye Wink",
+            "description": "<p>You manifest your dreams as an illusory hazard.</p><ul><li><p><strong>Area (4 continguous 5-foot squares)</strong> All solid ground in the area is a brilliant burst of colors from the Dreamlands. Creatures in the area or that enter the area must make a Will save. A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} as long as they are in the area and for 1 round after they leave. On a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} while in the area and stupefied 1 for 1 round after they leave the area.</p></li><li><p><strong>Target (1 object of Bulk 1 or less)</strong> If you cast the spell on an unattended object, anyone trying to pick up the object must succeed at a Will save against your spell DC or they believe the object is dangerous and would do them harm. If you target an attended object or a creature picks up the unattended object, the creature that has the object must attempt a Will save. On a failure, the wielder takes a –1 circumstance penalty to all checks that involve using the object; or a –2 circumstance on a critical failure. A creature can attempt to disbelieve the effect as normal after using a [[/act seek]] action. If it successfully disbelieves, it ignores the effect for the remaining duration. @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.JiB9kUl9RapPQ3Cr]{Effect: Mind's Eye Wink}</p></li></ul>"
+        },
+        "Apocryphal Mastery": {
+            "name": "Apocryphal Mastery",
+            "description": "<p>You understand your domain in its entirety, both the aspects commonly understood and those shrouded in secrets. During your daily preparations, select a domain you have a domain spell for and has an apocryphal variant domain spell. You can choose to know either the standard domain spell or the apocryphal domain spell today.</p>",
+            "prerequisites": [
+                {
+                    "value": "at least 1 domain spell"
+                }
+            ]
+        },
+        "Sharp Note": {
+            "name": "Sharp Note",
+            "description": "<p>You let loose a discordant song that opens your target up to hear the song. Each creature in the area takes 1d8 sonic damage and must attempt a Fortitude save. A creature deafened by the spell can still hear you and is affected by your auditory effects normally.</p><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes half damage.</p><p><strong>Failure</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p><p><strong>Critical Failure</strong> The creature takes double damage, is deafened for 1 minute, and takes @Damage[(@item.level)[sonic,persistent]] damage as long as it is deafened.</p><hr /><p><strong>Heightened (+1)</strong> The sonic damage increases by 1d8 and the persistent sonic damage increases by 1.</p>"
+        },
+        "Reflexive Reveal": {
+            "name": "Reflexive Reveal",
+            "description": "<p><strong>Trigger</strong> An ally within the aura of your Curio’s Foresight is the target of a Strike or effect that would require a saving throw.</p><hr /><p>You can reveal protective visions to your allies outside your protection. You use @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Js9vTrVqDJQeZ2uP]{Reveal the Mystery} on the triggering ally.</p>",
+            "prerequisites": [
+                {
+                    "value": "Enlightened Reliquarian Dedication"
+                }
+            ]
+        },
+        "Aspirations of the Acolyte": {
+            "name": "Aspirations of the Acolyte",
+            "description": "<p>Your followers have seen the ways of your mystery and aspire to such divinity by pledging themselves to its ways. You can spend 2 actions to Direct Follower, granting them the ability to Cast a Spell.</p><p>Each day during your daily preparations, you can choose to give one of your followers two cantrips you can cast from your oracle spellcasting as divine cantrips. If you have more than one follower, you can choose to give all of your followers one cantrip you can cast from your oracle spellcasting as a divine cantrip, with all of your followers gaining the same cantrip.</p>",
+            "prerequisites": [
+                {
+                    "value": "Mystery Cultist"
+                }
+            ]
+        },
+        "Spiraling Dance": {
+            "name": "Spiraling Dance",
+            "description": "<p><strong>Domain</strong> creation (apocryphal)</p><hr /><p>You express the joy of creation through a spiralling dance that sweeps others up in it. You Stride up to your Speed. You can attempt to [[/act shove statistic=spell]] a single creature adjacent to you during this move, using your spell attack modifier instead of your Athletics modifier if it is higher. The first time each turn after the first you Sustain the spell, you can Stride again and attempt to Shove a single creature adjacent to you during your move.</p>"
+        },
+        "Dream": {
+            "name": "Dream",
+            "description": "<p>The mind is the greatest creator, for in its folds are forged a thousand worlds in the land of dreams. Your imagination is so persistent and powerful that it forms illusions by your mere presence. You might have close ties to the likes of Desna, the Great Old One Bokrug or some other ancient power from the realm of slumber. You find that the power of the Dreamlands is only a flicker of magic away.</p><p><strong>Granted Spells</strong></p><ul><li><strong>cantrip:</strong> @UUID[Compendium.pf2e.spells-srd.Item.0zU8CPejjQFnhZFI]{Figment}</li><li><strong>1st:</strong> @UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{Sleep}</li><li><strong>3rd:</strong> @UUID[Compendium.pf2e.spells-srd.Item.yM3KTTSAIHhyuP14]{Dream Message}</li><li><strong>5th:</strong> @UUID[Compendium.pf2e.spells-srd.Item.U58aQWJ47VrI36yP]{Hallucination}</li></ul><p><strong>Revelation Spells</strong></p><ul><li><strong>initial: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.OpJmCs3zAXmN4mnX]{Mind's Eye Wink}</li><li><strong>advanced: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.kRd321XLgebXcpni]{Wishful Thinking}</li><li><strong>greater: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.2OSGe5NaTHXHXHGg]{Dream Come True}</li></ul><p><strong>Related Domains</strong> disorientation, dreams, glyph, nightmares</p><p><strong>Mystery Skill</strong> Occultism</p><p><strong>Oracle Feat </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.wZz04xU4HejpGTd4]{Astral Daydream}</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.x6SPAkbSDUbZqLrc]{Curse of Eternal Reverie}</p>"
+        },
+        "Accursed Curio": {
+            "name": "Accursed Curio",
+            "description": "<p>You are cursed to forever be bonded to an accursed curio, a sacred relic empowered by your mystery. You begin with a seemingly mundane item of that type, and you gain the listed benefits associated with your choice. Attempts to rid yourself of the curio generally fail; it will always appear in your possessions when you make your daily preparations, even if it was destroyed. Coins exchanged to sell it blacken and curl like rotting petals moments after you receive them, and purchasers mysteriously find new money to replace the lost money soon after. If you acquire a new object of the same general type as your curio, you can combine the curio and the new object by spending a day of downtime performing rituals to do so. This gives your artifact a slightly different appearance and the abilities of the combined item; for example, a lore oracle could combine their script curio–an ancient tome of handwritten notes written by Gruhastha–with a brooch of inspiration, giving the curio the properties of the item. If this process is repeated, the previous item is removed from the curio, and the new item and your accursed curio are combined. Invested items merged with your curio in this way do not count towards your daily limit of invested items.</p><p>You gain the @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Fg25A68hjadgRefp]{Curio’s Foresight} action and the following benefits depending on your selection of curio. You cannot use cursebound actions unless your object is wielded or worn, as defined in the curio.</p>"
+        },
+        "Ice": {
+            "name": "Ice",
+            "description": "<p>Ice encrusts your heart, and cold pulses through your veins. It is ever-present, a clinging phantom that saps away all warmth and joy and fills you with a grim numbness. You may draw your powers from the Princess of Rime Algenweis, the polar werebear frost giant god Yrmidar, Uvuko of the Mwangi Expanse, or even from the spirits of the Crown of the World itself. Whatever the source of your power, the bitter cold follows you no matter where you go.</p><p><strong>Granted Spells</strong></p><ul><li><strong>cantrip: </strong>@UUID[Compendium.pf2e.spells-srd.Item.IxhGEKl63R4QBvkj]{Frostbite}</li><li><strong>1st: </strong>@UUID[Compendium.pf2e.spells-srd.Item.8TQiFzGf4feoHeH0]{Chilling Spray}</li><li><strong>4th: </strong>@UUID[Compendium.pf2e.spells-srd.Item.kHyjQbibRGPNCixx]{Ice Storm}</li><li><strong>5th: </strong>@UUID[Compendium.pf2e.spells-srd.Item.xxWhyl81w3ckslAU]{Howling Blizzard}</li></ul><p><strong>Revelation Spells</strong></p><ul><li><strong>initial: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.hX9AndfKK4fUf4XX]{Freezing Cold}</li><li><strong>advanced: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.UkQm3EFrh7FjhMQX]{Ice Guardian}</li><li><strong>greater: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.UmP8nuC0f2DiMZOB]{Fractal Frosting}</li></ul><p><strong>Related Domains </strong>cold, death, pain, travel</p><p><strong>Mystery Skill </strong>Survival</p><p><strong>Oracle Feat </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.iWueJXoM6ZFHULZj]{Comfort of Struggle}</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.WkHeAsDV5cy2JkSr]{Curse of Gelid Presence}</p>"
+        },
+        "Hand in the Dark": {
+            "name": "Hand in the Dark",
+            "description": "<p><strong>Requirements</strong> You are adjacent to a shadow or in an area of darkness.</p><hr /><p>You reach your hand into the shadows as a portal to other shadows. At the beginning of each turn the spell is active, choose a square within range that has a shadow in it. You treat yourself as being in the chosen square for the purposes of Interact actions, and you can target creatures with your spells with a range of touch or a melee spell attack roll as if you were in the chosen square. If the chosen square no longer has a shadow in it, such as if a nearby creature moves, you lose this effect until you choose a new square at the beginning of your next turn.</p>"
+        },
+        "Assume Destiny": {
+            "name": "Assume Destiny",
+            "description": "<p><strong>Trigger</strong> An ally fails a save against an effect that targeted both of you, and your save was successful.</p><hr /><p>When a terrible fate awaits your friends, you often see it coming and prepare to take on the role of a martyr. Using your limited control over what you see, you trade fates with your ally, swapping the results of your roll after any modifications to the final result.</p><hr /><p><strong>Heightened (7th)</strong> If your ally’s original result was a critical failure, you get a failure instead.</p>"
+        },
+        "Hermit's Shelter": {
+            "name": "Hermit's Shelter",
+            "description": "<p><strong>Cost</strong> the Price of the chosen items</p><hr /><p>No matter where you walk, it seems that you can find your shelter nearby. You can spend 10 minutes consulting visions or vague memories of a shelter nearby. The cabin appears somewhere within a 500-foot emanation of you, usually out of line of sight or seemingly innocuously out of view. This shelter has the same specifications and effects as one produced by a cozy cabin spell, but its structure and resplendence is always dependent on the region in which it is found.</p><p>The cabin always has sustenance for up to 10 creatures and up to 2 common items of your choice with a level no higher than half your level. These items must be pieces of adventuring gear or consumable items, and can’t be weapons, armor, permanent magic items, or other treasure.</p><p>Even though the structure is permanent, it mysteriously fades from view immediately after you move more than 500 feet from the shelter and cannot be found again until you discover it again using Hermit’s Shelter. Any creatures or objects left inside the shelter appear somewhere outside the shelter within 10 feet.</p>"
+        },
+        "Curse of Ancient Growth": {
+            "name": "Curse of Ancient Growth",
+            "description": "<p>A feeling of homesickness gnaws at you as you walk the world, and when you are left alone, you hear the psithurism of the forest. The creaking trees, the distant birdsong, and the allconsuming temptation to wander back to those woods and never come back. Plants or fungi may grow on you or your belongings, and woodland creatures appear like omens wherever you go. When you have the cursebound condition and are in darkness or dim light, your growths use your body for sustenance, taking @Damage[(@actor.conditions.cursebound.value)[poison,persistent]|immutable]{persistent poison damage equal to your cursebound value} or @Damage[(2 * @actor.conditions.cursebound.value)[poison,persistent]|immutable]{twice your cursebound value} if you are in total darkness. When you are in bright light, you immediately stop taking persistent poison damage from your curse, as your plants soak up the light instead, producing growths that obscure your vision. While in bright light, creatures beyond 60 feet are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to you, and you reduce the distance you can see creatures clearly by 10 feet for each cursebound value you possess above 1 (with creatures beyond 30 feet concealed to you at cursebound 4). Your growth ceases when you begin Refocusing to assuage your curse or if you fall unconscious, but your growth resumes its behavior if your Refocus activity is interrupted or when you return to consciousness.</p>"
+        },
+        "Golden Touch": {
+            "name": "Golden Touch",
+            "description": "<p><strong>Domain</strong> wealth (apocryphal)</p><hr /><p>Your hand transmutes anything it touches to gold. The target must make a Fortitude save; If the target is an object held by a creature, the creature makes the Fortitude save.</p><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target transmutes partially into gold. The target gains a weakness 4 to bludgeoning and electricity damage. The target takes a –2 circumstance penalty to Stealth checks or applies this penalty to any creature holding it if it was an item.</p><p><strong>Failure</strong> The transmutation is more powerful. As success, but the weakness to bludgeoning and electricity is doubled. If the target is a creature, it is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}. If the target is an object, it grants a –2 circumstance penalty to checks or DCs made with the object if it is not already made of gold.</p><p><strong>Critical Failure</strong> As failure, but the target becomes @UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{Petrified} as if made of gold for the duration. If the target was an object, it is treated as having the @UUID[Compendium.pf2e.conditionitems.Item.6dNUvdb1dhToNDj3]{Broken} condition if it is not already made of gold.</p><hr /><p><strong>Heightened (+1)</strong> The weakness to bludgeoning and electricity on success increases by 1.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.TwARzUtpp7SCSpEX]{Effect: Golden Touch}</p>"
+        },
+        "Fantasms of Fire": {
+            "name": "Fantasms of Fire",
+            "description": "<p>Smoke and flickering visions of flame fill your senses, and harmless flickers of obscuring flames also fill your space. You create smoke in a @Template[emanation|distance:15] that provides concealment that lasts for 1 minute or until dispersed by a strong wind. You ignore concealment inside the smoke, but treat all creatures outside the smoke as concealed to you, as mysterious fantasms flash within the flames. Creatures inside the smoke cannot see outside the smoke even if they have smoke vision or a similar ability that would allow them to ignore the effects of concealment from smoke. Creatures that need to breath that end their turn in the area take @Damage[(@actor.conditions.cursebound.value)[fire]]{fire damage equal to your cursebound value}. If your cursebound value is 2 when you use Fantasms of Fire, the emanation is a @Template[emanation|distance:20], and if your cursebound value is 3 when you use Fantasms of Fire, the emanation is a @Template[emanation|distance:30].</p>",
+            "prerequisites": [
+                {
+                    "value": "flames mystery"
+                }
+            ]
+        },
+        "Ice Guardian": {
+            "name": "Ice Guardian",
+            "description": "<p>You create a guardian made of ice to defend you. An ice sculpture of Large size appears adjacent to you and attempts to defend you and your allies. You and your allies gain lesser cover while you are adjacent to the guardian, and you can Sustain the spell to increase the cover it grants to standard cover until the beginning of your next turn or to move the guardian to another area by having it Stride with its land Speed of 25 feet. The guardian can be destroyed and has [[/r 30+(@item.level -3)*10]] Hit Points, an AC of [[/r 22+(@item.level -3)*3]], [[/r 3+(@item.level -3)*3]] weakness to bludgeoning damage, and immunity to cold.</p><hr /><p><strong>Heightened (+1)</strong> The guardian’s AC and weakness increases by 3, and its Hit Points increase by 10.</p>"
+        },
+        "Curse of the Ancient Summit": {
+            "name": "Curse of the Ancient Summit",
+            "description": "<p>The weight of the mountains you are bound to are always felt on your shoulders and actions. In moments of stillness, your skin almost resembles stone, and you might find moss growing on you after a restful night's sleep. As your curse advances, you begin to petrify. While Cursebound, you cannot benefit from status bonuses to your Speeds and you cannot be mounted, if you were already mounted, you fall prone off your mount when you become cursebound. You additionally have a status penalty to your Speed equal to 5 feet x your cursebound value or double this amount to any fly or swim Speeds you possess. If your land Speed would be reduced to 5 or lower you retain a land Speed of 10 feet; If any other Speed you possess is reduced to 0 or lower, you cannot use the corresponding movement type.</p>"
+        },
+        "Fractal Frosting": {
+            "name": "Fractal Frosting",
+            "description": "<p>The frost lives on the fringe of your fingertips, splitting into tiny fractures of freezing rays. You cast @UUID[Compendium.pf2e.spells-srd.Item.IxhGEKl63R4QBvkj]{Frostbite} as part of casting fractal frosting. For the duration of fractal frosting, you can cast frostbite with a range of 60 feet, targeting up to three different targets within range. You create difficult terrain in a @Template[emanation|distance:5] in the area around each of the targets that lasts for 1 round.</p><hr /><p><strong>Heightened (9th)</strong> For the duration, when you cast frostbite, the target takes a –5-foot status penalty to its Speed for 1 round on a failure or a –15-foot status penalty to its Speed on a critical failure.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.OPBNdJPRJgcGVqp1]{Effect: Fractal Frosting}</p>"
+        },
+        "Curse of Inevitable Rot (Team+)": {
+            "name": "Curse of Inevitable Rot (Team+)",
+            "description": "<p>Your magic is a constant reminder that all creatures will eventually submit to the ravages of time and the environment. You are suffused with an aura of decay. Leaves wilt and insects fall out of the sky as you pass, silverware tarnishes in your hands, and the dregs of wine turn to vinegar in your goblet.</p><p><strong>Cursebound 1</strong> You gain weakness 2 to acid and poison damage.</p><p><strong>Cursebound 2</strong> You take a –1 status penalty to saving throws against diseases and poisons. In addition, anyone attempting to Treat your Disease, Poison, or Wounds takes a –1 status penalty to the associated skill check.</p><p><strong>Cursebound 3</strong> Your weakness to acid and poison damage increases to 10 + your level.</p><p><strong>Cursebound 4</strong> Your status penalty to saving throws against diseases and poisons and the status penalty for anyone attempting to Treat your Disease, Poison, or Wounds increases to –2.</p>"
+        },
+        "Juggernaut of Jagged Stone": {
+            "name": "Juggernaut of Jagged Stone",
+            "description": "<p>You call upon the mountain within, and you become its avatar. Rock formations form on your skin, giving you the appearance of a living mountain. You gain resistance 6 to physical damage, except adamantine. You're immune to death effects, disease, drained, fatigued, healing, nonlethal attacks, paralyzed, poison, sickened, vitality, and void; any of those conditions you had when the spell is cast are suspended until the spell ends, then return with their remaining duration when the spell ends.</p><p>Your fist Strikes have a 1d10 damage die, lose the finesse and agile traits, and gain the shove trait, and you become Large in size and are clumsy 1.</p><p>In this form, you don't need to breathe. Your Bulk is 24, and you become too dense to Swim in water, automatically sinking to the bottom. You can Dismiss the spell.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.MzalS4gzqOn5NTr8]{Effect: Juggernaut of Jagged Stone}</p><hr /><p><strong>Heightened (+1)</strong> The physical resistance increases by 1.</p>"
+        },
+        "Trepidation Spell": {
+            "name": "Trepidation Spell",
+            "description": "<p>When exerting your will over the mind of a creature, you send them harrowing visions of the future. If your next action is to Cast a Spell that is at least 2 ranks below your maximum rank and requires a Will save, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} on a failure or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure. If the creature is immune to emotion, fear, or mental effects, it is immune to this frightened condition.</p>"
+        },
+        "Vision of the Perfect Creation": {
+            "name": "Vision of the Perfect Creation",
+            "description": "<p>Your vision showed you something beautiful that is yet to exist, and you are to be a part of its creation. An ancestors oracle might be shown four fractured lenses slotted into a fulcrum, or a light oracle might see five glowing stars orbiting a tower.</p><p><strong>Alternate Domain</strong> creation</p><p><strong>Alternate Granted Spell</strong> 1st: @UUID[Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl]{Dizzying Colors}</p><p><strong>Granted Skill</strong> Performance</p><p><strong>Vision State</strong> Creation is your purpose. While cursebound, when you @UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{Perform} it counts as having prepared to @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} your ally on their next attack roll or skill check of your choice. When you later use the Aid reaction, you can roll [[/act aid statistic=performance]] instead of the normal skill check. After the first turn in an encounter, if you end a turn without using Perform or a cursebound action that turn, you increase your cursebound value by 1 up to your maximum cursebound value.</p><p><strong>Awakened State</strong> You can Perform as a free action at the end of each of your turns and if you roll a failure on your Performance check to Aid, you get a success instead. If your cursebound value is 3, you automatically critically succeed at your checks to Aid using Performance. If your cursebound value is 4, you gain an additional reaction each turn you can only use to Aid using Performance.</p>"
+        },
+        "Revelry": {
+            "name": "Revelry",
+            "description": "<p>You are granted mystic insight through acts of hedonism or intoxication. It might be that you have celebrated too hard that you have gained the favor of deities like Cayden Cailean, Urgathoa, Marishi or Sun Wukong; alternatively, you might come from a tradition that uses powerful hallucinogens to induce states of heightened awareness. Whatever form your revelry takes, being in a state of intoxication gives you a connection to the divine that nobody else can reach.</p><p><strong>Granted Spells</strong></p><ul><li><strong>cantrip: </strong>@UUID[Compendium.pf2e.spells-srd.Item.VACvA5VRbddjt5s9]{Infectious Enthusiasm}</li><li><strong>1st: </strong>@UUID[Compendium.pf2e.spells-srd.Item.pBevG6bSQOiyflev]{Befuddle}</li><li><strong>2nd: </strong>@UUID[Compendium.pf2e.spells-srd.Item.q5qmNn144ZJGxnvJ]{Befitting Attire}</li><li><strong>7th: </strong>@UUID[Compendium.pf2e.spells-srd.Item.vPWMEyVTreMOoFnm]{Planar Palace}</li></ul><p><strong>Revelation Spells</strong></p><ul><li><strong>initial: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.IwJEKkV4PX7pY3V9]{Life of the Party}</li><li><strong>advanced: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.LsoSNdvocpMcOZLv]{Overwhelming Festivities}</li><li><strong>greater: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.uLzgBltYNdU8hmJZ]{The More The Merrier}</li></ul><p><strong>Related Domains </strong>disorientation, indulgence, passion, wealth</p><p><strong>Mystery Skill </strong>Performance</p><p><strong>Oracle Feat </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.mLRt0nJQLvbZkiml]{Well of Joy}</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.ZamwPUeVau0UltXC]{Curse of the Eternal Banquet}</p>"
+        },
+        "Ray of Light": {
+            "name": "Ray of Light",
+            "description": "<p>You shoot a beam of light from your hands, dispelling darkness and blinding enemies. All creatures in the area must make a basic Fortitude save or take 1d6 fire damage. Creatures with the shadow trait or with light blindness take a –2 status penalty to their save. Creatures that fail their save are also @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round, or @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and then dazzled for 1 minute if it was a critical failure. The spell leaves an ambient light in each square of the area which sheds like a torch for 1 minute.</p><hr /><p><strong>Heightened (+1)</strong> Increase the fire damage by 1d6 and the distance of the line by 5 feet.</p>"
+        },
+        "Curse of Gelid Presence": {
+            "name": "Curse of Gelid Presence",
+            "description": "<p>The cold clings to you like a ghost haunting your every moment and numbing you to your core. Even in warm weather, your breath condenses as if it were freezing, and patches of ice sometimes appear on your clothes or hair. Your frost subsides when you begin Refocusing to assuage your curse or if you fall unconscious, but the frost resumes its behavior if your Refocus activity is interrupted or when you return to consciousness.</p><p><strong>Cursebound 1</strong> Frost forms on your skin. You take @Damage[1[cold,persistent]|immutable] damage.</p><p><strong>Cursebound 2</strong> You cannot Step. This applies to any creature you mount in addition to yourself.</p><p><strong>Cursebound 3</strong> The persistent cold damage increases to @Damage[3[cold,persistent]|immutable]{3}.</p><p><strong>Cursebound 4</strong> At the beginning of each of your turns, you reduce all of your Speeds by 10 feet to a minimum of 0 feet. If all of your Speeds are reduced to 0, you instead become @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} by your ice and must [[/act escape]] against your spell DC to move again. If you successfully Escape, all your Speeds are no longer reduced, and then the cycle continues, and the ice starts to reduce your Speed again. Your curses’ penalties to Speed and the immobilized condition apply to creatures you mount instead of yourself while mounted. @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.yRNC7m3QIS6GVdvz]{Effect: Curse of Gelid Presence}</p>"
+        },
+        "Wield the Divine": {
+            "name": "Wield the Divine",
+            "description": "<p>You access the divine directly, even if it is agonizing to do so. You gain 1 Focus Point.</p>"
+        },
+        "Mountain": {
+            "name": "Mountain",
+            "description": "<p>Your soul is linked to the eternal stone that makes up mountains. Perhaps you have a divine connection to a particular range of mountains such as the Kortos Mountains, the Wall of Heaven in Tian Xia, or the mountain that makes up the realm of Heaven itself. Maybe you have the blessing of deities such as Yamatsumi, Balumbdar or Ragdya. Whatever the case, you yourself are towering stone, and your powers manifest as such.</p><p><strong>Granted Spells</strong></p><ul><li><strong>cantrip: </strong>@UUID[Compendium.pf2e.spells-srd.Item.zA0jNIBRgLsyTpbm]{Scatter Scree}</li><li><strong>1st: </strong>@UUID[Compendium.pf2e.spells-srd.Item.dgCH2E0gMLMUgyFl]{Shockwave}</li><li><strong>3rd: </strong>@UUID[Compendium.pf2e.spells-srd.Item.KEagmnwgsSbGmkme]{Cave Fangs}</li><li><strong>6th: </strong>@UUID[Compendium.pf2e.spells-srd.Item.znv4ECL7ZtuiagtA]{Petrify}</li></ul><p><strong>Revelation Spells</strong></p><ul><li><strong>initial: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.tmGuPJr7ppxurTzP]{Seismic Shift}</li><li><strong>advanced: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.8p4xVEywQr8pN5QN]{Raise Mountain}</li><li><strong>greater: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.VK8P3zkoyrVI1RO7]{Juggernaut of Jagged Stone}</li></ul><p><strong>Related Domains </strong>earth, might, travel, vigil</p><p><strong>Mystery Skill </strong>Athletics</p><p><strong>Oracle Feat </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.yiPogNDpDqAXlqTJ]{Hardened to Suffering}</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.UlxAZtgVV8KaKGWS]{Curse of the Ancient Summit}</p>"
+        },
+        "Creature's Howl": {
+            "name": "Creature's Howl",
+            "description": "<p>You unleash an awful roar at your opponents, enough to chill them to the bones. All enemies in the area that can hear your howl must attempt a Will save. Regardless of their result, they become temporarily immune for 1 minute.</p><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p><p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p><p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p><hr /><p><strong>Heightened (9th)</strong> The area increases to a 60-foot emanation.</p>"
+        },
+        "The Hour of Rallying": {
+            "name": "The Hour of Rallying",
+            "description": "<p><strong>Requirements</strong> Your cursebound value is 2 or greater and you’re in an encounter.</p><hr /><p>The body is but a vessel for your mystery, easily subjected by its divinity. You attempt to @Check[counteract] the @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused}, @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled}, @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued}, or @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied} conditions of yourself and all allies within 30 feet of you. You gain a status bonus to your check equal to your cursebound value.</p>",
+            "prerequisites": [
+                {
+                    "value": "revelry mystery"
+                }
+            ]
+        },
+        "Spirit Squire": {
+            "name": "Spirit Squire",
+            "description": "<p>You can summon a squire that aids you in battle. For 1 minute, you gain a summoned squire which can carry items and swap them out for you on a whim. When you use this action and each turn for the duration, your squire gains a single action it can only use to Interact to draw, stow, or swap an item you have in your possession. If you’re cursebound 2 when you use Spirit Squire, your squire can choose to grant you a +1 circumstance bonus to your AC until the beginning of your next turn with its Interact action to protect you instead of using it to draw, stow, or swap an item, and if you’re cursebound 3 when you use Spirit Squire, it can grant both effects with the same Interact action.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.t3fbScIIFlfyffRK]{Effect: Spirit Squire}</p>",
+            "prerequisites": [
+                {
+                    "value": "battle mystery"
+                }
+            ]
+        },
+        "Curse of Countless Fates": {
+            "name": "Curse of Countless Fates",
+            "description": "<p>As you gaze further and further into the future, an immense pressure settles over you, leaving you more and more helpless to look away from the infinite possibilities laid before you. Your eyes are a milky white, or you might have a third eye which always looks forward, a single cyclopean eye, a blindfold you can't remove or some other effect affecting your eyes.</p><p><strong>Cursebound 1</strong> You are @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 1}. This doomed condition lasts only while your cursebound value is 1 or greater.</p><p><strong>Cursebound 2</strong> You take a –1 status penalty to Perception checks and to saves against death effects as visions of the future overwhelm you.</p><p><strong>Cursebound 3</strong> You are @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed 2}. This doomed condition lasts only while your cursebound value is 3 or greater.</p><p><strong>Cursebound 4</strong> Your status penalty to Perception checks and to saves against death effects increases to –2.</p>"
+        },
+        "Ominous Threats": {
+            "name": "Ominous Threats",
+            "description": "<p>Your words carry a mysterious weight to them. You use [[/act demoralize]], but it loses the auditory trait and you do not suffer a penalty for not sharing a language, as you send ominous visions to the mind of the individual. You gain a status bonus equal to your check equal to your cursebound value.</p>",
+            "prerequisites": [
+                {
+                    "value": "expert in Intimidation"
+                }
+            ]
+        },
+        "Wooden Engulfment": {
+            "name": "Wooden Engulfment",
+            "description": "<p>You grow a tree from the ground, which latches onto your enemies with its branches. You create a tree in the designated area, and creatures in the area are immediately moved to an adjacent square of their choice they could occupy. The tree is [[/r 40 + (@item.level - 6) *5]] feet high and has [[/r 60 + (@item.level - 6) *10]] Hit Points, AC [[/r 30 + (@item.level - 6) *3]], a reach of 15 feet, and is permanently @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p><p>When you first Cast the Spell and each time you Sustain the spell, you can attempt a spell attack roll against the Reflex DC of a target within the tree’s reach. If your spell attack roll is successful, the target is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the tree until the end of your next turn or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} if your spell attack roll was a critical success. The creature grabbed or restrained by the tree can attempt to [[/act escape]] and other creatures can attempt to free the grabbed or restrained creature by attempting a [[/act force-open]], using your spell DC for the DC of both checks. The tree uses and contributes to your multiple attack penalty.</p><p>If the tree is in soil and survives to the end of the spell's duration, it remains as an ordinary, non-magical tree and continues to grow and thrive. The GM might determine that the tree disappears immediately in certain inhospitable situations.</p><hr /><p><strong>Heightened (+1)</strong> The tree’s height increases by 5 feet, its Hit Points increases by 10, and its AC increases by 3.</p>"
+        },
+        "Charm": {
+            "name": "Charm",
+            "description": "<p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Charm.AccursedCurio]</p><h3>Curio Adept</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Charm.CurioAdept]</p><h3>Wielder of Mysteries</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Charm.WielderOfMysteries]</p><h3>Curio's Revelation</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Charm.CuriosRevelation]</p><h3>Curio's Form</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Charm.CuriosForm]</p>"
+        },
+        "Finery": {
+            "name": "Finery",
+            "description": "<p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Finery.AccursedCurio]</p><h3>Curio Adept</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Finery.CurioAdept]</p><h3>Wielder of Mysteries</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Finery.WielderOfMysteries]</p><h3>Curio's Revelation</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Finery.CuriosRevelation]</p><h3>Curio's Form</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Finery.CuriosForm]</p>"
+        },
+        "Curio Adept": {
+            "name": "Curio Adept",
+            "description": "<p>The artifact grows with power, and so do you by extension. You gain the benefit associated with your selection of curio.</p>"
+        },
+        "Utensil": {
+            "name": "Utensil",
+            "description": "<p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Utensil.AccursedCurio]</p><h3>Curio Adept</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Utensil.CurioAdept]</p><h3>Wielder of Mysteries</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Utensil.WielderOfMysteries]</p><h3>Curio's Revelation</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Utensil.CuriosRevelation]</p><h3>Curio's Form</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Utensil.CuriosForm]</p>"
+        },
+        "Impossible Mysteries": {
+            "name": "Impossible Mysteries",
+            "description": "<p>You have attained near-total enlightenment on your mystery, only to reveal more questions. When you make your daily preparations, you gain one cursebound oracle feat, even if its prerequisites require a different mystery. You can use that cursebound action until your next daily preparations.</p>"
+        },
+        "Curse of Vengeful Darkness": {
+            "name": "Curse of Vengeful Darkness",
+            "description": "<p>The darkness will always claim you, concealing you from the light and shrouding you in its enveloping embrace. Light seems not to live as brightly in your presence, and your shadow appears to be endlessly black even in the presence of light. When you have the cursebound condition and are in bright or dim light, your shadow lashes out at your body, taking @Damage[(@actor.conditions.cursebound.value)[bleed,persistent]|immutable]{persistent bleed damage equal to your cursebound value} or @Damage[(2 * @actor.conditions.cursebound.value)[bleed,persistent]|immutable]{twice your cursebound value} if you are in bright light. When you are in darkness, you immediately stop taking persistent bleed damage from your curse, as your shadow instead latches on to the dark, giving you a –5-foot status penalty to all your Speeds, or a –10-foot status penalty if you are cursebound 2, or a –15-foot status penalty if you are cursebound 3 or greater. This status penalty to your Speeds also applies to your mount if you are mounted. Your shadow lies still again when you begin Refocusing to assuage your curse or if you fall unconscious, but your shadow resumes its behavior if your Refocus activity is interrupted or when you return to consciousness.</p><hr /><p><strong>Foundry Note </strong>Use @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.hqKL2q7hc3FvRlBY]{Effect: Curse of Vengeful Darkness (Mount Penalty)} to keep track of your mount's penalty to Speeds.</p>"
+        },
+        "Curse of the Eternal Banquet": {
+            "name": "Curse of the Eternal Banquet",
+            "description": "<p>You can get so swept up in celebration and joy that relaxing feels unappealing or even frightening. The colours you wear seem more vivid and bright to others, and delicious smells hang in the air around you, causing you to be more easily overwhelmed and influenced.</p><p><strong>Cursebound 1</strong> Consumption can lead to overwhelming the faculties. You gain poison weakness 2, and effects with the olfactory trait that target you trigger this weakness. Any immunity or resistance you have to such spells and effects is suppressed.</p><p><strong>Cursebound 2</strong> Greet the bounty of life with open arms. You don't treat anyone as an enemy until they take a hostile action against you (though they might still treat you as theirs). You can't target these creatures with hostile effects or include them in hostile area effects, unless the area would include at least one enemy.</p><p><strong>Cursebound 3</strong> Your weakness to poison damage is equal to 5 + your level.</p><p><strong>Cursebound 4</strong> The intoxication is overwhelming. You are offguard and you take a –2 status penalty against emotion effects.</p>"
+        },
+        "Vision of the Long Odyssey": {
+            "name": "Vision of the Long Odyssey",
+            "description": "<p>Your vision showed you a distant place that you must reach. A cosmos oracle might see a castle in a vast redsanded desert, while a revelry oracle might see an inverted city on a cavern’s roof like grim stalactites.</p><p><strong>Alternate Domain</strong> travel</p><p><strong>Alternate Granted Spell</strong> 3rd: @UUID[Compendium.pf2e.spells-srd.Item.ThE5zPYKF4weiljj]{Show the Way}</p><p><strong>Granted Skill</strong> Acrobatics</p><p><strong>Vision State</strong> On your first turn of an encounter and each time you use an action with the cursebound trait, you can Step as a free action. After the first turn in an encounter, if you end a turn without using move action or cursebound action that turn, you increase your cursebound value by 1 up to your maximum cursebound value.</p><p><strong>Awakened State</strong> You can Step as a free action at the end of each of your turns. If your cursebound value is 3, you can Step up to 10 feet. If your cursebound value is 4, you also gain the effects of @UUID[Compendium.pf2e.spells-srd.Item.aqRYNoSvxsVfqglH]{Unfettered Movement}.</p>"
+        },
+        "Snuff Out": {
+            "name": "Snuff Out",
+            "description": "<p>You call upon your inner darkness, and snuff out a pervading light. You can immediately attempt to @Check[counteract|statistic:spell] a light source within 30 feet, automatically succeeding if the light source is non-magical. You use your spell attack modifier for your counteract modifier and you gain a circumstance bonus to your check equal to your cursebound value.</p><p>You can choose to target a creature with the light trait or under a light effect instead of a light source, dealing @Damage[(@actor.level)d6[void]] damage with a @Check[fortitude|basic] save instead of the normal effects. Creatures targeted by this effect are temporarily immune for 1 minute. At 7th level, and every level thereafter, increase the void damage by 1d6.</p>",
+            "prerequisites": [
+                {
+                    "value": "gloom mystery"
+                }
+            ]
+        },
+        "Share Mystery": {
+            "name": "Share Mystery",
+            "description": "<p>You can share your mystery with another, invoking your curse in exchange for power. During your daily preparations, choose a 1st-level oracle feat with the cursebound trait and a single ally with which you are currently traveling. The ally can use the granted cursebound action, but for all purposes it uses your cursebound value to determine the results and increases your cursebound condition as if you had used the action yourself. You must be willing for your ally to use this cursebound action and you must be able to use cursebound actions, or the action automatically fails.</p>"
+        },
+        "Self-Stitching Wounds": {
+            "name": "Self-Stitching Wounds",
+            "description": "<p><strong>Trigger</strong> Your turn begins.</p><p><strong>Requirements</strong> Your cursebound value is 2 or greater and you’re conscious in an encounter.</p><hr /><p>Your body will not break as you wade into war. You gain fast healing equal to 4 x your cursebound value for as long you meet the requirements.</p>",
+            "prerequisites": [
+                {
+                    "value": "battle mystery"
+                }
+            ]
+        },
+        "Inevitable Fate": {
+            "name": "Inevitable Fate",
+            "description": "<p><strong>Trigger</strong> A creature would use an action or activity with the fortune or misfortune trait.</p><hr /><p>The inevitability of fate is inarguable, and when one attempts to sway its momentum, it can be easily returned to the course of time. If the triggering action or activity had the fortune trait, the creature must attempt a @Check[will|against:spell] save against your spell DC, or the triggering action gains the misfortune trait. If the triggering action or activity had the misfortune trait, it gains the fortune trait. As normal for effects that have both the fortune and misfortune traits, this cancels out the effect.</p>",
+            "prerequisites": [
+                {
+                    "value": "prophecy mystery"
+                }
+            ]
+        },
+        "Harrowing Vision": {
+            "name": "Harrowing Vision",
+            "description": "<p>You implant a harrowing vision in the mind of an enemy, leaving them distracted by the threat from your ally. Choose one enemy within 30 feet of you and then designate one ally, sending the enemy a vision of your ally causing them harm. As long as your ally is within reach of the enemy, the enemy is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the beginning of your next turn or the chosen ally damages the enemy. The target is then temporarily immune for 1 day.</p>",
+            "prerequisites": [
+                {
+                    "value": "dream mystery"
+                }
+            ]
+        },
+        "Melt In Sunlight": {
+            "name": "Melt In Sunlight",
+            "description": "<p><strong>Domain</strong> sun (apocryphal)</p><p><strong>Trigger</strong> You would take fire damage or be the target of an effect with the fire trait.</p><hr /><p>As fire scorches your body, you melt like wax left in the sun and shift forward. You become a puddle of amorphous liquid. You lose any item bonus to AC and all other effects and bonuses from armor, and you use your proficiency modifier for unarmored defense. You gain resistance 8 to physical damage and are immune to precision damage. You can't cast spells, activate items, or use actions that have the attack or manipulate trait. You can slip through tiny cracks. You can Dismiss the spell.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.5zI6wMVYamcEwbiU]{Effect: Melt in Sunlight}</p>"
+        },
+        "Beast": {
+            "name": "Beast",
+            "description": "<p>All things that hunger once came from beasts, and you are no different. Perhaps you had a mystical encounter at a holy shrine to a monster; perhaps you come from a people who revere lycanthropes as divine guardians, such as the Ulfen. Deities such as the Sarkorian Gods or monstrous ones such as Lamashtu or Mother Vulture are the ones most likely to gain your favor—or ire, should you resent your power.</p><p><strong>Granted Spells</strong></p><ul><li><strong>cantrip: </strong>@UUID[Compendium.pf2e.spells-srd.Item.MPxbKoR54gkYkqLO]{Gouging Claw}</li><li><strong>1st: </strong>@UUID[Compendium.pf2e.spells-srd.Item.aEM2cttJ2eYcLssW]{Fleet Step}</li><li><strong>2nd: </strong>@UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form}</li><li><strong>5th: </strong>@UUID[Compendium.pf2e.spells-srd.Item.YtesyvfAIwXOqISq]{Moon Frenzy}</li></ul><p><strong>Revelation Spells</strong></p><ul><li><strong>initial: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.yCoJlIIopuCPi4Vw]{Body of the Beast}</li><li><strong>advanced: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.Ktv8fnq0j7x4VeFX]{Terrible Size}</li><li><strong>greater: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.XGmpxQgckt6aRUxm]{Creature's Howl}</li></ul><p><strong>Related Domains </strong>change, destruction, moon, nature</p><p><strong>Mystery Skill </strong>Intimidation</p><p><strong>Oracle Feat </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.yiPogNDpDqAXlqTJ]{Hardened to Suffering}</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.Dx34xI1uRFS6bJmS]{Curse of Monstrous Change}</p>"
+        },
+        "Tenuous Threads": {
+            "name": "Tenuous Threads",
+            "description": "<p>The fate of another is a tenuous thread as pulled and twisted as the thread of a robe. Choose a number of creatures equal to 2 plus twice your cursebound value ([[/r 2 + 2 * @actor.conditions.cursebound.value]]) within 30 feet of you. The creatures must attempt a @Check[will|against:spell] save against your spell DC. You can force the target to follow the direction of fate to approach you, run away (as if it had the @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} condition), release what it's holding, @UUID[Compendium.pf2e.actionspf2e.Item.HYNhdaPtF1QmQbR3]{Drop Prone}, or stand in place. Each target can be given a different direction and the target can choose not to follow the direction, in which case it takes a penalty depending on its save.</p><p><strong>Success</strong> The creature is unaffected.</p><p><strong>Failure</strong> The creature must spend the first action on its next turn to follow the direction, or it suffers from diverging from fate. If the creature does not follow the direction, it must roll twice and take the worse result on its next attack roll or saving throw until the end of your next turn.</p><p><strong>Critical Failure</strong> The target must use all its actions on its next turn to follow the direction. If the creature does not follow the direction, it must roll twice and take the worse result on all of its attack rolls and saving throws it makes until the beginning of your next turn.</p>",
+            "prerequisites": [
+                {
+                    "value": "prophecy mystery"
+                }
+            ]
+        },
+        "Oracle's Eyes": {
+            "name": "Oracle's Eyes",
+            "description": "<p>Your eyes are unusual, clouded by your mystery. Contrary to what others might believe, this clears your vision rather than obscuring it, and you can share this vision with others. Choose an effect with the illusion trait within 30 feet and attempt a counteract check against it as you lend others sight through your eyes. Alternatively, you can target a creature, and attempt to counteract one of the following conditions affecting that creature: @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded}, @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated}, or @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. You automatically succeed at a flat check due to invisibility when targeting a creature with this action. You use your spell attack roll modifier as your counteract modifier</p>"
+        },
+        "Spread Disease": {
+            "name": "Spread Disease",
+            "description": "<p><strong>Trigger</strong> You or a creature within 30 feet retch to remove the sickened condition.</p><hr /><p>The rot in your soul spreads as you cough and splutter. Choose another creature within 30 feet of the triggering creature. The target creature must attempt a @Check[fortitude|against:spell] save, becoming @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} on a failure, or @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure.</p>",
+            "prerequisites": [
+                {
+                    "value": "blight mystery"
+                }
+            ]
+        },
+        "An Opening is Revealed": {
+            "name": "An Opening is Revealed",
+            "description": "<p>In the event your warning tips the scales, your ally responds in kind. If a creature in your aura of foresight fails an attack roll against an ally under the effects of Reveal the Mystery, the creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to your ally until the end of your ally’s next turn.</p>",
+            "prerequisites": [
+                {
+                    "value": "Enlightened Reliquarian Dedication"
+                }
+            ]
+        },
+        "Wielder of Mysteries": {
+            "name": "Wielder of Mysteries",
+            "description": "<p>The artifact reaches its pinnacle of strength, deepening the power of your mystery. You gain the benefit associated with your selection of curio.</p>"
+        },
+        "Weapon Trance (Team+)": {
+            "name": "Weapon Trance (Team+)",
+            "description": "<p>The serenity of violence fills your mind, giving you a heightened sense of knowing exactly where your weapons need to be. For the duration, your proficiency with the target weapons is equal to your proficiency with simple weapons, or to your proficiency with martial weapons if the target weapons are advanced. You automatically Sustain this spell as a free action the first time you attempt a Strike with the target weapon each round. If your cursebound value is 2, you gain a +1 status bonus to Strikes with the target weapons while the spell is active, or a +2 if you are cursebound value is 3 or greater.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.gE9AYanWhpYxENBk]{Spell Effect: Weapon Trance (Team+)}</p>"
+        },
+        "Freezing Cold": {
+            "name": "Freezing Cold",
+            "description": "<p><strong>Area</strong> 2 or more contiguous squares, one of which must be adjacent to you</p><hr /><p>You cast out sheets of ice that stretch from your fingers. The frigid cold deals 1d6 cold damage, and the area becomes sheeted with a frigid flurry of difficult terrain.</p><p><span class=\"action-glyph\">1</span> The number of contiguous squares is 2, and the duration of the difficult terrain is 1 round.</p><p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The number of contiguous squares is 4, and the duration of the difficult terrain is 2 rounds.</p><p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> YThe number of contiguous squares is 6, and the duration of the difficult terrain is 3 rounds.</p>"
+        },
+        "The Question Remains": {
+            "name": "The Question Remains",
+            "description": "<p>Few understand the truth of your mystery as well as you do, to the extent that you have become an avatar of your mystic focus. When you would increase your cursebound condition, you can instead choose to increase your @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{Doomed} value by 1. You can do this multiple times, but you do not die if your doomed value reduces your dying value to 0. If you gain the dying condition and your doomed value would normally kill you, you die instantly.</p><p>You remain at this doomed level until you spend 8 hours resting. When you die in this way, you immediately cast @UUID[Compendium.pf2e.spells-srd.Item.ion3VOiLan6ga3QC]{Conquering Soldiers} as manifestations of your mystery swarm the field. You stay alive until the Depart action of the spell is taken, and you leave with them to join your mystery as quintessence.</p>"
+        },
+        "Speak in Tongues": {
+            "name": "Speak in Tongues",
+            "description": "<p>Your mystery grants a clarity that peers beyond language. When you increase the value of your cursebound condition, you can choose to learn a language temporarily for as long as you remain cursebound, but if you do the only languages you can speak while cursebound are languages you learned from this effect. You immediately lose these languages when you are no longer cursebound.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.t5NWv8KZClPjc0CE]{Effect: Speak in Tongues (Gain One Language)}</p>"
+        },
+        "Astronomical Body": {
+            "name": "Astronomical Body",
+            "description": "<p><strong>Trigger</strong> You would take physical damage.</p><hr /><p>Your body becomes an absence of space, filled with visions of distant stars and worlds. You reduce the triggering damage by your level plus your cursebound value and you move [[/r 5 * @actor.conditions.cursebound.value + 0 #feet]] feet away from the source of the triggering damage. This is forced movement.</p>",
+            "prerequisites": [
+                {
+                    "value": "cosmos mystery"
+                }
+            ]
+        },
+        "Light": {
+            "name": "Light",
+            "description": "<p>Light is more than just the presence of flame; it is the dispeller of darkness, the revealer of truth, the carrier of lifestuff from the sun itself. You are filled with it like a little star, but the brighter it glows, the hotter it burns you. You could find your guiding lights via Sarenrae, Dajermube, or directly from Creation’s Forge itself. As long as your heart still beats, light will shine brightly from within you.</p><p><strong>Granted Spells</strong></p><ul><li><strong>cantrip: </strong>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{Light}</li><li><strong>1st: </strong>@UUID[Compendium.pf2e.spells-srd.Item.m1vKX4xxWQJXfupu]{Glowing Trail}</li><li><strong>3rd: </strong>@UUID[Compendium.pf2e.spells-srd.Item.HWrNMQENi9WSGbnF]{Wall of Radiance}</li><li><strong>4th: </strong>@UUID[Compendium.pf2e.spells-srd.Item.ba1RyDpwq6tfW8VM]{Cloak of Light}</li></ul><p><strong>Revelation Spells</strong></p><ul><li><strong>initial: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.WKktrOEvO2Hm9TF2]{Ray of Light}</li><li><strong>advanced: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.pMw9249YMITuj2Y9]{Prism of Power}</li><li><strong>greater: </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.On86WPSyTK9jPkGS]{Divine Eclipse}</li></ul><p><strong>Related Domains </strong>healing, start, sun, truth</p><p><strong>Mystery Skill </strong>Arcana</p><p><strong>Oracle Feat </strong>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.wZz04xU4HejpGTd4]{Astral Daydream}</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.items.Item.D6A4gMTyEDDV1Fhq]{Curse of Impossible Radiance}</p>"
+        },
+        "Weapon": {
+            "name": "Weapon",
+            "description": "<p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Weapon.AccursedCurio]</p><h3>Curio Adept</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Weapon.CurioAdept]</p><h3>Wielder of Mysteries</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Weapon.WielderOfMysteries]</p><h3>Curio's Revelation</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Weapon.CuriosRevelation]</p><h3>Curio's Form</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Weapon.CuriosForm]</p>"
+        },
+        "Comfort of Struggle": {
+            "name": "Comfort of Struggle",
+            "description": "<p><strong>Requirements</strong> You have taken damage since the beginning of your last turn.</p><hr /><p>Not only are you expecting pain, but you find comfort in it. You gain either a +1 status bonus to the next spell attack roll you attempt before the end of your turn or an enemy within 60 feet takes a –1 status penalty to the next saving throw they attempt against a spell you cast before the end of your turn. If you are cursebound 2 when you use Comfort of Struggle, the status bonus and penalty each increase to 2, and if you are cursebound 3, the status bonus and penalty each increase to 3.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.a1kOX7I3kKodRyqr]{Effect: Comfort of Struggle}</p>"
+        },
+        "Script": {
+            "name": "Script",
+            "description": "<p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Script.AccursedCurio]</p><h3>Curio Adept</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Script.CurioAdept]</p><h3>Wielder of Mysteries</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Script.WielderOfMysteries]</p><h3>Curio's Revelation</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Script.CuriosRevelation]</p><h3>Curio's Form</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Script.CuriosForm]</p>"
+        },
+        "Rainbow Beam": {
+            "name": "Rainbow Beam",
+            "description": "<p>You harness all the brilliance of light and send a spectral blast towards an enemy. Make a @Check[spell|against:ac]{spell attack roll} against a creature within 30 feet of you. If your spell attack roll is successful, you deal @Damage[(@actor.level)d4[fire]] damage, or double this amount on a critical success. At 11th level, and every level thereafter, increase your beam’s damage by 1d4. Roll [[/r 1d8 #additional effect]] on the table below to determine the additional effect.</p><table class=\"pf2e\"><thead><tr><th style=\"width:10%\"><p>Roll</p></th><th style=\"width:10%\"><p>Colour</p></th><th><p>Effect</p></th></tr></thead><tbody><tr><td><p>1</p></td><td><p>Red</p></td><td><p>You deal additional persistent fire damage equal to 2 plus twice your cursebound value. @Damage[(2 + 2 * @actor.conditions.cursebound.value)[fire,persistent]]</p></td></tr><tr><td><p>2</p></td><td><p>Orange</p></td><td><p>You knock the target prone.</p></td></tr><tr><td><p>3</p></td><td><p>Yellow</p></td><td><p>The target is pushed [[/r 5 + 5 * @actor.conditions.cursebound.value]] feet.</p></td></tr><tr><td><p>4</p></td><td><p>Green</p></td><td><p>The target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} with a value equal to 1 plus your cursebound value.</p></td></tr><tr><td><p>5</p></td><td><p>Blue</p></td><td><p>The target is @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed} for a number of rounds equal to 1 plus half your cursebound value. The creature can attempt a saving throw at the beginning of each of its turns, ending the paralyzed condition on a successful save.</p></td></tr><tr><td><p>6</p></td><td><p>Indigo</p></td><td><p>The target is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for a number of rounds equal to 1 plus half your cursebound value.</p></td></tr><tr><td><p>7</p></td><td><p>Violet</p></td><td><p>The target is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for a number of rounds equal to 1 plus half your cursebound value.</p></td></tr><tr><td><p>8</p></td><td><p>Any</p></td><td><p>Choose a color of your choice and gain the corresponding effect.</p></td></tr></tbody></table>",
+            "prerequisites": [
+                {
+                    "value": "dream mystery, or light mystery"
+                }
+            ]
+        },
+        "Enchanting Rhapsody": {
+            "name": "Enchanting Rhapsody",
+            "description": "<p>You use your music to influence your foes to do as you wish. Enemy creatures in the initial area or that end their turn in the area must make a Will save.</p><p><strong>Critical Success</strong> The target is unaffected and is temporarily immune for 1 minute.</p><p><strong>Success</strong> The target takes a –1 status penalty to their saves against mental effects until they leave the area and for 1 round after. @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.xw2Z41yDSg7JW4hb]{Effect: Enchanting Rhapsody}</p><p><strong>Failure</strong> As success, except the target is @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} until they leave the area and for 1 round after and the status penalty increases to –2.</p><p><strong>Critical Failure</strong> As failure, but the target must spend the first action on each of its turns to [[/act perform variant=dance]] by dancing to the music for as long as it is fascinated.</p>"
+        },
+        "Escape Time's Shackles": {
+            "name": "Escape Time's Shackles",
+            "description": "<p>You speed up your personal time bubble, allowing time to pass over you more quickly. Your body moves forward in time, causing 1 minute of time to effectively pass over for you. Any effects or conditions with a duration are immediately reduced by 1 minute. Roll saving throws, flat checks, damage, and any other rolls for those effects normally as if the time had passed. If your cursebound value is 2, you cause 1 hour of time to pass, and if your cursebound value is 3 you cause 1 day of time to pass. Escape Time's Shackles does not remove the cursebound condition or allow you to rest or make your daily preparations again.</p>",
+            "prerequisites": [
+                {
+                    "value": "time mystery"
+                }
+            ]
+        },
+        "Wishful Thinking": {
+            "name": "Wishful Thinking",
+            "description": "<p>You aid an ally by making the incredulous possible. Choose an ally within 30 feet of you and influence their mind to believe they are capable of the impossible, by granting them special powers of their dreams, choosing one of the listed effects. The effects of the spell last for the duration, but you must succeed at a @Check[deception|against:will|options:wishful-thinking-deception] check against the target’s Will DC at the end of each of your turns or the spell immediately ends. You can use your spell attack modifier instead of your modifier in Deception if it is higher.</p><ul><li><p>The target gains a +1 status bonus to attack rolls and saving throws.</p></li><li><p>The target gains a +2 status bonus to skill checks for a specific skill of your choice.</p></li><li><p>The target gains a climb Speed of 30 feet and scent as an imprecise scent with a range of 30 feet.</p></li><li><p>The target gains a swim Speed of 30 feet with the ability to breath underwater.</p><hr /></li></ul><p><strong>Heightened (6th)</strong> The status bonuses increase by 1 and you can choose to give the target a fly Speed of 30 feet in addition to the other effects you could choose from.</p><p><strong>Heightened (9th)</strong> You can choose two effects instead of 1.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.k7Hqre7oOIR6gInb]{Effect: Wishful Thinking}</p>"
+        },
+        "Unknowable Icon": {
+            "name": "Unknowable Icon",
+            "description": "<p><strong>Domain</strong> glyph (apocryphal)</p><hr /><p>You transcribe ancient and forgotten knowledge into a single rune that overwhelms and shatters the mind. You place a rune on a 5-foot square of a flat surface within your reach which remains dormant until a living creature other than you comes within 10 feet of it. After a creature comes within 10 feet, the rune becomes active after 1 round has passed and all creatures in a 10-foot emanation of the rune must attempt a basic Will Save or take 1d12 mental and 1d4 spirit damage. On a critical failure, the creature is also @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p><hr /><p><strong>Heightened (+1)</strong> The damage increases by 1d12 mental and 1d4 spirit.</p>"
+        },
+        "Feel My Pain": {
+            "name": "Feel My Pain",
+            "description": "<p><strong>Trigger</strong> You take persistent damage.</p><hr /><p>You share your pain when it is dealt to you. Choose a creature within 30 feet of you. The creature must attempt a @Check[will|against:spell] save against your spell DC, taking the same persistent damage you take if it fails its save.</p>",
+            "prerequisites": [
+                {
+                    "value": "gloom mystery, or ice mystery"
+                }
+            ]
+        },
+        "Well of Joy": {
+            "name": "Well of Joy",
+            "description": "<p>You fill an ally with hope for the future, granting them a renewed sense of vigor and joy. Choose a creature within 30 feet. The chosen creature gains 4 temporary Hit Points for 1 minute. If you’re cursebound 1 when you use Well of Joy, the creature gains 8 temporary Hit Points, if you’re cursebound 2 they gain 16 temporary Hit Points, and if you’re cursebound 3 they gain 24 temporary Hit Points. In addition, they are immune to fear effects while they have temporary Hit Points. If the creature has the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition it is suspended until the they no longer have temporary Hit Points, which returns with the same value as when it was suspended.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.2G2KHpPCP3VZggC9]{Effect: Well of Joy}</p>"
+        },
+        "Curse of the Everpresent Sonata": {
+            "name": "Curse of the Everpresent Sonata",
+            "description": "<p>Try as you might, you cannot escape the song that follows you, and in moments of stress it grows louder and louder until it is all that you can hear. When you move, laugh or speak, the faint sound of musical instruments can sometimes be heard accompanying you, and everything you do has an almost rhythmic quality. When you have the cursebound condition, the music swells, and it becomes all that you can hear.</p><p><strong>Cursebound 1</strong> The song begins to play, drawing in other sounds like instruments in an orchestra. You gain sonic weakness 2, and hostile effects with the auditory trait that target you trigger this weakness.</p><p><strong>Cursebound 2</strong> The music is overwhelming your other senses. You take a –2 status penalty to Perception checks and to saves against auditory effects.</p><p><strong>Cursebound 3</strong> Your weakness to sonic damage is equal to 5 + your level.</p><p><strong>Cursebound 4</strong> The song is all-consuming. When you attempt to Cast a Spell that does not have the auditory or sonic traits, you must attempt a @Check[flat|dc:10] or you lose the spell.</p>"
+        },
+        "Vision of the Weeping Heart": {
+            "name": "Vision of the Weeping Heart",
+            "description": "<p>Your vision shows you a tragedy you have yet to decipher, but may have the power to fix. An ice oracle might see a horned ape in a snowstorm and find themselves crying, and a forest oracle might be shown a sword being pulled out of the chest of a princess by an enormous will-o-wisp.</p><p><strong>Alternate Domain</strong> repose</p><p><strong>Alternate Granted Spell</strong> 1st: @UUID[Compendium.pf2e.spells-srd.Item.szIyEsvihc5e1w8n]{Soothe}</p><p><strong>Granted Skill</strong> Diplomacy</p><p><strong>Vision State</strong> You must heal the wounds of the broken, even if they are unwilling. You gain the @UUID[Compendium.pf2e.actionspf2e.Item.tuZnRWHixLArvaIf]{Glimpse of Redemption} champion reaction except you reduce the resistance you grant allies by 2. If you go more than 1 round without using Glimpse of Redemption, you increase your cursebound value by 1 up to your maximum cursebound value. For the purposes of your Glimpse of Redemption your champion’s aura has a range of 5 feet plus an additional 5 feet x your cursebound value. At 6th level, your Glimpse of Redemption grants the normal amount of resistance.</p><p><strong>Awakened State</strong> Instead of making an enemy who refuses redemption through Glimpse of Redemption enfeebled 2, you can choose to instead make the target @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for the same duration. If your cursebound value is 3, If the enemy refuses, it takes @Damage[(@actor.abilities.cha.mod)[spirit,persistent]] damage equal to your Charisma modifier. If your cursebound value is 4, you gain an additional reaction you can use only for Glimpse of Redemption</p>"
+        },
+        "Foreseen Retaliation": {
+            "name": "Foreseen Retaliation",
+            "description": "<p>Your foresight not only protects your ally, but allows them to retaliate in kind. When you use Reveal the Mystery while benefiting from The Mystery Grows, you grant your ally the same status bonus to damage to its Strikes against the target of your Curio’s Foresight.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.z1p6jvxvqmks2kU9]{Effect: Foreseen Retaliation}</p>",
+            "prerequisites": [
+                {
+                    "value": "The Mystery Grows"
+                },
+                {
+                    "value": "Reveal the Mystery"
+                }
+            ]
+        },
+        "Curio's Form": {
+            "name": "Curio's Form",
+            "description": "<p>When melded into your form, your curio remains available. When you enter a battle form, you retain the ability to use effects that depend on your curio, such as Curio’s Foresight. You gain the following effect while in battleforms depending on your curio.</p>",
+            "prerequisites": [
+                {
+                    "value": "Enlightened Reliquarian Dedication"
+                }
+            ]
+        },
+        "Armament": {
+            "name": "Armament",
+            "description": "<p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Armament.AccursedCurio]</p><h3>Curio Adept</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Armament.CurioAdept]</p><h3>Wielder of Mysteries</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Armament.WielderOfMysteries]</p><h3>Curio's Revelation</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Armament.CuriosRevelation]</p><h3>Curio's Form</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Armament.CuriosForm]</p>"
+        },
+        "Purge Sickness": {
+            "name": "Purge Sickness",
+            "description": "<p><strong>Requirements</strong> You have the sickened condition.</p><hr /><p>Your body is so accustomed to being ravaged by your curse that other such consequences are easily dismissed. You retch to reduce your sickened condition, gaining your cursebound value as a status bonus to your check to remove the condition. If you’re cursebound 2 when you use Purge Sickness, you treat your degree of success as one step better.</p>",
+            "prerequisites": [
+                {
+                    "value": "beast mystery, or blight mystery"
+                }
+            ]
+        },
+        "Tectonic Fracture": {
+            "name": "Tectonic Fracture",
+            "description": "<p>With a long stare, you see where the world is weakest and shatter it. You stomp on the ground creating difficult terrain in a @Template[cone|distance:15] and creatures in the area must attempt a @Check[reflex|against:spell] save. If you are cursebound 2 when you use Tectonic Fracture, the area is a @Template[cone|distance:30] and if you are cursebound 3, it is instead a @Template[cone|distance:45].</p><p><strong>Success</strong> The creature is unaffected.</p><p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the beginning of your next turn.</p><p><strong>Critical Failure</strong> The creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>",
+            "prerequisites": [
+                {
+                    "value": "mountain mystery"
+                }
+            ]
+        },
+        "Atavistic Landslide": {
+            "name": "Atavistic Landslide",
+            "description": "<p>All things crumble with time, even ancient mountains, and you shall endure even this. At the end of each turn for 1 minute, you create a landslide of rubble and boulders that travels in a @Template[line|distance:35], except the line passes through you at the center point with an equal line on each side of you. The landslide deals @Damage[1d10[bludgeoning]|basic] damage to all creatures in the area with a @Check[reflex|basic|agaist:spell] save and creatures that critically fail their save are also knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. You can't Dismiss this landslide, but you can suppress the effect for 1 round with a Sustain action. The landslide is suppressed if you fall unconscious. If you become cursebound 3 or 4 at any point during Atavistic Landslide's duration, the line increases to a @Template[line|distance:55] and the damage increases to @Damage[2d10[bludgeoning]|basic].</p>",
+            "prerequisites": [
+                {
+                    "value": "mountain mystery"
+                }
+            ]
+        },
+        "Glimpse Future": {
+            "name": "Glimpse Future",
+            "description": "<p>Though your eyes can't let you see everything that is around you, they show you images of what is to come. You [[/act recall-knowledge statistic=spell options=glimpse-future]] on a single creature within 30 feet of you using your spell attack modifier for your check against a standard DC for the creature's level, except you treat a critical failure as a failure, and the check loses the secret trait. If your check was successful, you can choose to give the target a –2 status penalty to the next attack roll or save before the beginning of your next turn. Regardless of the result, the target is temporarily immune to Glimpse Future for 1 hour.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.13dAWN3gcT3uqOBw]{Effect: Glimpse Future}</p>"
+        },
+        "Show to Remember": {
+            "name": "Show to Remember",
+            "description": "<p>You fill a creature's mind with an overwhelming din that disorients the target. Choose a creature within 30 feet of you, that creature must attempt a @Check[will|against:spell] save.</p><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round.</p><p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} and @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 minute. The creature can spend a single action with the concentrate trait to attempt a new Will save against the effect.</p><p><strong>Critical Failure</strong> As failure, except the creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for as long as they are stupefied.</p>",
+            "prerequisites": [
+                {
+                    "value": "revelry mystery, or song mystery"
+                }
+            ]
+        },
+        "Dance, Dance": {
+            "name": "Dance, Dance",
+            "description": "<p>Your music floods the minds of two adjacent creatures, compelling them to move in time. Choose two creatures within 30 feet of you that are adjacent to each other. Both creatures must attempt a @Check[will|against:spell] save, but both creatures use the better result between them when determining the result of the effect. If you choose a willing ally as one of the targets, they can choose to get a result of a failure without rolling, but their movement triggers reactions to creatures other than the targets of this effect normally.</p><p><strong>Critical Success</strong> The creatures do not move and a willing ally is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} from the shuffle.</p><p><strong>Success</strong> Both creatures sway in a dance, moving 5 feet in a direction of your choice, remaining adjacent to one another. This is forced movement.</p><p><strong>Failure</strong> As success, except both creatures move up to 10 feet, remaining adjacent to one another for the entirety of the movement.</p>",
+            "prerequisites": [
+                {
+                    "value": "song mystery"
+                }
+            ]
+        },
+        "Prism of Power": {
+            "name": "Prism of Power",
+            "description": "<p>You conjure an intangible magical prism that interacts with magic as if it were light. You create a prism that occupies a @Template[square|distance:5] within range. When you create the prism, select one of the following options.</p><ul><li><p><strong>Diffract</strong> Magic enters the prism and is split into a spectrum. If a line spell enters the area of the prism, the area changes from a line to a cone and its size is equal to half the remaining feet the line could travel before it entered the prism in the same direction the line could travel (minimum 5 feet).</p></li><li><p><strong>Refract</strong> Magic entering the prism can change directions, even around corners. If a spell attack targets the prism or a line spell passes through its space, and doing so does not require all of the spell’s range, it can alter directions. Determine your spell's line of effect and line of sight from the prism, as well as whether creatures have cover against the spell. The spell can exceed its normal range as measured from you, as long as it's within its normal range from the prism.</p></li><li><p><strong>Scatter</strong> Magic is dispersed and reflected all around the prism. You can target 2 creatures with a spell attack by targeting the prism, targeting up to 2 creatures within 5 feet of the prism. For the purposes of a spell attack roll, you roll your spell attack roll once and compare the result against the AC of both creatures.</p></li></ul>"
+        },
+        "Accursed Flame Form": {
+            "name": "Accursed Flame Form",
+            "description": "<p><strong>Requirements </strong>Your cursebound value is 2 or greater and you’re in an encounter.</p><hr /><p>You let sacred fire consume you, transforming you into a burning monster. You gain the effects of @UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{Elemental Form} heightened to the highest rank spell you can cast. You must choose an elemental form with the fire trait.</p><p><strong>Special</strong> If you have access to @UUID[Compendium.pf2e-team-plus-magic.items.bK4rp20XuJRWGsEv]{Elemental Shift} (Magic+), you can choose to gain the effects of elemental shift heightened to the highest rank spell you can cast and you must select the fire elemental aspect.</p>",
+            "prerequisites": [
+                {
+                    "value": "flames mystery"
+                }
+            ]
+        },
+        "Reverse Movement": {
+            "name": "Reverse Movement",
+            "description": "<p>You refract time in order to cover a great distance and then return to where you started. You mark your current location with a figment of your form and leave translucent images of yourself when you move for a number of rounds equal to 1 plus your cursebound value ([[/r (1+ @actor.conditions.cursebound.value )#rounds]]), tracing back to the space you first used this action. During this time, you gain access to the Reversal Move free action. After you use Reversal Move, you end this effect.</p><p><strong>Reversal Move</strong> <span class=\"action-glyph\">f</span> (divine, oracle, teleportation)</p><hr /><p><strong>Effect</strong> You swap places with your shadow in a burst of darkness. You create magical darkness that lasts until the end of your next turn in a 15-foot emanation around the position of your shadowy duplicate and yourself. You can choose to change positions with your shadow when you use this action, and if you do, the spell gains the teleportation trait.</p>",
+            "prerequisites": [
+                {
+                    "value": "time mystery"
+                }
+            ]
+        },
+        "Spirit Steps": {
+            "name": "Spirit Steps",
+            "description": "<p>Requirements Your cursebound value is 2 or greater and you’re in an encounter.</p><hr /><p>Your body fades into ectoplasm, leaving you a translucent figure with a visible skeleton and chains tying you to the earth. You gain the incorporeal trait for 1 minute and a resistance to all damage (except spirit, vitality, or ghost touch) equal to twice your cursebound value, but you cannot pass through solid objects or walls. If your cursebound value is 3 when you use Spirit Steps, you can pass through solid objects, including walls while incorporeal. When inside an object, you can’t perceive, attack, or interact with anything outside the object, and if you start your turn in an object, you’re @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of your turn. You and corporeal creatures can pass through on another, but neither of you can end your movement in the other’s space. If you are in the area of a solid object or wall when this effect ends, you take @Damage[(@actor.level)[spirit]]{spirit damage equal to your level} as you are shunted to the nearest space you could occupy.</p>",
+            "prerequisites": [
+                {
+                    "value": "bones mystery"
+                }
+            ]
+        },
+        "Preparatory Cremation": {
+            "name": "Preparatory Cremation",
+            "description": "<p><strong>Trigger</strong> A creature within 30 feet of you takes fire damage.</p><hr /><p>You cause a burned creature to become ash-like, making them brittle and weak. The creature gains a weakness to physical damage equal to twice your cursebound value until the end of your next turn. Attacks that deal physical damage gain the death trait against the target while they have this weakness, their body turning into dust and ash if killed in this way.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Qkrxlll3LxBXBXup]{Effect: Preparatory Cremation}</p>",
+            "prerequisites": [
+                {
+                    "value": "ash mystery"
+                }
+            ]
+        },
+        "Matchmaker": {
+            "name": "Matchmaker",
+            "description": "<p><strong>Domain</strong> passion (apocryphal)</p><hr /><p>You gaze into the heart of the yearning, and find what will help their hearts settle. When you cast this spell, you Recall Knowledge with a special skill called Love Lore, in which you become trained for the duration. You find out if the target of your Recall Knowledge is the object of desire or yearns for another creature or object. You can also cast this spell to Make a [[/act request skill=love-lore]] to convince creatures to go on romantic excursions with others. If the target of the spell would not usually be willing to do so, the spell automatically fails.</p><hr /><p><strong>Heightened (2nd)</strong> You become an expert in Love Lore for the duration.</p><p><strong>Heightened (4th)</strong> You become a master in Love Lore for the duration.</p><p><strong>Heightened (8th)</strong> You become legendary in Love Lore for the duration</p>"
+        },
+        "Chosen Disciples": {
+            "name": "Chosen Disciples",
+            "description": "<p>You have guided your followers to learn great secrets of your mystery. During your daily preparations, you can choose to grant one of your followers a 1st-rank divine spell in your oracle spell repertoire, gaining the ability to Cast the Spell once per day. At least 10th level, you can choose to grant one 2nd-rank spell in your oracle spell repertoire in addition to the 1st-rank divine spell, and if you are at least 12th level, you can choose to grant one 3rd-rank spell in your oracle spell repertoire in addition to the 1st-rank and 2nd-rank divine innate spell. If you have multiple followers, you can divide these spells among them.</p>",
+            "prerequisites": [
+                {
+                    "value": "Aspiration of the Acolyte"
+                }
+            ]
+        },
+        "Orb of Brilliance": {
+            "name": "Orb of Brilliance",
+            "description": "<p>The enemy of the dark is the light, and it flees with great speed in its presence. You send out a burst of light in a @Template[burst|distance:20] within 500 feet. The burst generates bright light in the area and dim light 20 feet out from the area for up to 1 minute. Mist, fog, or other similar concealment does not grant the @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} condition to creatures in the area unless the concealment would be the result of an effect that cannot be used to Hide (such as blur). The orb can be seen from great distances and creatures that end their turn within the area take a status penalty to Perception checks equal to your cursebound value.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.4O0gLYll9fdNQkCa]{Effect: Orb of Brilliance}</p>",
+            "prerequisites": [
+                {
+                    "value": "light mystery"
+                }
+            ]
+        },
+        "Unmitigated Gaze of the Curio": {
+            "name": "Unmitigated Gaze of the Curio",
+            "description": "<p>Your foresight has become so intense, the target of your focus cannot escape you. You gain the effects of @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight} on creatures that you have a +2 status bonus to AC and saves against from Curio’s Foresight.</p>",
+            "prerequisites": [
+                {
+                    "value": "Enlightened Reliquarian Dedication"
+                }
+            ]
+        },
+        "Seismic Shift": {
+            "name": "Seismic Shift",
+            "description": "<p>You bring the rocky mountain beneath your feet to propel you forward. You move up to 30 feet, the earth moving beneath your feet as it propels you to your destination, avoiding difficult terrain. You must end your movement in an unoccupied space where you have solid footing. Every square you pass through becomes difficult terrain for 1 minute. This movement isn't a Stride, but you measure the distance in a similar way, and it still triggers reactions caused by movement. You can't transport anyone else with you.</p><hr /><p><strong>Heightened (+1)</strong> Increase the distance you move by 5 feet.</p>"
+        },
+        "Vision of the Glorious Victory": {
+            "name": "Vision of the Glorious Victory",
+            "description": "<p>In your vision, you were shown a climactic conflict that revolves around your mystery. A bones oracle might see a battle against a monster with two heads and three arms, while a song oracle might hear the anthem of a new nation in the face of legions of Hellknights.</p><p><strong>Alternate Domain</strong> zeal</p><p><strong>Alternate Granted Spell</strong> 2nd: @UUID[Compendium.pf2e.spells-srd.Item.mrDi3v933gsmnw25]{Telekinetic Maneuver}</p><p><strong>Granted Skill</strong> Athletics</p><p><strong>Vision State</strong> You seek the visions answers in the triumph of battle. You gain a status bonus to Athletics checks equal to half your cursebound value (minimum 1). After the first turn in an encounter, if you end a turn without using an Athletics action or using a cursebound action that turn, you increase your cursebound value by 1 up to your maximum cursebound value.</p><p><strong>Awakened State</strong> You gain the effects of an Athletics skill feat of your choice for which you meet the prerequisites for as long as you are awakened. If your cursebound value is 3, you gain your full cursebound value as a status bonus to Athletics checks. If your cursebound value is 4, you can choose to gain the effects of a 4th-rank @UUID[Compendium.pf2e.spells-srd.Item.wzctak6BxOW8xvFV]{Enlarge}.</p>"
+        },
+        "Amplified Accompaniment": {
+            "name": "Amplified Accompaniment",
+            "description": "<p><strong>Requirements</strong> Your cursebound value is 2 or greater and you’re in an encounter.</p><hr /><p>The music of your curse works to bolster other sounds instead of drowning them out, amplifying it and making creatures more sensitive to sound. For 1 minute, your music plays fervently in an aura in a 30-foot emanation bolstering other sounds and you must include yourself in the area and are included in the effects. Auditory and sonic effects originating within the area increase their range by 30 feet and linguistic effects no longer require that the target share a language while within the area. Creatures within the area gain a weakness to sonic damage equal to your cursebound value or increase their weakness to sonic damage by the same amount. Creatures with immunity to sonic damage are still immune.</p><hr /><p><strong>Foundry Note</strong> Besides the granting of sonic weakness, the rest, you'll have to handle manually (including increasing existing weaknesses). If your cursebound value changes while this aura is active, reapply the aura.</p>",
+            "prerequisites": [
+                {
+                    "value": "song mystery"
+                }
+            ]
+        },
+        "Protection of the Mystery": {
+            "name": "Protection of the Mystery",
+            "description": "<p>Your mystery seeks to protect you, even when unprepared. Once per day you can cast @UUID[Compendium.pf2e.spells-srd.Item.WG91Z5TiR6oO5FOw]{Contingency} as an divine innate spell heightened to a rank equal to half your level rounded up.</p>"
+        },
+        "The More The Merrier": {
+            "name": "The More The Merrier",
+            "description": "<p>What fun one can have when you are surrounded by revelers and debauchery. You create a crowd of illusory creatures of Medium size that fill all unoccupied spaces within the area. The area is difficult terrain and creatures cannot communicate or use auditory or linguistic actions on creatures more than 10 feet away from them while in the area.</p><p>In addition, you or your allies can spend a single action to Interact or Perform, causing the crowd in adjacent squares to become greater difficult terrain for 1 round. Creatures can attempt to disbelieve the crowd by spending a single action to Interact or Sense Motive on it. You and your allies ignore difficult and greater difficult terrain caused by the crowd.</p>"
+        },
+        "Harness the Light": {
+            "name": "Harness the Light",
+            "description": "<p>You draw all the light into a tiny focal point, and disperse it in a small burst. Choose a magical source of light within 30 feet of you, and attempt to @Check[counteract|statistic:spell] it. If you created the magical light, you automatically succeed at your check to counteract. If you successfully counteract the magical light, all creatures in a @Template[emanation|distance:10] of the light source must succeed at a @Check[reflex|against:spell] save or they @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for a number of rounds equal to your cursebound value. If the creature critically failed its save against this effect, it is also @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round. If the target was a creature or shares its space with a creature, you must include the creature in the effect.</p><p>If you are cursebound and you target your curse’s light with this effect, you can produce the effect without attempting to counteract your magical light and you treat your degree of success on your save as one step better.</p>",
+            "prerequisites": [
+                {
+                    "value": "light mystery"
+                }
+            ]
+        },
+        "Carnivorous Vegetation": {
+            "name": "Carnivorous Vegetation",
+            "description": "<p>You cause the plants around you to become carnivorous. You cause all plant-life in a @Template[emanation|distance:15] to become carnivorous, harming creatures that end their turn within the area and causing them to take @Damage[(4 + floor(@actor.level / 2 - 6))d6[acid],(4 + floor(@actor.level / 2 - 6))d6[piercing]] damage with a @Check[fortitude|basic|against:spell] save. You and allies within the area get a degree of success one better than rolled on a saving throw.</p><p>Particularly large plants within the area when you first use the effect, such as trees, can choose to deal @Damage[(4 + floor(@actor.level / 2 - 6))d6[acid],(4 + floor(@actor.level / 2 - 6))d6[bludgeoning]]{bludgeoning damage} instead of piercing damage and each have their own emanation that produces the same effect. The emanation is a number of feet equal to the size of the plant, such as a 5-foot emanation for a bush that occupies a 5-foot square or a 15-foot emanation for a tree that occupies a 15-foot square. A creature in any of the areas attempts one basic Reflex save against the spell no matter how many overlapping vegetation areas it's caught in and the type of damage dealt is determined by the nearest to the vegetation (subject to GM discretion).</p><p>At 14th level, and every 2 levels thereafter, the acid damage and piercing damage each increase by 1d6.</p>",
+            "prerequisites": [
+                {
+                    "value": "forest mystery"
+                }
+            ]
+        },
+        "Tool": {
+            "name": "Tool",
+            "description": "<p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Tool.AccursedCurio]</p><h3>Curio Adept</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Tool.CurioAdept]</p><h3>Wielder of Mysteries</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Tool.WielderOfMysteries]</p><h3>Curio's Revelation</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Tool.CuriosRevelation]</p><h3>Curio's Form</h3><p>@Localize[PF2E.TEAMPLUS.ORACLES.Curios.Tool.CuriosForm]</p>"
+        },
+        "Nourishing Rot": {
+            "name": "Nourishing Rot",
+            "description": "<p><strong>Trigger</strong> A creature within 30 feet gains the sickened condition or becomes diseased.</p><p><strong>Requirements</strong> Your cursebound value is 2 or greater and you’re in an encounter.</p><hr /><p>While sickness plagues your body, the illness of others cleanses you. You regain Hit Points equal to your level plus your cursebound value (@Damage[(@actor.level * @actor.conditions.cursebound.value)[healing]]).</p>",
+            "prerequisites": [
+                {
+                    "value": "blight mystery"
+                }
+            ]
+        },
+        "Garden of Crystals": {
+            "name": "Garden of Crystals",
+            "description": "<p><strong>Domain</strong> earth (apocryphal)</p><hr /><p>You cause crystals to grow from the ground around you. The area becomes difficult terrain, though you can ignore it. Select three @Template[burst|distance:5]s at least partially within the area; enormous clusters of crystals grow here, filled with magic energy. These crystalline structures are 10 feet high and occupy the area, moving any creatures in the area to the nearest adjacent space. When standing adjacent to one of these clusters, creatures' critical hits are empowered, dealing 1d10 force damage.</p><hr /><p><strong>Heightened (+2)</strong> The force damage increases by 1d10.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.NsA3mbbBphp9kx77]{Effect: Garden of Crystals}</p>"
+        },
+        "Hunter's Rush": {
+            "name": "Hunter's Rush",
+            "description": "<p>You hone in on one enemy, becoming the target of your bestial animosity. Choose an enemy you can see. You Stride twice towards that enemy. If you end your movement within melee reach of the chosen enemy, you can make a melee Strike against that enemy. If this Strike hits, you deal an extra die of weapon damage. If you are cursebound 2 when you use Hunter's Rush, increase this to two extra dice, and if you are cursebound 3, increase it to three extra dice.</p>",
+            "prerequisites": [
+                {
+                    "value": "beast mystery"
+                }
+            ]
+        },
+        "Curse of Outpouring Life (Team+)": {
+            "name": "Curse of Outpouring Life (Team+)",
+            "description": "<p>Life energy flows outward from you and connects you to all living things, but you expend your vital essence to do so. Your presence comforts the ill and injured, causes scars to fade slightly, spurs new growth in plants, and otherwise infuses your surroundings with vitality. As your life force seeps outward, it becomes more difficult to keep your body functioning. Magical effects that restore Hit Points to you take a status penalty equal to half your level (minimum 1) times your @UUID[Compendium.pf2e.conditionitems.Item.zXZjC8HLaRoLR17U]{Cursebound} value to the number of HP you recover.</p>"
+        },
+        "Claimed by Ancestors": {
+            "name": "Claimed by Ancestors",
+            "description": "<p><strong>Trigger</strong> You or an ally within 60 feet would be reduced to 0 Hit Points or killed.</p><p><strong>Requirements</strong> Your cursebound value is 2 or greater and you’re in an encounter.</p><hr /><p>Your ancestors surge around an unconscious body, dragging them back to their feet and fighting through them. The triggering creature does not die or gain the dying condition and regains @Damage[(@actor.level * @actor.conditions.cursebound.value)[healing]] Hit Points equal to your level x your cursebound condition value. However, the sudden surge from your ancestor is difficult to acclimate to, leaving the triggering creature @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round unless it succeeds at a @Check[will|against:spell] save. If the triggering creature would have been killed, it treats its save against this confusion condition as one step worse.</p>",
+            "prerequisites": [
+                {
+                    "value": "ancestory mystery"
+                }
+            ]
+        },
+        "Familiar Dark": {
+            "name": "Familiar Dark",
+            "description": "<p>The darkness is an old friend, familiar and comforting. You gain greater darkvision for 1 minute and create darkness in a @Template[emanation|distance:15]. If you are cursebound 2 when you use Familiar Dark, the aura is a @Template[emanation|distance:30] and if you are cursebound 3, it is instead a @Template[emanation|distance:120].</p>",
+            "prerequisites": [
+                {
+                    "value": "gloom mystery"
+                }
+            ]
+        },
+        "Storm Spell": {
+            "name": "Storm Spell",
+            "description": "<p><strong>Requirements</strong> Your cursebound value is 2 or greater and you're in an encounter.</p><hr /><p>You transform the components of a spell to become powerful blasts of storm magic. If your next action is to Cast a Spell with the air, cold, electricity, or water traits that targets an area, you transform it into a storm spell. The area of the spell becomes difficult terrain and hazardous terrain for a number of rounds equal to your cursebound value. A creature that moves through the area takes damage equal to the spell's rank for every square of that area it moves through. This damage is electricity damage or bludgeoning damage, chosen when you Cast the Spell.</p>",
+            "prerequisites": [
+                {
+                    "value": "tempest mystery"
+                }
+            ]
+        },
+        "Astral Daydream": {
+            "name": "Astral Daydream",
+            "description": "<p>You leverage your connection to the spirit itself, your soul swiftly dancing between worlds, bringing back a gift from the beyond. You become stupefied 1 until the end of your next turn. While stupefied, you gain resistance equal to your cursebound value plus half your level to mental damage and become trained in a skill of your choice. If you were already trained in the chosen skill, you instead gain a +1 status bonus to your next check with the chosen skill for the duration, or a +2 status bonus if you are cursebound 2 when you use Astral Daydream.</p>"
+        },
+        "Curse of Eternal Reverie": {
+            "name": "Curse of Eternal Reverie",
+            "description": "<p>Your attachment to your whimsical imagination is both a blessing and a common plight. Your surface thoughts can sometimes flicker into images around you, and as your curse gets stronger, you become more and more distracted by the fancies nobody but you can make out. You have a status penalty to saves against mental and visual effects and to Perception checks equal to your cursebound modifier.</p>"
+        },
+        "Divine Rampage": {
+            "name": "Divine Rampage",
+            "description": "<p><strong>Requirements</strong> Your cursebound value is 2 or greater and you’re in an encounter.</p><hr /><p>You become one with the beast, leaving you in an uncontrollable state and a destructive monster. The following effects apply until after you reduce a creature to 0 Hit Points and then attempt a @Check[will|against:spell-dc] to end this destructive state. You can choose to forgo this Will save and continue your rampage. If you have not been targeted or included in the area of effect of a hostile action for 1 round, you can attempt a Will save to end this destructive state at the end of your turn.</p><ul><li><p>You don’t treat anyone as your ally, except for flanking enemies (though they might still treat you as theirs).</p></li><li><p>You must use all your actions to Strike, cast offensive cantrips, use offensive cursebound actions, or to facilitate attacking, such as drawing a weapon, moving so a target is in reach, and so forth.</p></li><li><p>Your unarmed attacks gain the forceful trait.</p></li><li><p>When you reduce a creature to 0 Hit Points, you regain Hit Points equal to half your level plus your cursebound value.</p></li></ul>",
+            "prerequisites": [
+                {
+                    "value": "beast mystery"
+                }
+            ]
+        },
+        "Curio's Revelation": {
+            "name": "Curio's Revelation",
+            "description": "<p>Your artifact possesses a unique method to reveal the purposes of the mystery. You can grant the following benefit instead of the normal effects of @UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.Js9vTrVqDJQeZ2uP]{Reveal the Mystery}.</p>",
+            "prerequisites": [
+                {
+                    "value": "Enlightened Reliquarian Dedication"
+                }
+            ]
+        },
+        "Body of the Beast": {
+            "name": "Body of the Beast",
+            "description": "<p>Animalistic power surges through you as you channel your divinity. You gain an unarmed attack in the brawling group as the beast within you emerges. The unarmed attack’s Strikes deal additional damage equal to your cursebound condition value. If your cursebound value is 2, you gain a +1 status bonus to Strikes with your unarmed attack while the spell is active, or a +2 if you are cursebound value is 3 or greater.</p><ul><li><p>Jaws that deal 1d8 piercing damage</p></li><li><p>Claws that deal 1d4 slashing damage with the agile and finesse traits</p></li><li><p>Horns or antlers that deal 1d6 piercing damage with the shove trait</p></li><li><p>Tentacles or tail that deal 1d4 bludgeoning damage with the reach trait</p></li></ul><hr /><p><strong>Heightened (4th)</strong> You can select up to 2 unarmed attacks instead of 1 or increase the die size of one of your unarmed attacks by one step.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.alBwXHEEIgpe42Vt]{Effect: Body of the Beast}</p>"
+        },
+        "Web of Darkness": {
+            "name": "Web of Darkness",
+            "description": "<p>All the darkness in the area latches on like in webbed strands of shadow, hindering their movements. All enemy creatures in the area must attempt a Reflex save. Creatures can try to Escape the strands of darkness, and it or others can attempt to cut themselves free from the darkness by attacking the strands (the strands have AC [[/r 30+(@item.level - 6)*3]] and [[/r 30+(@item.level - 6)*5]] Hit Points). You can Dismiss the spell.</p><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes a –5-foot circumstance penalty to its Speed.</p><p><strong>Failure</strong> As success, except the creature has a –10-foot circumstance penalty to its Speed and it can’t move more than 30 feet away from the space it was in when you Cast the Spell.</p><p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}.</p><p>@UUID[Compendium.pf2e-team-plus-oracles-remastered.misc.Item.mOwOxk8Uwyz8hra5]{Effect: Web of Darkness}</p><hr /><p><strong>Heightened (+1)</strong> The strands’ AC increases by 3, and their Hit Points increase by 5.</p>"
+        },
+        "Hardened to Suffering": {
+            "name": "Hardened to Suffering",
+            "description": "<p>Your curse hardens you to outside pain. You gain your choice of a +1 item bonus to AC or increase the item bonus of any armor you are wearing by 1 until the end of your next turn. While you are benefiting from this bonus to AC, you gain resistance to physical damage equal to 2 plus twice your cursebound value.</p>"
+        },
+        "Vision of the Unraveling Secret": {
+            "name": "Vision of the Unraveling Secret",
+            "description": "<p>Your vision showed you something of dire importance that you cannot yet understand– but unraveling its meaning will help you change the fate of the world. A lore oracle might see an elephant opening a door into an impossible library, while a beast oracle might be shown an eggshell twice the size of a man in a plane of fractal glass.</p><p><strong>Alternate Domain</strong> knowledge</p><p><strong>Alternate Granted Spell</strong> 3rd: @UUID[Compendium.pf2e.spells-srd.Item.ZYoC630tNGutgbE0]{Hypercognition}</p><p><strong>Granted Skill</strong> one skill with the Recall Knowledge action</p><p><strong>Vision State</strong> Understanding will empower you. On your first turn of an encounter and each time you use an action with the cursebound trait, you can @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{Recall Knowledge} or @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} as a free action, but if you Recall Knowledge it must be on a creature, hazard, or similar subject in the current encounter. You gain a status bonus to your Recall Knowledge and Seek checks equal to your cursebound value. After the first turn in an encounter, if you end a turn without using Recall Knowledge, Seek, or a cursebound action that turn, you increase your cursebound value by 1 up to your maximum cursebound value.</p><p><strong>Awakened State</strong> You can either Recall Knowledge or Seek as a free action at the end of each of your turns, and you can Recall Knowledge on the same subject more than once even if you failed your Recall Knowledge, so long as the subject is in the current encounter. If your cursebound value is 3, you gain the effects of @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen}. If your cursebound value is 4, you also gain the effects of a 6th-rank @UUID[Compendium.pf2e.spells-srd.Item.uqlxMQQeSGWEVjki]{Truesight}.</p>"
+        }
+    }
+}

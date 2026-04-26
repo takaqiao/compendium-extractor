@@ -81,6 +81,13 @@ All flags are optional. Defaults:
 | `--temp-dir` | `/root/fvtt14-data/Data/temp` |
 | `--out-dir` | `./output/zh-CN` |
 | `--modules` | The 10 PF2e modules listed below |
+| `--no-merge` | (off) — when set, skips prior-translation merge and emits raw English output |
+
+Pass `--no-merge` to extract a clean English-only baseline (no values from `--temp-dir` are pulled in):
+
+```bash
+node extract-babele.mjs --out-dir ./output/en --no-merge
+```
 
 **Foundry must not be running** while extracting — Foundry holds a LevelDB `LOCK`. The script will surface a friendly error if the lock is held.
 

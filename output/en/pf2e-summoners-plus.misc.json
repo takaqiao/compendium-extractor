@@ -1,0 +1,692 @@
+{
+    "label": "Miscellaneous",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Spell Effect: Bizarre Surge": {
+            "name": "Spell Effect: Bizarre Surge",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e.spells-srd.Item.lV8FkHZtzZu7Cy6j]{Evolution Surge} with @UUID[Compendium.pf2e-summoners-plus.items.vByKHEVb5SQj4nm9]{Bizarre Surge}.</em></p>\n<p>You pull forth secrets of the future to reshape the form of your eidolon, evolving features and structure perfect for the exact issue facing you. When you cast @UUID[Compendium.pf2e.spells-srd.Item.lV8FkHZtzZu7Cy6j]{evolution surge} you can choose from the following effects in addition to the normal effects:</p>\n<ul>\n<li>Your eidolon gains echolocation, granting it hearing as a precise sense up to 20 feet.</li>\n<li>Your eidolon gains a resistance to mental damage equal to half your level.</li>\n</ul>\n<hr />\n<p><strong>Heightened (3rd) </strong>Your eidolon gains a +1 status bonus to Will saves.</p>\n<p><strong>Heightened (5th) </strong>Your eidolon gains lifesense as an imprecise sense up to 30 feet.</p>"
+        },
+        "Victory's Companion": {
+            "name": "Victory's Companion",
+            "description": "<p>Your eidolon knows victory as an old friend, sharing its path in each step. Your eidolon increases the die size of its unarmed attacks by 1 step. Your eidolon can use the @UUID[Compendium.pf2e-summoners-plus.misc.BPn644yIO8XN3MGs]{Heart of a Warrior} action as a free action when you roll for initiative, so long as it is aware of at least one enemy. When your eidolon reduces a creature to 0 Hit Points while under the effects of Heart of a Warrior it becomes @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} for 1 round and it can use this additional action to Stride or Strike.</p>"
+        },
+        "Tandem Boost": {
+            "name": "Tandem Boost",
+            "description": "<p>You and your eidolon join powers to boost each other. You cast @UUID[Compendium.pf2e.spells-srd.HStu2Yhw3iQER9tY]{Boost Eidolon} and both you and your eidolon gain the effects of boost eidolon. Any damage bonus you gain from boost eidolon applies to your unarmed and weapon attacks as well and use your weapon damage dice for determining your status bonus to damage.</p>\n<hr />\n<p><strong>Special </strong>If you gain the @UUID[Compendium.pf2e.spells-srd.TYbCj4dgXDOZou9k]{Reinforce Eidolon} cantrip, you can choose to cast it instead of boost eidolon</p>"
+        },
+        "Incarnate Arrival": {
+            "name": "Incarnate Arrival",
+            "description": "<p><strong>Requirements </strong>Your eidolon was manifested this turn.</p>\n<hr />\n<p>Your eidolon bursts with almighty power once released from your sigil. All creatures in a @Template[distance:10|type:emanation] around your eidolon take @Damage[(2+(floor(@actor.level/2)))d4[@actor.flags.pf2e.incarnate-type]]{2d4 plus an additional 1d4 damage} per 2 levels you possess with a @Check[type:reflex|basic:true|dc:resolve(@actor.attributes.spellDC.value)] save against your spell DC.</p>\n<p>The type of damage must be from the following list and if your eidolon has one of the traits listed, it must select that trait: acid, bludgeoning, cold, electricity, fire, piercing, poison, slashing, sonic, vitality, void, water (cold or bludgeoning), or wood (piercing or bludgeoning). If the creature has more than one of these traits, you choose which damage type to deal.</p>\n<p>If you use Manifest Incarnate Eidolon to unmanifest your eidolon, it can use this activity before it unmanifests.</p>\n<hr />\n<p><strong>Special </strong>This activity has the trait matching your eidolon's tradition (arcane, divine, occult, or primal).</p>"
+        },
+        "Manifest Incarnate Eidolon": {
+            "name": "Manifest Incarnate Eidolon",
+            "description": "<p>Your incarnate eidolon appears with triumphant force. When you use this action, you choose a square within 30 feet to manifest your eidolon. If your eidolon was already manifested, you unmanifest it instead. When you use Manifest Incarnate Eidolon, your eidolon can use an action or activity that takes 2-actions or less to perform as part of its arrival or departure but Manifest Incarnate Eidolon gains the tandem trait if you do.</p>\n<p>Your eidolon remains manifested until the end of your next turn, but you can @UUID[Compendium.pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{Sustain} its presence for up to 1 minute. For every round the eidolon remains manifested the emanation of its @UUID[Compendium.pf2e-summoners-plus.misc.0fvd9aASh27TJYOj]{Incarnate Arrival} departure increases by 5 feet up to a maximum of 50 feet. You can choose to suppress this effect when it unmanifests or reduce the emanation to a minimum of a 5-foot emanation.</p>\n<p>The conduit that allows your eidolon to manifest is also a tether between you. Your eidolon must remain within 100 feet of you at all times and can't willingly go beyond that limit. If forced beyond this distance, or if you are reduced to 0 Hit Points, your eidolon's physical form dissolves: your eidolon unmanifests, and you need to use Manifest Incarnate Eidolon to manifest it again.</p>\n<hr />\n<p><strong>Special </strong>This activity has the trait matching your eidolon's tradition (arcane, divine, occult, or primal).</p>"
+        },
+        "Rampaging Oni": {
+            "name": "Rampaging Oni",
+            "description": "<p>Str +4, Dex +1, Con +3, Int –1, Wis +0, Cha +2; +3 AC (+2 Dex cap)</p>"
+        },
+        "Effect: Fabricate Tool": {
+            "name": "Effect: Fabricate Tool",
+            "description": "<p>If you are 7th level or higher, you gain a +1 item bonus to checks with the item you summoned.</p>"
+        },
+        "Be Not Afraid!": {
+            "name": "Be Not Afraid!",
+            "description": "<p>Your eidolon reveals a glimpse of its true form to onlookers, frightening foes and encouraging allies. Your eidolon attempts to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} one enemy within range and then calms allies within 30 feet, reducing their frightened condition by 1. If the enemy it chose to Demoralize has the unholy trait, it gains a +2 circumstance bonus to its check.</p>"
+        },
+        "Eyes": {
+            "name": "Eyes",
+            "description": "<p>Your eidolon has additional eyes, either compound or simply arranged irregularly on its body, enhancing its detections. Your eidolon gains a +1 circumstance bonus to vision-based @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} checks. At the beginning of each turn, your eidolon can choose one enemy to fix its gaze upon and that creature cannot flank your eidolon, though it can still provide flanking to its allies. Your eidolon’s second skill must be a skill that uses the @UUID[Compendium.pf2e.actionspf2e.d9gbpiQjChYDYA2L]{Decipher Writing} activity. If you gain the @UUID[Compendium.pf2e.feats-srd.a6xUSibsRaclbSz3]{Ever-Vigilant Senses} class feat, it treats its level as 2 higher when determining which foes can flank it.</p>"
+        },
+        "Arcane Etudiant": {
+            "name": "Arcane Etudiant",
+            "description": "<p>Str +0, Dex +3, Con +1, Int +4, Wis +1, Cha +0; +1 AC (+4 Dex cap)</p>"
+        },
+        "Suppress Eidolon": {
+            "name": "Suppress Eidolon",
+            "description": "<p><strong>Trigger </strong>Your turn begins.</p>\n<hr />\n<p>You suppress your eidolon and present your face within your eidolon. Your eidolon cannot act until the beginning of your next turn, and you become your summoner again until the beginning of your next turn. You can use your abilities instead of your eidolons and suppress all of your eidolon abilities while your eidolon is suppressed in this way. You and your eidolon are targeted by effects and subject to area of effect while your eidolon is suppressed and you are considered to be occupying your eidolon’s space for the purposes of being targeted by effects.</p>"
+        },
+        "Aberrative Devourer": {
+            "name": "Aberrative Devourer",
+            "description": "<p>Str +4, Dex +2, Con +3, Int -1, Wis +1, Cha +0; +2 AC (+3 Dex cap)</p>"
+        },
+        "Mouth": {
+            "name": "Mouth",
+            "description": "<p>Your eidolon possesses one or more strange maws which gibber and cause distress when in close proximity. Your eidolon gains a +1 circumstance bonus to Intimidation checks to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} and it does not take a penalty to its Demoralize if it doesn’t share a language with the target. Your eidolon’s secondary skill is Intimidation.</p>"
+        },
+        "Spell Effect: Ancient Surge": {
+            "name": "Spell Effect: Ancient Surge",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e.spells-srd.Item.lV8FkHZtzZu7Cy6j]{Evolution Surge} with @UUID[Compendium.pf2e-summoners-plus.items.lsB3RzmVmK27iWv3]{Ancient Surge}.</em></p>\n<p>You unlock the power of the past, returning your eidolon to a mighty state from the beginning of time. Choose one of the following effects:</p>\n<ul>\n<li>Your eidolon gains tremorsense as an imprecise sense up to 20 feet.</li>\n<li>Your eidolon gains a resistance to acid, cold, electricity, or fire damage equal to half your level. If your eidolon has a weakness to the selected damage type, you instead reduce the weakness by an equal amount.</li>\n</ul>\n<hr />\n<p><strong>Heightened (3rd) </strong>Your eidolon gains a +1 status bonus to Fortitude saves.</p>\n<p><strong>Heightened (5th) </strong>Your eidolon treats its degree of success on saves against effects that would give it the grabbed, prone, or restrained conditions as one step better. </p>"
+        },
+        "Churning Ooze": {
+            "name": "Churning Ooze",
+            "description": "<p>Str +4, Dex +2, Con +3, Int -1, Wis +1, Cha +0; +2 AC (+3 Dex cap)</p>"
+        },
+        "Effect: Aura of Knowledge": {
+            "name": "Effect: Aura of Knowledge",
+            "description": "<p>All creatures within the area gain a +1 status bonus to @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{Recall Knowledge}. When a creature in the aura fails (but doesn't critically fail) a Recall Knowledge check using any skill, the creature learns the correct answer and an erroneous answer.</p>"
+        },
+        "Effect: Heart of a Warrior Temp Hp": {
+            "name": "Effect: Heart of a Warrior Temp Hp",
+            "description": ""
+        },
+        "Effect: Rampaging Spirit": {
+            "name": "Effect: Rampaging Spirit",
+            "description": ""
+        },
+        "Effect: Aura of Time": {
+            "name": "Effect: Aura of Time",
+            "description": "<p>All creatures within the aura are not affected by either fortune or misfortune effects.</p>"
+        },
+        "Aura of Knowledge": {
+            "name": "Aura of Knowledge",
+            "description": "<p>Your eidolon radiates an aura of knowledge and understanding. Your eidolon gains an aura of knowledge in a 10-foot emanation, granting all within the area a +1 status bonus to @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{Recall Knowledge}. When a creature in the aura fails (but doesn't critically fail) a Recall Knowledge check using any skill, the creature learns the correct answer and an erroneous answer. Your eidolon becomes a master in Academia Lore.</p>"
+        },
+        "Extinguish": {
+            "name": "Extinguish",
+            "description": "<p>Your eidolon can target a @Template[distance:5|type:burst] within 30 feet as a single action with the concentrate trait to automatically extinguish non-magical fires in the area.</p>"
+        },
+        "Pure Life Force": {
+            "name": "Pure Life Force",
+            "description": "<p>Your eidolon is fused with vitality. Your eidolon’s Strikes deal an extra 1 vitality damage. Your eidolon gains a life force of its choice between @UUID[Compendium.pf2e-summoners-plus.misc.Q6f0Rzb4vwJenVXo]{elemental}, @UUID[Compendium.pf2e-summoners-plus.misc.NqCwEgFAAt4kLr23]{light}, or @UUID[Compendium.pf2e-summoners-plus.misc.kFoaEGrS62JC95Pq]{plant}.</p>"
+        },
+        "Gelatinous Expansion": {
+            "name": "Gelatinous Expansion",
+            "description": "<p>Your ooze adjusts its shape to adapt to its needs. Your eidolon gains its choice of one of the listed effects until the end of your next turn. It can only have one effect active at a time.</p>\n<p><strong>Acidic Viscosity:</strong> Your eidolon’s touch is acidic. Creatures that successfully make melee attack rolls against your eidolon take @Damage[(floor(@actor.level/2))[persistent,acid]]{persistent acid} damage equal to half your level.</p>\n<p><strong>Elastic Blows:</strong> Your eidolon can stretch its pseudo-limbs and body. Your eidolon’s unarmed attacks increase their reach by 5 feet.</p>\n<p><strong>Grasping Goo:</strong> Your eidolon’s goo sticks to those it touches, eating away at them. When your eidolon successfully @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapples} an enemy, they take @Damage[(floor(@actor.level/2))[persistent,acid]]{persistent acid} damage equal to half your level.</p>\n<p><strong>Weapon Shape:</strong> Your eidolon shapes its unarmed attack, altering its attributes. Your eidolon changes its primary melee unarmed attack to another primary unarmed attack it could have selected at 1st level, gaining the appropriate traits and damage die for its new selection.</p>"
+        },
+        "Unspeakable Demonstration": {
+            "name": "Unspeakable Demonstration",
+            "description": "<p>Your eidolon performs an unspeakable demonstration using its unnatural physiology. For 1 minute, your eidolon performs the unspeakable in a @Template[distance:15|type:emanation]. Enemies that start their turn within the emanation must attempt a @Check[type:will|dc:resolve(@actor.attributes.classDC.value)] save against your spell DC. Creatures that fail their save are @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{fascinated} by your eidolon for 1 minute and it gains effects corresponding to its choice from Unnatural Physiology. Hostile actions from you or your eidolon do not break the target’s fascination, nor do hostile actions from your allies against the creature’s allies break the fascination. A creature that ends its fascinated condition from this effect cannot be affected again for 1 minute.</p>\n<p><strong>Eyes </strong>Your eidolon’s eyes project infinite confounding patterns. When your eidolon uses @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} on an area with creatures fascinated by its Unspeakable Demonstration, it can compare the result of its Perception to the Will DC of the fascinated creatures. On a success, the creatures are @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{dazzled} for 1 round, or 1 minute on a critical success. This activity gains the visual trait.</p>\n<p><strong>Mind </strong>Your eidolon’s mind penetrates into the minds of others via discontent. When your eidolon deals damage with one of its unarmed attacks to a creature fascinated by its Unspeakable Demonstration, the creature cannot take reactions until the beginning of its next turn. This activity gains the mental trait.</p>\n<p><strong>Mouth </strong>Your eidolon’s mouth spews vitriol and discord. When your eidolon successfully @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralizes} a creature fascinated by its Unspeakable Demonstration, the target is @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{deafened} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{stupefied 1} for as long as it is fascinated. These conditions apply even if the target of your Demoralize is immune to fear or would not gain the frightened condition from a successful Demoralize. This activity gains the auditory trait.</p>\n<p><strong>Skin </strong>Your eidolon’s skin vibrates, shudders, or some other unusual contortion. When your eidolon successfully makes a melee Strike or @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} against a creature fascinated by its Unspeakable Demonstration, the target takes @Damage[(floor(@actor.level/2))[persistent,acid]]{persistent acid damage equal to half your level}.</p>"
+        },
+        "Flying Beast": {
+            "name": "Flying Beast",
+            "description": "<p>Your eidolon has great wings which it uses to propel itself. It gains the @UUID[Compendium.pf2e.feats-srd.Bj0GvPgyPiC2kDH1]{Glider Form} feat. As a single action with the move trait, your eidolon can launch itself up to its Speed in the air if it is on the ground.</p>\n<p>At 12th level, you gain the @UUID[Compendium.pf2e.feats-srd.h8OB6zcdIqUPS6PC]{Airborne Form} feat, even though you don't meet the level prerequisites.</p>"
+        },
+        "Vital Juggernaut": {
+            "name": "Vital Juggernaut",
+            "description": "<p>Str +4, Dex +2, Con +3, Int –1, Wis +1, Cha +0, +2 AC (+3 Dex cap)</p>"
+        },
+        "Disrupt Reality": {
+            "name": "Disrupt Reality",
+            "description": "<p>Your eidolon’s presence is so disruptive to the planes that magic becomes unstable and difficult to use. Your eidolon gains an aura of disrupting reality in a @Template[distance:20|type:emanation]. Creatures that use the Cast a Spell activity within the aura must make a @Check[dc:7|type:flat] check. If they fail, instead of the normal effects of the spell they produce the effects of a @UUID[Compendium.pf2e.rollable-tables.N0pDFNCffTe2Du39]{Wellspring Surge}. Your eidolon may choose to activate or deactivate this aura as a single action that has the concentrate trait.</p>"
+        },
+        "Effect: Gelatinous Expansion": {
+            "name": "Effect: Gelatinous Expansion",
+            "description": "<p>Your ooze adjusts its shape to adapt to its needs. Your eidolon gains its choice of one of the listed effects until the end of your next turn. It can only have one effect active at a time.</p>\n<p><strong>Acidic Viscosity:</strong> Your eidolon’s touch is acidic. Creatures that successfully make melee attack rolls against your eidolon take @Damage[(floor(@actor.level/2))[persistent,acid]]{persistent acid} damage equal to half your level.</p>\n<p><strong>Elastic Blows:</strong> Your eidolon can stretch its pseudo-limbs and body. Your eidolon’s unarmed attacks increase their reach by 5 feet.</p>\n<p><strong>Grasping Goo:</strong> Your eidolon’s goo sticks to those it touches, eating away at them. When your eidolon successfully @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapples} an enemy, they take @Damage[(floor(@actor.level/2))[persistent,acid]]{persistent acid} damage equal to half your level.</p>\n<p><strong>Weapon Shape:</strong> Your eidolon shapes its unarmed attack, altering its attributes. Your eidolon changes its primary melee unarmed attack to another primary unarmed attack it could have selected at 1st level, gaining the appropriate traits and damage die for its new selection.</p>\n<div>\n<section class=\"secret\">\n<p>Add your chosen attack from the list below. I recommend storing your alternative attack for later so you don't have to re-add runes or other effects your Eidolon's strikes might have every time you choose this effect.</p>\n<ul style=\"columns:2;column-width:15rem\">\n<li>@UUID[Compendium.pf2e-animal-companions.AC-Features.Item.8dyatrsCMoIPuOlE]</li>\n<li>@UUID[Compendium.pf2e-animal-companions.AC-Features.Item.8IodRUpyU4nXGyAv]</li>\n<li>@UUID[Compendium.pf2e-animal-companions.AC-Features.Item.cIAB28BfwNA2uTQv]</li>\n<li>@UUID[Compendium.pf2e-animal-companions.AC-Features.Item.GEVoWzCBjidkO6DG]</li>\n<li>@UUID[Compendium.pf2e-animal-companions.AC-Features.Item.8EJNylotPDelRtZK]</li>\n<li>@UUID[Compendium.pf2e-animal-companions.AC-Features.Item.XNgPUKsnRQO2OS2O]</li>\n<li>@UUID[Compendium.pf2e-animal-companions.AC-Features.Item.ZXrAWVLwKxz5kovL]</li>\n</ul>\n</section>\n</div>"
+        },
+        "Protean Riddler": {
+            "name": "Protean Riddler",
+            "description": "<p>Str +1, Dex +4, Con +1, Int +0, Wis +0, Cha +3; +1 AC (+4 Dex cap)</p>"
+        },
+        "Ephemeral Existence": {
+            "name": "Ephemeral Existence",
+            "description": "<p>Your eidolon is a creature made of dreamstuff, and your dreams change its very makeup. Your eidolon can alter one of its evolution feats to another 1st-level evolution feat to which it has access each day during your daily preparations, as its form encapsulates an ever-shifting identity. This change lasts for 1 day, but the eidolon can choose to prolong the change durings its daily preparations the next day or alter it to another appropriate evolution feat. Your eidolon must still meet any prerequisites for the new evolution feat and if the evolution feat is a prerequisite for another evolution feat it has, it cannot be changed. It gains the Cast a Spell activity and learns @UUID[Compendium.pf2e.spells-srd.0zU8CPejjQFnhZFI]{Figment}, which it can cast as an innate occult cantrip.</p>"
+        },
+        "Village": {
+            "name": "Village",
+            "description": "<p>Your gold-masked eidolon lurks in urban places, dealing in coins or the artifice of man. It gains the metal trait. Your eidolon ignores difficult terrain caused by man made obstructions and crowds.</p>"
+        },
+        "Jaathoom": {
+            "name": "Jaathoom",
+            "description": "<p>Your genie eidolon has the air trait. Your eidolon can float but is still tethered to you. Your eidolon has a fly Speed equal to its land Speed, but with limited mobility. Your eidolon can't rise more than a few inches above the ground when it uses @UUID[Compendium.pf2e.actionspf2e.cS9nfDRGD83bNU1p]{Fly}. This means your eidolon can move above many types of difficult or hazardous terrain without moving slowly or being damaged, even though it can't fly without limit. Your eidolon can @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap}, @UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{High Jump}, @UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Long Jump}, and take similar actions, using its fly Speed for any calculations that would use its land Speed, and your eidolon can use Acrobatics for these checks instead of Athletics. If you select the @UUID[Compendium.pf2e.feats-srd.xXHoyccK5ZG2AJKg]{Skilled Partner} class feat, your eidolon can use its proficiency in Acrobatics instead of Athletics for prerequisites for skill feats if they would apply to these actions. Your eidolon’s second skill is Acrobatics.</p>\n<hr />\n<p>[[/act leap skill=acrobatics]]</p>\n<p>[[/act high-jump skill=acrobatics]]</p>\n<p>[[/act long-jump skill=acrobatics]]</p>"
+        },
+        "Arbiter of the Path": {
+            "name": "Arbiter of the Path",
+            "description": "<p>Your eidolon has come to know its path so well that its steps now forge the path, rather than following it. Your eidolon gains the listed effect for its bounded domain.</p>\n<ul>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.Item.SY84YXTJ7YI1XdiS]{Duty}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.Item.ipfhdIacg4dFSJLE]{Fate}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.Item.X1SqLaqsQgOM3vLg]{Knowledge}</strong></li>\n<li style=\"font-weight:bold\">@UUID[Compendium.pf2e-summoners-plus.misc.Item.qOcbAADPmp9bMQnC]{Time}</li>\n</ul>"
+        },
+        "Heart of a Warrior": {
+            "name": "Heart of a Warrior",
+            "description": "<p><strong>Requirements </strong>Your eidolon is in an encounter with at least one enemy creature.</p>\n<hr />\n<p>Your eidolon thrives in battle. For 1 minute, when your eidolon succeeds at a Strike or Athletics maneuver against a creature of no more than 4 levels below your level it gains temporary Hit Points equal to 2 plus half your level that last until the end of your next turn.</p>"
+        },
+        "Terrifying Smite": {
+            "name": "Terrifying Smite",
+            "description": "<p>Your eidolon makes a Strike against an enemy that has you or one of your allies within its reach. On a hit, the target takes an additional @Damage[3d8[spirit]] damage and is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}. Creatures that are unholy cannot reduce their frightened condition below 1 unless they spend a single action that has the concentrate trait to thwart your eidolon’s holy power.</p>"
+        },
+        "Vitality Springs Forth": {
+            "name": "Vitality Springs Forth",
+            "description": "<p>Your eidolon’s touch on life is so great, that even after it has touched you, it persists. When your eidolon restores Hit Points to a creature, it grants that creature @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{fast healing} equal to half your level for 4 rounds. When your eidolon deals vitality damage to a creature, that creature takes @Damage[(floor(@actor.level/2))[persistent,vitality]|traits:item:slug:vitality-springs-forth] damage equal to half your level. Your eidolon gains the @UUID[Compendium.pf2e-summoners-plus.misc.W5llrHBDsYYG68ep]{Bursting Life Spring} free action.</p>\n<hr />\n<p>@UUID[Compendium.pf2e-summoners-plus.misc.DC10UMpCz4sJmwcU]{Effect: Vitality Springs Forth}</p>"
+        },
+        "Project Senses": {
+            "name": "Project Senses",
+            "description": "<p><strong>Requirements </strong>Your eidolon is unmanifested.</p>\n<hr />\n<p>Your eidolon projects its senses into you, allowing you to perceive using its senses. When you do, you can sense and use skills using any of your eidolon’s senses or abilities, through your eidolon's body for up to 10 minutes. You can Dismiss this effect.</p>\n<hr />\n<p><strong>Special </strong>This action has the trait matching your eidolon's tradition (arcane, divine, occult, or primal). Your eidolon can also use this ability. When it does, it projects its senses into your body.</p>"
+        },
+        "Jabali Shuyookh": {
+            "name": "Jabali Shuyookh",
+            "description": "<p>Your eidolon crushes creatures grabbed by it, dealing @Damage[(@actor.level)[bludgeoning]]{bludgeoning damage equal to its level} to creatures that it successfully grabbed, either with a @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} or one of its abilities. When your eidolon grants a wish, it grants the simplest fulfillment of the wish possible that would meet the request. If the wish when spoken has more than 5 words, it has a @Check[dc:10|type:flat].</p>"
+        },
+        "Glory Seeker": {
+            "name": "Glory Seeker",
+            "description": "<p><strong>Requirements </strong>Your eidolon is under the effects @UUID[Compendium.pf2e-summoners-plus.misc.BPn644yIO8XN3MGs]{Heart of a Warrior}.</p>\n<hr />\n<p> Your eidolon unleashes a ferocious challenge. Your eidolon attempts to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} a creature it can see ignoring the penalty for not sharing a language with that creature. If your eidolon succeeds at its Demoralize against the creature, its frightened condition can't decrease to less than 1 at the end of its turn if your eidolon has made a successful Strike or Athletics maneuver against it since its last turn.</p>"
+        },
+        "Effect: Not Against Me": {
+            "name": "Effect: Not Against Me",
+            "description": "<p>Your eidolon hardens itself against attempts to harm it. Your eidolon gains a +1 status bonus to its AC and one save of its choice for 1 round.</p>"
+        },
+        "Kizidhar": {
+            "name": "Kizidhar",
+            "description": "<p>Your genie eidolon has the plant and wood traits. Your eidolon ignores difficult terrain caused by plants and can pass through barriers made of plant material by Squeezing and it can @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Squeeze} 5 feet in 1 round, or 10 feet on a critical success. Your eidolon uses Nature to Squeeze in this way instead of Acrobatics. Your eidolon’s second skill is Nature.</p>\n<hr />\n<p>[[/act squeeze skill=nature]]</p>"
+        },
+        "Effect: Vitality Springs Forth": {
+            "name": "Effect: Vitality Springs Forth",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-summoners-plus.misc.BwfIMZ7fGH3d9VFt]{Vitality Springs Forth}</p>\n<hr />\n<p>When your eidolon restores Hit Points to a creature, it grants that creature @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{fast healing} equal to half your level for 4 rounds.</p>"
+        },
+        "Aura of Time": {
+            "name": "Aura of Time",
+            "description": "<p>Your eidolon radiates an aura that hardens the rhythms of time. Your eidolon gains an aura of time in a 10-foot emanation, granting creatures within the aura a +2 status bonus to saves against effects that would give them the slowed condition. Creatures that begin their turn in the aura reduce the duration of the quickened or slowed conditions by 1 round.</p>"
+        },
+        "Coordinated Stride": {
+            "name": "Coordinated Stride",
+            "description": "<p><strong>Requirement </strong>You have at least 2 eidolons manifested.</p>\n<hr />\n<p>Your eidolons move into position. Each of your eidolons uses a single action to Stride. If either of them has the corresponding movement type they can Burrow, Climb, Fly, or Swim instead.</p>"
+        },
+        "Warpwave Strike": {
+            "name": "Warpwave Strike",
+            "description": "<p>Your eidolon attacks with a disrupting effect. Your eidolon Strikes a creature with one of its unarmed attacks. If your eidolon’s Strike is successful, the target of the eidolon’s Strike must attempt a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]. Creatures that fail their save roll [[/r 1d8]] to determine the effect. This effect lasts for [[/r 1d4]] rounds.</p>\n<table style=\"width:100%;height:238px\" border=\"1\"><colgroup><col style=\"width:10%\"></col><col style=\"width:90%\"></col></colgroup>\n<tbody>\n<tr style=\"height:17px;padding-left:4px\">\n<td style=\"height:17px;padding-left:4px\">Result</td>\n<td style=\"height:17px;padding-left:4px\">Effect</td>\n</tr>\n<tr style=\"height:51px;padding-left:4px\">\n<td style=\"height:51px;padding-left:4px\">1</td>\n<td style=\"height:51px;padding-left:4px\">@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 2} (@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 3} on critical failure)</td>\n</tr>\n<tr style=\"height:34px;padding-left:4px\">\n<td style=\"height:34px;padding-left:4px\">2</td>\n<td style=\"height:34px;padding-left:4px\">@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} and gains @Damage[4d6[temp-hp]]</td>\n</tr>\n<tr style=\"height:34px;padding-left:4px\">\n<td style=\"height:34px;padding-left:4px\">3</td>\n<td style=\"height:34px;padding-left:4px\">@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} (@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{blinded}on a critical failure)</td>\n</tr>\n<tr style=\"height:34px;padding-left:4px\">\n<td style=\"height:34px;padding-left:4px\">4</td>\n<td style=\"height:34px;padding-left:4px\">@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{3} on critical failure)</td>\n</tr>\n<tr style=\"height:17px;padding-left:4px\">\n<td style=\"height:17px;padding-left:4px\">5</td>\n<td style=\"height:17px;padding-left:4px\">@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} by filaments of energy</td>\n</tr>\n<tr style=\"height:17px;padding-left:4px\">\n<td style=\"height:17px;padding-left:4px\">6</td>\n<td style=\"height:17px;padding-left:4px\">@UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} (Stride, Strike, or Step only)</td>\n</tr>\n<tr style=\"height:17px;padding-left:4px\">\n<td style=\"height:17px;padding-left:4px\">7</td>\n<td style=\"height:17px;padding-left:4px\">@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}</td>\n</tr>\n<tr style=\"height:17px;padding-left:4px\">\n<td style=\"height:17px;padding-left:4px\">8</td>\n<td style=\"height:17px;padding-left:4px\">@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} (@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{3} on critical failure)</td>\n</tr>\n</tbody>\n</table>"
+        },
+        "Aura of Fate": {
+            "name": "Aura of Fate",
+            "description": "<p>Your eidolon radiates an aura that stabilizes fate. Your eidolon gains an aura of fate in a 10-foot emanation, and all creatures within the aura are not affected by either fortune or misfortune effects. It can activate, deactivate, or alter the targeted effect as a single action that has the concentrate trait.</p>"
+        },
+        "Path: Knowledge": {
+            "name": "Path: Knowledge",
+            "description": "<p>You and your eidolon gain the anathema: You must never destroy or obscure knowledge. Your eidolon becomes trained in Academia Lore.</p>"
+        },
+        "Effect: Synergy": {
+            "name": "Effect: Synergy",
+            "description": "<p>@UUID[Compendium.pf2e-summoners-plus.misc.eCBKJ4SEwF7Hiuvb]{Synergy} @UUID[Compendium.pf2e-summoners-plus.misc.VucxKRn4BC9O3gCf]{Synergy Combos}</p>"
+        },
+        "Zuhra": {
+            "name": "Zuhra",
+            "description": "<p>Your genie eidolon has the metal trait. Your eidolon gains resistance equal to half your level (minimum 1) to electricity. When your eidolon is the target of an effect that deals electricity damage, it gains an aura of repelling that grants it a +1 status bonus to AC for 1 round. Your eidolon’s second skill is Crafting.</p>\n<p>@UUID[Compendium.pf2e-summoners-plus.misc.Item.H3zwHiUNTrFqnGh5]{Effect: Zuhra Electricity Repel}</p>"
+        },
+        "Effect: Zuhra Electricity Repel": {
+            "name": "Effect: Zuhra Electricity Repel",
+            "description": "<p>When your eidolon is the target of an effect that deals electricity damage, it gains an aura of repelling that grants it a +1 status bonus to AC for 1 round.</p>"
+        },
+        "Punishing Contract": {
+            "name": "Punishing Contract",
+            "description": "<p>Your eidolon drafts a contract and targets a creature within 30 feet. The target must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your spell DC with the following effects. The effects last until the end of your next turn, but your eidolon can use a single action, which has the concentrate trait, to extend the enfeebled condition until the end of your next turn (like Sustaining a Spell), to a maximum duration of 1 minute. If the target is unholy, it takes a –2 circumstance penalty to its save. Regardless of whether it succeeds, the target becomes temporarily immune for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target can choose between being @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} or kneeling to become @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Failure</strong> The target immediately kneels to become prone and is enfeebled 1</p>\n<p><strong>Critical Failure</strong> As failure, except the target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2}.</p>"
+        },
+        "Mountain": {
+            "name": "Mountain",
+            "description": "<p>Your eidolon is a mighty warrior of the mountains and plains. It gains the earth trait. Your eidolon ignores difficult terrain from earth and rock.</p>"
+        },
+        "Traveled Path": {
+            "name": "Traveled Path",
+            "description": "<p>Your eidolon’s path continues, becoming more familiar and resolute with each step forward. Your eidolon gains an aura relevant to its bound domain. This aura can be activated or deactivated if your eidolon spends a single action that has the concentrate trait.</p>\n<ul>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.LRrFK1WVnmW3bVDk]{Duty}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.FbWDpg08LxCYE9Lr]{Fate}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.Item.5R9dJUYsFVZx9CxK]{Knowledge}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.Item.DV9enusyYTIMrXPS]{Time}</strong></li>\n</ul>"
+        },
+        "Zuhra Shuyookh": {
+            "name": "Zuhra Shuyookh",
+            "description": "<p>Your eidolon attunes by adjusting to its surroundings. Your eidolon gains an aura that affects a @Template[distance:10|type:emanation] and squares in the aura are difficult terrain for creatures wearing metal armor or made of metal. Strikes with metallic weapons made by or against creatures in this aura take a –2 status penalty to the attack roll. Your eidolon is immune to its own aura and it can activate or deactivate this aura as a single action that has the concentrate trait. When your eidolon grants a wish, it attempts to satisfy the wish for the shortest amount of time possible. If the wish would last less than 1 week it has a @Check[dc:5|type:flat], or a @Check[dc:10|type:flat] if the results of the wish would require it to last longer than 1 week, or a @Check[dc:15|type:flat] if the results would last longer than 1 month.</p>"
+        },
+        "Warrior Brute": {
+            "name": "Warrior Brute",
+            "description": "<p>Str +4, Dex +2, Con +2, Int +0, Wis +0, Cha +1; +2 AC (+3 Dex cap)</p>"
+        },
+        "Effect: Ultimate Form (Occult Phenomenon)": {
+            "name": "Effect: Ultimate Form (Occult Phenomenon)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-summoners-plus.items.pVH6bVC39YcxIObM]{Ultimate Form}</p>\n<p><strong>Arcane Omniscient</strong></p>\n<ul>\n<li>Speed 40 feet</li>\n<li>resistance 5 to physical damage</li>\n<li><strong>Melee <span class=\"action-glyph\">1</span></strong> mind shatter (reach 30 feet) <strong>Damage </strong>6d8+4 mental;</li>\n<li><strong>Ranged <span class=\"action-glyph\">1</span></strong> agonizing thought (range 60 feet) <strong>Damage </strong>6d8+4 spirit;</li>\n<li><strong>World of the Otherworldly</strong> (arcane, occult) 60 feet. Strange phenomenons reveal themselves, warping and changing the world around your eidolon. All creatures in the area gain a fly speed of 25 feet, and creatures cannot lower their frightened condition below 1 if they become frightened.</li>\n</ul>"
+        },
+        "Power of the Incarnate": {
+            "name": "Power of the Incarnate",
+            "description": "<p>Your eidolon draws on its temporal power. Your eidolon calls on the power of the incarnate and gains one of the following effects.</p>\n<ul>\n<li><strong>Begone </strong>Your eidolon points at a specific enemy, and they must attempt a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your spell DC or they are pushed 10 feet away from your eidolon, or 20 feet if they critically failed. If the creature comes in contact with an object or other creature, it becomes off-guard until the beginning of your next turn. This is forced movement.</li>\n<li><strong>Cower Before Me</strong> Your eidolon attempts to rebuke targets that would approach it. Enemies within a @Template[distance:10|type:emanation] must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:emotion,fear,mental] save against your spell DC or they become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{frightened 2} on a critical failure). Regardless of the result of their save, creatures are then immune to this effect for 1 minute. This effect has the emotion, fear, and mental traits.</li>\n<li><strong>Here is Your Punishment</strong> Your eidolon shoots a bolt of power that deals (@Damage[(2+(floor(@actor.level/2)))d4[@actor.flags.pf2e.incarnate-type]]) damage equal to the damage of your @UUID[Compendium.pf2e-summoners-plus.misc.0fvd9aASh27TJYOj]{Incarnate Arrival} in a @Template[distance:30|type:line] with a @Check[type:reflex|basic:true|dc:resolve(@actor.attributes.classOrSpellDC.value)] save. This damage is of the same type as it would deal with Incarnate Arrival.</li>\n<li><strong>Not Against Me</strong> Your eidolon hardens itself against attempts to harm it. Your eidolon gains a +1 status bonus to its AC and one save of its choice for 1 round. @UUID[Compendium.pf2e-summoners-plus.misc.CteoePJ8cCHYrkDP]{Effect: Not Against Me}</li>\n<li><strong>There’s No Escape</strong> Your eidolon can immediately Stride toward an enemy. If it ends its movement within reach, it can make a Strike against that enemy.</li>\n<li><strong>You Dare </strong>Your eidolon swirls energies to lash out at those who would dare attack. For 1 round, each time your eidolon is hit by a Strike, the creature that attacked it takes damage equal to @Damage[2 + (@actor.level)[@actor.flags.pf2e.incarnate-type]]{2 + your level}. This damage is of the same type as it would deal with Incarnate Arrival.</li>\n</ul>\n<hr />\n<p><strong>Special </strong>This activity has the trait matching your eidolon's tradition (arcane, divine, occult, or primal).</p>"
+        },
+        "Aura of Duty": {
+            "name": "Aura of Duty",
+            "description": "<p>Your eidolon radiates an aura that evokes honesty and truth. Your eidolon gains an aura of duty in a 10-foot emanation, and a creature your eidolon has challenged gains a -1 circumstance penalty to attack rolls that don't target you or your eidolon while in the aura. Your eidolon’s extra spirit damage increases to 2.</p>"
+        },
+        "Overflowing Vigor": {
+            "name": "Overflowing Vigor",
+            "description": "<p>Your eidolon exudes vitality. All living allies in a @Template[distance:15|type:emanation] restore @Damage[(ceil(@actor.level/2))d4[healing]] Hit Points and all enemies in the area take @Damage[(ceil(@actor.level/2))d4[vitality]] damage with a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save against your spell DC. </p>\n<p>At 9th level and every 2 levels thereafter, the Hit Points restored and damage each increase by 1d4.</p>"
+        },
+        "Ooze Biology": {
+            "name": "Ooze Biology",
+            "description": "<p>Your eidolon has an unusual anatomy that makes it act different from other eidolons. You gain the @UUID[Compendium.pf2e.feats-srd.AmP0qu7c5dlBSath]{Toughness} general feat. Your eidolon has immunity to critical hits and precision damage. Your ooze can @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Squeeze} 5 feet per round (10 feet on a critical success) and treats its size as one smaller when determining what spaces it can Squeeze through. Your ooze has a permanent –2 penalty to its AC.</p>"
+        },
+        "Effect: Cryptic Coloration": {
+            "name": "Effect: Cryptic Coloration",
+            "description": ""
+        },
+        "Light": {
+            "name": "Light",
+            "description": "<p>Your eidolon glows and dazzles and gains the light trait. Your eidolon radiates an aura of bright light in a 20-foot emanation and dim light 20 feet after that. It can activate or deactivate this aura as a single action with the concentrate trait, but your eidolon still projects bright light in its space and dim light 5 feet out from that even when the aura is deactivated. When your eidolon uses an ability with the vitality trait or critically succeeds at a Strike, enemies affected by the effect must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:light,visual] save against your spell DC or they become @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round, or 1 minute on a critical failure. This effect has the light and visual traits.</p>"
+        },
+        "Aeon Enforcer": {
+            "name": "Aeon Enforcer",
+            "description": "<p>Str +4, Dex +2, Con +2, Int +1, Wis +1, Cha –1; +2 AC (+3 Dex cap)</p>"
+        },
+        "Effect: Arbitrate Fate (Misfortune)": {
+            "name": "Effect: Arbitrate Fate (Misfortune)",
+            "description": ""
+        },
+        "Effect: Arbitrate Fate (Fortune)": {
+            "name": "Effect: Arbitrate Fate (Fortune)",
+            "description": ""
+        },
+        "Whirlwind Wings": {
+            "name": "Whirlwind Wings",
+            "description": "<p>Your eidolon flies breathtakingly fast, slashing through opponents as it goes. Fly twice, making Strikes against up to four different creatures within reach at any point during your movement. Each of these attacks counts towards your multiple attack penalty.</p>"
+        },
+        "Genie Nemesis": {
+            "name": "Genie Nemesis",
+            "description": "<p>Str +4, Dex +2, Con +2, Int +0, Wis +0, Cha +1; +2 AC (+3 Dex cap)</p>"
+        },
+        "Effect: Occult Phenomena": {
+            "name": "Effect: Occult Phenomena",
+            "description": "<p>Strange phenomenons reveal themselves, warping and changing the world around your eidolon. All creatures in the area gain a fly speed of 25 feet, and creatures cannot lower their frightened condition below 1 if they become frightened.</p>"
+        },
+        "Effect: Challenge": {
+            "name": "Effect: Challenge",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-summoners-plus.misc.umwOrIVGPxbRGbMw]{Challenge}</p>"
+        },
+        "Elemental": {
+            "name": "Elemental",
+            "description": "<p>Your eidolon’s vitality is infused with either fire or water and gains that trait. When your eidolon deals vitality damage it can choose to change half the amount of vitality damage dealt to fire damage if it chose fire, or bludgeoning damage if it chose water (minimum 1). Your eidolon gains a weakness to cold and water equal to half your level if it chose fire, or fire equal to half your level if it chose water.</p>"
+        },
+        "Path: Duty": {
+            "name": "Path: Duty",
+            "description": "<p>You and your eidolon gain the anathema: You must never fail to uphold commitments, oaths, or promises. Your eidolon can spend a single action with the auditory and concentrate traits to issue a challenge against a single creature. This challenge lasts for 1 minute or until your eidolon challenges another creature. Your eidolon deals 1 extra spirit damage on its Strikes against creatures it has challenged.</p>"
+        },
+        "Shuyookh Ascendancy": {
+            "name": "Shuyookh Ascendancy",
+            "description": "<p>Your genie eidolon advances to the rank of a shuyookh, becoming more powerful as a genie of its kind and the ability to alter reality. Your genie eidolon gains the listed effect for its genie incarnation and at 20th level, your eidolon can conduct a @UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{Wish} ritual for the benefit of a mortal, requiring no cost or secondary casters, which it can use once per year and must abide by the requirements set by its genie ancestry. If the genie succeeds at the flat check associated with its wish, the success effect is granted, otherwise the result is a failure.</p>"
+        },
+        "Engulfing Propensity": {
+            "name": "Engulfing Propensity",
+            "description": "<p>Your ooze can engulf creatures with its sticky substances. Your eidolon gains the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.zU3Ovaet4xQ5Gmvy]{Engulf} activity. Your eidolon treats its size category as one larger for the purposes of what creatures it can Engulf.</p>\n<p>Your eidolon’s Engulf has a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:action:engulf] equal to your spell DC, deals @Damage[4d10[acid]] damage, has an @Check[type:athletics|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:action:escape]{Escape} equal to your spell DC, and a Rupture of 20.</p>"
+        },
+        "Aeon Adjudicator": {
+            "name": "Aeon Adjudicator",
+            "description": "<p>Str +1, Dex +4, Con +1, Int +2, Wis +2, Cha –1; +1 AC (+4 Dex cap)</p>"
+        },
+        "Mystic Training": {
+            "name": "Mystic Training",
+            "description": "<p>Your eidolon has gifted you magic beyond that of other summoners. Your eidolon’s primary unarmed attack is its magical blast, a ranged unarmed attack with a range increment of 30 feet that deals 1d6 damage and has the arcane trait. It uses its Charisma or Intelligence instead of its Dexterity for this ranged attack roll and the unarmed attack deals damage of one of the following types: acid, bludgeoning, cold, electricity, fire, piercing, slashing, vitality, or void. These choices are made when you first gain your eidolon and cannot be changed. If you select the @UUID[Compendium.pf2e.feats-srd.oVSlTmdmho8ZQo2k]{Ranged Combatant} class feat, you instead gain a melee primary unarmed attack appropriate for your eidolon instead of the ranged unarmed attack granted by the feat. If you select the @UUID[Compendium.pf2e.feats-srd.kFpVgcqREAfDmjXp]{Advanced Weaponry} class feat, your eidolon’s ranged unarmed attack gains the versatile trait with another damage type you could have selected at 1st level.</p>\n<p>Your eidolon gains the @UUID[Compendium.pf2e.feats-srd.WfbmFsRxbVyzMmCz]{Magical Understudy} summoner feat, despite not meeting the prerequisite level, except you gain only one cantrip. As usual for a feat you are granted by name, you can't retrain Magical Understudy into another feat. Select a common arcane spell or another arcane spell to from your eidolon’s tradition of up to the highest level spell you could cast up to a maximum of 9th-rank. This spell must take 3 actions or less to cast. This spell is your @UUID[Compendium.pf2e-summoners-plus.misc.ya6e8AnzVvDxp6yD]{eidolon’s favored} spell. Each time you gain a level, your eidolon can select a new favored spell in place of the old one.</p>"
+        },
+        "Power of the Zuhra": {
+            "name": "Power of the Zuhra",
+            "description": "<p>Your genie eidolon can use its reflective skin to dazzle and blind. Your eidolon can spend a single @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} action to form a reflective surface to reflect light into the eyes of another creature within 30 feet. The creature must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your spell DC or they become @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{dazzled} for 1 round on a failure, or @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{blinded} for 1 round on a critical failure. This effect has the incapacitation and visual traits.</p>"
+        },
+        "Arbiter of Duty": {
+            "name": "Arbiter of Duty",
+            "description": "<p>Your eidolon is an enforcer of duty in all its forms. The extra spirit damage on your eidolon’s Strikes increases to 6. When your eidolon Strikes a challenged creature, it also adds the death trait to the Strike causing the creature to be instantly killed when reduced to 0 Hit Points. When a creature is killed in this way, attempts to communicate with it, return it to life, turn it into an undead, or otherwise disturb its afterlife fail unless the effect's counteract rank is higher than half your level, or originates from an artifact or a deity.</p>"
+        },
+        "Arbitrate Fate": {
+            "name": "Arbitrate Fate",
+            "description": "<p>Your eidolon pulls the threads of fate in such a way that it does not disrupt its natural flow. Once per hour, your eidolon can spend a single action with the concentrate trait to cause a creature to roll twice on its next attack roll, saving throw, or skill check. The eidolon can choose to make it the better of the two rolls or the worse of the two rolls, gaining the fortune or misfortune trait respectively. This effect ignores any immunities a creature would have to fortune or misfortune effects, such as from your eidolon’s aura.</p>\n<p>@UUID[Compendium.pf2e-summoners-plus.misc.Item.PMdQZwwfcftloNDC]{Effect: Arbitrate Fate (Fortune)} @UUID[Compendium.pf2e-summoners-plus.misc.Item.P4W6xEUyXOtaqWcU]{Effect: Arbitrate Fate (Misfortune)}</p>"
+        },
+        "Path: Fate": {
+            "name": "Path: Fate",
+            "description": "<p>You and your eidolon gain the anathema: You must never willingly attempt to alter prophecy or fate. Your eidolon is not affected by abilities or spells with the fortune or misfortune traits from creatures other than you or itself.</p>"
+        },
+        "Arcane Link": {
+            "name": "Arcane Link",
+            "description": "<p>Your eidolon uses you as a vessel for evoking its arcane might. Your eidolon gains the @UUID[Compendium.pf2e-animal-companions.AC-Evolution-Feats.Item.en0ikSriHVja8kGM]{Magical Adept} feat, despite not meeting the prerequisite level. When you or your eidolon uses the Cast a Spell activity, you can choose to use your position or your eidolon’s position for determining the point of casting and its effects.</p>"
+        },
+        "Jaathoom Shuyookh": {
+            "name": "Jaathoom Shuyookh",
+            "description": "<p>Your genie eidolon’s fly Speed is no longer restricted in mobility and it can cast @UUID[Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB]{Invisibility} on itself as an innate arcane spell once per 10 minutes instead of once per day. When your eidolon grants a wish, it first gains the effects of an @UUID[Compendium.pf2e.spells-srd.41TZEjhO6D1nWw2X]{Augury} spell for the results of the wish before the ritual is completed, learning the consequences of the wish. If the wish consequences are mixed or bad, it has a @Check[dc:5|type:flat] and if the consequences are nothing, it has a @Check[dc:10|type:flat].</p>"
+        },
+        "Forest": {
+            "name": "Forest",
+            "description": "<p>Bamboo and woods are the domain of your eidolon. It gains the wood trait. Your eidolon ignores difficult terrain caused by plants and vegetation.</p>"
+        },
+        "Dream Creature": {
+            "name": "Dream Creature",
+            "description": "<p>Str +4, Dex +2, Con +1, Int +0, Wis +1, Cha +1; +2 AC (+3 Dex cap)</p>"
+        },
+        "Extraneous Anatomy": {
+            "name": "Extraneous Anatomy",
+            "description": "<p>Your eidolon’s anatomy becomes even more extraneous and volatile. Your eidolon gains another choice from @UUID[Compendium.pf2e-summoners-plus.misc.coFrRiztDPcMRkyp]{Unnatural Physiology} that was not selected at level 1. Your eidolon gains all of its effects and when it uses Unspeakable Demonstration your eidolon can gain the effects of either or both of its choices. You become trained in its associated skill or another skill if you were already trained.</p>"
+        },
+        "Effect: Ultimate Form (Arcane Omniscient)": {
+            "name": "Effect: Ultimate Form (Arcane Omniscient)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-summoners-plus.items.pVH6bVC39YcxIObM]{Ultimate Form}</p>\n<p><strong>Arcane Omniscient</strong></p>\n<ul>\n<li>Speed 50 feet</li>\n<li>resistance 5 to magic</li>\n<li><strong>Melee <span class=\"action-glyph\">1</span></strong> brush with the arcane (reach 30 feet, agile) <strong>Damage </strong>8d4+8 force;</li>\n<li><strong>Ranged <span class=\"action-glyph\">1</span></strong> arcane bolt (range increment 60 feet, versatile acid, cold, electric, fire, poison, sonic) <strong>Damage </strong>6d10+10 force;</li>\n<li><strong>Know All <span class=\"action-glyph\">1</span></strong> (arcane, fortune) Your eidolon recalls Knowledge on any topic using your Arcana modifier, rolling twice and taking the higher result.</li>\n</ul>"
+        },
+        "Rampaging Spirit": {
+            "name": "Rampaging Spirit",
+            "description": "<p>Your eidolon is a furious spirit of nature, hell-bent on avenging some great tragedy or on spreading misery to those that oppose it. Your eidolon can grow to Large size or shrink its size to Medium by performing a 1 minute activity with the concentrate trait. While Large its reach increases to 10 feet, but it is permanently @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}. You can take the @UUID[Compendium.pf2e.feats-srd.H6qletvAJUCC1aIa]{Hulking Size} feat to remove this clumsy condition permanently. Your eidolon gains a trait and special benefit of its associated terrain, selected from the below options when you first gain your eidolon.</p>\n<ul>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.wJ1l0VU4fgeDEtsE]{Boreal}</li>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.fuXoTYH93NqhyHkc]{Darkness}</li>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.TVOyOXMh4osaxeac]{Forest}</li>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.IPUaeoKWaPRS8SiU]{Mountain}</li>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.pyU2yWMD10AqHeAs]{Sky}</li>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.AwyRGc83uH8FSBRM]{Village}</li>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.xdTL5U9G9ovTZz22]{Volcanic}</li>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.aMWiXeRZJFG8T5gM]{Water}</li>\n</ul>\n<hr />\n<p>@UUID[Compendium.pf2e-summoners-plus.misc.4Wqr2arzll8BkYHQ]{Effect: Rampaging Spirit}</p>"
+        },
+        "Synergy Combos": {
+            "name": "Synergy Combos",
+            "description": "<p>You can expend synergy to enhance actions or activities you use with the tandem trait. When you spend @UUID[Compendium.pf2e-summoners-plus.misc.eCBKJ4SEwF7Hiuvb]{Synergy} in this way, the synergy is expended after all actions or activities are completed.</p>\n<p><strong>Tandem Boost:</strong> The first successful Strike either you or your eidolon deals while you are under the effects of @UUID[Compendium.pf2e.spells-srd.HStu2Yhw3iQER9tY]{boost eidolon} deals an additional @Damage[1d6[precision]] precision damage. If you’re at least 10th level, increase this to @Damage[2d6[precision]] precision damage, and if you’re at least 18th level, increase it to @Damage[3d6[precision]] precision damage. If you used Tandem Boost to cast @UUID[Compendium.pf2e.spells-srd.TYbCj4dgXDOZou9k]{reinforce eidolon}, the resistance is equal to the spells rank instead of half the spell rank.</p>\n<p><strong>Tandem Step:</strong> You and your eidolon slip around enemies without provoking a response in unison. You and your eidolon both Step up to 10 feet.</p>\n<p><strong>Tandem Movement:</strong> If after you or your eidolon have ended your movement, you could make a melee Strike against the same enemy, one of you may Strike that enemy as part of the same action. If you or your eidolon are wielding a ranged unarmed attack or a ranged weapon, you or your eidolon can make this Strike so long as the target of the Strike would be within the first range increment of the ranged attack.</p>\n<p><strong>Tandem Ready:</strong> You reduce the number of actions required to use Tandem Ready from a 3-action activity to a 2-action activity, but one of the actions you or your eidolon readied must include a Strike.</p>\n<p><strong>Tandem Strike:</strong> If at least one of you or your eidolon’s Strikes are successful, the target takes an additional @Damage[2d6[persistent,bleed]] persistent bleed damage from the first Strike that deals damage. If you are at least 10th level, this bleed damage increases to @Damage[3d6[persistent,bleed]], or @Damage[4d6[persistent,bleed]] if you are 14th level, or @Damage[5d6[persistent,bleed]] if you are at least 18th level.</p>\n<h2>Manifestation Synergy Combos</h2>\n<p>The following are synergy combos for the manifestations tandem actions and activities.</p>\n<p><strong>Call the Incarnate:</strong> You cause your eidolon to unleash energy, producing the effects of its @UUID[Compendium.pf2e-summoners-plus.misc.0fvd9aASh27TJYOj]{Incarnate Arrival} instead of the effects of @UUID[Compendium.pf2e-summoners-plus.misc.LKTHOzyQjzuxDG66]{Power of the Incarnate}.</p>\n<p><strong>Suppress Eidolon:</strong> You form a perfect synthesis between you and your eidolon, allowing you to act normally while Melded into Eidolon. You and your eidolon cannot be targeted separately and you can use whichever of your ACs, immunities, resistances, saves, and weaknesses is more favorable for the duration.</p>\n<p><strong>Tandem Mount:</strong> Your eidolon Strides twice instead of once. In addition, these Strides can occur before you @UUID[Compendium.pf2e.actionspf2e.PM5jvValFkbFH3TV]{Mount}, and if you are adjacent to your Mount at any point during this movement, you can use your reaction to Mount it.</p>"
+        },
+        "Arcane Ascendant": {
+            "name": "Arcane Ascendant",
+            "description": "<p>Str +0, Dex +3, Con +1 Int +0, Wis +1, Cha +4; +1 AC (+4 Dex cap)</p>"
+        },
+        "Bursting Life Spring": {
+            "name": "Bursting Life Spring",
+            "description": "<p><strong>Trigger </strong>You would be reduced to 0 Hit Points.</p>\n<hr />\n<p>Your eidolon bursts with vital energy, like the wealth of a spring. Your eidolon uses @UUID[Compendium.pf2e-summoners-plus.misc.LVT1aZKpSBRkbCUd]{Overflowing Vigor} even if it would not normally be able to use the action, and then it unmanifests. At the end of your next turn, your eidolon manifests as if you used @UUID[Compendium.pf2e.actionspf2e.n5vwBnLSlIXL9ptp]{Manifest Eidolon} in the same location it was unmanifested or the nearest adjacent space if it could not be manifested in that space.</p>"
+        },
+        "Effect: Acidic Viscosity": {
+            "name": "Effect: Acidic Viscosity",
+            "description": "<p><em>Ephemeral Effect</em></p>\n<hr />\n<p>Your eidolon’s touch is acidic. Creatures that successfully make melee attack rolls against your eidolon take @Damage[(floor(@item.level/2))[persistent,acid]] damage equal to half your level.</p>"
+        },
+        "Effect: Heart of a Warrior": {
+            "name": "Effect: Heart of a Warrior",
+            "description": "<p>For 1 minute, when your eidolon succeeds at a Strike or Athletics maneuver against a creature of no more than 4 levels below your level it gains temporary Hit Points equal to 2 plus half your level that last until the end of your next turn.</p>\n<p>@UUID[Compendium.pf2e-summoners-plus.misc.Item.3pj3i1GTwI10EMyk]{Effect: Heart of a Warrior Temp Hp}</p>"
+        },
+        "Arbiter of Knowledge": {
+            "name": "Arbiter of Knowledge",
+            "description": "<p>Your eidolon has attained true knowledge. Your eidolon’s proficiency in Academia Lore increases to legendary. Your eidolon treats its degree of success on @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{Recall Knowledge} checks as one better.</p>"
+        },
+        "Inhibiting Excretion": {
+            "name": "Inhibiting Excretion",
+            "description": "<p>Your eidolon creates a sticky substance from its body in the area that impedes creatures' movement each time they try to move through it. Your eidolon creates an inhibiting substance in a @Template[type:burst|distance:15] within 30 feet. Squares filled with the substance are difficult terrain. Each square can be cleared by a single attack or effect that deals at least 5 slashing damage or 1 fire damage. A square has AC 5, and it automatically fails its saving throws. Each time a creature in the area begins to use a move action or enters the area during a move action, it must attempt an @Check[type:athletics|dc:resolve(@actor.attributes.classOrSpellDC.value)] check or @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your spell DC to avoid taking a circumstance penalty to its Speeds or becoming @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized}. A creature that gets out of the excretion ceases to take a circumstance penalty to its Speed. Your eidolon is immune to the effects of its own Inhibiting Excretion.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected, and it doesn't need to attempt further Athletics checks or saving throws against the effect this turn. If it used an Athletics check, it clears the substance from every square it leaves after leaving the square.</p>\n<p><strong>Success</strong> The creature is unaffected during its action. If it used an Athletics check, it clears the substance from every square it leaves after leaving the square. </p>\n<p><strong>Failure</strong> The creature takes a –10-foot circumstance penalty to its Speeds until the start of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} until the start of its next turn, after which it takes a –10-foot circumstance penalty to its Speeds for 1 round. It can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} to remove its immobilized condition.</p>\n<hr />\n<p><strong>Special</strong> If your eidolon has the transcendence ability, the area of the burst increases to a @Template[type:burst|distance:30], the range increases to 60 feet, and the slashing and fire damage required to destroy increases to 15 and 3 respectively.</p>"
+        },
+        "True Archmage": {
+            "name": "True Archmage",
+            "description": "<p>Your eidolon’s spellcasting is second to none. Your eidolon gains the @UUID[Compendium.pf2e-animal-companions.AC-Evolution-Feats.yCSsQaTFINIbr9Gh]{Magical Master} feat, despite not meeting the prerequisites. Your eidolon can use @UUID[Compendium.pf2e-summoners-plus.misc.ya6e8AnzVvDxp6yD]{Expend Favored Spell} an additional time per day, but after it uses Expend Favored Spell it cannot use it again for 1 hour.</p>"
+        },
+        "Mind": {
+            "name": "Mind",
+            "description": "<p>Your eidolon’s mind is of a likeness that no one understands, giving its touch an unsettling nature. Their unarmed attacks deal 1 additional mental damage. If the creature is immune to mental damage, your eidolon’s Strikes deal spirit damage instead of mental damage. Your eidolon’s secondary skill is Deception.</p>"
+        },
+        "Glory Seeker (pF8t)": {
+            "name": "Glory Seeker",
+            "description": "<p>Your eidolon seeks glory in all its forms. You become trained in Intimidation if you were untrained or trained in another skill of your choice if you were already trained. Your eidolon gains the @UUID[Compendium.pf2e-summoners-plus.misc.CqysXOAp6rpgojAF]{Glory Seeker} action.</p>"
+        },
+        "Water": {
+            "name": "Water",
+            "description": "<p>Your eidolon hides in the seas or on scattered islands. It gains the amphibious and water traits. Your eidolon ignores difficult terrain caused by water.</p>"
+        },
+        "Ifrit": {
+            "name": "Ifrit",
+            "description": "<p>Your genie eidolon has the fire trait. Your eidolon gains resistance equal to half your level (minimum 1) to fire and an equal amount of weakness to cold and water. They gain a shroud of flame that creates an aura in a @Template[distance:5|type:emanation] around the ifrit. Any creature other than your eidolon that ends its turn in the aura takes fire damage equal to @Damage[(max(1, (@actor.flags.pf2e.ifrit-calculation)))[fire]]{half your level} (minimum 1) with a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save against your spell DC. Your eidolon can activate or deactivate this aura with a single action that has the concentrate trait. Your eidolon’s second skill is Intimidation.</p>"
+        },
+        "Power of the Kizidhar": {
+            "name": "Power of the Kizidhar",
+            "description": "<p>Your genie eidolon can take root for combative gain. Your genie eidolon can plant its feet in ground or earth, becoming @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{immobilized} as a single action, causing plants to sprout and grow out of the ground in a @Template[distance:20|type:burst] centered on one corner of the eidolon’s square. All squares on the ground in that area are difficult terrain until your eidolon uses this ability again to unroot itself, removing its immobilized condition. This ability has the arcane, plant, and wood traits.</p>"
+        },
+        "Effect: Legendary Soul": {
+            "name": "Effect: Legendary Soul",
+            "description": "<p>Once per day, your eidolon can spend a single action with the concentrate and eidolon trait to gain fast healing equal to half your level for 1 minute. If it is reduced to 0 Hit Points while this effect is active, the effect immediately ends.</p>"
+        },
+        "Gaze": {
+            "name": "Gaze",
+            "description": "<p>At the beginning of each turn, your eidolon can choose one enemy to fix its gaze upon and that creature cannot flank your eidolon, though it can still provide flanking to its allies.</p>"
+        },
+        "Genie Courier": {
+            "name": "Genie Courier",
+            "description": "<p>Str +1, Dex +4, Con +1, Int +0, Wis +1, Cha +2; +1 AC (+4 Dex cap)</p>"
+        },
+        "Unnatural Physiology": {
+            "name": "Unnatural Physiology",
+            "description": "<p>Your aberration eidolon has strange characteristics for a creature of its physiology that protects them from attempts to target their vitals. They gain resistance equal to half your level against critical hits and precision damage (minimum 1). In addition, your eidolon gains an unusual addition to its physiology when you first choose your eidolon.</p>\n<ul>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.1L5GPiooSE0safIE]{Eyes}</li>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.ZAG5Z1aaiXoMAaUz]{Mind}</li>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.2z5ZjeCl2PhBhiQb]{Mouth}</li>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.sAIdHibLicq2cC3w]{Skin}</li>\n</ul>"
+        },
+        "Tandem Mount": {
+            "name": "Tandem Mount",
+            "description": "<p>You and your eidolon move as one. You @UUID[Compendium.pf2e.actionspf2e.PM5jvValFkbFH3TV]{Mount}your eidolon and it immediately Strides. Your eidolon can use Tandem Mount to Burrow, Climb, Fly, or Swim instead of Stride if it has the corresponding movement type.</p>"
+        },
+        "Effect: Ultimate Form": {
+            "name": "Effect: Ultimate Form",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-summoners-plus.items.pVH6bVC39YcxIObM]{Ultimate Form}</p>\n<p>Grants a battle form based on the tradition of magic tied to your eidolon.</p>"
+        },
+        "Manifest Mount Eidolon": {
+            "name": "Manifest Mount Eidolon",
+            "description": "<p>Your eidolon appears with you riding it, automatically appearing in your square and moving you into position as if you had used @UUID[Compendium.pf2e.actionspf2e.PM5jvValFkbFH3TV]{Mount}. If your eidolon was already manifested, you unmanifest it instead.</p>\n<p>The conduit that allows your eidolon to manifest is also a tether between you. Your eidolon must remain within 100 feet of you at all times and can't willingly go beyond that limit. If forced beyond this distance, or if you are reduced to 0 Hit Points, your eidolon's physical form dissolves: your eidolon unmanifests, and you need to use Manifest Mount Eidolon to manifest it again.</p>\n<hr />\n<p><strong>Special </strong>This activity has the trait matching your eidolon's tradition (arcane, divine, occult, or primal).</p>"
+        },
+        "Synergy": {
+            "name": "Synergy",
+            "description": "<p>You and your eidolon form a beautiful symmetry when you engage in combat, becoming a formidable duo. When you or your eidolon successfully Strike a creature, you become synergized. This state of symbiosis is called @UUID[Compendium.pf2e-summoners-plus.misc.Item.H0W9EDjO1wwp38ty]{Synergy}, and you are either in a state of synergy or you are not. If you or your eidolon made a successful Strike as part of an activity, you do not gain Synergy until after you have completed the activity.</p>\n<p>While you have synergy, you each gain a +5-foot status bonus to your Speed and if you are both adjacent to the same creature, that creature is off-guard to you and your eidolon.</p>\n<p>Normally, you gain and use synergy only in combat encounters; when an encounter ends, you lose synergy.</p>"
+        },
+        "Final Form": {
+            "name": "Final Form",
+            "description": "<p>Your eidolon and you have come a long way, and it has reached the apex of its power–and its journey. Choose between your eidolon reaching acceptance, corruption or redemption.</p>\n<ul>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.weTN3YzkeXcfCFFU]{Acceptance}</li>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.s9ynhm3yoGvsdfMe]{Corruption}</li>\n<li>@UUID[Compendium.pf2e-summoners-plus.misc.t6vpAuOuNzhVsqlf]{Redemption}</li>\n</ul>"
+        },
+        "Know All": {
+            "name": "Know All",
+            "description": "<p>Your eidolon @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{Recall Knowledge} on any topic using your Arcana modifier, rolling twice and taking the higher result.</p>"
+        },
+        "Versatile Ranged Primary Attack": {
+            "name": "Versatile Ranged Primary Attack",
+            "description": "<p>If you select the @UUID[Compendium.pf2e.feats-srd.kFpVgcqREAfDmjXp]{Advanced Weaponry} class feat, your eidolon’s ranged unarmed attack gains the versatile trait with another damage type you could have selected at 1st level.</p>"
+        },
+        "Effect: Ultimate Form (Divine Demiurge)": {
+            "name": "Effect: Ultimate Form (Divine Demiurge)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-summoners-plus.items.pVH6bVC39YcxIObM]{Ultimate Form}</p>\n<p><strong>Divine Demiurge</strong></p>\n<ul>\n<li>Speed 40 feet, fly 40 feet</li>\n<li><strong>Melee <span class=\"action-glyph\">1</span></strong> spiritual blast (reach 30 feet, versatile S) <strong>Damage </strong>6d8+12 spirit</li>\n<li><strong>Ranged <span class=\"action-glyph\">1</span></strong> planar ray (range 100 feet) <strong>Damage </strong>6d6+6 spirit</li>\n<li><strong>Godhood’s Grace </strong>(aura, divine) 60 feet. Enemies looking upon your eidolon must succeed at a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your spell DC or become @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{stupefied 1} for 1 round (@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{stupefied 2} on a critical failure).</li>\n</ul>"
+        },
+        "Effect: Aura of Duty": {
+            "name": "Effect: Aura of Duty",
+            "description": "<p>A creature your eidolon has challenged gains a -1 circumstance penalty to attack rolls that don't target you or your eidolon while in the aura.</p>"
+        },
+        "Power of the Jabali": {
+            "name": "Power of the Jabali",
+            "description": "<p>Your genie eidolon commands earth to grasp enemies. When your genie eidolon succeeds at a @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} or causes forced movement against an enemy creature and that creature ends its movement adjacent to earth or stone, the target must attempt a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your spell DC or be @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{grabbed} by the surface until the end of your next turn.</p>"
+        },
+        "Darkness": {
+            "name": "Darkness",
+            "description": "<p>Whether under cover of night or from hiding deep underground, your eidolon is a creature of darkness. It gains the shadow or void trait. Your eidolon gains darkvision.</p>"
+        },
+        "Kizidhar Shuyookh": {
+            "name": "Kizidhar Shuyookh",
+            "description": "<p>Your eidolon plants the seed of ambition in a chosen creature. Your eidolon can spend a single action with the auditory, emotion, and mental traits to call out to another creature, and the creature must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your spell DC or it can’t take reactions until the beginning of your next turn or the end of your next turn if it got a critical failure. When your eidolon grants a wish, it is always interpreted in a way that is favorable to you or your eidolon. Regardless of the wish made, it has a @Check[dc:5|type:flat].</p>"
+        },
+        "Swarm Attack": {
+            "name": "Swarm Attack",
+            "description": "<p>Your eidolon swarm does not have unarmed attacks, but instead gains a Swarm Attack that deals @Damage[(max(1, @actor.system.actions.0.item.baseDamage.dice)d6+@actor.system.abilities.str.mod)[@actor.flags.pf2e.evolutionFeats.energyHeartChoice]] plus its Strength modifier in bludgeoning, piercing, or slashing damage, chosen at the time you gain your eidolon. If your eidolon would gain an ability with the eidolon trait that would require it to make a Strike, such as a @UUID[Compendium.pf2e.actionspf2e.cx0juTYewwBmrYWv]{Beast's Charge}, your eidolon can use its Swarm Attack instead of a Strike. This Swarm Attack applies to all creatures in its space when it takes a single action to do so and has a @Check[basic:true|type:reflex|dc:10] save equal to 10 + your eidolon’s unarmed attack modifier, including item bonuses from potency runes. If it uses its Swarm Attack more than once in a turn, it reduces the DC by 5 each additional time it uses Swarm Attack that turn.</p><p>Effects that would normally apply on a successful unarmed Strike from your swarm eidolon apply to creatures that fail their save against your eidolon’s Swarm Attack and effects that would normally apply on a critical hit apply to creatures that critically fail their save.</p><hr /><p>@Damage[(max(1, @actor.system.actions.0.item.baseDamage.dice)d6+@actor.system.abilities.str.mod)[@actor.flags.pf2e.evolutionFeats.energyHeartChoice]], @Check[basic:true|type:reflex|dc:10]</p><p><strong>DC Reduced by 5</strong> @Check[basic:true|type:reflex|dc:10|adjustment:-5]</p><p><strong>DC Reduced by 10</strong> @Check[basic:true|type:reflex|dc:10|adjustment:-10]</p>"
+        },
+        "Effect: Through the Veil": {
+            "name": "Effect: Through the Veil",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-summoners-plus.misc.woR8Dx2cxQAIE3Vf]{Through the Veil}.</p>\n<hr />\n<p>Creatures entering the aura see incredible visions of your dream world, from which the eidolon sprung.</p>\n<p>Enemy creatures that end their turn within the aura must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your spell DC or suffer the listed effect. Creatures can @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} to attempt to disbelieve the sights and sounds within. Creatures that succeed at their Will save or successfully disbelieve your illusion are temporarily immune to its effects for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is dazzled and treats the area as difficult terrain for as long as they remain within the emanation or until they disbelieve your eidolon's illusion.</p>\n<p><strong>Critical Failure</strong> As failure, except the target is also @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} as long as they are dazzled.</p>"
+        },
+        "Death Curse": {
+            "name": "Death Curse",
+            "description": "<p><strong>Trigger</strong> You would be reduced to 0 Hit Points or killed.</p>\n<hr />\n<p>Your eidolon's power flares as your heartbeat fades. The triggering creature must make a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your spell DC. If you would die, their save is a degree of success worse than normal. Your eidolon can remain in existence until the end of your next turn and it instantly recovers the use of its @UUID[Compendium.pf2e-animal-companions.AC-Features.I8fG26JJS29ZYwfZ]{Breath Weapon}. If your eidolon would take any damage, you increase your dying value as normal for taking damage while dying and your eidolon immediately unmanifests.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Your target's soul is punished. They take damage equal to your level of the same type as your eidolon's Breath Weapon.</p>\n<p><strong>Failure</strong> Searing agony shoots through the target, punishing them for their transgressions. They take damage equal to twice your level of the same type as your eidolon's Breath Weapon and gain a weakness equal to half your level to damage of the same type as your eidolon's Breath Weapon that lasts 1 day. This weakness applies before the damage from your eidolon's Death Curse.</p>\n<p><strong>Critical Failure</strong> Your eidolon dooms the opponent. As failure, except the weakness is equal to your level instead of half your level and the target is @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for as long as it has this weakness.</p>"
+        },
+        "Jabali": {
+            "name": "Jabali",
+            "description": "<p>Your genie eidolon has the earth trait. Your genie eidolon gains a +2 circumstance bonus to its Fortitude or Reflex DC against attempts to Shove or Trip it. This bonus also applies to saving throws against spells or effects that attempt to knock your genie prone. Your eidolon’s second skill is Athletics.</p>"
+        },
+        "Effect: Disrupt Reality": {
+            "name": "Effect: Disrupt Reality",
+            "description": "<p>Creatures that use the Cast a Spell activity within the aura must make a @Check[dc:7|type:flat] check. If they fail, instead of the normal effects of the spell they produce the effects of a @UUID[Compendium.pf2e.rollable-tables.N0pDFNCffTe2Du39]{Wellspring Surge}.</p>"
+        },
+        "Effect: Ancient Surge Resistance": {
+            "name": "Effect: Ancient Surge Resistance",
+            "description": "<p>Your eidolon gains a resistance to acid, cold, electricity, or fire damage equal to half your level. If your eidolon has a weakness to the selected damage type, you instead reduce the weakness by an equal amount.</p>"
+        },
+        "Power of the Faydhaan": {
+            "name": "Power of the Faydhaan",
+            "description": "<p>Your genie eidolon grants you an easier sway in negotiations and conversation. You gain a +1 status bonus to Diplomacy checks to @UUID[Compendium.pf2e.actionspf2e.DCb62iCBrJXy0Ik6]{Request} or @UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{Make an Impression} and to Society checks to @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{Recall Knowledge}, as long as your genie eidolon is present. This status bonus increases to +2 if you are attempting to avoid hostile action or conflict and the act or knowledge would further your goals of non-hostility.</p>"
+        },
+        "Effect: Inhibiting Excretion": {
+            "name": "Effect: Inhibiting Excretion",
+            "description": "<p>The creature takes a –10-foot circumstance penalty to its Speeds until the start of its next turn.</p>"
+        },
+        "Power of the Jaathoom": {
+            "name": "Power of the Jaathoom",
+            "description": "<p>Your genie eidolon’s flight improves. Your eidolon can fly through the air in short bursts. If your eidolon doesn't end its movement on solid ground, it falls at the end of your turn. Once per day, your eidolon can cast @UUID[Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB]{Invisibility} on itself as an innate arcane spell.</p>"
+        },
+        "Arbiter of Fate": {
+            "name": "Arbiter of Fate",
+            "description": "<p>Your eidolon pulls the threads of fate in such a way that it does not disrupt its natural flow. Once per hour, your eidolon can spend a single action with the concentrate trait to cause a creature to roll twice on its next attack roll, saving throw, or skill check. The eidolon can choose to make it the better of the two rolls or the worse of the two rolls, gaining the fortune or misfortune trait respectively. This effect ignores any immunities a creature would have to fortune or misfortune effects, such as from your eidolon’s aura.</p>"
+        },
+        "Destined Path": {
+            "name": "Destined Path",
+            "description": "<p>Your eidolon follows a path of order, enforcing cosmic balance wherever it is needed. Your eidolon is bound to one of the following domains: duty, fate, knowledge, or time. Your eidolon gains the Cast a Spell activity and gains the initial domain spell for its associated domain and you and your eidolon share a focus pool as normal. You and your eidolon gain the anathema based on its associated domain. If you or your eidolon ever commit this anathema, your eidolon loses all of its eidolon abilities, including the Focus Points gained from domain spells until you complete an atone ritual.</p>\n<ul>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.Q7WyqXKD7HYAHjU3]{Duty}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.Sswwenib1weVfTYe]{Fate}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.GehAdhuYeTT1pf2Y]{Knowledge}</strong></li>\n<li style=\"font-weight:bold\">@UUID[Compendium.pf2e-summoners-plus.misc.zmSA08qGvVO7PLBR]{Time}</li>\n</ul>\n<p><strong>Special</strong> You gain access to the @UUID[Compendium.pf2e.feats-srd.uR44wELN9OlU68cL]{Advanced Domain} cleric feat at 8th level, and if you select this feat you must select the advanced domain spell for your eidolon’s bounded domain and your eidolon gains the ability to Cast the Spell instead of you.</p>"
+        },
+        "Coordinated Assault": {
+            "name": "Coordinated Assault",
+            "description": "<p><strong>Requirement </strong>You have 3 eidolons manifested and are in an encounter with at least one enemy.</p>\n<hr />\n<p>Your eidolons form a three pronged assault against a target enemy. Your eidolons each Stride up to half their Speed and perform a single action. These actions can be performed in any order, but if they would target an enemy they must target the required enemy. The first Strike your eidolons make against the required enemy gains a +2 circumstance bonus to its attack roll and deals two extra dice of weapon damage. If you’re at least 10th level, increase this to four extra dice, and if you’re at least 18th level, increase it to six extra dice. The first Strike your eidolons make counts as two attacks when calculating your multiple attack penalty.</p>"
+        },
+        "Plant": {
+            "name": "Plant",
+            "description": "<p>Your eidolon creates bountiful growth and gains the plant trait. Your eidolon can @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} to create vegetation that causes difficult terrain in a @Template[distance:5|type:emanation] that lasts 1 round. On subsequent turns, it can Interact to expand the emanation an additional 5 feet and extend the duration by 1 round, up to a maximum of 5 rounds. When your eidolon uses an action with the vitality trait that affects an area, your eidolon can choose to make the area difficult terrain for 1 round in addition to its normal effects. These effects have the plant trait.</p>"
+        },
+        "Effect: Change Shape": {
+            "name": "Effect: Change Shape",
+            "description": "<p><em>For Token Changing Purposes.</em></p>"
+        },
+        "Effect: Fabricate Weapon": {
+            "name": "Effect: Fabricate Weapon",
+            "description": ""
+        },
+        "Genie Incarnation": {
+            "name": "Genie Incarnation",
+            "description": "<p>Your genie eidolon is one of the following genie ancestries: faydhaan, ifrit, jaathoom, jabali, kizidhar, or zuhra. Your genie eidolon gains the listed traits and abilities of your chosen ancestry.</p>\n<ul>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.nyiF0IeEkmEYEAMZ]{Faydhaan}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.aqBKsZZHyka7QQyT]{Ifrit}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.B0KXimTqhww3Whc8]{Jaathoom}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.hcrOAHUUDHPNKCnO]{Jabali}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.D8zVAh2ycPrSE4TU]{Kizidhar}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.H2UaWm8aeM6jUtwb]{Zuhra}</strong></li>\n</ul>"
+        },
+        "Manifest Splintered Eidolon": {
+            "name": "Manifest Splintered Eidolon",
+            "description": "<p>One of your eidolons appears in an open space adjacent to you, and can then take a single action. Alternatively, you can choose to unmanifest one of your splintered eidolons with this action.</p>\n<p>The conduit that allows your eidolon to manifest is also a tether between you. Your splintered eidolon must remain within 100 feet of you at all times and can't willingly go beyond that limit. If forced beyond this distance, or if you are reduced to 0 Hit Points, your eidolon's physical form dissolves: your eidolon unmanifests, and you need to use Manifest Splintered Eidolon to manifest it again. If a splintered eidolon does not take at least one action before the end of your turn, it unmanifests and must be manifested again.</p>\n<hr />\n<p><strong>Special </strong>This activity has the trait matching your eidolon's tradition (arcane, divine, occult, or primal).</p>"
+        },
+        "The Mind Makes it Real": {
+            "name": "The Mind Makes it Real",
+            "description": "<p>Your eidolon can change the perception of reality as simply as a lucid dreamer can in their dreamland. Your eidolon gains the ability to cast @UUID[Compendium.pf2e.spells-srd.f8SBoXiXQjlCKqly]{Illusory Creature} and @UUID[Compendium.pf2e.spells-srd.2oH5IufzdESuYxat]{Illusory Object} as 9th-rank occult innate spells once per day each.</p>"
+        },
+        "Vital Messenger": {
+            "name": "Vital Messenger",
+            "description": "<p>Str +1, Dex +4, Con +1, Int +0, Wis +1, Cha +2, +1 AC (+4 Dex cap)</p>"
+        },
+        "Reshape the Earth": {
+            "name": "Reshape the Earth",
+            "description": "<p>Your eidolon’s steps causes forests to grow and mountains to crumble. It creates either a @UUID[Compendium.pf2e.spells-srd.kOa055FIrO9Smnya]{wall of stone} or @UUID[Compendium.pf2e.spells-srd.KsWhliKfUs3IpW3c]{wall of thorns} as if it had cast the spell and the spell was heightened to 8th-rank.</p>"
+        },
+        "Faydhaan": {
+            "name": "Faydhaan",
+            "description": "<p>Your genie eidolon has the water trait. Your eidolon can target a @Template[distance:5|type:burst] within 30 feet as a single action with the concentrate trait to automatically extinguish non-magical fires in the area. Additionally, your eidolon has a +1 status bonus to AC and saves against water effects and can make nonlethal attacks with its unarmed attacks without taking the usual –2 circumstance penalty. Your eidolon’s second skill is Diplomacy.</p>"
+        },
+        "Nightmare Creature": {
+            "name": "Nightmare Creature",
+            "description": "<p>Str +2, Dex +4, Con +0, Int +1, Wis +0, Cha +2; +1 AC (+4 Dex cap)</p>"
+        },
+        "Accursed Oni": {
+            "name": "Accursed Oni",
+            "description": "<p>Str +1, Dex +4, Con +1, Int +0, Wis +0, Cha +3; +1 AC (+4 Dex cap)</p>"
+        },
+        "Warrior Skirmisher": {
+            "name": "Warrior Skirmisher",
+            "description": "<p>Str +1, Dex +4, Con +1, Int +0, Wis +1, Cha +2; +1 AC (+4 Dex cap)</p>"
+        },
+        "Shell Armor": {
+            "name": "Shell Armor",
+            "description": ""
+        },
+        "Sky": {
+            "name": "Sky",
+            "description": "<p>Whether through storms or through windswept lands, your eidolon is one of the sky. It gains the air or electricity trait. Your eidolon gains the @UUID[Compendium.pf2e.feats-srd.ZBhvJ9O8MvBFAlhq]{Quick Jump} skill feat even though it would not normally be able to take skill feats.</p>"
+        },
+        "Arbiter of Time": {
+            "name": "Arbiter of Time",
+            "description": "<p>Your eidolon wields time as a weapon. Your eidolon can Cast @UUID[Compendium.pf2e.spells-srd.o6YCGx4lycsYpww4]{haste} and @UUID[Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3]{slow} once per hour each as divine innate spells and these innate spells do not count as violating its anathema. Your eidolon can now choose not to reduce the duration of the quickened and slowed conditions of itself and creatures within its aura, choosing at the time each creature would reduce the condition’s duration whether to reduce it.</p>"
+        },
+        "Effect: Shrink Down": {
+            "name": "Effect: Shrink Down",
+            "description": "<p>Your eidolon reduces in size, to a minimum of size Tiny.</p>"
+        },
+        "Power of the Ifrit": {
+            "name": "Power of the Ifrit",
+            "description": "<p>Your genie eidolon’s fire grows more intense. Its resistance to fire and the damage from its flame shroud aura both increase to be equal to your level.</p>"
+        },
+        "Effect: Entropic Entity": {
+            "name": "Effect: Entropic Entity",
+            "description": "<p>Immediately after your eidolon takes acid, electricity, or sonic damage, it gains resistance equal to your level against damage of that type. This lasts for 1 hour or until the next time your eidolon takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first.</p>"
+        },
+        "Corruption": {
+            "name": "Corruption",
+            "description": "<p>Your oni's rage has grown only more vile, and become a true spirit of devastation. Your eidolon increases its size by one step and the damage dice of its unarmed attacks increases by one die size. In addition, when you use @UUID[Compendium.pf2e.spells-srd.lV8FkHZtzZu7Cy6j]{Evolution Surge} on your eidolon, you increase its size to Gargantuan instead of Huge.</p>"
+        },
+        "Skin": {
+            "name": "Skin",
+            "description": "<p>Your eidolon’s skin excretes a mucus which it leverages in close-quarters struggles. Your eidolon gains a +1 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} creatures of equal or larger size, and a +1 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} checks against creatures of smaller size. Your eidolon’s secondary skill is Athletics.</p>"
+        },
+        "Slithering Ooze": {
+            "name": "Slithering Ooze",
+            "description": "<p>Str +2, Dex +4, Con +2, Int +0, Wis +1, Cha +0; +1 AC (+4 Dex cap)</p>"
+        },
+        "Entropic Entity": {
+            "name": "Entropic Entity",
+            "description": "<p>Your eidolon’s protean anatomy grants it a chaotic presence and perception. Immediately after your eidolon takes acid, electricity, or sonic damage, it gains resistance equal to your level against damage of that type. This lasts for 1 hour or until the next time your eidolon takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first. In addition, your eidolon can sense creatures within its entropy sense, which is an imprecise sense with a range of 15 feet. A creature under the effects of @UUID[Compendium.pf2e.spells-srd.EoKBlgf6Smt8opaU]{veil of privacy} cannot be noticed via entropy sense.</p>\n<p>@UUID[Compendium.pf2e-summoners-plus.misc.Item.rMxxodfSKmcgafKB]{Effect: Entropic Entity}</p>"
+        },
+        "Redemption": {
+            "name": "Redemption",
+            "description": "<p>You have healed the broken spirit of your eidolon, returning it to the being it once was: a kami spirit of nature. Your eidolon gains the kami and spirit traits, and it loses the size increase, reach, and clumsy condition it gained from @UUID[Compendium.pf2e-summoners-plus.misc.UgC7EEaeRZg4eoYp]{Rampaging Spirit} as well as the oni and giant traits. Your eidolon can cast @UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{One with Plants} and @UUID[Compendium.pf2e.spells-srd.4MOew29Z1oCX8O28]{Moment of Renewal} as 9th-rank primal innate spells once per day. As part of this transformation, you can alter your eidolon’s form and unarmed attack selection that you made at 1st level to other unarmed attacks appropriate for its new form.</p>"
+        },
+        "Call the Incarnate": {
+            "name": "Call the Incarnate",
+            "description": "<p>You boost your eidolon’s next actions. You @UUID[Compendium.pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{Sustain} your manifested incarnate eidolon and it immediately uses @UUID[Compendium.pf2e-summoners-plus.misc.LKTHOzyQjzuxDG66]{Power of the Incarnate}.</p>"
+        },
+        "Power of the Jinn": {
+            "name": "Power of the Jinn",
+            "description": "<p>Your genie eidolon grows in elemental power, gaining a special blessing according to their genie ancestry.</p>\n<ul>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.huhxd2tWcgBTqWeS]{Faydhaan}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.qu25CCeNXhGPOn9S]{Ifrit}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.Item.iXzJGceJZfXoLBH1]{Jaathoom}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.Item.fqhj974A6FkMJJsB]{Jabali}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.Item.atStXClBpQVzi8Wt]{Kizidhar}</strong></li>\n<li style=\"font-weight:bold\"><strong>@UUID[Compendium.pf2e-summoners-plus.misc.Item.SNT1JV98S4YzR5ib]{Zuhra}</strong></li>\n</ul>"
+        },
+        "Challenge": {
+            "name": "Challenge",
+            "description": "<p>Your eidolon can spend a single action with the auditory and concentrate traits to issue a challenge against a single creature. This challenge lasts for 1 minute or until your eidolon challenges another creature. Your eidolon deals 1 extra spirit damage on its Strikes against creatures it has challenged.</p>"
+        },
+        "Infinite Power Cascade": {
+            "name": "Infinite Power Cascade",
+            "description": "<p>Your eidolon makes an attack that calls upon its inner reservoir of power. This effect gains the appropriate trait for its oni type. Your oni eidolon makes a melee Strike against a creature within its reach. As long as your eidolon’s Strike was not a critical failure, the target of the Strike takes @Damage[(ceil(@actor.level/2))d6[@actor.flags.pf2e.infinite-power-cascade]] damage with a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save. The damage is of the same type as the energy trait from its Rampaging Spirit, or bludgeoning if it has the air, earth, or water trait, piercing if it has the wood trait, or slashing if it has the metal or shadow trait. If your eidolon is in a terrain associated with its Rampaging Spirit, the frequency of this ability is reduced to [[/r 1d4]] rounds instead of once per 10 minutes. At 9th level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>If your eidolon has @UUID[Compendium.pf2e-summoners-plus.misc.f77t4YLJkaKWVLuJ]{Final Form}, they can create terrain that resembles the terrain of their Rampaging Spirit in a @Template[distance:20|type:emanation] around them. The difficult terrain is of the type associated with your eidolon’s Rampaging Spirit, or concealment relevant for the terrain if your eidolon’s terrain was darkness, sky, or volcanic. This reduces the frequency of Infinite Power Cascade for being in terrain of your Rampaging Spirit.</p>"
+        },
+        "Aberrative Skulker": {
+            "name": "Aberrative Skulker",
+            "description": "<p>Str +1, Dex +4, Con +1, Int +0, Wis +1, Cha +2; +1 AC (+4 Dex cap)</p>"
+        },
+        "Boreal": {
+            "name": "Boreal",
+            "description": "<p>Your eidolon stalks taigas and frozen lands. It gains the cold trait. Your eidolon ignores difficult terrain from cold and ice.</p>"
+        },
+        "Spore Plume": {
+            "name": "Spore Plume",
+            "description": "<p>Your eidolon sends waves, blooms and clouds of spores into your enemies. As well as a 10-foot emanation, it can also create a @Template[distance:30|type:cone] or a @Template[distance:60|type:line] when it uses its @UUID[Compendium.pf2e-summoners-plus.misc.zE41sGx7afQPw97M]{Spore Cloud}.</p>"
+        },
+        "Acceptance": {
+            "name": "Acceptance",
+            "description": "<p>Though your eidolon remains an oni, and will never fully heal from the grief it experienced that led it on its path, it does not need to be a servant of cruelty. Your eidolon learns one spell that they share an elemental trait with of 6th rank or lower. It can cast this spell as a primal innate spell once per day and it is heightened to 9th-rank.</p>"
+        },
+        "Ifrit Shuyookh": {
+            "name": "Ifrit Shuyookh",
+            "description": "<p>Your genie eidolon is immune to fire and creatures that end their turn grabbed by your eidolon @Damage[(2*(max(1, @actor.flags.pf2e.ifrit-calculation)))[fire]]{double} the damage they take from its flame shroud. When your eidolon grants a wish, it must be interpreted in a way that causes an unexpected outcome for the granter of the wish that does not obstruct fulfilling the strictest requirements of the wish. If the wish would not harm the enemies of you or your eidolon or empower you or your eidolon, it has a @Check[dc:10|type:flat].</p>"
+        },
+        "Through the Veil": {
+            "name": "Through the Veil",
+            "description": "<p>With a single thought, your eidolon can blur the lines between the real world and your own dreamlands. Your eidolon gains a dreamland aura within a @Template[distance:10|type:emanation] that lasts 1 minute or until Dismissed. Creatures entering the aura see incredible visions of your dream world, from which the eidolon sprung.</p>\n<p>Enemy creatures that end their turn within the aura must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your spell DC or suffer the listed effect. Creatures can @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} to attempt to disbelieve the sights and sounds within. Creatures that succeed at their Will save or successfully disbelieve your illusion are temporarily immune to its effects for 1 day.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is dazzled and treats the area as difficult terrain for as long as they remain within the emanation or until they disbelieve your eidolon's illusion.</p>\n<p><strong>Critical Failure</strong> As failure, except the target is also @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} as long as they are dazzled.</p>"
+        },
+        "Volcanic": {
+            "name": "Volcanic",
+            "description": "<p>Hot springs and calderas alike are where your eidolon might call home. It gains the fire trait. Your eidolon ignores concealment caused by smoke or steam.</p>"
+        },
+        "Rampage": {
+            "name": "Rampage",
+            "description": "<p>Your eidolon can grow to Large size or shrink its size to Medium by performing a 1 minute activity with the concentrate trait. While Large its reach increases to 10 feet, but it is permanently @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}. You can take the @UUID[Compendium.pf2e.feats-srd.H6qletvAJUCC1aIa]{Hulking Size} feat to remove this clumsy condition permanently.</p>"
+        },
+        "Expend Favored Spell": {
+            "name": "Expend Favored Spell",
+            "description": "<p>Your eidolon expends power from its magical essence, releasing powerful magic. Your eidolon Casts the spell it chose for its favored spell. After your eidolon uses this ability, it cannot use the Cast a Spell activity again for 1 round. This activity uses the same number of actions as the spell your eidolon casts.</p>"
+        },
+        "Effect: Ultimate Form (Primal Apex)": {
+            "name": "Effect: Ultimate Form (Primal Apex)",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-summoners-plus.items.pVH6bVC39YcxIObM]{Ultimate Form}</p>\n<p><strong>Primal Apex</strong></p>\n<ul>\n<li>Speed 40 feet, fly 40 feet</li>\n<li><strong>Melee <span class=\"action-glyph\">1</span></strong> wild touch (reach 30 feet) <strong>Damage </strong>6d10+10 of the same damage type as<br />your eidolon’s main strike;</li>\n<li><strong>Ranged <span class=\"action-glyph\">1</span></strong> nature’s voice (reach 100 feet) <strong>Damage </strong>6d8+4 sonic;</li>\n<li><strong>Reshape the Earth <span class=\"action-glyph\">3</span></strong> <strong>Frequency </strong>once per minute; <strong>Effect </strong>Your eidolon’s steps causes forests to grow and mountains to crumble. It creates either a @UUID[Compendium.pf2e.spells-srd.kOa055FIrO9Smnya]{wall of stone} or @UUID[Compendium.pf2e.spells-srd.KsWhliKfUs3IpW3c]{wall of thorns} as if it had cast the spell and the spell was heightened to 8th-rank.</li>\n</ul>"
+        },
+        "Faydhaan Shuyookh": {
+            "name": "Faydhaan Shuyookh",
+            "description": "<p>Your genie eidolon is under the constant effects of @UUID[Compendium.pf2e.spells-srd.SwUiVavHKMWG7t5K]{Truespeech}. When your eidolon grants a wish, it must be interpreted in a way that grants the most benefit to the most people. If the wish would require the harm of others indirectly, it has a @Check[dc:5|type:flat], and if it requires direct harm it has a @Check[dc:15|type:flat].</p>"
+        },
+        "Spore Cloud": {
+            "name": "Spore Cloud",
+            "description": "<p>Your eidolon shudders, releasing clouds of consumptive spores around it. Your eidolon unleashes a cloud within a @Template[distance:10|type:emanation] that lasts for [[/r 1d4]] rounds or until dispersed by a strong wind. The cloud of spores grants concealment and deals @Damage[(max(2, ceil(@actor.level/2)))[acid],(max(2, ceil(@actor.level/2)))[poison]]{2 acid damage and 2 poison} damage to creatures that begin their turn in the area with a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save against your spell DC. Your eidolon is immune the Fortitude save of its own Spore Cloud.</p>\n<p>At 3rd level and every 2 levels thereafter, the acid and poison damage each increases by 1.</p>"
+        },
+        "Protean Unraveler": {
+            "name": "Protean Unraveler",
+            "description": "<p>Str +4, Dex +2, Con +2, Int +0, Wis +0, Cha +1; +2 AC (+3 Dex cap)</p>"
+        },
+        "Effect: Aura of Fate": {
+            "name": "Effect: Aura of Fate",
+            "description": "<p>All creatures within the aura are not affected by either fortune or misfortune effects.</p>"
+        },
+        "Path: Time": {
+            "name": "Path: Time",
+            "description": "<p>You and your eidolon gain the anathema: You must never alter the flow of time or knowingly change the course of time. Your eidolon reduces the duration of its @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{quickened} and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{slowed} conditions by half (minimum duration of 1 round).</p>"
+        }
+    }
+}

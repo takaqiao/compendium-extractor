@@ -1,0 +1,96 @@
+{
+    "label": "Inventors+ Effects",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Effect: Reverberate": {
+            "name": "Effect: Reverberate",
+            "description": "<p>Your gizmos produce a high-pitched frequency. Your Strikes apply a reverberating effect to enemies and gain the auditory trait for 1 minute. After you successfully Strike a creature, until the beginning of your next turn the creature takes a –1 circumstance penalty against auditory effects and it takes additional damage equal to your Intelligence modifier when they take damage from an auditory effect. After Reverberate ends, your gizmos become unusable as they re-tune, and you can't use Reverberate for 1 minute. Creatures immune to the auditory trait can still be affected by your Strikes normally even if they would be immune to the effects of Reverberate, but are immune to the damage from Reverberate.</p>\n"
+        },
+        "Effect: Invigoration Link": {
+            "name": "Effect: Invigoration Link",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-inventors.inventors-actions.Item.OAJJz0ey8LU37Ghc]{Invigorating Link}</p>\n<p>You connect a link between your innovation and an ally within 30 feet that lasts 4 rounds, and the ally must remain within 60 feet or it breaks your link. The target immediately gains 2 plus half your level in temporary Hit Points that last as long as your link remains active. At the beginning of each of your subsequent turns your link is active on an ally, you increase their temporary Hit Points from Invigoration Link by 1 plus half your level or grant them temporary Hit Points equal to 1 plus half your level if they have no temporary Hit Points from Invigoration Link.</p>"
+        },
+        "Effect: Reverberate Enemy": {
+            "name": "Effect: Reverberate Enemy",
+            "description": "<p>Apply this effect to enemies after striking them with Reverberate.</p>"
+        },
+        "Effect: Frigerate": {
+            "name": "Effect: Frigerate",
+            "description": "<p>Your gizmos create a condensing effect, decelerating the matter of enemies. For 1 minute, when you successfully Strike a creature, it takes a –5-foot status penalty to its Speed until the beginning of your next turn. Creatures that use an action with the move trait while affected by this status penalty take damage equal to your @Damage[(@actor.abilities.int.mod+ternary(gte(@actor.level,15),3,ternary(gte(@actor.level,7),2,ternary(gte(@actor.level,3),1,0))))]{Intelligence modifier}. This damage is of the same type as the Strike’s damage. After Frigerate ends, your gizmos become unusable as it freezes over, and you can't use Frigerate for 1 minute.</p>\n"
+        },
+        "Effect: Dynamic Sheeting": {
+            "name": "Effect: Dynamic Sheeting",
+            "description": "<p>AC Bonus +5; Dex Cap +1; Check Penalty –2; Speed Penalty –10 feet; Strength +3; Bulk 3; Group plate.</p>"
+        },
+        "Effect: Frigerate Enemy": {
+            "name": "Effect: Frigerate Enemy",
+            "description": "<p>Apply this effect to enemies after striking them with Frigerate.</p>"
+        },
+        "Effect: Perfected Appendages": {
+            "name": "Effect: Perfected Appendages",
+            "description": "<p>If you choose to make a Strike, your appendages are treated as unarmed attacks that deal 1d4 damage of either bludgeoning, piercing, or slashing damage with the reach trait and are in the brawling group. You make the choice of damage when you gain this feat, but you can spend 1 hour adjusting your appendages to change the damage to another type of your choice.</p>"
+        },
+        "Effect: Elemental Entanglement Success": {
+            "name": "Effect: Elemental Entanglement Success",
+            "description": "<p>When a creature within 30 feet takes damage of the type you chose, they also gain the weakness you predicted until you stop entertaining your theory.</p>"
+        },
+        "Effect: Planar Focus": {
+            "name": "Effect: Planar Focus",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.dS9vI1BxqUKcU4s9]{Planar Focus}</p>\n<p>You gain spirit and void resistance equal to 3 plus your level for 3 rounds.</p>"
+        },
+        "Effect: Repulse": {
+            "name": "Effect: Repulse",
+            "description": "<p>Your gizmos create a bubble of magnetic force, protecting you and granting you an increased ability to move enemies. You are charged with repulsion, allowing you to use your proficiency in Crafting instead of Athletics for attempts to Disarm, Reposition, or Shove for 1 minute. While you are under the effects of Repulse, whenever you successfully use one of these actions or you subject an enemy to forced movement from an effect caused by your innovation (such as Magnetic Pulse), the target takes damage equal to your @Damage[(@actor.abilities.int.mod+ternary(gte(@actor.level,15),3,ternary(gte(@actor.level,7),2,ternary(gte(@actor.level,3),1,0))))[bludgeoning]]{Intelligence modifier} (or additional damage of the same amount if the effect dealt damage). This damage is of the same type that produced the effect or bludgeoning damage if the effect did not deal damage. After the Repulse ends, your gizmos become unusable as they cool down or reset, and you can't use Repulse for 1 minute.</p>"
+        },
+        "Effect: Crank Up": {
+            "name": "Effect: Crank Up",
+            "description": "<p>Your gizmos do the hard work for you, allowing you to put in minimal energy for maximum physical output. You gain a +10-foot status bonus to your Speeds. As you brawl, you leave poisonous chemicals in your wake. For 1 minute, when you successfully Strike a creature, you leave behind hazardous terrain in an adjacent @Template[type:square|distance:5] of your choice and any squares you move through before the end of your turn. Your hazardous terrain lasts for 2 rounds. Creatures other than you passing through your hazardous terrain take poison damage equal to your @Damage[(@actor.abilities.int.mod+ternary(gte(@actor.level,15),3,ternary(gte(@actor.level,7),2,ternary(gte(@actor.level,3),1,0))))[poison]]{Intelligence modifier}. After Crank Up ends, your gizmos become unusable as they require refueling, and you can't use Crank Up for 1 minute.</p>\n"
+        },
+        "Effect: Sonar Alert System": {
+            "name": "Effect: Sonar Alert System",
+            "description": "<p>Apply this effect to your construct companion.</p>\n<p>Your construct innovation gains echolocation as an imprecise sense out to 30 feet.</p>"
+        },
+        "Effect: Resistance Engine": {
+            "name": "Effect: Resistance Engine",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.aAhqQ2D5a8RyyExd]{Resistance Engine}</p>\n<p>You gain a resistance to an energy type of your choosing (acid, cold, electricity, fire, poison, or sonic) equal to half your level until the beginning of your next turn. When under the effects of Overdrive, the resistance increases by 2. You select this damage type when you gain Resistance Engine, but you can Reconfigure the energy type as normal.</p>"
+        },
+        "Effect: Critical Enhancement": {
+            "name": "Effect: Critical Enhancement",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-inventors.inventors-features.Item.c0NOWRH6eV1dYJgk]{Critical Enhancement}</p>\n<p>You gain +1 status bonus to their attack and damage rolls.</p>"
+        },
+        "Effect: Elemental Weapon Systems": {
+            "name": "Effect: Elemental Weapon Systems",
+            "description": "<p>Your construct's attacks are enhanced by elemental power. Its strikes deal 1 additional fire damage. If you have a @Compendium[pf2e.feats-srd.4KkzwOu2OKYLKSXQ]{Variable Core}, you can replace the fire damage with a damage type appropriate for your Variable Core.</p>"
+        },
+        "Effect: Metaphysical Materials": {
+            "name": "Effect: Metaphysical Materials",
+            "description": "<p>You gain resistance to all damage equal to half your level while incorporeal and are immune to precision damage.</p>"
+        },
+        "Effect: Mutate": {
+            "name": "Effect: Mutate",
+            "description": "<p>Your gizmos grow and warp, oozing internal acids as they do. Your Strikes deal persistent acid damage equal to half your Intelligence modifier for 1 minute. The flat check to remove this persistent damage is a DC 17. After your Mutate ends, your mutations cease and become unusable as they coagulate, and you can't use Mutate for 1 minute.</p>"
+        },
+        "Effect: Healing Fog": {
+            "name": "Effect: Healing Fog",
+            "description": "<p>Granted by</p>\n<p>You gain a +1 circumstance bonus to your next Fortitude saving throw against a disease or poison for 1 day.</p>"
+        },
+        "Effect: Proximity Scanner": {
+            "name": "Effect: Proximity Scanner",
+            "description": "<p>You can spend a single action with the manipulate trait to make your tremorsense an imprecise sense of 60 feet for 1 minute and increase its circumstance bonus to checks to +2.</p>"
+        },
+        "Effect: Full-Metal Sheeting": {
+            "name": "Effect: Full-Metal Sheeting",
+            "description": "<p>AC Bonus +6; Dex Cap +0; Check Penalty –3; Speed Penalty –10 feet; Strength +4; Bulk 4; Group plate.</p>"
+        }
+    }
+}

@@ -33,9 +33,14 @@ function parseArgs(argv) {
     'temp-dir': '/root/fvtt14-data/Data/temp',
     'out-dir': './output/zh-CN',
     modules: DEFAULT_MODULES.join(','),
+    'no-merge': false,
   };
   for (let i = 2; i < argv.length; i++) {
     const a = argv[i];
+    if (a === '--no-merge') {
+      args['no-merge'] = true;
+      continue;
+    }
     if (a.startsWith('--')) {
       const key = a.slice(2);
       const val = argv[i + 1];
@@ -293,11 +298,13 @@ async function processModule(moduleId, args) {
     }
     const builder = pack.type === 'Item' ? buildItemPack : buildJournalPack;
     const { out, audit } = builder(pack.label, data);
-    const prior = await loadPriorTranslation(args['temp-dir'], moduleId, pack.name);
-    if (prior) {
-      const merger = pack.type === 'Item' ? mergeItemPriors : mergeJournalPriors;
-      merger(out, prior);
-      console.log(`  [merge] ${pack.name} ← ${moduleId}.${pack.name}.json`);
+    if (!args['no-merge']) {
+      const prior = await loadPriorTranslation(args['temp-dir'], moduleId, pack.name);
+      if (prior) {
+        const merger = pack.type === 'Item' ? mergeItemPriors : mergeJournalPriors;
+        merger(out, prior);
+        console.log(`  [merge] ${pack.name} ← ${moduleId}.${pack.name}.json`);
+      }
     }
     const outPath = path.join(args['out-dir'], `${moduleId}.${pack.name}.json`);
     await writeFile(outPath, JSON.stringify(out, null, 4) + '\n', 'utf8');
@@ -315,7 +322,7 @@ async function main() {
   await mkdir(args['out-dir'], { recursive: true });
   console.log(`Modules root: ${args['modules-root']}`);
   console.log(`Output:       ${args['out-dir']}`);
-  console.log(`Prior temp:   ${args['temp-dir']}`);
+  console.log(`Prior temp:   ${args['no-merge'] ? '(no-merge: priors ignored)' : args['temp-dir']}`);
   console.log(`Modules:      ${args.modules.length}`);
   let totalWritten = 0, totalSkipped = 0;
   for (const moduleId of args.modules) {

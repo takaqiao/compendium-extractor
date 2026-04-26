@@ -1,0 +1,20 @@
+{
+    "label": "Inventors+ Spells",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Technomancy Ray": {
+            "name": "Technomancy Ray",
+            "description": "<p>You fire a ray of technologically empowered magic at your opponent. Make a spell attack roll with your innovation against a target within 30 feet. On a hit, the ray deals 1d4 fire damage or twice this amount and 1 persistent fire damage on a critical success. If you are a master in Crafting, the die size of your ray increases to d6, and if you are legendary in Crafting, the die size increases to d8.</p>\n<p>If you have a Variable Core, you change the damage type from fire damage to the type you chose and replace the fire trait with that damage trait.</p>"
+        }
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "label": "Lessons",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Lesson of Brambles": {
+            "name": "Lesson of Brambles",
+            "description": "<p>You must be ready to defend yourself from any who would dare harm you. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.PB5cKSpPFeShAcJV]{Coiling Creepers} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.KsWhliKfUs3IpW3c]{Wall of Thorns}.</p>"
+        },
+        "Lesson of Destiny": {
+            "name": "Lesson of Destiny",
+            "description": "<p>This is what you were always meant to do. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.nLPIv4DdLPDDu6N7]{Unleash True Power} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.AuIiqc7jjiy1GZ75]{Manifestation}.</p>"
+        },
+        "Lesson of Legacy": {
+            "name": "Lesson of Legacy",
+            "description": "<p>You were not the first witch in servitude to your patron. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.DZtgq345ra0HZtg8]{Secret of the Forebearers} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.hghGRzOSzEl4UXdS]{Invoke Spirits}.</p>"
+        },
+        "Lesson of Mirrors": {
+            "name": "Lesson of Mirrors",
+            "description": "<p>The world on the other side of the mirror has many secrets from which you can learn from. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.RvEtKvWzlGlnCFNk]{Specular Portals} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.A7w3YQBrFNH8KYsB]{Mirror's Misfortune}.</p>"
+        },
+        "Lesson of Apocalypses": {
+            "name": "Lesson of Apocalypses",
+            "description": "<p>The end of the world will come in exactly the way foreseen by your patron. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.dtRMSLa2GJK6XPM0]{Patron's Apocalypse} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.wLIvH0AT1u7oa64N]{Cataclysm}.</p>"
+        },
+        "Lesson of Senses": {
+            "name": "Lesson of Senses",
+            "description": "<p>Trust your senses—and if you cannot, then you must adapt. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.hPimFSXw5UxmDCFN]{Sensory Deprivation} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}.</p>"
+        },
+        "Lesson of Nightmares": {
+            "name": "Lesson of Nightmares",
+            "description": "<p>The power of dreams is great, but the horrors of a nightmare are even greater. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.XPEKWkreDnAMJoul]{Eternal Slumber} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.U58aQWJ47VrI36yP]{Hallucination}.</p>"
+        },
+        "Lesson of Prophecy": {
+            "name": "Lesson of Prophecy",
+            "description": "<p>Gaze into the main futures and pluck one from the streams of time. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.zqHHwUxFcbdFvTzW]{Soothsayer's Prediction} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.EUMjrJJwSgsqNidi]{Anticipate Peril}.</p>"
+        },
+        "Lesson of Disease": {
+            "name": "Lesson of Disease",
+            "description": "<p>The smallest virus can topple the largest dragon. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.J76UyZrMV8XdyIKa]{Sudden Outbreak} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.zJQnkKEKbJqGB3iB]{Goblin Pox}.</p>"
+        },
+        "Lesson of Aging": {
+            "name": "Lesson of Aging",
+            "description": "<p>All that is ugly is beautiful, and all that is beautiful is ugly; those who fail to recognize this are naught but fools. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.5IxpPxEQWsoha7Gx]{Warped Visage} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.MNiT0dHol5fEcKlz]{Threefold Aspect}.</p>"
+        },
+        "Lesson of Studiousness": {
+            "name": "Lesson of Studiousness",
+            "description": "<p>Keen understanding of the lessons of your patron will take your far. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.tM0BhVmf8Ylz4f2G]{Brief Lesson} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.TjWHgXqPv5jywMti]{Pocket Library}.</p>"
+        },
+        "Lesson of Judgement": {
+            "name": "Lesson of Judgement",
+            "description": "<p>Your patron has granted you the role of final arbitrator, deciding who lives and who dies. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.pj7DPwmlbWWqe1Un]{Judge Soul} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.ckUOoqOM7Kg7VqxB]{Avatar}.</p>"
+        },
+        "Lesson of Sigils": {
+            "name": "Lesson of Sigils",
+            "description": "<p>Anciest runes and markings hold impossible power. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.YFusnK3S1rkhfy55]{Holding Glyph} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.DgcSiOCR1uDXGaEA]{Synchronize}.</p>"
+        },
+        "Lesson of Binding": {
+            "name": "Lesson of Binding",
+            "description": "<p>Extraplanar beings make the greatest of assistants... if you only know how to keep them by your side. You gain the @UUID[Compendium.witches-remaster.witches-remaster-focus-spells.Item.A3321ycmFdKzgoNO]{Binding Summon} hex, and your familiar learns @UUID[Compendium.pf2e.spells-srd.Item.GUeRTriJkMlMlVrk]{Bind Undead}.</p>"
+        }
+    }
+}

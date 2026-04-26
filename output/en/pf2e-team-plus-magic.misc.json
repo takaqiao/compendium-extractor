@@ -1,0 +1,953 @@
+{
+    "label": "Misc",
+    "mapping": {
+        "prerequisites": {
+            "path": "system.prerequisites.value",
+            "converter": "structured",
+            "cardinality": "many",
+            "mapping": {
+                "value": "value"
+            }
+        }
+    },
+    "folders": {
+        "Monitor Aspect": "Monitor Aspect",
+        "Fey Aspect": "Fey Aspect",
+        "Fiend Aspect": "Fiend Aspect",
+        "Dragon Aspects": "Dragon Aspects",
+        "Animal Aspect": "Animal Aspect",
+        "Construct Aspects": "Construct Aspects",
+        "Celestial Aspect": "Celestial Aspect",
+        "Plant Aspect": "Plant Aspect",
+        "Thurse Aspect": "Thurse Aspect",
+        "Elemental Aspect": "Elemental Aspect",
+        "Undead Aspect": "Undead Aspect",
+        "Aberration Aspect": "Aberration Aspect"
+    },
+    "entries": {
+        "Mindless": {
+            "name": "Mindless",
+            "description": "<p>(Battle Form only) If the aspect has the mindless trait, you still retain your mind and do not gain the mindless trait or immunity to mental, but you cannot use actions with the concentrate trait (other than Dismiss), and you cannot speak while in the aspect form.</p>"
+        },
+        "Effect: Unified Perseverance": {
+            "name": "Effect: Unified Perseverance",
+            "description": "<p>The link you and your mystic duo share means you can help each other avoid danger with almost no effort. You each gain a +2 status bonus to your saving throw against the triggering effect. You use the higher of the results between the two of you for each of your results.</p>"
+        },
+        "Intimidating Glare": {
+            "name": "Intimidating Glare",
+            "description": "<p>@Embed[Compendium.pf2e.feats-srd.Item.xQMz6eDgX75WX2ce]</p>"
+        },
+        "Spell Effect: Stretched Dynamic Gouging Claw": {
+            "name": "Spell Effect: Stretched Dynamic Gouging Claw",
+            "description": ""
+        },
+        "Punished Creatures": {
+            "name": "Punished Creatures",
+            "description": ""
+        },
+        "Spell Effect: Dynamic Fly": {
+            "name": "Spell Effect: Dynamic Fly",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.WRoPQsypEQPZuIQH]{Dynamic Fly}</p><p>You gain a fly Speed equal to your Speed or 20 feet, whichever is greater.</p><p><span style=\"font-family:Roboto, sans-serif\"><strong style=\"box-sizing:border-box;user-select:text;scrollbar-width:initial;scrollbar-color:initial;color:rgb(25, 24, 19);font-family:Roboto, sans-serif;font-size:14px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial\">Heightened (7th)</strong> The duration of the two-action version increases to 30 minutes.</span></p>"
+        },
+        "Effect: Mortisor Immunity": {
+            "name": "Effect: Mortisor Immunity",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.J1cXlcK3NXpanDMB]{Mortisor}.</em></p><p>The creature is immune to @UUID[Compendium.pf2e-team-plus-magic.items.J1cXlcK3NXpanDMB]{Mortisor's} Threaded effect for 1 minute.</p>"
+        },
+        "Friend of Misfortune": {
+            "name": "Friend of Misfortune",
+            "description": "<p><strong>Trigger</strong> A creature within 30 feet critically fails an attack roll, skill check, or saving throw</p><hr /><p>The aspect worsens the misfortune of others. Roll [[/r 1d4]] to determine the results.</p><table class=\"pf2e\"><thead><tr><th><p>d4 Result</p></th><th><p>Outcome</p></th></tr></thead><tbody><tr><td><p>1</p></td><td><p>The target is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round</p></td></tr><tr><td><p>2</p></td><td><p>The target is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 round</p></td></tr><tr><td><p>3</p></td><td><p>The target is @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round</p></td></tr><tr><td><p>4</p></td><td><p>The target is @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} by an object of the trickster’s choice for 1 round</p></td></tr></tbody></table>"
+        },
+        "Leech Environs": {
+            "name": "Leech Environs",
+            "description": "<p>The aspect leeches its surroundings. All living creatures and plants within a @Template[distance:15|type:emanation] take @Damage[(@actor.flags.pf2e.aspectRank)d8[void]]{1d8 void damage per rank} of the spell with a @Check[fortitude|basic:true|dc:@actor.flags.pf2e.aspectDC] save. Creatures that critically failed their save also halve healing effects that would restore Hit Points for [[/r 1d4]] rounds. The aspect regains Hit Points equal to twice the rank of the spell as long as at least 1 living creature or plant was present in the area. Regardless of the result, all non-creature plants in the area wither and die and creatures are temporarily immune for 1 minute.</p>"
+        },
+        "Hungry Flurry": {
+            "name": "Hungry Flurry",
+            "description": "<p>The aspect makes four primary Strikes at a –2 penalty, each against a different target. These attacks count toward the aspect’s multiple attack penalty, but the multiple attack penalty doesn't increase until after it makes all its attacks.</p>"
+        },
+        "Effect: Savior's Tranquility": {
+            "name": "Effect: Savior's Tranquility",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.c7VshoY6Cr4CeB3N]{Savior}.</em></p><p>You gain a +2 status bonus against mental effects for 1 round when you remove the dying condition from a creature.</p>"
+        },
+        "Effect: Erosior": {
+            "name": "Effect: Erosior",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.aANtNYkjWu5xtycR]{Erosior}.</em></p><p>You take a -5 to -10-foot status penalty to your Speeds.</p>"
+        },
+        "Beyond": {
+            "name": "Beyond",
+            "description": "<p>The aspect is a thing not of this world. It speaks aklo and has resistance to mental damage.</p>"
+        },
+        "Archon's Protection": {
+            "name": "Archon's Protection",
+            "description": "<p><strong>Trigger</strong> An enemy damages the aspect's ally and both are within 15 feet of the aspect</p><hr /><p>The ally gains resistance equal to twice the spell’s rank to the triggering damage.</p><p>@UUID[Compendium.pf2e-team-plus-magic.misc.iRXrDzyWrabbQSsT]{Effect: Archon's Protection}</p><hr /><p><strong>Heightened (4th)</strong> The aspect gains an additional benefit from its Celestial Gift. </p><ul><li><p><strong>Gift of Flight</strong> The aspect can Fly up to half its fly Speed towards the triggering ally when it uses Archon’s Protection. </p></li><li><p><strong>Gift of Vitality</strong> The aspect can make a melee Strike against the triggering enemy when it uses Archon’s Protection if the enemy is within range.</p></li></ul>"
+        },
+        "Construct Armor": {
+            "name": "Construct Armor",
+            "description": "<p>The aspect has Hardness equal to twice the rank of the spell. Once the construct is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its constructed armor breaks, it loses its Hardness and takes a –2 status penalty to AC and all of its saves for the duration of the spell.</p>"
+        },
+        "Fire": {
+            "name": "Fire",
+            "description": "<p>This burning hot elemental is made of flame, like a cinder rat or living magma.</p>"
+        },
+        "Sourced": {
+            "name": "Sourced",
+            "description": "<p><strong>Sourced (Summon)</strong> If you Cast the Spell with a suitable source of the listed type within 30 feet of you and in enough quantity to create the creature, you can choose to summon the creature in the space of the source or adjacent to it. The source is in use until the spell ends, after which any materials used as a source return to their normal state, though they may gain the broken or destroyed conditions from their use (subject to GM discretion). </p><p><strong>Sourced (Battle Form)</strong> If you Cast the Spell with a suitable source of the listed type within 5 feet of you and in enough quantity to the size of your form, increase the number of temporary Hit Points the spell grants by its rank. The source is in use until the spell ends, after which any materials used as a source return to their normal state, though they may gain the broken or destroyed conditions from their use (subject to GM discretion).</p>"
+        },
+        "Spell Effect: Dynamic Shield 1": {
+            "name": "Spell Effect: Dynamic Shield 1",
+            "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR]{Shield}</p><p><span class=\"action-glyph\">1</span> The circumstance bonus to AC is +1 and the shield’s Hardness is 3.</p><p><span class=\"action-glyph\">2</span> The circumstance bonus to AC is +2 and the shield’s Hardness is 7.</p><p><span class=\"action-glyph\">3</span> The circumstance bonus to AC is +4 and the shield’s Hardness is 9.</p><p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. After you use Shield Block, the spell ends.</p>"
+        },
+        "Air": {
+            "name": "Air",
+            "description": "<p>This elemental rages with whistling winds, like a zephyr hawk or a picture-in-cloud.</p>"
+        },
+        "Effect: Courage of the Azata": {
+            "name": "Effect: Courage of the Azata",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">The aspect sings and inspires all within range. All allies within 30 feet gain a +1 status bonus to attack rolls.</span></p>"
+        },
+        "Speak With Animals": {
+            "name": "Speak With Animals",
+            "description": "<p><span style=\"font-family:Roboto, sans-serif\">You can ask questions of, receive answers from, and use the Diplomacy skill with animals related to the agathion's animal type (such as felines for a silvanshee). </span></p><p><span style=\"font-family:Roboto, sans-serif\">This effect doesn't make them more friendly than normal. Cunning animals are likely to be terse and evasive, while less intelligent ones often make inane comments.</span></p>"
+        },
+        "Directive of Guidance": {
+            "name": "Directive of Guidance",
+            "description": "<p>The aspect can teach others its ways well. It gains the @UUID[Compendium.pf2e-team-plus-magic.misc.zSlBwwLCDeSQBSoi]{Enhanced Aid (Religion)} aspect ability.</p>"
+        },
+        "Know Thy Magic": {
+            "name": "Know Thy Magic",
+            "description": "<p><strong>Trigger</strong> You observe a magical effect with the traits associated with your wicket. </p><hr /><p>You @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{Recall Knowledge} on the effect using the skill of your magical tradition to attempt to identify it.</p>"
+        },
+        "Agathion": {
+            "name": "Agathion",
+            "description": "<p>This is an animal-like celestial, like a vulpinal or a procyal.</p><hr /><p><strong>Aspect of the Beast</strong> Select an animal type (such as feline for a silvanshee)</p><hr /><p><strong>Heightened (8th)</strong> The aspect gains one of the activities listed for an 4th-rank animal aspect as appropriate for its Aspect of the Beast (subject to GM discretion) and increases the damage die of its secondary attack by one step.</p>"
+        },
+        "Empowered Striker": {
+            "name": "Empowered Striker",
+            "description": "<p>Choose fire, physical, or spirit. The aspect deals 1 additional damage per weapon damage die of the chosen type on its primary Strikes or the same damage as the Strike if you chose physical.</p>"
+        },
+        "Spell Effect: Elemental Shift": {
+            "name": "Spell Effect: Elemental Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.bK4rp20XuJRWGsEv]{Elemental Shift} or @UUID[Compendium.pf2e-team-plus-magic.items.wjzn7STqTeztzg3a]{Summon Elemental Aspect}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.7uM4JwbEJVzFrkiH]</p>"
+        },
+        "Drag Under": {
+            "name": "Drag Under",
+            "description": "<p><strong>Requirements</strong> The aspect hits a creature with a Strike as its last action.</p><hr /><p>The aspect makes an @Check[type:athletics|against:ac] check with the same multiple attack penalty from the required Strike against the creature. On a success, the target is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} and the aspect then Swims up to half its swim Speed. The target remains grabbed and adjacent until its movement is completed.</p>"
+        },
+        "Wind-Up Key": {
+            "name": "Wind-Up Key",
+            "description": "<p>The aspect has a key in its back which can be wound up to increase the power of the aspect. The key can be wound with a single Interact action, which reloads its primary attack, and gives it a +10-foot status bonus to its Speed for 1 round.</p>"
+        },
+        "Trick for Every Occasion": {
+            "name": "Trick for Every Occasion",
+            "description": "<p>The aspect has the @UUID[Compendium.pf2e.feats-srd.5eNKs6738aykAhK2]{Dirty Trick} skill feat. The aspect can cast @UUID[Compendium.pf2e.spells-srd.0zU8CPejjQFnhZFI]{Figment} as an innate primal cantrip.</p>"
+        },
+        "Spell Effect: Wicket Dominion Aura": {
+            "name": "Spell Effect: Wicket Dominion Aura",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.N3OX0jvrRRAvwF8u]{Sticky Wicket}.</em></p><p>Your dominion is wherever you step. When you cast @UUID[Compendium.pf2e-team-plus-magic.misc.LHh2MWWJY4La9pDN]{Manifest Wicket Dominion}, you can choose to give the spell the aura trait, causing the emanation to remain around you for the duration. If your movement would cause a threaded magic effect to be outside the area of the spell, the threaded magic effect immediately ends.</p>"
+        },
+        "Effect: Fabricator's Precautions": {
+            "name": "Effect: Fabricator's Precautions",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.Thlikh0Rk1lFJuUM]{Fabricator}.</em></p><p>The creature takes a –2 circumstance bonus to disbelieve your illusion spells or a +2 status bonus to sight-based Perception checks while within the area.</p>"
+        },
+        "Spell Effect: Wicket Dominion": {
+            "name": "Spell Effect: Wicket Dominion",
+            "description": "<p>When you Cast a Spell from Focus Points or your spell slots with your wicket traits while within the area and the spell deals damage or restores Hit Points, you gain a status bonus to that spell’s damage or healing equal to the spell’s rank. This applies only to the initial damage or healing the spell deals when cast. An individual creature takes this damage or benefits from this healing only once per spell, even if the spell would damage or heal that creature multiple times.</p>"
+        },
+        "Windy Aura": {
+            "name": "Windy Aura",
+            "description": "<p>Winds whip around the aspect making it hard to approach. Ranged attacks against creatures within the area take a –1 circumstance penalty and the area is difficult terrain to creatures in flight.</p><hr /><p><strong>Heightened (4th)</strong> Creatures within the aspect’s Windy Aura are also @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the aura become concealed to creatures within it. The aspect is immune to the concealed condition from this ability.</p>"
+        },
+        "Aesir Shield": {
+            "name": "Aesir Shield",
+            "description": ""
+        },
+        "Spell Effect: Plant Shift": {
+            "name": "Spell Effect: Plant Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.qH18jW3EMywavprR]{Plant Shift} or @UUID[Compendium.pf2e-team-plus-magic.items.doZbTeqBN402j4Vh]{Summon Plant Aspect}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.qDuNt0YwJX8CTZ14]</p>"
+        },
+        "Quick Siphon": {
+            "name": "Quick Siphon",
+            "description": "<p><strong>Trigger</strong> A creature within 30 feet takes persistent bleed damage. </p><hr /><p>You siphon trace amounts of blood as they leave a warm body, giving you just enough to tide you over. You regain 10 Hit Points and can choose to immediately end one instance of persistent bleed damage you are suffering from. </p><hr /><p><strong>Heightened (+1)</strong> Increase the Hit Points you regain by 2.</p>"
+        },
+        "Effect: Eat Soul": {
+            "name": "Effect: Eat Soul",
+            "description": "<p>The aspect ate a creature’s soul, gaining a +1 status bonus to attack rolls and saving throws for the duration of the spell.</p>"
+        },
+        "Mystic Link": {
+            "name": "Mystic Link",
+            "description": "<p><strong>Requirements</strong> You are within 30 feet of your mystic duo.</p><hr /><p>You and your mystic duo become tethered by a mystic link. You establish a link to your mystic duo that lasts for 1 minute. You or your mystic duo can @UUID[Compendium.pf2e.actionspf2e.AjLSHZSWQ90exdLo]{Dismiss} your mystic link.</p><p>You and your mystic duo can communicate telepathically and you each gain a +1 status bonus to saves against mental effects. Your mystic duo gains a +4 status bonus to saves against your spells and treats its degree of success against your spells as one step better. If at the end of your turn, if you are more than 30 feet from your mystic duo, your mystic link immediately ends.</p><p>If your mystic link ends before 1 minute has passed, you must spend a single action to concentrate on your ally to reestablish your connection to them before you can use Mystic Link again.</p><p>@UUID[Compendium.pf2e-team-plus-magic.misc.STG8oFxUFAza45zv]{Effect: Mystic Link}</p>"
+        },
+        "Effect: Guiding Aesir": {
+            "name": "Effect: Guiding Aesir",
+            "description": "<p>You gain +1 status bonus to attack rolls.</p>"
+        },
+        "Unnerving Gaze": {
+            "name": "Unnerving Gaze",
+            "description": "<p>When a bleeding creature ends its turn within 10 feet of the aspect, it must succeed at a @Check[will|dc:@actor.flags.pf2e.aspectDC] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure).</p>"
+        },
+        "Effect: Dynamic Divine Lance Tag": {
+            "name": "Effect: Dynamic Divine Lance Tag",
+            "description": "<p>The next time within 1 minute that the creature takes spirit damage that does not already have the holy or unholy trait, that damage gains the trait corresponding to your divine lance.</p>"
+        },
+        "Aberrant Lair": {
+            "name": "Aberrant Lair",
+            "description": "<p>Aberrations seldom live in plain sight. Choose a habitat for the aspect and gain the selected abilities.</p>"
+        },
+        "Invisible Stalker": {
+            "name": "Invisible Stalker",
+            "description": "<p>The aspect can cast a 4th-rank @UUID[Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB]{Invisibility} spell on itself at will.</p>"
+        },
+        "Drain Essence": {
+            "name": "Drain Essence",
+            "description": "<p><strong>Trigger</strong> The aspect dealt damage with a Strike</p><hr /><p>The aspect drains a creature, absorbing its essence and regains Hit Points equal to half the damage of the triggering Strike.</p>"
+        },
+        "Mount's Mobility": {
+            "name": "Mount's Mobility",
+            "description": "<p>The aspect can ignore difficult terrain associated with its environment. Alternatively, your mount gains either the @UUID[Compendium.pf2e-team-plus-magic.misc.YBgCXb3TEkPv1aEE]{Climber} or @UUID[Compendium.pf2e-team-plus-magic.misc.nmBfrxQS21y8AfFF]{Swimmer} aspect ability.</p>"
+        },
+        "Fear the Fabled": {
+            "name": "Fear the Fabled",
+            "description": "<p><strong>Requirements</strong> There is a frightened creature within reach of the aspect</p><hr /><p>The aspect Strikes the target creature. If the Strike is successful, the target does not reduce their frightened condition at the end of their next turn unless they can no longer see the aspect.</p>"
+        },
+        "Woodland Network": {
+            "name": "Woodland Network",
+            "description": "<p><strong>Requirements</strong> The aspect is in a forest or near trees</p><hr /><p>The aspect taps into the mycelium between tree roots. It attempts to @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{Recall Knowledge} using Forest Lore on an event or subject that trees within 500 feet of it have been present for or might know (subject to GM discretion)</p>"
+        },
+        "Hinder": {
+            "name": "Hinder",
+            "description": "<p><strong>Trigger</strong> An enemy is about to use an action that requires a skill check or attack roll</p><p><strong>Requirements</strong> You have prepared to hinder (see below)</p><hr /><p>The aspect attempts to hinder an enemy. To use this reaction, it must first prepare to hinder, usually by using an action during your turn. </p><p>Attempt a @Check[legal-lore|against:will] check against the triggering enemies Will DC. If its check is successful, the target takes a –1 circumstance penalty to the triggering check or a –2 circumstance penalty if it was a critical success. Regardless of the result the enemy is then temporarily immune for 1 minute.</p>"
+        },
+        "Earth": {
+            "name": "Earth",
+            "description": "<p>This elemental is forged from earth, like a gluttonous geode or a stone mauler.This elemental is forged from earth, like a gluttonous geode or a stone mauler.</p>"
+        },
+        "Gruesome Display": {
+            "name": "Gruesome Display",
+            "description": "<p>When the aspect is critically hit by a Strike, enemies within a @Template[distance:30|type:emanation] must attempt a @Check[fortitude|dc:@actor.flags.pf2e.aspectDC] save or become @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). Regardless of the result, the enemy is then immune for 1 minute.</p>"
+        },
+        "Essence Conduit": {
+            "name": "Essence Conduit",
+            "description": "<p>You transform yourself into a conduit for your magical essences. Until the end of your turn, the next time you Cast a Spell that takes 1 or 2 actions to cast, you increase your essence by 1 even if the spell would not normally increase your essence (such as a focus spell). If the spell was a 1-action essence spell, you don’t experience an essence leak.</p><p><strong>Special</strong> If you’re a summoner and you use Essence Conduit as part of @UUID[Compendium.pf2e.actionspf2e.2KV87ponbWXgGIhZ]{Act Together}, you can instead increase your essence by 1 if your eidolon uses the actions from Act Together to cast a 1-action or 2-action spell or use a 2-action eidolon ability granted by their type or an evolution feat.</p>"
+        },
+        "Spell Effect: Celestial Shift": {
+            "name": "Spell Effect: Celestial Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.96miaBWxrw1nROmn]{Celestial Shift} or @UUID[Compendium.pf2e-team-plus-magic.items.CICOkQnnGwZpUX7O]{Summon Celestial Aspect}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.ABdvu7T0B57zoJRm]</p>"
+        },
+        "Ephemeral Effect: Holy Divine Lance Tag": {
+            "name": "Ephemeral Effect: Holy Divine Lance Tag",
+            "description": "<p>Ephemeral Part of @UUID[Compendium.pf2e-team-plus-magic.misc.DnVO9aTKJOZFnNrg]{Effect: Dynamic Divine Lance Tag}</p>"
+        },
+        "Divebomb": {
+            "name": "Divebomb",
+            "description": "<p>The aspect flies up to twice its fly Speed, and makes a Strike against a creature at any point during its flight.</p>"
+        },
+        "Magnetism Aura": {
+            "name": "Magnetism Aura",
+            "description": "<p>Metals are interfered with within the aspect’s aura. Strikes made with metal weapons have a –1 circumstance penalty within the area.</p>"
+        },
+        "Shadow Injection": {
+            "name": "Shadow Injection",
+            "description": "<p>You inject a spell using the essence from the shadows around you. If you Cast a Spell modified by a umbral shape before the beginning of your next turn, you do not lose your shadow but instead increase the light level in the area by one step, from darkness to dim-light, or from dim light to bright light for 1 round and you reduce the number of rounds you lose your shadow by 1.</p>"
+        },
+        "Botanical Wonder": {
+            "name": "Botanical Wonder",
+            "description": "<p>The aspect gains the mindless trait, it is immune to auditory, mental, and visual effects and it cannot speak or use actions with the concentrate trait. It automatically fails hearing- and sight-based Perception checks, has a land Speed of 15 feet, and tremorsense as a precise sense with a range of 15 feet. It gains the @UUID[Compendium.pf2e-team-plus-magic.misc.sxsGtyluYMtzmiad]{Undergrowth Empowerment} aura ability.</p>"
+        },
+        "Ephemeral Effect: In Wicket Dominion": {
+            "name": "Ephemeral Effect: In Wicket Dominion",
+            "description": "<p><em>Grants the</em> <em>target-in-dominion roll option, enabling automation for when a wicket's effects come online.</em></p>"
+        },
+        "Extra Limbs": {
+            "name": "Extra Limbs",
+            "description": "<p>The aspect gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.W7SbTykXrNwxDzJc]{Reactive Strike} as a reaction.</p><p><strong>Heightened (8th) </strong>The aspect can use Reactive Strike once per turn as a free action.</p>"
+        },
+        "Gift of Flight": {
+            "name": "Gift of Flight",
+            "description": "<p>The aspect gains the @UUID[Compendium.pf2e-team-plus-magic.misc.rU0OMGjiOo6xc7BR]{Flier} aspect ability.</p><hr /><p><strong>Heightened (4th)</strong> Depending on your sub aspect, you gain additional benefits to its Celestial Gift.</p><ul><li><p><strong>Agathion</strong></p><ul><li><p><strong>Gift of Flight</strong> The aspect gains either the Climber or Swimmer aspect ability depending on its choice of Aspect of the Beast (subject to GM discretion).</p></li></ul></li><li><p><strong>Angel</strong></p><ul><li><p><strong>Gift of Flight</strong> The aspect increases its Speed by 15 feet.</p></li></ul></li><li><p><strong>Archon</strong></p><ul><li><p><strong>Gift of Flight</strong> The aspect can Fly up to half its fly Speed towards the triggering ally when it uses Archon’s Protection.</p></li></ul></li><li><p><strong>Azata</strong></p><ul><li><p><strong>Gift of Flight</strong> The aspect increases its Speed by 15 feet.</p></li></ul></li></ul>"
+        },
+        "Perfect Averages": {
+            "name": "Perfect Averages",
+            "description": "<p>The aspect makes a Strike. It does not roll damage and instead automatically deals the average damage. For example, rather than rolling 2d8 for damage, it takes a value of 9 instead of the roll and adds any flat damage as normal.</p>"
+        },
+        "Effect: Protean Anatomy": {
+            "name": "Effect: Protean Anatomy",
+            "description": "<p>Immediately after the aspect takes acid, electricity, or sonic damage, the aspect gains resistance to that damage type. This lasts until the next time the aspect takes damage of one of the other types, triggering a new resistance.</p>"
+        },
+        "Spell Effect: Targeted Ward": {
+            "name": "Spell Effect: Targeted Ward",
+            "description": "<p>You gain a status bonus to your choice of AC, Fortitude saves, Reflex saves, or Will saves against that opponent based on the results of the opponent’s Will save. The number of actions you spend determines when the bonus applies.</p><p style=\"padding-left:1rem\"><strong>Critical Success</strong> You do not gain a bonus.</p><p style=\"padding-left:1rem\"><strong>Success</strong> The status bonus is +1.</p><p style=\"padding-left:1rem\"><strong>Failure</strong> The status bonus is +2.</p><p style=\"padding-left:1rem\"><strong>Critical Failure</strong> The status bonus is +3.</p><p><span class=\"action-glyph\">1</span> You focus on a specific action the opponent has taken in the past, such as a breath weapon or a Strike. The bonus only applies when the opponent uses that same action against you.</p><p><span class=\"action-glyph\">2</span> The bonus applies every time that opponent targets your chosen defense.</p><p><span class=\"action-glyph\">3</span> As the two-action version. Additionally, when the opponent uses an offensive ability against you that targets a different defense (such as targeting your AC after you have chosen to gain a status bonus to Fortitude saves), you can change your defense to match the one appropriate for the incoming attack as a free action. Once you have changed the defense type once, you can’t change it again during the same casting of targeted ward.</p>"
+        },
+        "Spell Effect: Vitality Lash Temp HP": {
+            "name": "Spell Effect: Vitality Lash Temp HP",
+            "description": "<p><em>From </em><span class=\"action-glyph\"><em>3</em></span><em> @UUID[Compendium.pf2e-team-plus-magic.items.tTrlLcR6aVPDjWZe]{Dynamic Vitality Lash}.</em></p><hr /><p>The lingering vital energy grants you [[3 * @item.level]] temporary Hit Points that last until the end of your next turn.</p>"
+        },
+        "Spell Effect: Dynamic Flight": {
+            "name": "Spell Effect: Dynamic Flight",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.WRoPQsypEQPZuIQH]{Dynamic Fly}</p><p>You gain a fly Speed equal to your Speed or 20 feet, whichever is greater.</p>"
+        },
+        "Scouter": {
+            "name": "Scouter",
+            "description": "<p>The maximum size of an aerial aspect is one step smaller than normal. When the creature uses Seek, it gains a +2 circumstance bonus to its Perception check if it was made from above.</p>"
+        },
+        "Sanguine Siphon": {
+            "name": "Sanguine Siphon",
+            "description": "<p>You draw loose blood through the air to reinvigorate yourself. One creature within 30 feet that would take persistent bleed damage at the end of its turn immediately takes the persistent bleed damage and can then attempt the normal flat check to remove the persistent bleed damage. If the creature took damage, you regain 1 Hit Point per level you possess up to a maximum amount equal to the persistent bleed damage dealt to the creature. You can target yourself with this effect and if you do you automatically succeed at the flat check to remove the persistent bleed damage.</p><p><strong>Max Level Healing</strong> @Damage[@actor.level[healing]]</p>"
+        },
+        "Effect: Alaznist's Embrace": {
+            "name": "Effect: Alaznist's Embrace",
+            "description": "<p>The affected enemy has weakness 10 to acid, cold, electricity, fire, or sonic damage until the end of your next turn.</p>"
+        },
+        "Warpwave": {
+            "name": "Warpwave",
+            "description": "<p>When the aspect critically Strikes a creature, it triggers a warpwave, and the target must make a @Check[fortitude|dc:@actor.flags.pf2e.aspectDC] save, suffering the listed effect on a failed save. Roll [[/r 1d8]] and consult the table below for the specific effect on that creature.</p><p>Unless indicated otherwise, a warpwave effect lasts for [[/r 1d4]] rounds, and a new warpwave effect negates any previous warpwave effect already affecting a creature.</p><p></p><table class=\"pf2e\"><thead><tr><th><p>d8</p></th><th><p>Warpwave Effect</p></th></tr></thead><tbody><tr><td><p>1</p></td><td><p>@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} (@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 3} on a critical failure)</p></td></tr><tr><td><p>2</p></td><td><p>@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} and gains [[/r 4d6]] temporary Hit Points</p></td></tr><tr><td><p>3</p></td><td><p>@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} (@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} on critical failure)</p></td></tr><tr><td><p>4</p></td><td><p>@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} on a critical failure)</p></td></tr><tr><td><p>5</p></td><td><p>@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} by filaments of energy</p></td></tr><tr><td><p>6</p></td><td><p>@UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} (Stride, Strike, or Step only)</p></td></tr><tr><td><p>7</p></td><td><p>@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}</p></td></tr><tr><td><p>8</p></td><td><p>@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure)</p></td></tr></tbody></table>"
+        },
+        "Underground": {
+            "name": "Underground",
+            "description": "<p>The aspect hails from underground caves, potentially as deep as the Darklands. It speaks sakvroth and gains the @UUID[Compendium.pf2e-team-plus-magic.misc.YBgCXb3TEkPv1aEE]{Climber} aspect ability.</p>"
+        },
+        "Effect: Song of the Angels": {
+            "name": "Effect: Song of the Angels",
+            "description": "<p>The aspect grants all allies within 15 feet a +1 status bonus to saves against auditory and fear effects.</p><hr /><p><strong>Heightened (8th)</strong> The aspect’s aura grants all allies a +1 status bonus to AC and saves and doubles the status bonus against auditory and fear effects.</p>"
+        },
+        "Manifest Wicket Dominion": {
+            "name": "Manifest Wicket Dominion",
+            "description": "<p>You manifest the powers of your wicket, granting you a dominion that exudes the powers of your wicket when you cast spells. You create a stationary area of your wicket’s dominion. When you Cast a Spell from Focus Points or your spell slots with your wicket traits while within the area and the spell deals damage or restores Hit Points, you gain a status bonus to that spell’s damage or healing equal to the spell’s rank. This applies only to the initial damage or healing the spell deals when cast. An individual creature takes this damage or benefits from this healing only once per spell, even if the spell would damage or heal that creature multiple times.</p><p>@UUID[Compendium.pf2e-team-plus-magic.misc.C358lXcRk14Mm1LS]{Spell Effect: Wicket Dominion}</p><hr /><p><strong>Special</strong> This activity gains the trait of your magical tradition and your wicket traits.</p>"
+        },
+        "Terminus of Terror": {
+            "name": "Terminus of Terror",
+            "description": "<p><strong>Prerequisites</strong> NPC spellcaster</p><p><strong>Trigger</strong> The caster completes an essence cycle.</p><hr /><p>The caster’s magic pulls on the strings of souls, dragging them to their ultimate demise.</p><p><strong>Cycle 1+</strong> The caster chooses 1 creature within 60 feet, and the target must attempt a @Check[type:will|dc:resolve(@actor.attributes.spellDC.value)] save.</p><div style=\"padding-left:1.5rem\"><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p><p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p><p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 4} and @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{Doomed 1}.</p></div>"
+        },
+        "Mend the Spirit": {
+            "name": "Mend the Spirit",
+            "description": "<p><strong>Trigger</strong> The aspect is hit by a Strike</p><hr /><p>The aspect either alters fate or alters into a spirit form to avoid the Strike. The aspect gains physical resistance against the triggering Strike equal to twice the rank of the spell.</p>"
+        },
+        "Spell Effect: Undead Shift": {
+            "name": "Spell Effect: Undead Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.bt0hfAne73ZvZ096]{Undead Shift} or @UUID[Compendium.pf2e-team-plus-magic.items.hU9cFWQltvJQx3CR]{Summon Undead Aspect}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.XvhS51o90MK6TqiD]</p>"
+        },
+        "Breath Weapon": {
+            "name": "Breath Weapon",
+            "description": "<p>The dragon can unleash a blast of draconic breath, dealing @Damage[(@actor.flags.pf2e.aspectRank)d6[@actor.flags.pf2e.aspectResistance]]{1d6 damage per spell rank} to all creatures within a @Template[distance:15|type:cone] or a @Template[distance:30|type:line] with @Check[reflex|dc:@actor.flags.pf2e.aspectDC|basic:true] save. The damage type is determined by your choice of draconic damage.</p><hr /><p><strong>Heightened (4th)</strong> The dragon’s breath weapon damage doubles and the area increases to a @Template[distance:30|type:cone] or a @Template[distance:60|type:line], depending on your choice of area.</p>"
+        },
+        "Effect: Sin Mark": {
+            "name": "Effect: Sin Mark",
+            "description": "<p>The target is marked with sin and takes @Damage[@origin.actor.flags.pf2e.aspectRank[mental]] damage equal to the rank of the spell at the end of each turn the mark is present. A creature can spend an Interact action to remove the mark.</p><p>Creatures with the holy trait are immune to this effect. After a creature has removed the mark, it is temporarily immune for 1 hour.</p>"
+        },
+        "Spell Effect: Fiend Shift": {
+            "name": "Spell Effect: Fiend Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.3grs18Pz56xe4krE]{Fiend Shift} or @UUID[Compendium.pf2e-team-plus-magic.items.DabI586blA4U4NvI]{Summon Fiend Aspect}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.zTdtg6CPxmqwus1D]</p>"
+        },
+        "Pose a Riddle": {
+            "name": "Pose a Riddle",
+            "description": "<p>The aspect recites a riddle and compels a creature within 30 feet to make a @Check[type:will|dc:@actor.flags.pf2e.aspectDC] save or answer. Creatures that fail their save are @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (or @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 3} on a critical failure) until they successfully @UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{Recall Knowledge} using any skill against the same DC as this effect or 1 minute has passed, whichever comes first.</p>"
+        },
+        "Fundamental Sphere": {
+            "name": "Fundamental Sphere",
+            "description": "<p>The aspect creates a sphere with varying effects depending on its choice for Monitor’s Directive. The sphere appears within 30 feet of the aeon in a @Template[distance:5|type:burst] and lasts for 1 minute. The aspect can spend a single action with the concentrate trait to move the sphere to another location within 30 feet of it. Creatures in the area at the beginning of their turn take the listed effect for the aeon’s directive.</p>"
+        },
+        "Mounted Combatant": {
+            "name": "Mounted Combatant",
+            "description": "<p><strong>Mounted Combatant (Battle Form)</strong> The maximum size of the aspect is one step larger than normal but it reduces its reach by 5 feet. When another PC rides you as a mount, your expert coordination allows them to gain three actions at the start of their turn, rather than the two they normally would for riding another PC (see Riding PCs). You still gain only two actions at the start of your turn, instead of three, as you spend one action keeping them balanced on your back and ensuring they're firmly mounted. </p><p><strong>Mounted Combatant (Summon)</strong> The maximum size of the aspect is one step larger than normal but it reduces its reach by 5 feet. In addition, when you Cast the Spell, you can target your space instead of adjacent to you and Mount the creature as part of the casting.</p>"
+        },
+        "Spell Effect: Dynamic Shield 3": {
+            "name": "Spell Effect: Dynamic Shield 3",
+            "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR]{Shield}</p><p><span class=\"action-glyph\">1</span> The circumstance bonus to AC is +1 and the shield’s Hardness is 3.</p><p><span class=\"action-glyph\">2</span> The circumstance bonus to AC is +2 and the shield’s Hardness is 7.</p><p><span class=\"action-glyph\">3</span> The circumstance bonus to AC is +4 and the shield’s Hardness is 9.</p><p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. After you use Shield Block, the spell ends.</p>"
+        },
+        "Nature Spirit": {
+            "name": "Nature Spirit",
+            "description": "<p>The aspect has a spirit and soul. The aspect speaks fey, has a land Speed of 25 feet, and adds Diplomacy and Nature to its list of skills. It gains @UUID[Compendium.pf2e-team-plus-magic.misc.zSlBwwLCDeSQBSoi]{Enhanced Aid} with your choice of Diplomacy or Nature. It can ask questions of, receive answers from, and use the Diplomacy skill with plants.</p>"
+        },
+        "Battering Elements": {
+            "name": "Battering Elements",
+            "description": "<p>The aspect deals 1d6 damage per spell rank to all creatures within 15 feet with a @Check[reflex|dc:@actor.flags.pf2e.aspectDC|basic:true].</p><p>The precipitation has the following effect depending on your choice for Water Aura and gains either the water trait or cold trait.</p><p><strong>Churning Aura</strong> (water) The damage is @Damage[(@actor.flags.pf2e.aspectRank)d6[bludgeoning]|traits:water] and creatures that critically fail their save are pushed 10 feet away from the water elemental.</p><p><strong>Freezing Aura</strong> (cold) The damage is @Damage[(@actor.flags.pf2e.aspectRank)d6[cold]|traits:cold] and creatures that critically fail their save are @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round or until they Interact to remove the immobilized condition.</p>"
+        },
+        "Old-Mage's Echo": {
+            "name": "Old-Mage's Echo",
+            "description": "<p>You surround the target with a field of disruptive magical energy that siphons away their power and returns it to them as waves of pure pain. The target must attempt a Will save.</p><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The next time the target Casts a Spell during the duration of this effect, they take mental damage equal to twice that spell’s rank.</p><p><strong>Failure</strong> For the duration of this spell, whenever the target attempts to Cast a Spell, they take mental damage equal to twice that spell’s rank.</p><p><strong>Critical Failure</strong> As failure, except the target is also @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} until the beginning of their next turn whenever the target attempts to Cast a Spell and the flat check from the deafened condition applies to the spell being cast unless it has the subtle trait.</p>"
+        },
+        "Coalesce Form": {
+            "name": "Coalesce Form",
+            "description": "<p>You assume the form for your daily anatomical configuration. You gain the effects of the spell you chose during your daily preparations for the same duration as the original spell. The spell’s effects are heightened to the rank of coalesce form.</p>"
+        },
+        "Spell Effect: Creeping Cold": {
+            "name": "Spell Effect: Creeping Cold",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.Item.NZmPY9p96i11JA9e]{Creeping Cold}.</em></p><p><strong>Success</strong> The target takes half persistent damage and a –1 status penalty to their Reflex saves until the start of their next turn.</p><p><strong>Failure</strong> The target takes the full persistent damage and a –1 status penalty to their Reflex saves as long as they are taking this persistent damage.</p><p><strong>Critical Failure</strong> As failure, but the status penalty is –2.</p>"
+        },
+        "Terminus of Ultima": {
+            "name": "Terminus of Ultima",
+            "description": "<p><strong>Trigger</strong> You complete an essence cycle at 9 essence.</p><p><strong>Requirements</strong> You have previously completed another essence cycle this encounter.</p><hr /><p>The incredible power flowing through you from multiple essence cycles allows you to cast your ultimate spell!</p><p><strong>Cycle 1</strong> Instead of returning your essence to 0 as normal for an essence cycle, your essence increases from 9 to 10. This means that starting the next turn, you can cast a 10th-rank spell. When you do, your essence is reduced to 0, but you don’t complete an additional essence cycle.</p>"
+        },
+        "Effect: Freedom of the Azata": {
+            "name": "Effect: Freedom of the Azata",
+            "description": "<p>The aspect grants all allies within 15 feet a +1 status bonus to Escape checks and to saves against effects that would give it the grabbed, immobilized, or restrained conditions.</p>"
+        },
+        "Punish Instigators": {
+            "name": "Punish Instigators",
+            "description": "<p><strong>Trigger</strong> A creature Strikes an ally adjacent to the aspect with standard cover</p><hr /><p>The aspect Strikes the creature. If the aspect’s Strike is a critical hit, the creature is shoved 10 feet away from the construct, potentially disrupting the Strike.</p>"
+        },
+        "Roar": {
+            "name": "Roar",
+            "description": "<p>The aspect lets out a deafening roar, frightening those nearby. It attempts to [[/act demoralize]] all creatures within 30 feet, and it doesn’t take a penalty for not speaking the same language as the target.</p>"
+        },
+        "Sickening Fear": {
+            "name": "Sickening Fear",
+            "description": "<p>The aspect targets a frightened creature within 30 feet. The creature becomes @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}. The target is then temporarily immune for 1 minute.</p>"
+        },
+        "Elemental Gift": {
+            "name": "Elemental Gift",
+            "description": "<p>Choose the air, cold, earth, fire, metal, water, or wood trait. The aspect gains that elemental trait. The aspect Strikes deal 1 additional damage per weapon damage dice. The damage type is the same as the selected elemental trait, or the same as the Strike if the trait does not have a specific damage type.</p>"
+        },
+        "Template Aspect Shift": {
+            "name": "Template Aspect Shift",
+            "description": "<p><em>Granted by ???.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[]</p>"
+        },
+        "Spell Effect: Thurse Shift": {
+            "name": "Spell Effect: Thurse Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.dhkn1t8nbHrlqQ99]{Thurse Shift} or @UUID[Compendium.pf2e-team-plus-magic.items.6uh4scwO9VIrtnQm]{Summon Thurse Aspect}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.YnKV7I548K8EH9JW]</p>"
+        },
+        "Effect: Mystic Link": {
+            "name": "Effect: Mystic Link",
+            "description": "<p>You and your mystic duo become tethered by a mystic link. You establish a link to your mystic duo that lasts for 1 minute. You or your mystic duo can @UUID[Compendium.pf2e.actionspf2e.AjLSHZSWQ90exdLo]{Dismiss} your mystic link.</p><p>You and your mystic duo can communicate telepathically and you each gain a +1 status bonus to saves against mental effects. Your mystic duo gains a +4 status bonus to saves against your spells and treats its degree of success against your spells as one step better. If at the end of your turn, if you are more than 30 feet from your mystic duo, your mystic link immediately ends.</p><p>If your mystic link ends before 1 minute has passed, you must spend a single action to concentrate on your ally to reestablish your connection to them before you can use Mystic Link again.</p>"
+        },
+        "Protean Anatomy": {
+            "name": "Protean Anatomy",
+            "description": "<p>Immediately after the aspect takes acid, electricity, or sonic damage, the aspect gains resistance to that damage type. This lasts until the next time the aspect takes damage of one of the other types, triggering a new resistance.</p><p>@UUID[Compendium.pf2e-team-plus-magic.misc.Item.IQl6ks8tQ7EmCYUY]</p>"
+        },
+        "Spell Effect: Ooze Shift": {
+            "name": "Spell Effect: Ooze Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.5eSjwMuWowftlcwz]{Ooze Shift} or @UUID[Compendium.pf2e-team-plus-magic.items.3AwQzAMzlMelYB8Z]{Summon Ooze Aspect}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.HqRDK6jf5vAVwt2l]</p>"
+        },
+        "Spell Effect: Animal Shift": {
+            "name": "Spell Effect: Animal Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.lV8etIlOczlCbJ46]{Animal Shift} or @UUID[Compendium.pf2e-team-plus-magic.items.3DSNbxe36dMAwXpC]{Summon Animal Aspect}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.3K8036kor5oCkGQ5]{Animal Aspects}</p>"
+        },
+        "Freezing Aura": {
+            "name": "Freezing Aura",
+            "description": "<p>Water roils around the aspect. The aspect’s Strikes deal bludgeoning damage. All non-magical fires in the area are extinguished and creatures with a swim Speed treat water in the area as if it were difficult terrain, or greater difficult terrain if the creature does not have a swim Speed. The aspect gains the Swimmer aspect ability. The aspect has a resistance to fire and a weakness to electricity and is sourced by water.</p>"
+        },
+        "Spell Effect: Fey Shift": {
+            "name": "Spell Effect: Fey Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.R7ZH1KTuVqFtxjNG]{Fey Shift} or @UUID[Compendium.pf2e-team-plus-magic.items.PNGQnKyWQ9ydD9P8]{Summon Fey Aspect}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.uhw3SFYeTt13E6K2]</p>"
+        },
+        "Envisioning": {
+            "name": "Envisioning",
+            "description": "<p>The aeon aspect can communicate mentally with any creatures in the aura using wordless psychic projections. They don't need to share a language, though the aeon's meaning to non-aeons can be vague and is often mysterious.</p>"
+        },
+        "Draconic Frenzy": {
+            "name": "Draconic Frenzy",
+            "description": "<p>The aspect makes two primary Strikes and one secondary Strike in any order.</p>"
+        },
+        "Anchored Incorporeality (You)": {
+            "name": "Anchored Incorporeality (You)",
+            "description": "<p>A creature with anchored incorporeality has the incorporeal trait, meaning it can move through physical creatures and such creatures can move through it. It can't attempt Strength-based checks (such as Grapple) against corporeal creatures and corporeal creatures can't attempt such checks against it. Though incorporeal, a creature with anchored incorporeality can travel no more than 60 feet from its anchor and must maintain line of effect to the anchor. This typically prevents it from moving through walls. Unlike many other incorporeal creatures, a creature with anchored incorporeality doesn't have resistance to all damage or immunity to precision damage.</p>"
+        },
+        "Feed on Fear": {
+            "name": "Feed on Fear",
+            "description": "<p>While a frightened creature is within its Cognitohazard aura, the aspect gains Fast Healing equal to the rank of the spell.</p>"
+        },
+        "Effect: Thirsty Blade": {
+            "name": "Effect: Thirsty Blade",
+            "description": "<p>The required weapon deals bleed damage equal to its number of weapon damage dice, and on a critical hit against a creature not immune to bleed damage, you gain sanguimancy Hit Points equal to the number of weapon damage dice of the required weapon. These benefits last until the end of your next turn.</p>"
+        },
+        "Devastator of the Spirit": {
+            "name": "Devastator of the Spirit",
+            "description": "<p>The aspect’s Strikes affect incorporeal creatures with the effects of a ghost touch property rune.</p>"
+        },
+        "Heat Aura": {
+            "name": "Heat Aura",
+            "description": "<p>The aspect gives off intense heat. It sheds bright light in the area, and dim light 15 feet beyond that. Creatures that end their turn within the bright light take fire damage equal to twice the rank of the spell (@Damage[(@actor.flags.pf2e.aspectRank * 2)[fire]]) with a @Check[fortitude|dc:@actor.flags.pf2e.aspectDC|basic:true] save. The aspect can spend a single action with the concentrate trait to suppress or resume the damage from this aura. The aspect is immune to its own heat aura.</p><hr /><p><strong>Heightened (4th)</strong> Creatures that fail their save against the aspects Heat Aura take persistent fire damage equal to the rank of the spell (@Damage[(@actor.flags.pf2e.aspectRank)[fire, persistent]]) or twice the rank of the spell (@Damage[(@actor.flags.pf2e.aspectRank * 2)[persistent,fire]]) if they critically fail their save. Flammable objects in the area can also catch fire (subject to GM discretion).</p>"
+        },
+        "Effect: Eldritch Energy": {
+            "name": "Effect: Eldritch Energy",
+            "description": "<p>Until the start of your next turn, you deal additional damage with their unarmed attacks and wielded weapons equal to the rank of the required spell or half the rank of the required spell if the spell was a cantrip. The additional damage is the same type as the required spell.</p><hr /><p><strong>Foundry Note </strong>Level of this effect should match the level of the spell or cantrip used.</p>"
+        },
+        "Spore Cloud": {
+            "name": "Spore Cloud",
+            "description": "<p>The aspect emits a cloud of spores, making it hard to see around you. It emits a cloud of spores in a @Template[distance:15|type:emanation]. All creatures within the spore cloud become @UUID[Compendium.pf2e.kingmaker-features.tWS8aMCyeGKcnFh1]{Concealed}, and all creatures outside the spore cloud become concealed to creatures within it. The spore clouds last until the spell ends or they are dispersed by a strong wind.</p><hr /><p><strong>Heightened (4th)</strong> The aspect’s spore cloud causes hallucinations. The fungus can emit a noxious gas within its Spore Cloud, and creatures in the area must attempt a @Check[fortitude|dc:@actor.flags.pf2e.aspectDC] save. Creatures that fail their save are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Off-Guard} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (or @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} on a critical failure) for [[/r 1d4]] rounds. Regardless of the result, the creature is then temporarily immune for 1 minute.</p>"
+        },
+        "Terminus of Dismissal": {
+            "name": "Terminus of Dismissal",
+            "description": "<p><strong>Prerequisites</strong> NPC spellcaster</p><p><strong>Trigger</strong> The caster completes an essence cycle.</p><hr /><p>The caster’s magic unravels the magic of others, rendering it inert and useless.</p><p><strong>Cycle 1+ </strong>The caster chooses a magical effect affecting a creature or area within 60 feet of it and immediately attempts to counteract the effect using its spell attack modifier. The caster can target two magical effects if the caster can cast 4th rank spells, or three magical effects if the caster can cast 8th rank spells.</p>"
+        },
+        "Psychopomp's Dirge": {
+            "name": "Psychopomp's Dirge",
+            "description": "<p>The aspect exudes a melody which garners the attention of the dead. Each undead creature within a @Template[distance:30|type:emanation] must attempt a @Check[will|dc:@actor.flags.pf2e.aspectDC] save or be @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} with the aspect. The effect lasts until the end of the aspect's next turn, but it can Sustain the effect by continuing the music. Despite being a mental effect, this ability affects mindless undead. Regardless of the result, the creature is then temporarily immune for 1 day.</p>"
+        },
+        "Dream Eater": {
+            "name": "Dream Eater",
+            "description": "<p>The aspect eats the dreams of an unconscious creature within 30 feet, causing the target to take @Damage[(@actor.flags.pf2e.aspectRank)d8[mental]] damage per rank of the spell with a @Check[type:will|basic:true|dc:resolve(@actor.flags.pf2e.aspectDC)] save and damage from this effect does not end the unconscious condition. The aspect gains temporary Hit Points equal to the rank of the spell.</p>"
+        },
+        "Spell Effect: Untamed Aspect Shift": {
+            "name": "Spell Effect: Untamed Aspect Shift",
+            "description": "<p>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.rgKYmYLZVA7KeMxL]{Untamed Shift}</p><p>You can polymorph into any form listed in <em>pest shift</em>, which lasts 10 minutes. All other <em>untamed shift </em>shapes last 1 minute. You can add more shapes to your <em>untamed shift </em>list with druid feats; your feat might grant you some or all of the shapes from a given polymorph spell.</p><p>When you transform into a shape granted by a spell, you gain all the effects of the shape you chose from a version of the spell heightened to <em>untamed shift</em>'s rank. <em>Untamed shift </em>allows you to use your own shapeshifting training more easily than most polymorph spells. When you choose to use your own attack modifier while polymorphed instead of the form's default attack modifier, you gain a +2 status bonus to your attack rolls.</p><hr /><p><strong>Heightened (2nd)</strong> You can transform into shapes listed in <em>animal shift</em>.</p>"
+        },
+        "Sin Strike": {
+            "name": "Sin Strike",
+            "description": "<p>The aspect makes a Strike against an enemy. If the Strike is successful, the target is marked with sin and takes mental damage equal to the rank of the spell at the end of each turn the mark is present. A creature can spend an Interact action to remove the mark. Creatures with the holy trait are immune to this effect. After a creature has removed the mark, it is temporarily immune for 1 hour.</p><p>@UUID[Compendium.pf2e-team-plus-magic.misc.NrRhEensRZeH4GqK]{Effect: Sin Mark}</p>"
+        },
+        "Secondary": {
+            "name": "Secondary",
+            "description": ""
+        },
+        "Terminus of Summoning": {
+            "name": "Terminus of Summoning",
+            "description": "<p><strong>Trigger</strong> You complete an essence cycle</p><p><strong>Requirements</strong> You have at least one creature summoned via an essence spell; Effect You tie one of your summons to your essence.</p><hr /><p><strong>Cycle 1</strong> Choose one creature you summoned via an essence summon spell with a sustained duration. When you Cast a Spell that increases your essence, you can Sustain that creature’s summoning as a free action triggered on casting the spell.</p>"
+        },
+        "Spellcasting Dragon": {
+            "name": "Spellcasting Dragon",
+            "description": "<p>The aspect can cast @UUID[Compendium.pf2e.spells-srd.izcxFQFwf3woCnFs]{Guidance} as an innate cantrip of your tradition.</p>"
+        },
+        "Uncanny Stalker": {
+            "name": "Uncanny Stalker",
+            "description": "<p>The aspect gains either bloodscent as a precise sense with a range of 60 feet or scent as an imprecise sense with a range of 30 feet.</p>"
+        },
+        "Trample": {
+            "name": "Trample",
+            "description": "<p>The creature Strides up to double its Speed and can move through the spaces of creatures a size smaller than it, Trampling each enemy whose space it enters. The creature can attempt to Trample the same target only once in a single use of Trample. Trampled foes must make a @Check[type:reflex|basic:true|dc:resolve(@actor.flags.pf2e.aspectDC)] or take damage equal to the creature’s primary Strike.</p>"
+        },
+        "Capture Soul": {
+            "name": "Capture Soul",
+            "description": "<p>The aspect attempts to capture the soul of a living creature or an undead creature. The target must attempt a @Check[will|dc:@actor.flags.pf2e.aspectDC] save but creatures with more than 40 Hit Points treat their result on this save as one better than normal. If the aspect targets a living creature, this activity gains the death trait. Regardless of the result, the creature is then temporarily immune for 1 minute. </p><p><strong>Success</strong> The creature is unaffected. </p><p><strong>Failure</strong> If the creature is living, it becomes @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (or increases its drained condition by 1). If the creature is a corporeal undead, it becomes @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute. If the creature is an incorporeal undead, it becomes @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 minute. </p><p><strong>Critical Failure</strong> The aspect captures the creature's soul. If the creature is living, it dies and if it is undead it is destroyed with its soul returning to the aspect. The aspect spell then ends, as the aspect returns the soul to the Boneyard.</p>"
+        },
+        "Captivating Performer": {
+            "name": "Captivating Performer",
+            "description": "<p>The reveler fey has the @UUID[Compendium.pf2e.feats-srd.7LB00jkh6JaJr3vS]{Fascinating Performance} skill feat. The aspect can cast @UUID[Compendium.pf2e.spells-srd.yvs1zN5Pai5U4CJX]{Summon Instrument} as an innate primal cantrip.</p>"
+        },
+        "Climber": {
+            "name": "Climber",
+            "description": "<p>The aspect gains a climb Speed equal to its land Speed or 25 feet, whichever is greater.</p>"
+        },
+        "Spell Effect: Volley My Ally Range": {
+            "name": "Spell Effect: Volley My Ally Range",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.jhabTKc2kCg92vBc]{Volley My Ally}.</em></p><p><strong>Heightened (+2)</strong> Increase the range of the Strike by 15 feet.</p>"
+        },
+        "Living Parts": {
+            "name": "Living Parts",
+            "description": "<p>The aspect’s body is made of tissue, such as flesh, bone or straw. It is not immune to bleed, disease, drained, mental, nonlethal, poison, sickened, vitality, or void, and is healed for half the normal amount by healing effects.</p>"
+        },
+        "Disgusting Anatomy": {
+            "name": "Disgusting Anatomy",
+            "description": "<p>The aspect’s body acts in ways that sicken onlookers. The first time a creature enters the aura, it must make a @Check[fortitude|dc:resolve(@actor.flags.pf2e.aspectDC)] save or become @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). Regardless of the result, the creature is then temporarily immune for 1 minute.</p>"
+        },
+        "Camouflage": {
+            "name": "Camouflage",
+            "description": "<p>The aspect can cast @UUID[Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB]{Invisibility} as an innate spell at will.</p><div class=\"team-plus-statblock\"><p><strong>Range</strong> touch; <strong>Targets</strong> 1 creature</p><p><strong>Duration</strong> 10 minutes</p><hr /><p>@Embed[Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB inline]</p></div><p><strong>Heightened (8th)</strong> The aspect can cast invisibility as a 1-action activity.</p>"
+        },
+        "Spell Effect: Glutton For Blood": {
+            "name": "Spell Effect: Glutton For Blood",
+            "description": "<p>Blood infused with its own magic makes an excellent substitute for your own blood. You gain fast healing 4 for as long as the target is bleeding and within range of the spell, after which the spell ends.</p>"
+        },
+        "Angel": {
+            "name": "Angel",
+            "description": "<p>This celestial is of Nirvana, like a choral or a tabellia.</p>"
+        },
+        "Effect: Overwhelming Electricity": {
+            "name": "Effect: Overwhelming Electricity",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.JYYo8ElGuzm99WP8]{Magnetor}.</em></p><p>The creature gains a weakness to electricity damage after you Cast the Spell equal to its rank until the beginning of their next turn.</p>"
+        },
+        "Clockwork Blast": {
+            "name": "Clockwork Blast",
+            "description": "<p><strong>Requirements</strong> The aspect’s primary attack is loaded</p><hr /><p>All creatures within a @Template[distance:30|type:cone] take twice the damage of its primary Strike with a basic Reflex save. It cannot use Clockwork Blast again until it has had its key wound three times.</p>"
+        },
+        "Effect: Savior's Grace Immunity": {
+            "name": "Effect: Savior's Grace Immunity",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.c7VshoY6Cr4CeB3N]{Savior}.</em></p><p>You are immune to Savior's Threaded effect for 1 minute. </p>"
+        },
+        "Directive of Punishment": {
+            "name": "Directive of Punishment",
+            "description": "<p>The aspect seeks to destroy those that defy it. It deals 1 additional spirit damage per weapon damage die to creatures listed in the aspect’s Punished Creatures.</p>"
+        },
+        "Fade": {
+            "name": "Fade",
+            "description": "<p>The aspect becomes @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} until it performs a hostile action. It cannot use Fade again for [[/r 1d4#Fade Cooldown]] rounds after using a hostile action.</p>"
+        },
+        "Spell Effect: Dynamic Gouging Claw": {
+            "name": "Spell Effect: Dynamic Gouging Claw",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.L4qfhvVOv1T3XWzy]{Dynamic Gouging Claw}.</em></p><hr /><p><span class=\"action-glyph\">1</span> You gain a claw Strike for 1 minute. The claw deals 1d6 slashing damage, has the agile and finesse traits, and is in the knife weapon group. You gain the critical specialization effect of the claw. You become temporarily immune to gaining a claw Strike from this spell for 10 minutes.</p><p><span class=\"action-glyph\">3</span> You gain a claw Strike as described in the one-action version. Until the end of your next turn, the claw Strike’s reach increases by 10 feet.</p>"
+        },
+        "Effect: Eldritch Resilience": {
+            "name": "Effect: Eldritch Resilience",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.m6MtdQkJnNUA3mzJ]{Eldritch Resilience}.</em></p><p>The mystic duo gains temporary hit points equal to twice the rank of the spell used for the spellshape, or the rank of the spell if the spell was a cantrip. These temporary Hit Points last as long as your mystic link is active.</p>"
+        },
+        "Prey On The Weary": {
+            "name": "Prey On The Weary",
+            "description": "<p>The aspect has a +1 circumstance bonus to attack rolls against creatures that have failed a Will save this round. It has a +2 circumstance bonus to attack rolls against fatigued and unconscious creatures.</p>"
+        },
+        "Spell Effect: Umbral Escape Immunity": {
+            "name": "Spell Effect: Umbral Escape Immunity",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.vIC8aSCQiIKVw6FD]{Umbral Escape}.</em></p><p>You are then temporarily immune for 1 minute.</p>"
+        },
+        "Masochistic Boon": {
+            "name": "Masochistic Boon",
+            "description": "<p>Choose acid, cold, electricity, or fire damage. The aspect gains resistance against the chosen damage type.</p>"
+        },
+        "Rocky Aura": {
+            "name": "Rocky Aura",
+            "description": "<p>The earth hardens and sharpens around the aspect. When the aspect gains actions for the turn, it creates difficult terrain within the area that lasts until the beginning of your next turn. The aspect treats this difficult terrain as normal terrain.</p>"
+        },
+        "Spears of War": {
+            "name": "Spears of War",
+            "description": "<p>The aspect can unleash a storm of spears, dealing @Damage[(@actor.flags.pf2e.aspectRank)d8[force]]{1d8 force}, @Damage[(@actor.flags.pf2e.aspectRank)d8[piercing]]{piercing}, or @Damage[(@actor.flags.pf2e.aspectRank)d8[electricity]]{electricity} damage per spell rank to all creatures within a @Template[distance:30|type:cone] with @Check[reflex|dc:@actor.flags.pf2e.aspectDC|basic:true] save.</p>"
+        },
+        "Cognitohazard": {
+            "name": "Cognitohazard",
+            "description": "<p>Looking directly at this aspect is maddening. The first time a creature enters the aura, it must make a @Check[type:will|dc:resolve(@actor.flags.pf2e.aspectDC)] save or become @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure) for [[/r 1d4#Cognitohazard Stupefied Duration]] rounds. Regardless of the result, the creature is then temporarily immune for 1 minute.</p>"
+        },
+        "Spell Effect: Hemophilia": {
+            "name": "Spell Effect: Hemophilia",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.wAqvtJaxC5zpZyMa]{Hemophilia}.</em></p><p><strong>Success</strong> The target gains weakness 1 to bleed damage.</p><p><strong>Failure</strong> As success, except the first time the target takes bleed damage while the spell is active, it becomes drained 1 or increases its drained value by 1.</p><p><strong>Critical Failure</strong> As failure, except the weakness to bleed damage is doubled.</p>"
+        },
+        "Wood": {
+            "name": "Wood",
+            "description": "<p>This elemental is composed entirely of plantlife, like a nursery crawler or painted stag.</p>"
+        },
+        "Terminus of Calling": {
+            "name": "Terminus of Calling",
+            "description": "<p><strong>Prerequisites</strong> NPC spellcaster that can cast summon spell</p><p><strong>Trigger</strong> The caster completes an essence cycle.</p><hr /><p>The magical energy flowing through the caster erupts into the air around them, summoning monsters to do their bidding.</p><p><strong>Cycle 1+</strong> The caster gains the effects of a summon spell it knows without expending essence or spending actions to Cast the Spell. The summon spell is heightened to the highest rank spell the NPC can cast. The caster can Sustain the summon effect as a free action at the beginning of each of its turns.</p>"
+        },
+        "Summon Accomplice": {
+            "name": "Summon Accomplice",
+            "description": "<p>You summon your accomplice to aid you. You summon your accomplice in a space adjacent to you as if you had Cast the Spell you selected during your daily preparations. The summon has the following modifications: </p><ul><li><p>The summoned creature has 1 Hit Point, is automatically hit by attacks, and automatically fails all saving throws. </p></li><li><p>The maximum duration of the spell is halved. </p></li><li><p>The creature cannot use the Cast a Spell activity. </p></li><li><p>If the creature has an ability with a frequency of once per minute or longer, it cannot use that ability.</p></li></ul>"
+        },
+        "Freedom of the Azata": {
+            "name": "Freedom of the Azata",
+            "description": "<p>The aspect grants all allies within 15 feet a +1 status bonus to Escape checks and to saves against effects that would give it the grabbed, immobilized, or restrained conditions. The aspect treats difficult terrain as normal terrain.</p><hr /><p><strong>Heightened (4th)</strong> The aspect gains an additional benefit from its @UUID[Compendium.pf2e-team-plus-magic.misc.uSwsWsdfYhbHihcE]{Gift of Vitality}. The aspect sings and inspires all within range. All allies within 30 feet gain a +1 status bonus to attack rolls.</p>"
+        },
+        "Glutton For Blood": {
+            "name": "Glutton For Blood",
+            "description": "<p>Blood infused with its own magic makes an excellent substitute for your own blood. You gain fast healing 4 for as long as the target is bleeding and within range of the spell, after which the spell ends.</p><p>@UUID[Compendium.pf2e-team-plus-magic.misc.Yt2rpgWVdKA4yrEs]{Spell Effect: Glutton For Blood}</p><hr /><p><strong>Heightened (+1)</strong> Increase the fast healing by 1.</p>"
+        },
+        "Frightening Features": {
+            "name": "Frightening Features",
+            "description": "<p>The aspect’s appearance is distressing to many. The first time a creature enters the aura, it must make a @Check[type:will|dc:@actor.flags.pf2e.aspectDC] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). Regardless of the result, the creature is then temporarily immune for 1 minute.</p><hr /><p><em>In addition, the aspect deals 1 additional damage per weapon damage die to creatures that are frightened.</em></p><hr /><p><strong>Heightened (8th)</strong> The area for Frightening Features is increased to 30 feet, and the additional damage it deals to frightened creatures is doubled.</p>"
+        },
+        "Repulsion": {
+            "name": "Repulsion",
+            "description": "<p>The aspect grants all allies wearing metal armor within its aura a +1 status bonus to AC for 1 round.</p>"
+        },
+        "Energized": {
+            "name": "Energized",
+            "description": "<p>The aspect’s Strike gains the versatile trait for one of the following damage types: cold, fire, mental, sonic, and spirit. If you choose spirit, the Strike and this spell gain the holy trait and it only deals spirit damage against unholy creatures.</p>"
+        },
+        "Shield Maiden": {
+            "name": "Shield Maiden",
+            "description": "<p>The aspect wields a shield or uses a weapon to parry like a shield. It can raise a shield as an action, granting itself +2 AC. The shield’s hardness is equal to twice the spell’s rank, HP equal to quadruple the spell’s rank, and a BT equal to double the spell’s rank. It also gains the Shield Block reaction.</p>"
+        },
+        "Spell Effect: Monitor Shift": {
+            "name": "Spell Effect: Monitor Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.uf5cKXqsQYWJ75xj]{Monitor Shift} or @UUID[Compendium.pf2e-team-plus-magic.items.dEde2XsZbJHxQknx]{Summon Monitor Aspect}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.C6JZEcra03J2ysI4]</p>"
+        },
+        "Azata": {
+            "name": "Azata",
+            "description": "<p>This mercurial celestial hails from Elysium, like a lyrakien or a kanya.</p>"
+        },
+        "Spell Effect: Dynamic Shield 2": {
+            "name": "Spell Effect: Dynamic Shield 2",
+            "description": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR]{Shield}</p><p><span class=\"action-glyph\">1</span> The circumstance bonus to AC is +1 and the shield’s Hardness is 3.</p><p><span class=\"action-glyph\">2</span> The circumstance bonus to AC is +2 and the shield’s Hardness is 7.</p><p><span class=\"action-glyph\">3</span> The circumstance bonus to AC is +4 and the shield’s Hardness is 9.</p><p>While the spell is in effect, you can use the Shield Block reaction with your magic shield. After you use Shield Block, the spell ends.</p>"
+        },
+        "Spell Effect: Umbral Escape": {
+            "name": "Spell Effect: Umbral Escape",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.vIC8aSCQiIKVw6FD]{Umbral Escape}.</em></p><p>You gain resistance 4 to all damage per spell rank during the spells Stride.</p>"
+        },
+        "Terminus of Cataclysm": {
+            "name": "Terminus of Cataclysm",
+            "description": "<p><strong>Prerequisites</strong> NPC spellcaster that can cast an elemental spell that would deal damage or a spell that would deal acid, cold, electricity, or poison damage</p><p><strong>Trigger</strong> The caster completes an essence cycle.</p><hr /><p>The caster’s magic reflects onto the world around them, calling forth a cataclysm to punish their foes.</p><p><strong>Cycle 1+ </strong>The caster creates a cataclysm that you can direct on a whim that grows with power. The caster creates a @Template[distance:15|type:burst] of cataclysm within 60 feet. Creatures in the area of the initial burst or that end their turn in the area take 1d6 damage per rank of the highest-rank spell the caster can cast. The damage type must be the same as one it could have used to meet the prerequisites of this terminus action. The caster can Sustain this effect as a free action once per turn to move the burst to another location within 60 feet. In addition, the caster chooses one of the listed effects.</p><ul><li><p>The area is difficult terrain.</p></li><li><p>The area is hazardous terrain and deals @Damage[@actor.level[acid]]{1 damage per level} of the caster to creatures that move through the area or that begin their turn in the area.</p></li><li><p>All creatures within the area become @UUID[Compendium.pf2e.kingmaker-features.tWS8aMCyeGKcnFh1]{Concealed} (and all creatures outside the area become concealed to creatures within it).</p></li></ul><hr /><p><strong>Foundry Note </strong>Damage rolls for convenience.</p><ul><li><p><em><strong>Max Rank</strong></em> @Damage[max(1,(ceil(@actor.level/2)))d6[acid]]</p></li><li><p><em><strong>Max Rank - 1</strong></em> @Damage[(ceil(@actor.level/2) - 1)d6[acid]]</p></li><li><p><em><strong>Max Rank - 2</strong></em> @Damage[(ceil(@actor.level/2) - 2)d6[acid]]</p></li></ul>"
+        },
+        "Effect: Channel Essence Leak": {
+            "name": "Effect: Channel Essence Leak",
+            "description": "<p>When you cause an essence leak, either you gain a +1 status bonus to AC and saving throws until the end of your next turn or a creature affected by the spell causing the leak takes a –1 status penalty to AC and saving throws until the end of your next turn, your choice.</p>"
+        },
+        "Interposing Presence": {
+            "name": "Interposing Presence",
+            "description": "<p>Allies adjacent to the aspect gain lesser cover.</p><hr /><p><strong>Heightened (8th) </strong>Allies adjacent to the aspect gain standard cover instead of lesser cover. On Reflex saves to avoid a damaging effect, such as a fireball, the aspect uses its Fortitude modifier instead of its Reflex modifier.</p>"
+        },
+        "Effect: Frigid Darknes": {
+            "name": "Effect: Frigid Darknes",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.RmlKxZWHK4M0nSE5]{Extingor}.</em></p><p>Creatures in areas of darkness gain a weakness to cold damage equal to half your level.</p>"
+        },
+        "Spell Effect: Dragon Shift": {
+            "name": "Spell Effect: Dragon Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.d8OboK14CSqs7N7p]{Dragon Shift} or @UUID[Compendium.pf2e-team-plus-magic.items.l5vsZK7L8GtFvF4O]{Summon Dragon Aspect}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.XaX4kPgcKyHxbVZS]{Dragon Aspects}</p><p></p>"
+        },
+        "Bleeding Spell": {
+            "name": "Bleeding Spell",
+            "description": "<p>You infuse your spell with a potent thirst for blood. If the next action you use is to Cast a Spell from your spell slots that targets at least one creature, the spell deals persistent bleed damage equal to the spell rank to one creature of your choice if the creature fails its save or your spell attack roll is successful. This choice is made when you Cast the Spell.</p>"
+        },
+        "Empowered Regeneration": {
+            "name": "Empowered Regeneration",
+            "description": "<p>The aspect’s body flows with the power of their element, regrowing limbs or heads or covering up dire wounds. It gains fast healing equal to the rank of the spell.</p>"
+        },
+        "Sadistic Boon": {
+            "name": "Sadistic Boon",
+            "description": "<p>Choose bleed, fire, mental, or void damage. When the aspect critically succeeds at a Strike, it deals persistent damage of the chosen type equal to its Strike’s weapon damage dice.</p>"
+        },
+        "Spell Effect: Pest Shift": {
+            "name": "Spell Effect: Pest Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.TXZWyxFYuhQeQ5ue]{Pest Shift}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.XbPY6LojeQrqUfjI]</p>"
+        },
+        "Liberate": {
+            "name": "Liberate",
+            "description": "<p>The aspect loosen the bonds holding a creature back. A creature of its choice within 30 feet can attempt to Escape as a free action. The creature is then temporarily immune for 1 hour.</p>"
+        },
+        "Weight of Sins": {
+            "name": "Weight of Sins",
+            "description": "<p>The aspect chooses a non-holy creature within 30 feet and brings the weight of their sins to the forefront of their mind. The creature takes @Damage[(@actor.flags.pf2e.aspectRank)d6[mental]] damage per rank of the spell with a @Check[will|basic:true|dc:@actor.flags.pf2e.aspectDC] save. If the creature is marked by Sin Strike, it takes double damage. Regardless of the result, the creature is then temporarily immune for 1 hour.</p>"
+        },
+        "Terrifying Shriek": {
+            "name": "Terrifying Shriek",
+            "description": "<p>The aspect emits a bloodcurdling scream or a mortifying display, dealing @Damage[(2 * @actor.flags.pf2e.aspectRank)d6[mental]]{2d6 damage per spell rank} to all creatures within a @Template[distance:15|type:emanation] with a @Check[will|basic:true|dc:@actor.flags.pf2e.aspectDC] save. Creatures that critically fail their save are also @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
+        },
+        "Effect: Savior's Grace": {
+            "name": "Effect: Savior's Grace",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.c7VshoY6Cr4CeB3N]{Savior}.</em></p><p>You gain a +1 status bonus to attack rolls and a +2 status bonus to damage rolls for 1 round.</p>"
+        },
+        "Predator's Maneuver": {
+            "name": "Predator's Maneuver",
+            "description": "<p><strong>Trigger</strong> The aspect critically hits with its primary Strike.</p><hr /><p>The aspect attempts the chosen Athletics maneuver against the target of the Strike. This attack counts toward its multiple attack penalty, but the maneuver is made at the same multiple attack penalty as the triggering Strike.</p>"
+        },
+        "Silence of The Archmage": {
+            "name": "Silence of The Archmage",
+            "description": "<p>You afflict the target with a curse that causes magic itself to recoil at their attempts to wield or control it. The target must attempt a Will save.</p><p><strong>Critical Success</strong> The target is unaffected.</p><p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} and unable to speak until they pry themselves free from the magical bindings with an Interact action, after which the curse ends.</p><p><strong>Failure</strong> As success, except the effect lasts until this curse is removed.</p><p><strong>Critical Failure</strong> As failure, except the target also has a –2 status penalty to all spell attack rolls and to the DC of all their spells. Whenever they attempt to Cast a Spell, Activate a magic Item, or affix a magic talisman to a piece of equipment, they must attempt a DC 11 flat check; on a failure, the action fails and any resources used for it are wasted (consumable talismans are destroyed, charged magic items lose the charges used for the attempt, etc.)</p>"
+        },
+        "Effect: Embodiment Ring Rune": {
+            "name": "Effect: Embodiment Ring Rune",
+            "description": "<p>Your ring swirls with the malleable magical essences. When you Cast a Spell with the polymorph trait that grants a battle form, you gain a status bonus to Strikes equal to the ring’s item bonus until the spell ends.</p>"
+        },
+        "Giant": {
+            "name": "Giant",
+            "description": "<p>The aspect is a giant, the mortal children of titans that live in the far reaches of our world. It gains the giant trait and the maximum size of the aspect is one step larger than normal. The thurse speaks jotun.</p>"
+        },
+        "Charge": {
+            "name": "Charge",
+            "description": "<p>The aspect charges forward and attacks an enemy. It Strides twice. If it ends its movement adjacent to an enemy, it can make a melee Strike against that enemy.</p>"
+        },
+        "Effect: Archon's Protection": {
+            "name": "Effect: Archon's Protection",
+            "description": "<p>The ally gains resistance equal to twice the spell’s rank to the triggering damage.</p>"
+        },
+        "Grasp of the Dead": {
+            "name": "Grasp of the Dead",
+            "description": "<p><strong>Trigger</strong> The aspect critically hits with its primary Strike</p><hr /><p>The aspect attempts the chosen Athletics maneuver against the target of the Strike. This attack counts toward its multiple attack penalty, but the maneuver is made at the same multiple attack penalty as the triggering Strike.</p>"
+        },
+        "Effect: Velstrac Bloodsense": {
+            "name": "Effect: Velstrac Bloodsense",
+            "description": "<p>When a creature within range of its bloodscent takes persistent bleed damage, it regains @Damage[@origin.actor.flags.pf2e.aspectRank[heal]] Hit Points equal to the rank of the spell.</p>"
+        },
+        "Dirty Trick": {
+            "name": "Dirty Trick",
+            "description": "<p>@Embed[Compendium.pf2e.feats-srd.5eNKs6738aykAhK2]</p>"
+        },
+        "Capture": {
+            "name": "Capture",
+            "description": "<p><strong>Requirements</strong> The aspect has a creature at least one size smaller than it restrained by its Grapple</p><hr /><p>The creature is @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} until it @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escapes} and the aspect can use the limb it used for the Grapple. It can only have a single creature occupied in this way at a time.</p>"
+        },
+        "Collapse": {
+            "name": "Collapse",
+            "description": ""
+        },
+        "Archon": {
+            "name": "Archon",
+            "description": "<p>This celestial is a Heavenly warrior of justice such as a zoaem or an aesra.</p>"
+        },
+        "Aquatic Habitat": {
+            "name": "Aquatic Habitat",
+            "description": "<p>The aspect cannot function on dry land, and must hold its breath in air. It has no land Speed and it increases its swim Speed by 15 feet. The creature has the aquatic trait.</p>"
+        },
+        "Effect: In Wicket Dominion": {
+            "name": "Effect: In Wicket Dominion",
+            "description": "<p>You are in a wicket dominion, able to be targeted by its effects.</p>"
+        },
+        "Aftershock": {
+            "name": "Aftershock",
+            "description": "<p>The aspect deals @Damage[(@actor.flags.pf2e.aspectRank)d6[bludgeoning]]{1d6 damage per rank} of the spell to all creatures within 15 feet with a @Check[reflex|dc:@actor.flags.pf2e.aspectDC|basic:true]. Creatures that critically fail their save are knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+        },
+        "Effect: Energy Ablation": {
+            "name": "Effect: Energy Ablation",
+            "description": "<p>You gain resistance to one energy type the triggering spell could deal equal to the spell’s rank until the end of your next turn.</p>"
+        },
+        "Ephemeral Effect: Unholy Divine Lance Tag": {
+            "name": "Ephemeral Effect: Unholy Divine Lance Tag",
+            "description": "<p>Ephemeral Part of @UUID[Compendium.pf2e-team-plus-magic.misc.DnVO9aTKJOZFnNrg]{Effect: Dynamic Divine Lance Tag}</p>"
+        },
+        "Effect: Essence Strike": {
+            "name": "Effect: Essence Strike",
+            "description": "<p>The next time you make a spell attack roll before the end of your turn, roll it twice and use the better result. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden.</p>"
+        },
+        "Devastating Hurl": {
+            "name": "Devastating Hurl",
+            "description": "<p>The aspect hurls an attack at an enemy. The aspect makes a Strike with its primary attack against a creature within 60 feet as a ranged attack.</p>"
+        },
+        "Swimmer": {
+            "name": "Swimmer",
+            "description": "<p>The aspect gains a swim Speed equal to its land Speed or 25 feet, whichever is greater.</p>"
+        },
+        "Beast": {
+            "name": "Beast",
+            "description": "<p>The Aspect is a creature of the wild, an animal with magical powers or intelligence far exceeding regular fauna. It gains the beast trait, has scent as an imprecise sense with a range of 30 feet, and increases one of its Speeds by 10 feet. The thurse speaks fey.</p>"
+        },
+        "Shadow Wield": {
+            "name": "Shadow Wield",
+            "description": "<p>You draw your shadow into your hands and wield it. You can form your shadow into a weapon, and your shadow disappears for the duration. Select either bludgeoning, piercing, or slashing damage and whether your shadow weapon is a melee or ranged weapon. If you select a ranged weapon, it has a range of 30 feet.</p><p>When you first Cast the Spell or when you Sustain the spell, you attempt a spell attack roll against the target's AC with your shadow weapon, dealing 1d8 damage on a hit with a melee weapon or 1d6 damage on a hit with ranged weapon (or double damage on a critical hit). The attack deals void damage instead if that would be more detrimental to the creature (as determined by the GM). This attack uses and contributes to your multiple attack penalty.</p><hr /><p><strong>Heightened (+2)</strong> Increase the damage of the weapon by 1d8 for a melee weapon or 1d6 for a ranged weapon.</p>"
+        },
+        "Terrifier": {
+            "name": "Terrifier",
+            "description": "<p>The aspect has the @UUID[Compendium.pf2e-team-plus-magic.misc.22loipZM4KOOB7A6]{Intimidating Glare} skill feat. The aspect can cast @UUID[Compendium.pf2e.spells-srd.sX2g6WFSQPNW9jzx]{Warp Step} as an innate primal cantrip.</p>"
+        },
+        "Metal": {
+            "name": "Metal",
+            "description": "<p>This steely elemental is made of sharp metals, like a rust scarab or oregorger.</p>"
+        },
+        "Archmage's Counter": {
+            "name": "Archmage's Counter",
+            "description": "<p><strong>Trigger</strong> an enemy you are observing Casts a Spell, and that spell is of a rank you can cast</p><hr /><p>You counteract the triggering spell. Your counteract rank for this ability is equal to half your level (rounded up) and your counteract check modifier is your spellcasting attribute modifier plus your spellcasting proficiency bonus, plus any bonuses and penalties that specifically apply to counteract checks. You can spend a Mythic Point as part of this reaction to attempt the check at mythic proficiency.</p>"
+        },
+        "Go For The Eyes!": {
+            "name": "Go For The Eyes!",
+            "description": "<p>When the aspect critically hits with one of its Strikes, it deals persistent bleed damage equal to half the spell’s rank and the creature is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} as long as it is suffering from this bleed damage.</p>"
+        },
+        "Thurse of Bravery": {
+            "name": "Thurse of Bravery",
+            "description": "<p>Even mere proximity to the thurse is enough to give someone courage. All creatures within the aspect’s aura immediately reduce any frightened conditions they gain by 1.</p>"
+        },
+        "Behold!": {
+            "name": "Behold!",
+            "description": "<p>The aspect reveals its true nature to all enemies within @Template[type:emanation|distance:30]{30 feet}. Creatures in the area must make a @Check[will|dc:@actor.flags.pf2e.aspectDC] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p><p>Frightened creatures lose their resistance or immunity to fire damage from the aspect’s effects. Creatures are then temporarily immune to this effect for 1 minute.</p>"
+        },
+        "Effect: Energy Abjection": {
+            "name": "Effect: Energy Abjection",
+            "description": "<p>You grant resistance to one energy damage type of your choosing to all allies within 30 feet, equal to double the rank of spell you expended. This last for a number of rounds equal to the rank of spell you expended.</p><hr /><p><strong>Foundry Note </strong>Modify the duration to match the spell rank.</p>"
+        },
+        "Razing Rampage": {
+            "name": "Razing Rampage",
+            "description": "<p>The aspect Strides twice and makes two Strikes at any point of its turn.</p>"
+        },
+        "Flier": {
+            "name": "Flier",
+            "description": "<p>The aspect adds Athletics to its list of skills. When @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{Leaping} horizontally, the aspect moves an additional 5 feet. It doesn't automatically fail its checks to @UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{High Jump} or @UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Long Jump} if it doesn't Stride at least 10 feet first. In addition, when it makes a Long Jump, it can jump a distance up to 10 feet further than its Athletics check result, though still with the normal maximum of its Speed. Additionally, it takes no damage from falling, no matter what distance it falls. </p><p>At 4th rank, the aspect gains a fly Speed equal to its land Speed and adds Acrobatics to its list of skills.</p>"
+        },
+        "Timber!": {
+            "name": "Timber!",
+            "description": "<p>The aspect drops prone and deals @Damage[(2 * @actor.flags.pf2e.aspectRank)d6[bludgeoning]]{2d6 bludgeoning damage per spell rank} to itself and to creatures in a @Template[distance:10|type:line] with a @Check[reflex|basic:true|dc:@actor.flags.pf2e.aspectDC] save. Creatures that critically fail their saving throw are also knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. This line increases to a @Template[distance:20|type:line] if the aspect is size Huge, or a @Template[distance:40|type:line] if the aspect is Gargantuan.</p>"
+        },
+        "Spell Effect: Bewilder": {
+            "name": "Spell Effect: Bewilder",
+            "description": "<p><em>From @UUID[Compendium.pf2e-team-plus-magic.items.xDXh0aavZPUmvaaG]{Bewilder}.</em></p><p>Any time they attempt a hostile action, they must attempt a @Check[type:flat|dc:6], failing to perform the hostile action on a failure. If the creature fails to complete a hostile action against another creature due to this spell, it treats the creature it targeted with the hostile action as its ally until its next turn.</p><p>On a critical failure on the Bewilder spell, the DC for the flat check is increased to @Check[type:flat|dc:11]{ }.</p>"
+        },
+        "Benthic": {
+            "name": "Benthic",
+            "description": "<p>The aspect is at home in the darkest depths of the sea. It speaks thalassic and gains the @UUID[Compendium.pf2e-team-plus-magic.misc.nmBfrxQS21y8AfFF]{Swimmer} aspect ability.</p>"
+        },
+        "Song of the Angels": {
+            "name": "Song of the Angels",
+            "description": "<p>The aspect grants all allies within 15 feet a +1 status bonus to saves against auditory and fear effects.</p><hr /><p><strong>Heightened (8th)</strong> The aspect’s aura grants all allies a +1 status bonus to AC and saves and doubles the status bonus against auditory and fear effects.</p>"
+        },
+        "Face Your Fears": {
+            "name": "Face Your Fears",
+            "description": "<p>When the aspect gives a creature the frightened condition, the creature does not reduce its frightened condition at the end of its next turn until it takes a hostile action against the aspect or it can no longer perceive the aspect.</p>"
+        },
+        "Grove Aura": {
+            "name": "Grove Aura",
+            "description": "<p>Plantlife grows quickly around the wood aspect, teeming with life. The first time each turn a creature uses an action or activity with the plant or wood traits, it regains Hit Points equal to twice the rank of the spell (@Damage[(2 * @actor.flags.pf2e.aspectRank)[healing]]) that summoned the wood elemental.</p>"
+        },
+        "Undergrowth Empowerment": {
+            "name": "Undergrowth Empowerment",
+            "description": "<p>The aspect causes natural shrubbery to grow stronger. When the aspect gains actions for the turn, it creates difficult terrain within the area that lasts until the beginning of your next turn. The aspect treats this difficult terrain as normal terrain.</p>"
+        },
+        "Effect: Winded Up": {
+            "name": "Effect: Winded Up",
+            "description": "<p>The aspect has a key in its back which can be wound up to increase the power of the aspect. The key can be wound with a single Interact action, which reloads its primary attack, and gives it a +10-foot status bonus to its Speed for 1 round.</p>"
+        },
+        "Aquatic Sense": {
+            "name": "Aquatic Sense",
+            "description": "<p>The aspect gains your choice of bloodscent as a precise sense with a range of 30 feet or wavesense as an imprecise sense with a range of 30 feet.</p>"
+        },
+        "Terminus of Bounded Might": {
+            "name": "Terminus of Bounded Might",
+            "description": "<p><strong>Trigger</strong> After your second draw, you Cast a Spell that would increase your essence.</p><p><strong>Requirements</strong> You haven’t experienced an essence leak this encounter.</p><hr /><p>You gather all the essence you’ve built up during the encounter to allow you to cast an even more powerful spell.</p><p><strong>Cycle 1</strong> Instead of your essence being reduced to 0 as normal for a bounded essence caster casting an essence spell, your essence increases to 1 above your essence pool. This means that starting the next turn, you can cast an essence spell of up to that rank. When you do, your essence is reduced to 0.</p>"
+        },
+        "Churning Aura": {
+            "name": "Churning Aura",
+            "description": "<p>Water roils around the aspect. The aspect’s Strikes deal bludgeoning damage. All non-magical fires in the area are extinguished and creatures with a swim Speed treat water in the area as if it were difficult terrain, or greater difficult terrain if the creature does not have a swim Speed. The aspect gains the Swimmer aspect ability. The aspect has a resistance to fire and a weakness to electricity and is sourced by water.</p>"
+        },
+        "Torment": {
+            "name": "Torment",
+            "description": "<p><strong>Requirements</strong> The velstrac’s last action was a successful Strike against a creature</p><hr /><p>When the aspect torments the enemy further, the triggering creature takes @Damage[@actor.flags.pf2e.aspectRank[persistent,bleed]] damage equal to the rank of the spell.</p>"
+        },
+        "Caster": {
+            "name": "Caster",
+            "description": "<p>The aspect can cast 2 spells of your choice from the listed spells. You must select spells that are at least 2 ranks below the rank of this spell and each of the spells you select must be of a different rank. You can choose a higher rank for a spell than its listed rank. The aspect can cast each spell once for the duration of the summon. If you select a cantrip, the cantrip’s spell DC is reduced by 2, but the aspect can cast it at will for the duration.</p>"
+        },
+        "Quick Capture": {
+            "name": "Quick Capture",
+            "description": "<p><strong>Trigger</strong> A creature ends its turn within reach of the aspect</p><hr /><p>The aspect makes an Athletics check to @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} the triggering creature.</p><hr /><p><strong>Heightened (4th)</strong> The aspect can use Quick Capture when it succeeds at a Strike with its primary attack. In addition, creatures that end their turn grabbed or restrained by the aspect take damage equal to @Damage[(@actor.flags.pf2e.aspectRank * 2)[@actor.flags.pf2e.damageTypeConCarne]]{twice the rank of the spell}. The damage type is the same as its primary attack would deal.</p>"
+        },
+        "Legendary Cry": {
+            "name": "Legendary Cry",
+            "description": "<p>The aspect roars out, affecting the hearts of all allies within a @Template[distance:30|type:emanation], granting them temporary Hit Points equal to twice the rank of the spell for 1 minute. Allies also gain a +1 status bonus to melee attack rolls for as long as they have temporary Hit Points.</p>"
+        },
+        "Gift of Vitality": {
+            "name": "Gift of Vitality",
+            "description": "<p>The aspect is an entirely good creature. The aspect can restore @Damage[(max(@actor.flags.pf2e.aspectRank,1))d6[healing]] Hit Points per rank of the spell to an adjacent creature as a single action. The creature is then temporarily immune to this effect for 1 hour.</p><hr /><p><strong>Heightened (4th)</strong> Depending on your sub aspect, you gain additional benefits to its Celestial Gift.</p><ul><li><p><strong>Agathion</strong></p><ul><li><p><strong>Gift of Vitality</strong> The aspect can deal vitality damage to an adjacent creature of the same amount it would normally restore with a @Check[fortitude|dc:@actor.flags.pf2e.aspectDC|basic:true] save.</p></li></ul></li><li><p><strong>Angel</strong></p><ul><li><p><strong>Gift of Vitality</strong> The aspect can cast @UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{Heal} as a spell equal to half the spell’s rank, but if it does the aspect spell ends.</p></li></ul></li><li><p><strong>Archon</strong></p><ul><li><p><strong>Gift of Vitality</strong> The aspect can make a melee Strike against the triggering enemy when it uses Archon’s Protection if the enemy is within range.</p></li></ul></li><li><p><strong>Azata</strong></p><ul><li><p><strong>Gift of Vitality</strong> The aspect sings and inspires all within range. All allies within 30 feet gain a +1 status bonus to attack rolls.</p></li></ul></li></ul>"
+        },
+        "Effect: Calling Rune": {
+            "name": "Effect: Calling Rune",
+            "description": "<p>The ring’s magic guides your attack. If the next action you use is to Cast a Spell that would summon a creature capable of making Strikes, the summon gains a status bonus to its Strikes equal to your power ring’s item bonus. You cannot use Veracious Spell until the summon spell ends.</p>"
+        },
+        "Eat Soul": {
+            "name": "Eat Soul",
+            "description": "<p><strong>Trigger</strong> The aspect reduces a living creature to 0 Hit Points;</p><hr /><p>The aspect eats the creature’s soul, causing it to die immediately. It gains a +1 status bonus to attack rolls and saving throws for the duration of the spell.</p>"
+        },
+        "Effect: Windy Aura": {
+            "name": "Effect: Windy Aura",
+            "description": "<p>Winds whip around the aspect making it hard to approach. Ranged attacks against creatures within the area take a –1 circumstance penalty and the area is difficult terrain to creatures in flight.</p>"
+        },
+        "Spell Effect: Construct Shift": {
+            "name": "Spell Effect: Construct Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.Z7jVUX8dvTfWq1Ul]{Construct Shift} or @UUID[Compendium.pf2e-team-plus-magic.items.RwH4iPmNmCHkyBQ2]{Summon Construct Aspect}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.VNtyYlVBQoNGAthk]</p>"
+        },
+        "Tools of Darkness": {
+            "name": "Tools of Darkness",
+            "description": "<p>You form shadows into useful tools. You can form your shadow into a shadow tool, and your shadow disappears for the duration. The shadow tool must be a simple tool, such as a shovel or rope, and it appears in your hands or adjacent to you. The tool lasts until it’s used for a single activity or for 1 minute, whichever comes first, after which it disappears. The tool is obviously temporarily conjured and thus can’t be sold or passed off as a genuine item.</p><hr /><p><strong>Heightened (4th)</strong> You can Cast the Spell as a 2-action activity and you can spend a single action to use the tool as part of your casting. Your tool grants a +1 item bonus to checks made with it.</p><p><strong>Heightened (8th)</strong> You can Cast the Spell as a single action and you can spend a single action to use the tool as part of your casting. Your tool grants a +2 item bonus to checks made with it.</p>"
+        },
+        "Innate Sleep": {
+            "name": "Innate Sleep",
+            "description": "<p>The hypnagog aspect can cast @UUID[Compendium.pf2e.spells-srd.o4lRVTwSxnOOn5vl]{Sleep} as an innate spell two ranks below the rank of the spell once per day.</p>"
+        },
+        "Bon Mot": {
+            "name": "Bon Mot",
+            "description": "<p>@Embed[Compendium.pf2e.feats-srd.0GF2j54roPFIDmXf]</p>"
+        },
+        "Spell Effect: Aberration Shift": {
+            "name": "Spell Effect: Aberration Shift",
+            "description": "<p><em>Granted by @UUID[Compendium.pf2e-team-plus-magic.items.mBZA39OruYMaOUc2]{Aberration Shift}.</em></p><hr /><p><strong>Modifier </strong>[[@item.flags.pf2e.aspectDC - 10]]; <strong>DC </strong>[[@item.flags.pf2e.aspectDC]]</p><hr /><p>@Embed[Compendium.pf2e-team-plus-magic.journals.JournalEntry.2ywfGZz3We3np1MB.JournalEntryPage.xDO6Iqzk8uT6l0U3]{Entity Aspects}</p>"
+        },
+        "Hunter of Death": {
+            "name": "Hunter of Death",
+            "description": "<p>The aspect Strikes deal 1 additional spirit damage per weapon damage dice against creatures with fewer than half its maximum Hit Points.</p>"
+        },
+        "Overclock": {
+            "name": "Overclock",
+            "description": "<p><strong>Requirements</strong> A creature wound its key at least once since the aspect’s last turn</p><hr /><p>The aspect is @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} for a number of rounds equal to the number of times its key was turned. The aspect can use the extra action each round for only Strike and Stride actions.</p>"
+        },
+        "Fascinating Performance": {
+            "name": "Fascinating Performance",
+            "description": "<p>@Embed[Compendium.pf2e.feats-srd.7LB00jkh6JaJr3vS]</p>"
+        },
+        "Enhanced Aid": {
+            "name": "Enhanced Aid",
+            "description": "<p><strong>Enhanced Aid (Battle Form)</strong> You gain a +1 status bonus to the listed skill. If the spell you cast was at least 8th-rank, you gain a +2 status bonus to the listed skill and when you get a result of a critical failure with the listed skill, you get a failure instead. </p><p><strong>Enhanced Aid (Summon)</strong> The aspect can always use the listed skill to Aid. If the spell that summoned the creature was at least 4th rank, it grants a +3 circumstance bonus when it gets a critical success with its check to Aid or a +4 circumstance bonus if the spell was at least 8th rank.</p>"
+        },
+        "Fringes": {
+            "name": "Fringes",
+            "description": "<p>The aspect lives on the edge of society. It speaks aklo and can Hide without cover as it blends into the background, either with shapeshifting, magic or camouflage.</p>"
+        },
+        "Water": {
+            "name": "Water",
+            "description": "<p>This elemental is made of liquid or ice, like a brineshark or icewyrm.</p>"
+        },
+        "Splinter Wood": {
+            "name": "Splinter Wood",
+            "description": "<p>The wood elemental causes non-magical wooden objects in a @Template[type:burst|distance:15] within 30 feet to take @Damage[(@actor.flags.pf2e.aspectRank)d8[piercing]]{1d8 piercing damage per rank} of the spell with a @Check[fortitude|dc:@actor.flags.pf2e.aspectDC|basic:true]. Creatures adjacent to a wooden object that gained the broken condition or was destroyed by this ability also take the damage from the spell.</p>"
+        }
+    }
+}
