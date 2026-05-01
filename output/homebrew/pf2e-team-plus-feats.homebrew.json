@@ -1,0 +1,20 @@
+{
+    "moduleId": "pf2e-team-plus-feats",
+    "moduleTitle": "Feats+",
+    "homebrew": {
+        "featTraits": {
+            "teamwork": {
+                "label": "Teamwork",
+                "description": "A teamwork action is a general combat strategy that you employ by using an action with the teamwork trait and designating a willing ally that meets the requirements as your partner. A teamwork lasts until you or your partner are knocked out, until its requirements (if any) are violated, until the encounter ends, or until you or your ally engage in another teamwork, whichever comes first. After you take an action with the teamwork trait, you and your partner can't take another one for 1 round. You can employ teamwork only in encounter mode. You or your partner can Dismiss a teamwork."
+            },
+            "triumph": {
+                "label": "Triumph",
+                "description": "A triumph celebrates your acts during an encounter that make you feel triumphant and empower you to be bold. A triumph grants you benefits and gives you access to a bold action or activity. You celebrate a triumph until you get knocked out, until the encounter ends, until you use a triumph action again or until you've resolved a bold action or activity, whichever comes first. You can only celebrate a triumph while in encounter mode."
+            },
+            "bold": {
+                "label": "Bold",
+                "description": "Bold actions are actions granted to you while under a triumph effect, and using an action with the bold trait ends the triumph effect after the action is resolved. You cannot use more than one bold action per turn. Once a bold action is used, you cannot gain another triumph effect for 1 round."
+            }
+        }
+    }
+}

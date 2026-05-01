@@ -11,7 +11,7 @@ const DEFAULT_MODULES = [
   'pf2e-team-plus-magic',
   'pf2e-team-plus-wizards',
   'pf2e-team-plus-oracles-remastered',
-  'pf2e-feats-plus',
+  'pf2e-team-plus-feats',
   'pf2e-summoners-plus',
   'clerics-remaster',
   'witches-remaster',
@@ -278,15 +278,37 @@ function mergeJournalPriors(newDoc, priorDoc) {
   }
 }
 
+const PRIOR_ALIAS = {
+  'pf2e-team-plus-feats': {
+    moduleAlias: 'pf2e-feats-plus',
+    packAlias: {
+      'pf2e-player-options': 'player-options',
+      'pf2e-misc': 'misc',
+    },
+  },
+};
+
 async function loadPriorTranslation(tempDir, moduleId, packName) {
-  const file = path.join(tempDir, `${moduleId}.${packName}.json`);
-  if (!existsSync(file)) return null;
-  try {
-    return JSON.parse(await readFile(file, 'utf8'));
-  } catch (err) {
-    console.error(`  [warn] could not parse prior file ${file}: ${err.message}`);
-    return null;
+  const candidates = [{ m: moduleId, p: packName }];
+  const alias = PRIOR_ALIAS[moduleId];
+  if (alias) {
+    const aliasedPack = alias.packAlias?.[packName] ?? packName;
+    candidates.push({ m: alias.moduleAlias, p: aliasedPack });
   }
+  for (const { m, p } of candidates) {
+    const file = path.join(tempDir, `${m}.${p}.json`);
+    if (!existsSync(file)) continue;
+    try {
+      const doc = JSON.parse(await readFile(file, 'utf8'));
+      if (m !== moduleId || p !== packName) {
+        console.log(`  [alias] ${moduleId}.${packName} ← ${m}.${p}.json (renamed)`);
+      }
+      return doc;
+    } catch (err) {
+      console.error(`  [warn] could not parse prior file ${file}: ${err.message}`);
+    }
+  }
+  return null;
 }
 
 async function processModule(moduleId, args) {
@@ -351,11 +373,13 @@ async function processModule(moduleId, args) {
       moduleTitle: manifest.title || moduleId,
       homebrew,
     };
-    const outPath = path.join(args['out-dir'], `${moduleId}.homebrew.json`);
+    const homebrewDir = path.resolve(args['out-dir'], '..', 'homebrew');
+    await mkdir(homebrewDir, { recursive: true });
+    const outPath = path.join(homebrewDir, `${moduleId}.homebrew.json`);
     await writeFile(outPath, JSON.stringify(out, null, 4) + '\n', 'utf8');
     written++;
     const counts = Object.entries(homebrew).map(([k, v]) => `${k}×${Object.keys(v).length}`).join(', ');
-    console.log(`  [homebrew] ${moduleId}.homebrew.json (${counts})`);
+    console.log(`  [homebrew] ../homebrew/${moduleId}.homebrew.json (${counts})`);
   }
   return { written, skipped };
 }

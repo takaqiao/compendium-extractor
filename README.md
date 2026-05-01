@@ -57,7 +57,7 @@ For JournalEntry packs (no `mapping`, matching official zh-CN convention):
 
 Many PF2e community modules register custom weapons, weapon traits, feat traits, equipment traits, etc. via `flags.<moduleId>.pf2e-homebrew` in `module.json` rather than as compendium entries — these are loaded directly by the PF2e system and are **not visible to babele**, so prior extractions silently dropped them (e.g. the `overkill` weapon trait from Barbarians+).
 
-For each module that declares any homebrew, the script also writes `<moduleId>.homebrew.json`:
+For each module that declares any homebrew, the script writes `<out-dir>/../homebrew/<moduleId>.homebrew.json` (i.e. always to a sibling `homebrew/` directory regardless of which `--out-dir` you pass — the data is language-agnostic):
 
 ```json
 {
@@ -125,7 +125,7 @@ node extract-babele.mjs --out-dir ./output/en --no-merge
 - `pf2e-team-plus-magic`
 - `pf2e-team-plus-wizards`
 - `pf2e-team-plus-oracles-remastered`
-- `pf2e-feats-plus`
+- `pf2e-team-plus-feats` (formerly `pf2e-feats-plus`; old prior translations are auto-aliased on merge)
 - `pf2e-summoners-plus`
 - `clerics-remaster`
 - `witches-remaster`
