@@ -93,7 +93,16 @@ For each module that declares any homebrew, the script writes `<out-dir>/../home
 }
 ```
 
-This file is **not babele input** — translate it by hand (replace `label` and `description` strings) and inject the result into the PF2e system at runtime via a Foundry hook in your translation module (e.g. on `setup`, walk `CONFIG.PF2E.weaponTraits` / `traitsDescriptions` and replace English values with translated ones). Description values that look like `PF2E.TraitDescriptionXxx` are already system i18n keys — leave those alone.
+This file is **not babele input** — babele only translates compendium documents, not `module.json` flags. Inject the translations at runtime via a Foundry `setup` hook that overwrites `CONFIG.PF2E.<recordKey>` and `CONFIG.PF2E.traitsDescriptions` after the PF2e system has registered the homebrew (PF2e does this on `i18nInit`).
+
+A drop-in implementation is provided at [`examples/inject-homebrew.js`](./examples/inject-homebrew.js). To use it from a translation module like `pf2e-compendium-extra-cn`:
+
+1. Copy the `output/homebrew/` directory into your module: `modules/<your-cn-id>/homebrew/`.
+2. Translate each `label` and `description` in those JSONs to your target language. Leave `description` values that look like `PF2E.TraitDescriptionXxx` untouched — those are system i18n keys handled elsewhere.
+3. Copy `examples/inject-homebrew.js` into your module's `scripts/` directory, edit the `MODULE_ID` constant at the top to match your module's id, and add the file to your `module.json`'s `esmodules` array (or `import` it from your existing entry).
+4. The script auto-discovers active modules with `pf2e-homebrew` flags and applies a translation if it finds a matching `<moduleId>.homebrew.json` in your `homebrew/` directory — you don't have to maintain a manual list.
+
+Description values that look like `PF2E.TraitDescriptionXxx` are already system i18n keys — leave those alone.
 
 Recognized homebrew categories: `baseWeapons`, `weaponTraits`, `featTraits`, `equipmentTraits`, `spellTraits`, `creatureTraits`, `languages`, `damageTypes`. Unknown keys are extracted anyway with a stderr warning.
 
