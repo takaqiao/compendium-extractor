@@ -51,7 +51,25 @@ For JournalEntry packs (no `mapping`, matching official zh-CN convention):
 
 `name` and `description` are babele defaults so they don't need to appear in `mapping`. `prerequisites` mapping is required because the structured-array converter is not a default — without it, prior extractors silently lost prerequisite text.
 
-`Actor`, `Macro`, `RollTable`, and `Adventure` packs are skipped (with a stderr log).
+**Actor packs** (e.g. iconic NPCs, summoned-creature aspects):
+```json
+{
+  "label": "...",
+  "mapping": { "tokenName": "prototypeToken.name", "prototypeToken": "prototypeToken.name", "blurb": "system.details.blurb", "publicNotes": "system.details.publicNotes", "items": { "path": "items", "converter": "fromPack" } },
+  "entries": {
+    "<actor.name>": {
+      "name": "...", "tokenName": "...", "prototypeToken": "...",
+      "items": { "<item.name>": { "name": "...", "description": "..." } }
+    }
+  }
+}
+```
+
+**Macro packs**: `entries[macro.name] = { name, command }` (no `mapping`).
+
+**RollTable packs**: `entries[table.name] = { name, description, results }` where `results` is a dict keyed by `"<low>-<high>"` (or `"<n>"` when low === high) with the result text as value.
+
+`Adventure` packs are skipped (with a stderr log). Merge of prior translations only applies to `Item` and `JournalEntry` packs.
 
 ### Homebrew traits / weapons
 

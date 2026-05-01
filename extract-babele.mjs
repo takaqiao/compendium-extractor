@@ -17,7 +17,8 @@ const DEFAULT_MODULES = [
   'witches-remaster',
 ];
 
-const SUPPORTED_PACK_TYPES = new Set(['Item', 'JournalEntry']);
+const SUPPORTED_PACK_TYPES = new Set(['Item', 'JournalEntry', 'Actor', 'Macro', 'RollTable']);
+const MERGE_PACK_TYPES = new Set(['Item', 'JournalEntry']);
 
 const AUDIT_PATHS = [
   ['system', 'publication', 'title'],
@@ -73,6 +74,11 @@ async function readPack(packPath) {
   const items = [];
   const journalEntries = new Map();
   const journalPages = [];
+  const actors = new Map();
+  const actorItems = [];
+  const macros = [];
+  const tables = new Map();
+  const tableResults = [];
   const db = new ClassicLevel(packPath, { valueEncoding: 'json', keyEncoding: 'utf8' });
   try {
     await db.open();
@@ -93,6 +99,18 @@ async function readPack(packPath) {
       } else if (/^!journal\.pages!([^.!]+)\.([^.!]+)$/.test(key)) {
         const [, parentId] = key.match(/^!journal\.pages!([^.!]+)\.([^.!]+)$/);
         journalPages.push({ parentId, page: value });
+      } else if (/^!actors!([^.!]+)$/.test(key)) {
+        actors.set(value._id, { ...value, items: [] });
+      } else if (/^!actors\.items!([^.!]+)\.([^.!]+)$/.test(key)) {
+        const [, parentId] = key.match(/^!actors\.items!([^.!]+)\.([^.!]+)$/);
+        actorItems.push({ parentId, item: value });
+      } else if (/^!macros!([^.!]+)$/.test(key)) {
+        macros.push(value);
+      } else if (/^!tables!([^.!]+)$/.test(key)) {
+        tables.set(value._id, { ...value, results: [] });
+      } else if (/^!tables\.results!([^.!]+)\.([^.!]+)$/.test(key)) {
+        const [, parentId] = key.match(/^!tables\.results!([^.!]+)\.([^.!]+)$/);
+        tableResults.push({ parentId, result: value });
       }
     }
   } finally {
@@ -100,13 +118,27 @@ async function readPack(packPath) {
   }
   for (const { parentId, page } of journalPages) {
     const parent = journalEntries.get(parentId);
-    if (parent) {
-      parent.pages.push(page);
-    } else {
-      console.error(`  [warn] orphan page ${page.name} (parent ${parentId} not found)`);
-    }
+    if (parent) parent.pages.push(page);
+    else console.error(`  [warn] orphan page ${page.name} (parent ${parentId} not found)`);
   }
-  return { folders, items, journals: [...journalEntries.values()] };
+  for (const { parentId, item } of actorItems) {
+    const parent = actors.get(parentId);
+    if (parent) parent.items.push(item);
+    else console.error(`  [warn] orphan actor item ${item.name} (parent ${parentId} not found)`);
+  }
+  for (const { parentId, result } of tableResults) {
+    const parent = tables.get(parentId);
+    if (parent) parent.results.push(result);
+    else console.error(`  [warn] orphan table result ${result._id} (parent ${parentId} not found)`);
+  }
+  return {
+    folders,
+    items,
+    journals: [...journalEntries.values()],
+    actors: [...actors.values()],
+    macros,
+    tables: [...tables.values()],
+  };
 }
 
 function uniqueKeyMap(docs) {
@@ -168,6 +200,106 @@ function buildItemPack(packLabel, packData) {
     entries,
   };
   return { out, audit };
+}
+
+function buildActorPack(packLabel, packData) {
+  const folderMap = {};
+  for (const f of packData.folders) {
+    if (!(f.name in folderMap)) folderMap[f.name] = f.name;
+  }
+  const entries = {};
+  for (const { key, doc } of uniqueKeyMap(packData.actors)) {
+    const items = {};
+    const seenItems = new Map();
+    for (const item of doc.items || []) {
+      let itemKey = item.name;
+      if (seenItems.has(itemKey)) itemKey = `${item.name} (${(item._id || '').slice(-4)})`;
+      seenItems.set(itemKey, true);
+      const itemEntry = { name: item.name };
+      const desc = item.system?.description?.value;
+      if (desc) itemEntry.description = desc;
+      items[itemKey] = itemEntry;
+    }
+    const entry = { name: doc.name };
+    const tokenName = doc.prototypeToken?.name;
+    if (tokenName) {
+      entry.tokenName = tokenName;
+      entry.prototypeToken = tokenName;
+    }
+    const blurb = doc.system?.details?.blurb;
+    if (blurb) entry.blurb = blurb;
+    const publicNotes = doc.system?.details?.publicNotes;
+    if (publicNotes) entry.publicNotes = publicNotes;
+    if (Object.keys(items).length > 0) entry.items = items;
+    entries[key] = entry;
+  }
+  return {
+    out: {
+      label: packLabel,
+      mapping: {
+        tokenName: 'prototypeToken.name',
+        prototypeToken: 'prototypeToken.name',
+        blurb: 'system.details.blurb',
+        publicNotes: 'system.details.publicNotes',
+        items: {
+          path: 'items',
+          converter: 'fromPack',
+        },
+      },
+      folders: folderMap,
+      entries,
+    },
+    audit: {},
+  };
+}
+
+function buildMacroPack(packLabel, packData) {
+  const folderMap = {};
+  for (const f of packData.folders) {
+    if (!(f.name in folderMap)) folderMap[f.name] = f.name;
+  }
+  const entries = {};
+  for (const { key, doc } of uniqueKeyMap(packData.macros)) {
+    entries[key] = {
+      name: doc.name,
+      command: doc.command ?? '',
+    };
+  }
+  return {
+    out: { label: packLabel, folders: folderMap, entries },
+    audit: {},
+  };
+}
+
+function buildRollTablePack(packLabel, packData) {
+  const folderMap = {};
+  for (const f of packData.folders) {
+    if (!(f.name in folderMap)) folderMap[f.name] = f.name;
+  }
+  const entries = {};
+  for (const { key, doc } of uniqueKeyMap(packData.tables)) {
+    const results = {};
+    for (const r of doc.results || []) {
+      const [low, high] = Array.isArray(r.range) ? r.range : [null, null];
+      const rangeKey = (low != null && high != null)
+        ? (low === high ? String(low) : `${low}-${high}`)
+        : (r._id || '');
+      results[rangeKey] = r.description ?? r.text ?? '';
+    }
+    entries[key] = {
+      name: doc.name,
+      description: doc.description ?? '',
+      results,
+    };
+  }
+  return {
+    out: {
+      label: packLabel,
+      folders: folderMap,
+      entries,
+    },
+    audit: {},
+  };
 }
 
 const HOMEBREW_KEYS = [
@@ -342,15 +474,29 @@ async function processModule(moduleId, args) {
       skipped++;
       continue;
     }
-    const docCount = pack.type === 'Item' ? data.items.length : data.journals.length;
+    const docCountByType = {
+      Item: data.items.length,
+      JournalEntry: data.journals.length,
+      Actor: data.actors.length,
+      Macro: data.macros.length,
+      RollTable: data.tables.length,
+    };
+    const docCount = docCountByType[pack.type] ?? 0;
     if (docCount === 0) {
       console.log(`  [skip] ${pack.name} (empty)`);
       skipped++;
       continue;
     }
-    const builder = pack.type === 'Item' ? buildItemPack : buildJournalPack;
+    const builders = {
+      Item: buildItemPack,
+      JournalEntry: buildJournalPack,
+      Actor: buildActorPack,
+      Macro: buildMacroPack,
+      RollTable: buildRollTablePack,
+    };
+    const builder = builders[pack.type];
     const { out, audit } = builder(pack.label, data);
-    if (!args['no-merge']) {
+    if (!args['no-merge'] && MERGE_PACK_TYPES.has(pack.type)) {
       const prior = await loadPriorTranslation(args['temp-dir'], moduleId, pack.name);
       if (prior) {
         const merger = pack.type === 'Item' ? mergeItemPriors : mergeJournalPriors;

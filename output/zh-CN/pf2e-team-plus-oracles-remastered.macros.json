@@ -1,0 +1,10 @@
+{
+    "label": "Macros",
+    "folders": {},
+    "entries": {
+        "The Lurking Storm": {
+            "name": "The Lurking Storm",
+            "command": "const DamageRollClass = CONFIG.Dice.rolls.find(((R) => R.name === \"DamageRoll\"));\nconst damageRolls = game.messages\n    .filter(it => it.rolls && it.rolls.length > 0)\n    .slice(-1);\n\nif(damageRolls.length < 1) {\n   return ui.notifications.error(\"There has not been any damage rolled yet!\") ;\n}\n\nconst damageRoll = damageRolls[0];\nconst total = damageRoll.rolls[0]._total;\n\n\nconst splitDamage = new DamageRollClass(`(${Math.ceil(total/2)})[bludgeoning],(${Math.floor(total/2)})[electricity]`);\nsplitDamage.toMessage({\n    flavor: `The Lurking Storm`,\n    speaker: ChatMessage.getSpeaker()\n});"
+        }
+    }
+}

@@ -1,0 +1,153 @@
+{
+    "label": "Actors",
+    "mapping": {
+        "tokenName": "prototypeToken.name",
+        "prototypeToken": "prototypeToken.name",
+        "blurb": "system.details.blurb",
+        "publicNotes": "system.details.publicNotes",
+        "items": {
+            "path": "items",
+            "converter": "fromPack"
+        }
+    },
+    "folders": {},
+    "entries": {
+        "Monitor Aspect": {
+            "name": "Monitor Aspect",
+            "tokenName": "Monitor Aspect",
+            "prototypeToken": "Monitor Aspect",
+            "items": {
+                "Legal Lore": {
+                    "name": "Legal Lore"
+                }
+            }
+        },
+        "Animal Aspect": {
+            "name": "Animal Aspect",
+            "tokenName": "Animal Aspect",
+            "prototypeToken": "Animal Aspect"
+        },
+        "Undead Aspect": {
+            "name": "Undead Aspect",
+            "tokenName": "Undead Aspect",
+            "prototypeToken": "Undead Aspect"
+        },
+        "Dragon Aspect": {
+            "name": "Dragon Aspect",
+            "tokenName": "Dragon Aspect",
+            "prototypeToken": "Dragon Aspect",
+            "items": {
+                "Disaster Lore": {
+                    "name": "Disaster Lore"
+                },
+                "Secrets Lore": {
+                    "name": "Secrets Lore"
+                },
+                "Planar Lore": {
+                    "name": "Planar Lore"
+                },
+                "Spirit Lore": {
+                    "name": "Spirit Lore"
+                }
+            }
+        },
+        "Plant Aspect": {
+            "name": "Plant Aspect",
+            "tokenName": "Plant Aspect",
+            "prototypeToken": "Plant Aspect"
+        },
+        "Celestial Aspect": {
+            "name": "Celestial Aspect",
+            "tokenName": "Celestial Aspect",
+            "prototypeToken": "Celestial Aspect"
+        },
+        "Elemental Aspect": {
+            "name": "Elemental Aspect",
+            "tokenName": "Elemental Aspect",
+            "prototypeToken": "Elemental Aspect",
+            "items": {
+                "Fire Lore": {
+                    "name": "Fire Lore"
+                },
+                "Air Lore": {
+                    "name": "Air Lore"
+                },
+                "Metal Lore": {
+                    "name": "Metal Lore"
+                },
+                "Wood Lore": {
+                    "name": "Wood Lore"
+                },
+                "Earth Lore": {
+                    "name": "Earth Lore"
+                },
+                "Water Lore": {
+                    "name": "Water Lore"
+                }
+            }
+        },
+        "Fiend Aspect": {
+            "name": "Fiend Aspect",
+            "tokenName": "Fiend Aspect",
+            "prototypeToken": "Fiend Aspect",
+            "items": {
+                "Legal Lore": {
+                    "name": "Legal Lore"
+                }
+            }
+        },
+        "Construct Aspect": {
+            "name": "Construct Aspect",
+            "tokenName": "Construct Aspect",
+            "prototypeToken": "Construct Aspect"
+        },
+        "Thurse Aspect": {
+            "name": "Thurse Aspect",
+            "tokenName": "Thurse Aspect",
+            "prototypeToken": "Thurse Aspect",
+            "items": {
+                "Fire Lore": {
+                    "name": "Fire Lore"
+                },
+                "Earth Lore": {
+                    "name": "Earth Lore"
+                },
+                "Metal Lore": {
+                    "name": "Metal Lore"
+                },
+                "Riddle Lore": {
+                    "name": "Riddle Lore"
+                },
+                "Wood Lore": {
+                    "name": "Wood Lore"
+                },
+                "Air Lore": {
+                    "name": "Air Lore"
+                },
+                "Water Lore": {
+                    "name": "Water Lore"
+                }
+            }
+        },
+        "Fey Aspect": {
+            "name": "Fey Aspect",
+            "tokenName": "Fey Aspect",
+            "prototypeToken": "Fey Aspect"
+        },
+        "Entity Aspect": {
+            "name": "Entity Aspect",
+            "tokenName": "Entity Aspect",
+            "prototypeToken": "Entity Aspect"
+        },
+        "Ooze Aspect": {
+            "name": "Ooze Aspect",
+            "tokenName": "Ooze Aspect",
+            "prototypeToken": "Ooze Aspect",
+            "items": {
+                "Legal Lore": {
+                    "name": "Legal Lore"
+                }
+            }
+        }
+    }
+}

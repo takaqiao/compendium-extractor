@@ -1,0 +1,20 @@
+{
+    "label": "Roll Tables",
+    "folders": {},
+    "entries": {
+        "Fortune Reader": {
+            "name": "Fortune Reader",
+            "description": "",
+            "results": {
+                "1": "Roll again, choosing only one of the rolls for your next result",
+                "20": "Roll twice, adding both sets of rolls to the trigger for your reaction",
+                "14-16": "ranged attack rolls and Perception checks to Seek",
+                "5-7": "Reflex saving throws and Thievery checks",
+                "11-13": "spell attack rolls and skill checks",
+                "2-4": "melee attack rolls and Athletics checks",
+                "17-19": "Will saving throws and Diplomacy checks",
+                "8-10": "Fortitude saving throws and recovery checks"
+            }
+        }
+    }
+}
