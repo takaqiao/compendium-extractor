@@ -53,6 +53,32 @@ For JournalEntry packs (no `mapping`, matching official zh-CN convention):
 
 `Actor`, `Macro`, `RollTable`, and `Adventure` packs are skipped (with a stderr log).
 
+### Homebrew traits / weapons
+
+Many PF2e community modules register custom weapons, weapon traits, feat traits, equipment traits, etc. via `flags.<moduleId>.pf2e-homebrew` in `module.json` rather than as compendium entries — these are loaded directly by the PF2e system and are **not visible to babele**, so prior extractions silently dropped them (e.g. the `overkill` weapon trait from Barbarians+).
+
+For each module that declares any homebrew, the script also writes `<moduleId>.homebrew.json`:
+
+```json
+{
+  "moduleId": "pf2e-team-plus-barbarians",
+  "moduleTitle": "Barbarians+",
+  "homebrew": {
+    "baseWeapons": { "axewheel": "Axewheel", ... },
+    "weaponTraits": {
+      "overkill": {
+        "label": "Overkill",
+        "description": "Weapons with the overkill trait..."
+      }
+    }
+  }
+}
+```
+
+This file is **not babele input** — translate it by hand (replace `label` and `description` strings) and inject the result into the PF2e system at runtime via a Foundry hook in your translation module (e.g. on `setup`, walk `CONFIG.PF2E.weaponTraits` / `traitsDescriptions` and replace English values with translated ones). Description values that look like `PF2E.TraitDescriptionXxx` are already system i18n keys — leave those alone.
+
+Recognized homebrew categories: `baseWeapons`, `weaponTraits`, `featTraits`, `equipmentTraits`, `spellTraits`, `creatureTraits`, `languages`, `damageTypes`. Unknown keys are extracted anyway with a stderr warning.
+
 ## Install
 
 ```bash

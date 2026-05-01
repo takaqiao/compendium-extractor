@@ -1,0 +1,30 @@
+{
+    "moduleId": "pf2e-team-plus-barbarians",
+    "moduleTitle": "Barbarians+",
+    "homebrew": {
+        "baseWeapons": {
+            "axewheel": "Axewheel",
+            "dire-lance": "Dire Lance",
+            "doubleblade": "Doubleblade",
+            "forestbutcher": "Forestbutcher",
+            "fullsword": "Fullsword",
+            "grip-needle": "Grip Needle",
+            "moonscythe": "Moonscythe",
+            "mountain-hammer": "Mountain Hammer",
+            "gigauntlets": "Gigauntlets",
+            "mouthsword": "Mouthsword",
+            "palintonos-bow": "Palintonos Bow",
+            "ship-chain": "Ship Chain"
+        },
+        "weaponTraits": {
+            "modular-moonscythe": {
+                "label": "Modular (P, Forceful, and Pick or S, Sweep, and Polearm)",
+                "description": "PF2E.TraitDescriptionModular"
+            },
+            "overkill": {
+                "label": "Overkill",
+                "description": "Weapons with the overkill trait are very hard to use unless you are fueled by adrenaline or trained in how to use them. Unless you are raging, you can't use an overkill weapon more than once per round and can’t use it to Strike as part of a reaction, such as Reactive Strike. When you critically succeed at a Strike with an overkill weapon, you can choose to create difficult terrain in the space occupied by the target of your Strike, which replaces the normal critical specialization effect for the weapon."
+            }
+        }
+    }
+}

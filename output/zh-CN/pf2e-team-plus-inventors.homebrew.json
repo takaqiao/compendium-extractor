@@ -1,0 +1,12 @@
+{
+    "moduleId": "pf2e-team-plus-inventors",
+    "moduleTitle": "Inventors+",
+    "homebrew": {
+        "featTraits": {
+            "theory": {
+                "label": "Theory",
+                "description": "A theory is a conceptual imagining that you enter by using an action with the theory trait, and that you remain in for some time. A theory lasts until you get knocked out, until its requirements (if any) are violated, until the encounter ends, or until you entertain a new theory, whichever comes first. Theories progress through different phases: Predict, Test, and Analyze. These phases have stipulations on how you progress through your theory and when to change phases. After you use an action with the theory trait, you can’t use another one for 1 round. You can entertain a theory or have an ongoing theory only in encounter mode."
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "moduleId": "pf2e-team-plus-wizards",
+    "moduleTitle": "Wizards+",
+    "homebrew": {
+        "featTraits": {
+            "exploit": {
+                "label": "Exploit",
+                "description": "With enough study, a wizard can learn to take advantage of the loopholes and rule gaps of magic to reconstitute its power into another form. This gives the wizard unique and unusual ways to make arcane magic obey them through subverting a spell’s normal behavior by either compressing it into a reactive rebuttal or unraveling it carefully to produce an alternate effect. Using an exploit costs a prepared arcane spell slot with specific qualities and the rank of the spell slot you expend determines the strength of the effects. You can use only one action with the exploit trait per round. For the purposes of counteract checks, exploits are treated as spells equal to the rank of the expended spell."
+            }
+        }
+    }
+}

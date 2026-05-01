@@ -1,0 +1,36 @@
+{
+    "moduleId": "pf2e-team-plus-magic",
+    "moduleTitle": "Magic+",
+    "homebrew": {
+        "featTraits": {
+            "terminus": {
+                "label": "Terminus",
+                "description": "Terminus actions specify a cycle, which indicates the benefit your terminus provides you until the end of the current encounter where the cycle number is the number of times you have used that terminus action during the current encounter. You gain no additional benefits for using a terminus action if you have already reached its highest cycle in the current encounter."
+            }
+        },
+        "equipmentTraits": {
+            "scepter": {
+                "label": "Scepter",
+                "description": "Using a scepter requires holding it in one hand. Scepters always grant access to spellshape and a once per day activated effect. activated effects will require sacrificing a spell slot of a rank indicated by the effect. If you are a prepared spellcaster, you choose one of your prepared spells to lose as if you had cast it. Spontaneous casters use one of their daily spell slots as if they had cast a spell from it. Most scepters will have a minimum and/or maximum spell slot rank required to activate it, listed in the effect. Scepters have a limited capacity to convert spells into actuated effects, but similar to wands they can be overloaded to allow for additional uses. If you have already used the actuated effect of a scepter, you can attempt to Overload it. Roll a DC 10 flat check. On a success the activation happens as normal, but the scepter gains the broken condition and cannot be used for either the Spellshape or actuated effect. On a failure, the effect does not happen, you lose the actions, and the scepter gains the broken condition. In either case, the scepter cannot be repaired until the next time you make your daily preparations. Repairing a scepter requires using the Repair action or sacrificing a daily spell slot of the minimum rank required to activate the scepter."
+            }
+        },
+        "spellTraits": {
+            "essence": {
+                "label": "Essence",
+                "description": "Spells and feats with the essence trait are modified by essence spellcasting features and rules. <i>This is a FoundryVTT-only inclusion, making it easier to work with Essence spellcasting and to assign which spells are affected.</i>"
+            },
+            "aspectmorph": {
+                "label": "Aspectmorph",
+                "description": "These effects transform the target into a new form. A target can't be under the effect of more than one polymorph effect at a time. If it comes under the effect of a second polymorph effect, the second polymorph effect attempts to counteract the first. If it succeeds, it takes effect, and if it fails, the spell has no effect on that target. Any Strikes specifically granted by a polymorph effect are magical. Unless otherwise stated, polymorph spells don't allow the target to take on the appearance of a specific individual creature, but rather just a generic creature of a general type or ancestry.<p/> For more details, see the Aspect Forms page in the Magic+ Journal."
+            },
+            "aspectmon": {
+                "label": "Aspectmon",
+                "description": "Summoned creatures typically take the appearance of a creature below the caster’s level, though juvenile or visibly weaker versions of the appropriate level are possible. Spells with the summon trait can conjure aspect creatures, typically ones of a particular aspect type. The aspect creature must be from a common aspect or from another aspect to which you have access. The aspect creature gains the minion and aspectformed traits, and it must appear adjacent to you in an unoccupied space large enough to contain it. The rank of the spell determines other statistics of the aspect creature you summon, such as its starting Hit Points. The spell can still summon a creature with statistics of a lower rank if you so choose. These rules apply only to spells that have the aspectmon trait; other spells that call or conjure items or beings but that don't have the trait, like summon instrument, work as explained in the spell."
+            },
+            "aspectformed": {
+                "label": "Aspectformed",
+                "description": "Summoned creatures have the minion and summoned traits, and other traits as defined in the summon’s aspect. For all of the rules regarding aspectformed creatures, see the Aspect Summons page in the Magic+ Journal."
+            }
+        }
+    }
+}

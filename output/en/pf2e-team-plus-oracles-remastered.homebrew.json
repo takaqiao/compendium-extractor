@@ -1,0 +1,12 @@
+{
+    "moduleId": "pf2e-team-plus-oracles-remastered",
+    "moduleTitle": "Oracles+ Remastered",
+    "homebrew": {
+        "featTraits": {
+            "traversal": {
+                "label": "SF2E.Trait.Traversal",
+                "description": "SF2E.TraitDescription.Traversal"
+            }
+        }
+    }
+}

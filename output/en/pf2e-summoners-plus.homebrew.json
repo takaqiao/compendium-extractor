@@ -1,0 +1,12 @@
+{
+    "moduleId": "pf2e-summoners-plus",
+    "moduleTitle": "Summoners+",
+    "homebrew": {
+        "featTraits": {
+            "fabrication": {
+                "label": "Fabrication",
+                "description": "A fabrication is a temporary effect that is summoned into existence for a brief period of time. The fabrication trait means the action has the concentrate trait and the trait associated with your summoner tradition. Fabrications normally have too much instability to last more than 1 round, but if your eidolon is unmanifested, you can use your connection to your eidolon on subsequent turns to Sustain the effect for up to 4 rounds. If a fabrication would require a save, you use your spell DC to determine the DC of the effect. After this duration has passed or you no longer Sustain the fabrication, the fabrication automatically dissipates. After a fabrication dissipates, it cannot be created again for at least 1 round."
+            }
+        }
+    }
+}

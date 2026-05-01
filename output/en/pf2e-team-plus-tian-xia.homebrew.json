@@ -1,0 +1,19 @@
+{
+    "moduleId": "pf2e-team-plus-tian-xia",
+    "moduleTitle": "Tian Xia+",
+    "homebrew": {
+        "baseWeapons": {
+            "barong": "Barong",
+            "coconut-shell": "Coconut Shell",
+            "kampilan": "Kampilan",
+            "talibong": "Talibong",
+            "ginunting": "Ginunting"
+        },
+        "featTraits": {
+            "qi-shape": {
+                "label": "Qi-Shape",
+                "description": "A qi-shape action is a special action that requires that you have at least 1 Focus Point remaining in your Focus Pool. You must spend 1 Focus Point when you use the Energize entry for a qi-shape action, and doing so modifies the action’s properties as described in its entry. You cannot use more than one qi-shape action per turn. When you gain a new qi-shape action, you increase your Focus Pool by 1 point."
+            }
+        }
+    }
+}

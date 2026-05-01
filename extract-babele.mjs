@@ -170,6 +170,36 @@ function buildItemPack(packLabel, packData) {
   return { out, audit };
 }
 
+const HOMEBREW_KEYS = [
+  'baseWeapons',
+  'weaponTraits',
+  'featTraits',
+  'equipmentTraits',
+  'spellTraits',
+  'creatureTraits',
+  'languages',
+  'damageTypes',
+];
+
+function extractHomebrew(manifest) {
+  const flags = manifest?.flags?.[manifest.id];
+  const homebrew = flags?.['pf2e-homebrew'];
+  if (!homebrew || typeof homebrew !== 'object') return null;
+  const out = {};
+  for (const k of HOMEBREW_KEYS) {
+    if (homebrew[k] && typeof homebrew[k] === 'object' && Object.keys(homebrew[k]).length > 0) {
+      out[k] = homebrew[k];
+    }
+  }
+  for (const [k, v] of Object.entries(homebrew)) {
+    if (!HOMEBREW_KEYS.includes(k) && v && typeof v === 'object' && Object.keys(v).length > 0) {
+      out[k] = v;
+      console.error(`  [homebrew] unknown key "${k}" in ${manifest.id} — included anyway`);
+    }
+  }
+  return Object.keys(out).length > 0 ? out : null;
+}
+
 function buildJournalPack(packLabel, packData) {
   const folderMap = {};
   for (const f of packData.folders) {
@@ -313,6 +343,19 @@ async function processModule(moduleId, args) {
       ? ` [audit: ${Object.entries(audit).map(([k, n]) => `${k}×${n}`).join(', ')}]`
       : '';
     console.log(`  [write] ${pack.name} (${docCount} docs)${auditMsg}`);
+  }
+  const homebrew = extractHomebrew(manifest);
+  if (homebrew) {
+    const out = {
+      moduleId,
+      moduleTitle: manifest.title || moduleId,
+      homebrew,
+    };
+    const outPath = path.join(args['out-dir'], `${moduleId}.homebrew.json`);
+    await writeFile(outPath, JSON.stringify(out, null, 4) + '\n', 'utf8');
+    written++;
+    const counts = Object.entries(homebrew).map(([k, v]) => `${k}×${Object.keys(v).length}`).join(', ');
+    console.log(`  [homebrew] ${moduleId}.homebrew.json (${counts})`);
   }
   return { written, skipped };
 }
